@@ -1,0 +1,64 @@
+{
+  "Metadata": {
+    "title": "The Ranco Bay — Soggiorni sul Lago Maggiore",
+    "description": "Un soggiorno tranquillo e curato dai proprietari a Ranco, sul Lago Maggiore.",
+    "openGraphTitle": "The Ranco Bay",
+    "openGraphDescription": "Una casa sul lago e una guida locale per soggiorni consapevoli a Ranco."
+  },
+  "Navigation": {
+    "brand": "The Ranco Bay",
+    "primaryLabel": "Navigazione principale",
+    "stay": "Soggiorno",
+    "story": "La casa",
+    "guide": "Guida locale",
+    "location": "Posizione",
+    "languageLabel": "Scegli una lingua",
+    "locales": {"en": "EN", "it": "IT", "de": "DE", "fr": "FR"}
+  },
+  "Home": {
+    "Hero": {
+      "eyebrow": "Ranco · Lago Maggiore",
+      "title": "Una casa sul bordo tranquillo del lago",
+      "body": "Questa base tecnica introduce la futura casa digitale di The Ranco Bay."
+    },
+    "Story": {
+      "eyebrow": "Racconto cinematografico",
+      "title": "Una casa plasmata dal suo rapporto con il lago",
+      "body": "Questa sezione indica la futura sequenza narrativa senza introdurne immagini o movimento."
+    },
+    "Accommodation": {
+      "eyebrow": "Ospitalità",
+      "title": "Il soggiorno resta l'esperienza principale",
+      "body": "I futuri dettagli dell'alloggio, i servizi, le fotografie e la disponibilità vivranno in quest'area."
+    },
+    "Guide": {
+      "eyebrow": "Guida locale",
+      "title": "La conoscenza diretta di Ranco e del Lago Maggiore",
+      "body": "Ristoranti, borghi, spiagge e consigli pratici saranno in seguito organizzati come contenuti editoriali."
+    },
+    "GuestCompanion": {
+      "eyebrow": "Guest Companion",
+      "title": "Informazioni utili per gli ospiti confermati",
+      "body": "È previsto uno spazio privato per il check-in, le indicazioni sulla casa e i consigli locali."
+    },
+    "Location": {
+      "eyebrow": "Posizione",
+      "title": "Ranco, sulla sponda lombarda del Lago Maggiore",
+      "body": "L'esperienza della posizione sarà sviluppata in seguito senza vincolare questa base a un fornitore di mappe."
+    },
+    "FinalCta": {
+      "eyebrow": "Richiesta futura",
+      "title": "Un percorso chiaro dalla scoperta al soggiorno",
+      "body": "Gli strumenti di prenotazione e richiesta sono intenzionalmente esclusi da questa fase."
+    }
+  },
+  "Stay": {},
+  "Guide": {},
+  "Property": {},
+  "Guest": {},
+  "Common": {
+    "Footer": {"brand": "The Ranco Bay", "location": "Ranco, Lago Maggiore, Italia"},
+    "NotFound": {"title": "Pagina non trovata", "description": "La pagina richiesta non fa parte di questo sito.", "returnHome": "Torna alla home"}
+  },
+  "Accessibility": {"skipToContent": "Vai al contenuto principale"}
+}

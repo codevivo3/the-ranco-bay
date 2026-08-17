@@ -1,0 +1,64 @@
+{
+  "Metadata": {
+    "title": "The Ranco Bay — Séjours au lac Majeur",
+    "description": "Un séjour paisible et porté par ses propriétaires à Ranco, au bord du lac Majeur.",
+    "openGraphTitle": "The Ranco Bay",
+    "openGraphDescription": "Une maison au bord du lac et un guide local pour des séjours attentifs à Ranco."
+  },
+  "Navigation": {
+    "brand": "The Ranco Bay",
+    "primaryLabel": "Navigation principale",
+    "stay": "Séjour",
+    "story": "La maison",
+    "guide": "Guide local",
+    "location": "Situation",
+    "languageLabel": "Choisir une langue",
+    "locales": {"en": "EN", "it": "IT", "de": "DE", "fr": "FR"}
+  },
+  "Home": {
+    "Hero": {
+      "eyebrow": "Ranco · Lac Majeur",
+      "title": "Une maison au bord paisible du lac",
+      "body": "Cette fondation technique présente le futur espace numérique de The Ranco Bay."
+    },
+    "Story": {
+      "eyebrow": "Récit cinématographique",
+      "title": "Une maison façonnée par sa relation avec le lac",
+      "body": "Cette section annonce la future séquence narrative sans introduire encore ses images ou son mouvement."
+    },
+    "Accommodation": {
+      "eyebrow": "Hébergement",
+      "title": "Le séjour reste l'expérience principale",
+      "body": "Les futurs détails de l'hébergement, équipements, photographies et disponibilités vivront dans cet espace."
+    },
+    "Guide": {
+      "eyebrow": "Guide local",
+      "title": "Une connaissance personnelle de Ranco et du lac Majeur",
+      "body": "Restaurants, villages, plages et conseils pratiques seront ensuite structurés comme contenus éditoriaux."
+    },
+    "GuestCompanion": {
+      "eyebrow": "Guest Companion",
+      "title": "Des informations utiles pour les voyageurs confirmés",
+      "body": "Un compagnon privé est prévu pour l'arrivée, les informations de la maison et les recommandations locales."
+    },
+    "Location": {
+      "eyebrow": "Situation",
+      "title": "Ranco, sur la rive lombarde du lac Majeur",
+      "body": "L'expérience de localisation sera développée plus tard sans lier cette fondation à un fournisseur de cartes."
+    },
+    "FinalCta": {
+      "eyebrow": "Future demande",
+      "title": "Un parcours clair de la découverte au séjour",
+      "body": "Les outils de réservation et de demande sont volontairement hors de cette phase de fondation."
+    }
+  },
+  "Stay": {},
+  "Guide": {},
+  "Property": {},
+  "Guest": {},
+  "Common": {
+    "Footer": {"brand": "The Ranco Bay", "location": "Ranco, lac Majeur, Italie"},
+    "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"}
+  },
+  "Accessibility": {"skipToContent": "Aller au contenu principal"}
+}

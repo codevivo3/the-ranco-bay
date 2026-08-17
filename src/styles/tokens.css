@@ -1,0 +1,18 @@
+:root {
+  --trb-sand: #f0edda;
+  --trb-walnut: #5f4433;
+  --trb-lake: #244b74;
+  --trb-lagoon: #13788a;
+
+  --color-background: var(--trb-sand);
+  --color-surface: #fffdf4;
+  --color-text: var(--trb-walnut);
+  --color-text-muted: #745f50;
+  --color-accent: var(--trb-lake);
+  --color-border: color-mix(in srgb, var(--trb-walnut) 24%, transparent);
+
+  --space-section: clamp(4rem, 9vw, 8rem);
+  --space-gutter: clamp(1rem, 4vw, 3rem);
+  --content-width: 76rem;
+  --content-narrow: 48rem;
+}

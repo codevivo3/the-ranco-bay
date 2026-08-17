@@ -1,0 +1,64 @@
+{
+  "Metadata": {
+    "title": "The Ranco Bay — Lake Maggiore stays",
+    "description": "A calm, owner-led stay on Lake Maggiore in Ranco, Italy.",
+    "openGraphTitle": "The Ranco Bay",
+    "openGraphDescription": "A lakeside home and local guide for thoughtful stays in Ranco."
+  },
+  "Navigation": {
+    "brand": "The Ranco Bay",
+    "primaryLabel": "Primary navigation",
+    "stay": "Stay",
+    "story": "The house",
+    "guide": "Local guide",
+    "location": "Location",
+    "languageLabel": "Choose a language",
+    "locales": {"en": "EN", "it": "IT", "de": "DE", "fr": "FR"}
+  },
+  "Home": {
+    "Hero": {
+      "eyebrow": "Ranco · Lake Maggiore",
+      "title": "A home at the quiet edge of the lake",
+      "body": "This technical foundation introduces the future home of The Ranco Bay."
+    },
+    "Story": {
+      "eyebrow": "Cinematic story",
+      "title": "A house shaped by its relationship with the lake",
+      "body": "This section marks the future narrative sequence without introducing its imagery or motion."
+    },
+    "Accommodation": {
+      "eyebrow": "Accommodation",
+      "title": "The stay remains the primary experience",
+      "body": "Future accommodation details, amenities, photography and availability will live within this product area."
+    },
+    "Guide": {
+      "eyebrow": "Local guide",
+      "title": "Owner-led knowledge of Ranco and Lake Maggiore",
+      "body": "Restaurants, villages, beaches and practical recommendations will later be structured as editorial content."
+    },
+    "GuestCompanion": {
+      "eyebrow": "Guest Companion",
+      "title": "Useful information for confirmed guests",
+      "body": "A private companion is planned for check-in, house guidance and contextual local recommendations."
+    },
+    "Location": {
+      "eyebrow": "Location",
+      "title": "Ranco, on the Lombardy shore of Lake Maggiore",
+      "body": "The location experience will be developed later without committing this foundation to a map provider."
+    },
+    "FinalCta": {
+      "eyebrow": "Future enquiry",
+      "title": "A clear path from discovery to a stay",
+      "body": "Booking and enquiry tools are intentionally outside this foundation phase."
+    }
+  },
+  "Stay": {},
+  "Guide": {},
+  "Property": {},
+  "Guest": {},
+  "Common": {
+    "Footer": {"brand": "The Ranco Bay", "location": "Ranco, Lake Maggiore, Italy"},
+    "NotFound": {"title": "Page not found", "description": "The requested page is not part of this website.", "returnHome": "Return home"}
+  },
+  "Accessibility": {"skipToContent": "Skip to main content"}
+}
