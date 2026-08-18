@@ -10,24 +10,24 @@ export async function SiteHeader() {
 
   return (
     <header className='border-b border-page-border bg-page-surface'>
-      <Container className='flex flex-wrap items-center justify-between gap-5 py-5'>
-        <Link className='flex items-center gap-3' href='/'>
+      <Container className='grid grid-cols-[1fr_auto_1fr] items-center gap-5 py-4 bg-blue-500'>
+        <Link className='flex items-center gap-2' href='/' aria-label={t('brand')}>
           <Image
             src='/logo/trb-logo-image-plain.svg'
-            alt='The Ranco Bay'
-            width={35}
-            height={35}
+            alt=''
+            width={40}
+            height={40}
             priority
           />
           <Image
             src='/logo/trb-logo-typography-plain.svg'
-            alt='The Ranco Bay'
+            alt=''
             width={150}
             height={50}
             priority
           />
         </Link>
-        <nav aria-label={t('primaryLabel')}>
+        <nav className='justify-self-center bg-amber-300' aria-label={t('primaryLabel')}>
           <ul className='flex flex-wrap gap-x-5 gap-y-2 text-sm'>
             <li>
               <Link href='/#stay'>{t('stay')}</Link>
@@ -43,7 +43,7 @@ export async function SiteHeader() {
             </li>
           </ul>
         </nav>
-        <nav aria-label={t('languageLabel')}>
+        <nav className='justify-self-end' aria-label={t('languageLabel')}>
           <ul className='flex gap-3 text-xs uppercase tracking-[0.12em]'>
             {routing.locales.map((locale) => (
               <li key={locale}>
