@@ -19,7 +19,13 @@
     "Hero": {
       "eyebrow": "Ranco · Lago Maggiore",
       "title": "Una casa sul bordo tranquillo del lago",
-      "body": "Questa base tecnica introduce la futura casa digitale di The Ranco Bay."
+      "body": "Questa base tecnica introduce la futura casa digitale di The Ranco Bay.",
+      "stayLabel": "Ospitalità sul lago · Spiaggia privata",
+      "slides": {
+        "arrival": {"alt": "La riva e le montagne del Lago Maggiore viste dall'acqua"},
+        "openWater": {"alt": "Barche a vela ferme sull'acqua calma sotto le montagne"},
+        "evening": {"alt": "La luce calda della sera sul Lago Maggiore"}
+      }
     },
     "Story": {
       "eyebrow": "Racconto cinematografico",

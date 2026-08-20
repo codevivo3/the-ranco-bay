@@ -19,7 +19,13 @@
     "Hero": {
       "eyebrow": "Ranco · Lac Majeur",
       "title": "Une maison au bord paisible du lac",
-      "body": "Cette fondation technique présente le futur espace numérique de The Ranco Bay."
+      "body": "Cette fondation technique présente le futur espace numérique de The Ranco Bay.",
+      "stayLabel": "Hébergement au bord du lac · Plage privée",
+      "slides": {
+        "arrival": {"alt": "La rive et les montagnes du lac Majeur vues depuis l'eau"},
+        "openWater": {"alt": "Voiliers au repos sur une eau calme au pied des montagnes"},
+        "evening": {"alt": "La lumière chaude du soir sur le lac Majeur"}
+      }
     },
     "Story": {
       "eyebrow": "Récit cinématographique",

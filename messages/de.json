@@ -19,7 +19,13 @@
     "Hero": {
       "eyebrow": "Ranco · Lago Maggiore",
       "title": "Ein Zuhause am ruhigen Rand des Sees",
-      "body": "Dieses technische Fundament führt zur künftigen Website von The Ranco Bay."
+      "body": "Dieses technische Fundament führt zur künftigen Website von The Ranco Bay.",
+      "stayLabel": "Unterkunft am See · Privatstrand",
+      "slides": {
+        "arrival": {"alt": "Ufer und Berge des Lago Maggiore vom Wasser aus gesehen"},
+        "openWater": {"alt": "Segelboote auf ruhigem Wasser vor den Bergen"},
+        "evening": {"alt": "Warmes Abendlicht über dem Lago Maggiore"}
+      }
     },
     "Story": {
       "eyebrow": "Filmische Geschichte",

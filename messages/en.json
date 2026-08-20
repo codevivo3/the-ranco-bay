@@ -19,7 +19,13 @@
     "Hero": {
       "eyebrow": "Ranco · Lake Maggiore",
       "title": "A home at the quiet edge of the lake",
-      "body": "This technical foundation introduces the future home of The Ranco Bay."
+      "body": "This technical foundation introduces the future home of The Ranco Bay.",
+      "stayLabel": "Lakeside accommodation · Private beach",
+      "slides": {
+        "arrival": {"alt": "Lake Maggiore shoreline and mountains seen from the water"},
+        "openWater": {"alt": "Sailboats resting on calm open water beneath the mountains"},
+        "evening": {"alt": "Warm evening light settling over Lake Maggiore"}
+      }
     },
     "Story": {
       "eyebrow": "Cinematic story",

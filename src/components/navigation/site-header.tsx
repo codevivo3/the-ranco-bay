@@ -10,7 +10,7 @@ export async function SiteHeader() {
 
   return (
     <header className='border-b border-page-border bg-page-surface'>
-      <Container className='grid grid-cols-[1fr_auto_1fr] items-center gap-5 py-4 bg-blue-500'>
+      <Container className='grid grid-cols-[1fr_auto_1fr] items-center gap-5 py-4'>
         <Link className='flex items-center gap-2' href='/' aria-label={t('brand')}>
           <Image
             src='/logo/trb-logo-image-plain.svg'
@@ -27,7 +27,7 @@ export async function SiteHeader() {
             priority
           />
         </Link>
-        <nav className='justify-self-center bg-amber-300' aria-label={t('primaryLabel')}>
+        <nav className='justify-self-center' aria-label={t('primaryLabel')}>
           <ul className='flex flex-wrap gap-x-5 gap-y-2 text-sm'>
             <li>
               <Link href='/#stay'>{t('stay')}</Link>

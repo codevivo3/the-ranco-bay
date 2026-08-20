@@ -3,6 +3,7 @@ import {getTranslations, setRequestLocale} from "next-intl/server";
 import {Container} from "@/components/layout/container";
 import {SiteFooter} from "@/components/layout/site-footer";
 import {SiteHeader} from "@/components/navigation/site-header";
+import {CinematicHero} from "@/components/sections/cinematic-hero";
 import {HomeSection} from "@/components/sections/home-section";
 import {Link} from "@/i18n/navigation";
 
@@ -26,19 +27,7 @@ export default async function HomePage({params}: HomePageProps) {
       </Link>
       <SiteHeader />
       <main id="main-content">
-        <section className="flex min-h-[58svh] items-end bg-page-accent py-[var(--space-section)] text-page-surface">
-          <Container>
-            <p className="mb-5 text-xs uppercase tracking-[0.18em] opacity-80">
-              {t("Hero.eyebrow")}
-            </p>
-            <h1 className="max-w-4xl font-display text-5xl sm:text-7xl lg:text-8xl">
-              {t("Hero.title")}
-            </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8">
-              {t("Hero.body")}
-            </p>
-          </Container>
-        </section>
+        <CinematicHero />
         <HomeSection id="story" eyebrow={t("Story.eyebrow")} title={t("Story.title")} body={t("Story.body")} />
         <HomeSection id="stay" eyebrow={t("Accommodation.eyebrow")} title={t("Accommodation.title")} body={t("Accommodation.body")} tone="surface" />
         <HomeSection id="guide" eyebrow={t("Guide.eyebrow")} title={t("Guide.title")} body={t("Guide.body")} />
