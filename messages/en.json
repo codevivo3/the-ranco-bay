@@ -3,68 +3,130 @@
     "title": "The Ranco Bay — Lake Maggiore stays",
     "description": "A calm, owner-led stay on Lake Maggiore in Ranco, Italy.",
     "openGraphTitle": "The Ranco Bay",
-    "openGraphDescription": "A lakeside home and local guide for thoughtful stays in Ranco."
+    "openGraphDescription": "A lakeside home and local guide for thoughtful stays in Ranco.",
+    "pages": {
+      "house": {"title": "The House — The Ranco Bay", "description": "Explore the house, its lake-facing spaces, private beach and practical details."},
+      "guide": {"title": "Local Guide — The Ranco Bay", "description": "A host-led guide to eating, exploring and spending time on Lake Maggiore."},
+      "contact": {"title": "Contact — The Ranco Bay", "description": "Plan an enquiry and find practical location information for The Ranco Bay."}
+    }
   },
   "Navigation": {
     "brand": "The Ranco Bay",
     "primaryLabel": "Primary navigation",
-    "stay": "Stay",
-    "story": "The house",
+    "house": "The House",
     "guide": "Local guide",
-    "location": "Location",
+    "contact": "Contact",
     "languageLabel": "Choose a language",
     "locales": {"en": "EN", "it": "IT", "de": "DE", "fr": "FR"}
   },
   "Home": {
     "Hero": {
-      "eyebrow": "Ranco · Lake Maggiore",
       "title": "A home at the quiet edge of the lake",
-      "body": "This technical foundation introduces the future home of The Ranco Bay.",
-      "stayLabel": "Lakeside accommodation · Private beach",
+      "metadata": "RANCO · LAKE MAGGIORE — LAKESIDE ACCOMMODATION WITH PRIVATE BEACH",
       "slides": {
         "arrival": {"alt": "Lake Maggiore shoreline and mountains seen from the water"},
         "openWater": {"alt": "Sailboats resting on calm open water beneath the mountains"},
         "evening": {"alt": "Warm evening light settling over Lake Maggiore"}
       }
     },
-    "Story": {
-      "eyebrow": "Cinematic story",
-      "title": "A house shaped by its relationship with the lake",
-      "body": "This section marks the future narrative sequence without introducing its imagery or motion."
+    "CinematicHero": {
+      "counter": "{current} / {total}",
+      "scenes": {
+        "promise": {
+          "alt": "Lake Maggiore seen from the shaded interior of the house"
+        },
+        "inside": {
+          "title": "Inside",
+          "subtitle": "Stay",
+          "windowAlt": "Lake water seen through a wide window framed by dark curtains",
+          "sculptureAlt": "Carved wooden sculpture in a bright interior",
+          "bedsideAlt": "Wooden bedside table with books and a vintage camera case",
+          "detailAlt": "Abstract close-up of a textured interior surface"
+        },
+        "outside": {
+          "label": "Toward the lake",
+          "alt": "Open garden gates framing the path across the road to Lake Maggiore"
+        },
+        "privateBeach": {
+          "eyebrow": "Private beach",
+          "lineOne": "Cross the road.",
+          "lineTwo": "Barefoot.",
+          "alt": "Sun loungers on a lawn beside open blue water"
+        },
+        "reveal": {
+          "eyebrow": "Lake to house",
+          "title": "The Ranco Bay",
+          "alt": "A house reflected in still water beneath a forested mountain"
+        }
+      }
     },
-    "Accommodation": {
-      "eyebrow": "Accommodation",
-      "title": "The stay remains the primary experience",
-      "body": "Future accommodation details, amenities, photography and availability will live within this product area."
+    "HousePreview": {
+      "eyebrow": "The House",
+      "title": "A lake-facing home, made for unhurried days",
+      "body": "A concise introduction to the spaces, the view and the practical comforts that shape a stay at The Ranco Bay.",
+      "link": "Explore the house",
+      "imageAlt": "Lake Maggiore framed by the shaded veranda of the house",
+      "facts": {"lakeView": "Lake view", "privateBeach": "Private beach", "parking": "Parking", "equipped": "Equipped accommodation"}
     },
-    "Guide": {
-      "eyebrow": "Local guide",
-      "title": "Owner-led knowledge of Ranco and Lake Maggiore",
-      "body": "Restaurants, villages, beaches and practical recommendations will later be structured as editorial content."
+    "GuidePreview": {
+      "eyebrow": "Local Guide",
+      "title": "Three ways into the quieter side of the lake",
+      "body": "A small, host-curated selection for eating well, getting onto the water and exploring beyond Ranco.",
+      "link": "Open the local guide"
     },
-    "GuestCompanion": {
-      "eyebrow": "Guest Companion",
-      "title": "Useful information for confirmed guests",
-      "body": "A private companion is planned for check-in, house guidance and contextual local recommendations."
-    },
-    "Location": {
-      "eyebrow": "Location",
-      "title": "Ranco, on the Lombardy shore of Lake Maggiore",
-      "body": "The location experience will be developed later without committing this foundation to a map provider."
+    "Hospitality": {
+      "eyebrow": "A Local Welcome",
+      "title": "Hospitality with a real person behind it",
+      "body": "The stay is supported by local knowledge, practical help and recommendations shaped around how guests want to experience the lake.",
+      "link": "Get in touch",
+      "imageAlt": "A quiet interior detail representing the personal character of the house"
     },
     "FinalCta": {
-      "eyebrow": "Future enquiry",
-      "title": "A clear path from discovery to a stay",
-      "body": "Booking and enquiry tools are intentionally outside this foundation phase."
+      "eyebrow": "Plan a stay",
+      "title": "Begin with a simple conversation",
+      "body": "Share your dates and what you would like from your time at Lake Maggiore. Enquiry details will be confirmed personally.",
+      "link": "Contact The Ranco Bay"
     }
   },
-  "Stay": {},
-  "Guide": {},
-  "Property": {},
-  "Guest": {},
+  "House": {
+    "hero": {"eyebrow": "The House", "title": "Rooms shaped by light, water and time", "titleLineOne": "Rooms shaped", "titleLineTwo": "by light, water and time", "body": "Explore the accommodation in chapters: from the first view toward the lake to the practical details that make a stay feel easy.", "imageAlt": "A house reflected in still water beneath a forested mountain"},
+    "introduction": {"eyebrow": "Accommodation", "title": "A place to settle in, not simply pass through", "body": "The house is presented as an honest sequence of spaces and experiences. The current photography remains temporary while the final property shoot is prepared."},
+    "chapters": {
+      "veranda": {"title": "Veranda and arrival", "body": "The first relationship is outward: from the shelter of the house toward the road, the private beach and the lake beyond.", "imageAlt": "Lake Maggiore seen from the shaded veranda"},
+      "living": {"title": "Living spaces", "body": "Shared rooms are intended for slow mornings, meals at home and returning from a day around the lake.", "imageAlt": "A wide interior window looking toward blue water"},
+      "bedroom": {"title": "Bedroom", "body": "A quieter chapter focused on rest, useful storage and the small details that make the accommodation comfortable.", "imageAlt": "Wooden bedside table beside a neatly prepared bed"},
+      "details": {"title": "Details", "body": "Materials, objects and natural light give the interiors their character without turning the house into a staged showroom.", "imageAlt": "Close-up of a textured interior surface"},
+      "outside": {"title": "Outside", "body": "The route outside connects the property directly with the lakeshore and the wider landscape of Ranco.", "imageAlt": "Open gates framing the path toward Lake Maggiore"},
+      "beach": {"title": "Private beach", "body": "Across the road, the private beach creates a direct and uncomplicated relationship with the water.", "imageAlt": "Sun loungers on a lawn beside open blue water"}
+    },
+    "amenities": {"eyebrow": "At a glance", "title": "The essentials of the stay", "body": "Only confirmed high-value facts are included at this stage.", "items": {"lakeView": "Lake-facing setting", "privateBeach": "Access to the private beach", "parking": "Parking available", "equipped": "Equipped accommodation"}},
+    "practical": {"eyebrow": "Practical information", "title": "What is useful to know", "body": "Detailed capacity, policies and arrival instructions will be confirmed as the accommodation content is finalized.", "items": {"setting": {"label": "Setting", "value": "Ranco, on the Lombardy shore of Lake Maggiore."}, "arrival": {"label": "Arrival", "value": "Exact check-in instructions will be shared directly with confirmed guests."}, "parking": {"label": "Parking", "value": "Parking is part of the accommodation offer; final access details will follow."}, "beach": {"label": "Private beach", "value": "The beach is across the road from the property."}}, "contactLink": "Ask about the house"}
+  },
+  "Guide": {
+    "hero": {"eyebrow": "Local Guide", "title": "Useful ways to experience Lake Maggiore", "titleLineOne": "Useful ways to", "titleLineTwo": "experience Lake Maggiore", "body": "A deliberately small guide shaped by local judgement rather than rankings, volume or generic lists.", "imageAlt": "Open garden gates leading toward Lake Maggiore"},
+    "categories": {
+      "eat": {"eyebrow": "01", "label": "Eat", "description": "Restaurants, bars, aperitivo and lunch suggestions selected for context, not completeness."},
+      "water": {"eyebrow": "02", "label": "On the Water", "description": "Swimming, boats and lake experiences that make the water part of the day."},
+      "explore": {"eyebrow": "03", "label": "Explore", "description": "Villages, viewpoints, nature and day trips worth the journey from Ranco."}
+    },
+    "entries": {
+      "lakeside-table": {"title": "A table near the water", "description": "A temporary editorial door for future host-selected restaurants and aperitivo stops.", "alt": "Blue water seen through an interior window"},
+      "open-water": {"title": "Make time for the lake", "description": "A temporary starting point for swimming, boat hire and quieter hours beside the water.", "alt": "Sun loungers on a lawn beside open water"},
+      "ranco-outlook": {"title": "Begin close to Ranco", "description": "A temporary route into walks, villages and viewpoints chosen with practical local context.", "alt": "Open gates framing the path toward the lake"}
+    },
+    "tags": {"lunch": "Lunch", "sunset": "Sunset", "swimming": "Swimming", "halfDay": "Half day", "withoutCar": "Without a car"},
+    "cta": {"eyebrow": "Personal recommendations", "title": "Tell us how you like to spend a day", "titleLineOne": "Tell us how you like", "titleLineTwo": "to spend a day", "body": "Future guide content will become more useful when it can respond to each stay, season and pace.", "link": "Contact your host"}
+  },
+  "Contact": {
+    "hero": {"eyebrow": "Contact", "title": "Plan the practical side of your stay", "titleLineOne": "Plan the practical", "titleLineTwo": "side of your stay", "body": "A calm place for enquiries, arrival context and the information needed to find The Ranco Bay.", "imageAlt": "Lake Maggiore framed by the shaded interior of the house"},
+    "hospitality": {"eyebrow": "Your Host", "title": "Local help is part of the welcome", "titleLineOne": "Local help", "titleLineTwo": "is part of the welcome", "body": "The final host story is still being prepared. The intention is simple: personal communication, useful recommendations and support before and during the stay.", "imageAlt": "A quiet interior detail representing the character of the house"},
+    "enquiry": {"eyebrow": "Enquiry", "title": "Start with the details that matter", "titleLineOne": "Start with", "titleLineTwo": "the details that matter", "body": "The final enquiry channel and contact details will be connected in a later controlled phase.", "formStatus": "This form shows the intended structure only. Submission is not active yet.", "fields": {"name": "Name", "email": "Email", "dates": "Preferred dates", "message": "What would you like to know?"}},
+    "details": {"eyebrow": "Contact details", "title": "The Ranco Bay in Ranco", "body": "Public contact information will be confirmed before launch.", "addressLabel": "Area", "addressValue": "Ranco, Lake Maggiore, Italy", "contactLabel": "Enquiries", "contactValue": "Direct contact details to be confirmed"},
+    "location": {"title": "Location and map", "body": "Use Google Maps for the current public location context. No map API is required for this skeleton.", "mapsLink": "Open in Google Maps", "arrivalTitle": "Arrival", "arrivalBody": "Exact address, access and check-in instructions will be shared directly when a stay is confirmed.", "imageAlt": "Map showing Lake Maggiore and the surrounding border region of Italy and Switzerland"}
+  },
   "Common": {
-    "Footer": {"brand": "The Ranco Bay", "location": "Ranco, Lake Maggiore, Italy"},
+    "Footer": {"brand": "The Ranco Bay", "location": "Ranco • Lake Maggiore • Italy"},
     "NotFound": {"title": "Page not found", "description": "The requested page is not part of this website.", "returnHome": "Return home"}
   },
-  "Accessibility": {"skipToContent": "Skip to main content"}
+  "Accessibility": {"skipToContent": "Skip to main content", "closeDialog": "Close dialog"}
 }

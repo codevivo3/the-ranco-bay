@@ -1,3 +1,9 @@
+# Source-file maintainability
+
+- Target roughly 100–200 lines for most source modules.
+- Treat roughly 300 lines as a soft maximum and review larger files by responsibility.
+- Prefer cohesive extraction over arbitrary fragmentation or one-component-per-element files.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know

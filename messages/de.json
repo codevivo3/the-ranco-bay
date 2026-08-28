@@ -3,68 +3,130 @@
     "title": "The Ranco Bay — Aufenthalte am Lago Maggiore",
     "description": "Ein ruhiger, persönlich geführter Aufenthalt in Ranco am Lago Maggiore.",
     "openGraphTitle": "The Ranco Bay",
-    "openGraphDescription": "Ein Haus am See und ein lokaler Guide für bewusste Aufenthalte in Ranco."
+    "openGraphDescription": "Ein Haus am See und ein lokaler Guide für bewusste Aufenthalte in Ranco.",
+    "pages": {
+      "house": {"title": "Das Haus — The Ranco Bay", "description": "Entdecken Sie das Haus, seine Räume mit Seeblick, den Privatstrand und praktische Details."},
+      "guide": {"title": "Lokaler Guide — The Ranco Bay", "description": "Ein persönlich kuratierter Guide zum Essen, Entdecken und Erleben des Lago Maggiore."},
+      "contact": {"title": "Kontakt — The Ranco Bay", "description": "Planen Sie eine Anfrage und finden Sie praktische Lageinformationen zu The Ranco Bay."}
+    }
   },
   "Navigation": {
     "brand": "The Ranco Bay",
     "primaryLabel": "Hauptnavigation",
-    "stay": "Aufenthalt",
-    "story": "Das Haus",
+    "house": "Das Haus",
     "guide": "Lokaler Guide",
-    "location": "Lage",
+    "contact": "Kontakt",
     "languageLabel": "Sprache auswählen",
     "locales": {"en": "EN", "it": "IT", "de": "DE", "fr": "FR"}
   },
   "Home": {
     "Hero": {
-      "eyebrow": "Ranco · Lago Maggiore",
       "title": "Ein Zuhause am ruhigen Rand des Sees",
-      "body": "Dieses technische Fundament führt zur künftigen Website von The Ranco Bay.",
-      "stayLabel": "Unterkunft am See · Privatstrand",
+      "metadata": "RANCO · LAGO MAGGIORE — UNTERKUNFT AM SEE MIT PRIVATSTRAND",
       "slides": {
         "arrival": {"alt": "Ufer und Berge des Lago Maggiore vom Wasser aus gesehen"},
         "openWater": {"alt": "Segelboote auf ruhigem Wasser vor den Bergen"},
         "evening": {"alt": "Warmes Abendlicht über dem Lago Maggiore"}
       }
     },
-    "Story": {
-      "eyebrow": "Filmische Geschichte",
-      "title": "Ein Haus, geprägt von seiner Verbindung zum See",
-      "body": "Dieser Abschnitt markiert die künftige Erzählung, ohne Bilder oder Bewegung vorwegzunehmen."
+    "CinematicHero": {
+      "counter": "{current} / {total}",
+      "scenes": {
+        "promise": {
+          "alt": "Der Lago Maggiore aus dem schattigen Inneren des Hauses gesehen"
+        },
+        "inside": {
+          "title": "Drinnen",
+          "subtitle": "Aufenthalt",
+          "windowAlt": "Seewasser durch ein breites, von dunklen Vorhängen gerahmtes Fenster",
+          "sculptureAlt": "Geschnitzte Holzskulptur in einem hellen Innenraum",
+          "bedsideAlt": "Hölzerner Nachttisch mit Büchern und einer alten Kameratasche",
+          "detailAlt": "Abstrakte Nahaufnahme einer strukturierten Oberfläche im Innenraum"
+        },
+        "outside": {
+          "label": "Zum See",
+          "alt": "Offene Gartentore rahmen den Weg über die Straße zum Lago Maggiore"
+        },
+        "privateBeach": {
+          "eyebrow": "Privatstrand",
+          "lineOne": "Über die Straße.",
+          "lineTwo": "Barfuß.",
+          "alt": "Sonnenliegen auf einer Wiese am offenen blauen Wasser"
+        },
+        "reveal": {
+          "eyebrow": "Vom See zum Haus",
+          "title": "The Ranco Bay",
+          "alt": "Ein Haus spiegelt sich im stillen Wasser unter einem bewaldeten Berg"
+        }
+      }
     },
-    "Accommodation": {
-      "eyebrow": "Unterkunft",
-      "title": "Der Aufenthalt bleibt das zentrale Erlebnis",
-      "body": "Künftige Details zur Unterkunft, Ausstattung, Fotografie und Verfügbarkeit gehören in diesen Produktbereich."
+    "HousePreview": {
+      "eyebrow": "Das Haus",
+      "title": "Ein Haus mit Blick zum See, für Tage ohne Eile",
+      "body": "Eine kurze Einführung in die Räume, die Aussicht und die wichtigen Annehmlichkeiten eines Aufenthalts in The Ranco Bay.",
+      "link": "Das Haus entdecken",
+      "imageAlt": "Der Lago Maggiore, gerahmt von der schattigen Veranda",
+      "facts": {"lakeView": "Seeblick", "privateBeach": "Privatstrand", "parking": "Parkplatz", "equipped": "Ausgestattete Unterkunft"}
     },
-    "Guide": {
+    "GuidePreview": {
       "eyebrow": "Lokaler Guide",
-      "title": "Persönliche Empfehlungen für Ranco und den Lago Maggiore",
-      "body": "Restaurants, Dörfer, Strände und praktische Empfehlungen werden später als redaktionelle Inhalte strukturiert."
+      "title": "Drei Wege zur ruhigeren Seite des Sees",
+      "body": "Eine kleine, persönlich kuratierte Auswahl zum guten Essen, für Zeit auf dem Wasser und Entdeckungen rund um Ranco.",
+      "link": "Lokalen Guide öffnen"
     },
-    "GuestCompanion": {
-      "eyebrow": "Guest Companion",
-      "title": "Nützliche Informationen für bestätigte Gäste",
-      "body": "Ein privater Begleiter für Check-in, Hausinformationen und passende lokale Empfehlungen ist geplant."
-    },
-    "Location": {
-      "eyebrow": "Lage",
-      "title": "Ranco, am lombardischen Ufer des Lago Maggiore",
-      "body": "Die Standortdarstellung wird später entwickelt, ohne dieses Fundament an einen Kartenanbieter zu binden."
+    "Hospitality": {
+      "eyebrow": "Ein lokaler Empfang",
+      "title": "Gastfreundschaft mit einem echten Menschen dahinter",
+      "body": "Lokales Wissen, praktische Hilfe und persönliche Empfehlungen begleiten den Aufenthalt und die gewünschte Art, den See zu erleben.",
+      "link": "Kontakt aufnehmen",
+      "imageAlt": "Ein ruhiges Innendetail als Ausdruck des persönlichen Charakters des Hauses"
     },
     "FinalCta": {
-      "eyebrow": "Künftige Anfrage",
-      "title": "Ein klarer Weg von der Entdeckung zum Aufenthalt",
-      "body": "Buchungs- und Anfragefunktionen liegen bewusst außerhalb dieser Grundlagenphase."
+      "eyebrow": "Aufenthalt planen",
+      "title": "Beginnen Sie mit einem einfachen Gespräch",
+      "body": "Teilen Sie uns Ihre Reisedaten und Wünsche für die Zeit am Lago Maggiore mit. Die Einzelheiten werden persönlich bestätigt.",
+      "link": "The Ranco Bay kontaktieren"
     }
   },
-  "Stay": {},
-  "Guide": {},
-  "Property": {},
-  "Guest": {},
+  "House": {
+    "hero": {"eyebrow": "Das Haus", "title": "Räume, geprägt von Licht, Wasser und Zeit", "titleLineOne": "Räume, geprägt", "titleLineTwo": "von Licht, Wasser und Zeit", "body": "Entdecken Sie die Unterkunft in Kapiteln: vom ersten Blick zum See bis zu den praktischen Details für einen entspannten Aufenthalt.", "imageAlt": "Ein Haus spiegelt sich im stillen Wasser unter einem bewaldeten Berg"},
+    "introduction": {"eyebrow": "Unterkunft", "title": "Ein Ort zum Ankommen, nicht nur zum Durchreisen", "body": "Das Haus wird als ehrliche Folge von Räumen und Erlebnissen vorgestellt. Die aktuelle Fotografie bleibt vorläufig, bis das endgültige Shooting erfolgt."},
+    "chapters": {
+      "veranda": {"title": "Veranda und Ankunft", "body": "Die erste Beziehung führt nach draußen: vom Schutz des Hauses über die Straße und den Privatstrand bis zum See.", "imageAlt": "Der Lago Maggiore von der schattigen Veranda aus gesehen"},
+      "living": {"title": "Wohnräume", "body": "Die gemeinsamen Räume sind für langsame Morgen, Mahlzeiten zu Hause und die Rückkehr von einem Tag am See gedacht.", "imageAlt": "Ein breites Innenfenster mit Blick auf blaues Wasser"},
+      "bedroom": {"title": "Schlafzimmer", "body": "Ein ruhigeres Kapitel über Erholung, nützlichen Stauraum und Details, die die Unterkunft angenehm machen.", "imageAlt": "Holznachttisch neben einem sorgfältig vorbereiteten Bett"},
+      "details": {"title": "Details", "body": "Materialien, Gegenstände und Tageslicht geben den Innenräumen Charakter, ohne das Haus zur Kulisse zu machen.", "imageAlt": "Nahaufnahme einer strukturierten Oberfläche im Innenraum"},
+      "outside": {"title": "Draußen", "body": "Der Weg nach draußen verbindet das Grundstück direkt mit dem Seeufer und der Landschaft von Ranco.", "imageAlt": "Offene Tore rahmen den Weg zum Lago Maggiore"},
+      "beach": {"title": "Privatstrand", "body": "Auf der anderen Straßenseite schafft der Privatstrand eine direkte und unkomplizierte Verbindung zum Wasser.", "imageAlt": "Sonnenliegen auf einer Wiese am offenen blauen Wasser"}
+    },
+    "amenities": {"eyebrow": "Auf einen Blick", "title": "Das Wesentliche des Aufenthalts", "body": "In dieser Phase werden nur bestätigte, wichtige Fakten genannt.", "items": {"lakeView": "Lage mit Seeblick", "privateBeach": "Zugang zum Privatstrand", "parking": "Parkplatz vorhanden", "equipped": "Ausgestattete Unterkunft"}},
+    "practical": {"eyebrow": "Praktische Informationen", "title": "Was hilfreich ist", "body": "Kapazität, Regeln und Anreisehinweise werden bestätigt, sobald die Unterkunftsinhalte fertiggestellt sind.", "items": {"setting": {"label": "Lage", "value": "Ranco, am lombardischen Ufer des Lago Maggiore."}, "arrival": {"label": "Ankunft", "value": "Genaue Check-in-Hinweise erhalten bestätigte Gäste direkt."}, "parking": {"label": "Parken", "value": "Ein Parkplatz gehört zum Angebot; genaue Zufahrtsdetails folgen."}, "beach": {"label": "Privatstrand", "value": "Der Strand liegt auf der anderen Straßenseite des Grundstücks."}}, "contactLink": "Fragen zum Haus stellen"}
+  },
+  "Guide": {
+    "hero": {"eyebrow": "Lokaler Guide", "title": "Hilfreiche Wege, den Lago Maggiore zu erleben", "titleLineOne": "Hilfreiche Wege,", "titleLineTwo": "den Lago Maggiore zu erleben", "body": "Ein bewusst kleiner Guide, geprägt von lokalem Urteil statt Rankings, Masse oder generischen Listen.", "imageAlt": "Offene Gartentore führen zum Lago Maggiore"},
+    "categories": {
+      "eat": {"eyebrow": "01", "label": "Essen", "description": "Restaurants, Bars, Aperitivo und Mittagessen, ausgewählt nach Kontext statt Vollständigkeit."},
+      "water": {"eyebrow": "02", "label": "Auf dem Wasser", "description": "Schwimmen, Boote und Erlebnisse, die den See zum Teil des Tages machen."},
+      "explore": {"eyebrow": "03", "label": "Entdecken", "description": "Dörfer, Aussichtspunkte, Natur und Ausflüge, für die sich der Weg von Ranco lohnt."}
+    },
+    "entries": {
+      "lakeside-table": {"title": "Ein Tisch nahe am Wasser", "description": "Ein vorläufiger redaktioneller Einstieg für später persönlich ausgewählte Restaurants und Aperitivo-Orte.", "alt": "Blaues Wasser durch ein Innenfenster gesehen"},
+      "open-water": {"title": "Zeit für den See", "description": "Ein vorläufiger Ausgangspunkt für Schwimmen, Bootsverleih und ruhige Stunden am Wasser.", "alt": "Sonnenliegen auf einer Wiese am offenen Wasser"},
+      "ranco-outlook": {"title": "Nahe Ranco beginnen", "description": "Ein vorläufiger Weg zu Spaziergängen, Dörfern und Aussichtspunkten mit praktischem lokalem Kontext.", "alt": "Offene Tore rahmen den Weg zum See"}
+    },
+    "tags": {"lunch": "Mittagessen", "sunset": "Sonnenuntergang", "swimming": "Schwimmen", "halfDay": "Halber Tag", "withoutCar": "Ohne Auto"},
+    "cta": {"eyebrow": "Persönliche Empfehlungen", "title": "Erzählen Sie uns, wie Sie einen Tag verbringen möchten", "titleLineOne": "Erzählen Sie uns,", "titleLineTwo": "wie Sie einen Tag verbringen möchten", "body": "Der künftige Guide wird nützlicher, wenn er auf Aufenthalt, Saison und Tempo reagieren kann.", "link": "Gastgeber kontaktieren"}
+  },
+  "Contact": {
+    "hero": {"eyebrow": "Kontakt", "title": "Planen Sie die praktische Seite Ihres Aufenthalts", "titleLineOne": "Planen Sie die praktische Seite", "titleLineTwo": "Ihres Aufenthalts", "body": "Ein ruhiger Ort für Anfragen, Anreiseinformationen und alles, was hilft, The Ranco Bay zu finden.", "imageAlt": "Der Lago Maggiore, gerahmt vom schattigen Inneren des Hauses"},
+    "hospitality": {"eyebrow": "Ihr Gastgeber", "title": "Lokale Hilfe gehört zur Begrüßung", "titleLineOne": "Lokale Hilfe", "titleLineTwo": "gehört zur Begrüßung", "body": "Die endgültige Gastgebergeschichte wird noch vorbereitet. Die Absicht ist einfach: persönliche Kommunikation, nützliche Empfehlungen und Unterstützung vor und während des Aufenthalts.", "imageAlt": "Ein ruhiges Innendetail, das den Charakter des Hauses zeigt"},
+    "enquiry": {"eyebrow": "Anfrage", "title": "Beginnen Sie mit den wichtigen Details", "titleLineOne": "Beginnen Sie", "titleLineTwo": "mit den wichtigen Details", "body": "Der endgültige Anfrageweg und die Kontaktdaten werden in einer späteren kontrollierten Phase verbunden.", "formStatus": "Dieses Formular zeigt nur die vorgesehene Struktur. Das Absenden ist noch nicht aktiv.", "fields": {"name": "Name", "email": "E-Mail", "dates": "Gewünschte Reisedaten", "message": "Was möchten Sie wissen?"}},
+    "details": {"eyebrow": "Kontaktdaten", "title": "The Ranco Bay in Ranco", "body": "Öffentliche Kontaktdaten werden vor dem Start bestätigt.", "addressLabel": "Region", "addressValue": "Ranco, Lago Maggiore, Italien", "contactLabel": "Anfragen", "contactValue": "Direkte Kontaktdaten werden bestätigt"},
+    "location": {"title": "Lage und Karte", "body": "Google Maps bietet den aktuellen öffentlichen Lagekontext. Für dieses Grundgerüst ist keine Karten-API nötig.", "mapsLink": "Google Maps öffnen", "arrivalTitle": "Ankunft", "arrivalBody": "Genaue Adresse, Zufahrt und Check-in-Hinweise werden direkt mitgeteilt, sobald der Aufenthalt bestätigt ist.", "imageAlt": "Karte des Lago Maggiore und der umliegenden Grenzregion von Italien und der Schweiz"}
+  },
   "Common": {
-    "Footer": {"brand": "The Ranco Bay", "location": "Ranco, Lago Maggiore, Italien"},
+    "Footer": {"brand": "The Ranco Bay", "location": "Ranco • Lago Maggiore • Italien"},
     "NotFound": {"title": "Seite nicht gefunden", "description": "Die angeforderte Seite ist nicht Teil dieser Website.", "returnHome": "Zur Startseite"}
   },
-  "Accessibility": {"skipToContent": "Zum Hauptinhalt springen"}
+  "Accessibility": {"skipToContent": "Zum Hauptinhalt springen", "closeDialog": "Dialog schließen"}
 }
