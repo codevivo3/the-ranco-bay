@@ -6,40 +6,30 @@ type PageIntroProps = {
   alt: string;
   body: string;
   eyebrow: string;
-  fullViewport?: boolean;
   image: string;
   title: string;
   titleLines?: readonly string[];
   titleLinesFromDesktop?: boolean;
   titleRole?: "editorial" | "hero";
-  wideEditorial?: boolean;
 };
 
 export function PageIntro({
   alt,
   body,
   eyebrow,
-  fullViewport = false,
   image,
   title,
   titleLines,
   titleLinesFromDesktop = false,
   titleRole = "hero",
-  wideEditorial = false,
 }: PageIntroProps) {
   const isEditorialStatement = titleRole === "editorial";
 
   return (
-    <section
-      className={`${fullViewport ? "flex min-h-[100svh] items-center" : ""} bg-page-background pb-[var(--space-section)] pt-[clamp(9rem,18vw,13rem)]`}
-    >
-      <Container
-        className={
-          isEditorialStatement && wideEditorial ? "!max-w-[110rem]" : ""
-        }
-      >
+    <section className="min-h-[100svh] bg-page-background pb-[var(--space-section)] pt-[clamp(8rem,11vw,10rem)]">
+      <Container className="!max-w-[110rem]">
         <div
-          className={`grid items-end gap-10 lg:gap-16 ${isEditorialStatement ? "lg:grid-cols-[1.5fr_1fr]" : "lg:grid-cols-[0.82fr_1.18fr]"}`}
+          className={`grid items-start gap-10 lg:gap-16 ${isEditorialStatement ? "lg:grid-cols-[1.65fr_1fr]" : "lg:grid-cols-[0.82fr_1.18fr]"}`}
         >
           <div className="pb-2">
             <p className="text-xs uppercase tracking-[0.18em] text-page-muted">
@@ -66,7 +56,7 @@ export function PageIntro({
               {body}
             </p>
           </div>
-          <div className="relative aspect-[4/5] min-h-[28rem] overflow-hidden sm:aspect-[5/4] lg:aspect-[4/5] lg:max-h-[46rem]">
+          <div className="relative aspect-square w-full max-w-[34rem] justify-self-start overflow-hidden lg:max-w-none">
             <Image
               src={image}
               alt={alt}

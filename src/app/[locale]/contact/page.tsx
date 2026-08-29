@@ -36,9 +36,7 @@ export default async function ContactPage({params}: ContactPageProps) {
         body={t('hero.body')}
         image='/images/property/image1.jpg'
         alt={t('hero.imageAlt')}
-        fullViewport
         titleRole='editorial'
-        wideEditorial
       />
 
       <section className='flex min-h-[100svh] items-center bg-[var(--trb-lake)] py-[var(--space-section)] text-[var(--trb-sand)]'>

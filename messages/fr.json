@@ -126,7 +126,8 @@
   },
   "Common": {
     "Footer": {"brand": "The Ranco Bay", "location": "Ranco • lac Majeur • Italie"},
-    "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"}
+    "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"},
+    "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant"}
   },
   "Accessibility": {"skipToContent": "Aller au contenu principal", "closeDialog": "Fermer la fenêtre"}
 }

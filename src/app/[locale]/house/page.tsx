@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
+import { ExpandableGalleryGroup } from '@/components/layout/expandable-gallery-group';
 import { ExpandableGalleryItem } from '@/components/layout/expandable-gallery-item';
 import {
   HorizontalEditorialGallery,
@@ -55,6 +56,7 @@ export default async function HousePage({ params }: HousePageProps) {
   setRequestLocale(locale);
   const t = await getTranslations('House');
   const tAccessibility = await getTranslations('Accessibility');
+  const tGallery = await getTranslations('Common.Gallery');
 
   return (
     <main id='main-content'>
@@ -68,8 +70,21 @@ export default async function HousePage({ params }: HousePageProps) {
         titleRole='editorial'
       />
 
-      <section className='flex min-h-[100svh] items-center bg-page-surface py-[var(--space-section)]'>
-        <Container>
+      <section className='house-intro-watermark relative flex min-h-[100svh] items-center overflow-hidden bg-page-surface py-[var(--space-section)]'>
+        <div
+          aria-hidden='true'
+          className='house-intro-watermark__mark pointer-events-none select-none'
+        >
+          <Image
+            src='/logo/trb-logo-image-plain.svg'
+            alt=''
+            fill
+            sizes='(min-width: 1024px) 115rem, 125vw'
+            className='object-contain'
+            draggable={false}
+          />
+        </div>
+        <Container className='relative z-10'>
           <SectionHeading
             eyebrow={t('introduction.eyebrow')}
             title={t('introduction.title')}
@@ -83,55 +98,64 @@ export default async function HousePage({ params }: HousePageProps) {
           key={chapter.key}
           className='bg-page-background py-[var(--space-section)]'
         >
-          <Container className='!max-w-[110rem]'>
+          <Container className='editorial-gallery-container'>
             <div
-              className={`editorial-gallery-row grid items-stretch gap-10 lg:gap-16 ${index % 2 === 1 ? 'lg:grid-cols-[0.62fr_0.38fr]' : 'lg:grid-cols-[0.38fr_0.62fr]'}`}
+              className='editorial-gallery-row editorial-gallery-row--house grid items-stretch'
             >
-              <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+              <div
+                className={`editorial-gallery-card-slot ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}
+              >
                 <HouseChapterText
                   index={String(index + 1).padStart(2, '0')}
                   title={t(`chapters.${chapter.key}.title`)}
                   body={t(`chapters.${chapter.key}.body`)}
                 />
               </div>
-              <HorizontalEditorialGallery
-                label={t(`chapters.${chapter.key}.title`)}
-                variant='house'
+              <ExpandableGalleryGroup
+                className={`editorial-gallery-media-slot ${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}
+                closeLabel={tAccessibility('closeDialog')}
+                previousLabel={tGallery('previousItem')}
+                nextLabel={tGallery('nextItem')}
               >
-                <HorizontalEditorialPanel format='landscape'>
-                  <ExpandableGalleryItem
-                    closeLabel={tAccessibility('closeDialog')}
-                    dialogLabel={t(`chapters.${chapter.key}.title`)}
-                    dialogContent={
-                      <div className='relative h-[82svh] w-[min(90vw,90rem)]'>
-                        <Image
-                          src={chapter.image}
-                          alt={t(`chapters.${chapter.key}.imageAlt`)}
-                          fill
-                          sizes='90vw'
-                          className='object-contain'
-                        />
-                      </div>
-                    }
-                  >
-                    <HouseChapterImage
-                      image={chapter.image}
-                      alt={t(`chapters.${chapter.key}.imageAlt`)}
-                    />
-                  </ExpandableGalleryItem>
-                </HorizontalEditorialPanel>
-                {TEMPORARY_GALLERY_TEST_SLIDES.map((slide) => (
-                  <HorizontalEditorialPanel
-                    key={slide.slideNumber}
-                    format={slide.format}
-                  >
-                    <TemporaryGalleryPlaceholder
-                      slideNumber={slide.slideNumber}
-                      tone={slide.tone}
-                    />
+                <HorizontalEditorialGallery
+                  label={t(`chapters.${chapter.key}.title`)}
+                  variant='house'
+                >
+                  <HorizontalEditorialPanel format='landscape'>
+                    <ExpandableGalleryItem
+                      itemId={chapter.key}
+                      dialogLabel={t(`chapters.${chapter.key}.title`)}
+                      dialogContent={
+                        <div className='relative h-[min(78svh,52rem)] w-full'>
+                          <Image
+                            src={chapter.image}
+                            alt={t(`chapters.${chapter.key}.imageAlt`)}
+                            fill
+                            sizes='90vw'
+                            className='object-contain'
+                          />
+                        </div>
+                      }
+                    >
+                      <HouseChapterImage
+                        image={chapter.image}
+                        alt={t(`chapters.${chapter.key}.imageAlt`)}
+                      />
+                    </ExpandableGalleryItem>
                   </HorizontalEditorialPanel>
-                ))}
-              </HorizontalEditorialGallery>
+                  {TEMPORARY_GALLERY_TEST_SLIDES.map((slide) => (
+                    <HorizontalEditorialPanel
+                      key={slide.slideNumber}
+                      format={slide.format}
+                    >
+                      <TemporaryGalleryPlaceholder
+                        slideNumber={slide.slideNumber}
+                        tone={slide.tone}
+                      />
+                    </HorizontalEditorialPanel>
+                  ))}
+                </HorizontalEditorialGallery>
+              </ExpandableGalleryGroup>
             </div>
           </Container>
         </section>

@@ -6,7 +6,7 @@ export type GuideEntry = {
   active: boolean;
   category: GuideCategory;
   featured: boolean;
-  format: "landscape" | "portrait";
+  format: "landscape" | "portrait" | "square";
   homepageEligible: boolean;
   id: "lakeside-table" | "open-water" | "ranco-outlook";
   image: string;

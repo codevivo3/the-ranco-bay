@@ -3,6 +3,7 @@ import type {Metadata} from "next";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 
 import {Container} from "@/components/layout/container";
+import {ExpandableGalleryGroup} from "@/components/layout/expandable-gallery-group";
 import {ExpandableGalleryItem} from "@/components/layout/expandable-gallery-item";
 import {
   HorizontalEditorialGallery,
@@ -38,6 +39,7 @@ export default async function GuidePage({params}: GuidePageProps) {
   setRequestLocale(locale);
   const t = await getTranslations("Guide");
   const tAccessibility = await getTranslations("Accessibility");
+  const tGallery = await getTranslations("Common.Gallery");
 
   return (
     <main id='main-content'>
@@ -49,9 +51,7 @@ export default async function GuidePage({params}: GuidePageProps) {
         body={t('hero.body')}
         image='/images/property/image3.png'
         alt={t('hero.imageAlt')}
-        fullViewport
         titleRole='editorial'
-        wideEditorial
       />
 
       {guideCategories.map((category, index) => {
@@ -68,86 +68,95 @@ export default async function GuidePage({params}: GuidePageProps) {
                 : 'flex min-h-[100svh] items-center bg-page-background py-[var(--space-section)]'
             }
           >
-            <Container className='!max-w-[110rem]'>
-              <div className='editorial-gallery-row grid items-stretch gap-10 lg:grid-cols-[0.38fr_0.62fr] lg:gap-16'>
-                <div className='editorial-gallery-text-card trb-editorial-glass flex items-center px-[clamp(1.5rem,5vw,5rem)] py-[clamp(2rem,5vw,5rem)]'>
-                  <SectionHeading
-                    eyebrow={t(`categories.${category}.eyebrow`)}
-                    title={t(`categories.${category}.label`)}
-                    body={t(`categories.${category}.description`)}
-                  />
+            <Container className='editorial-gallery-container'>
+              <div className='editorial-gallery-row editorial-gallery-row--guide grid items-stretch'>
+                <div className='editorial-gallery-card-slot'>
+                  <div className='editorial-gallery-text-card trb-editorial-glass'>
+                    <SectionHeading
+                      eyebrow={t(`categories.${category}.eyebrow`)}
+                      title={t(`categories.${category}.label`)}
+                      body={t(`categories.${category}.description`)}
+                    />
+                  </div>
                 </div>
-                <HorizontalEditorialGallery
-                  label={t(`categories.${category}.label`)}
-                  variant='guide'
+                <ExpandableGalleryGroup
+                  className='editorial-gallery-media-slot'
+                  closeLabel={tAccessibility('closeDialog')}
+                  previousLabel={tGallery('previousItem')}
+                  nextLabel={tGallery('nextItem')}
                 >
-                  {entries.map((entry) => (
-                    <HorizontalEditorialPanel
-                      key={entry.id}
-                      format={entry.format}
-                    >
-                      <ExpandableGalleryItem
-                        closeLabel={tAccessibility('closeDialog')}
-                        dialogLabel={t(`entries.${entry.id}.title`)}
-                        dialogContent={
-                          <article className='grid w-[min(92vw,80rem)] overflow-hidden bg-[color-mix(in_srgb,var(--trb-lake)_82%,transparent)] lg:grid-cols-[1.2fr_0.8fr]'>
-                            <div className='relative h-[52svh] min-h-72 lg:h-[78svh] lg:max-h-[48rem]'>
-                              <Image
-                                src={entry.image}
-                                alt={t(`entries.${entry.id}.alt`)}
-                                fill
-                                sizes='(min-width: 1024px) 60vw, 92vw'
-                                className='object-contain'
-                              />
-                            </div>
-                            <div className='flex items-center px-[clamp(1.5rem,4vw,4rem)] py-[clamp(2rem,5vw,5rem)]'>
-                              <div>
-                                <p className='text-xs uppercase tracking-[0.18em] text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
-                                  {t(`categories.${category}.label`)}
-                                </p>
-                                <h2 className='mt-4 font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.95]'>
-                                  {t(`entries.${entry.id}.title`)}
-                                </h2>
-                                <p className='mt-6 max-w-xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)]'>
-                                  {t(`entries.${entry.id}.description`)}
-                                </p>
-                                <ul className='mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
-                                  {entry.tags.map((tag) => (
-                                    <li key={tag}>{t(`tags.${tag}`)}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          </article>
-                        }
+                  <HorizontalEditorialGallery
+                    label={t(`categories.${category}.label`)}
+                    variant='guide'
+                  >
+                    {entries.map((entry) => (
+                      <HorizontalEditorialPanel
+                        key={entry.id}
+                        format={entry.format}
                       >
-                        <GuideCard
-                          image={entry.image}
-                          alt={t(`entries.${entry.id}.alt`)}
-                          category={t(`categories.${category}.label`)}
-                          title={t(`entries.${entry.id}.title`)}
-                          description={t(`entries.${entry.id}.description`)}
-                          tags={entry.tags.map((tag) => t(`tags.${tag}`))}
-                          presentation='gallery'
+                        <ExpandableGalleryItem
+                          itemId={entry.id}
+                          dialogLabel={t(`entries.${entry.id}.title`)}
+                          dialogContent={
+                            <article className='grid w-full overflow-hidden bg-[color-mix(in_srgb,var(--trb-lake)_82%,transparent)] lg:grid-cols-[1.2fr_0.8fr]'>
+                              <div className='relative h-[52svh] min-h-72 lg:h-[78svh] lg:max-h-[48rem]'>
+                                <Image
+                                  src={entry.image}
+                                  alt={t(`entries.${entry.id}.alt`)}
+                                  fill
+                                  sizes='(min-width: 1024px) 60vw, 92vw'
+                                  className='object-contain'
+                                />
+                              </div>
+                              <div className='flex items-center px-[clamp(1.5rem,4vw,4rem)] py-[clamp(2rem,5vw,5rem)]'>
+                                <div>
+                                  <p className='text-xs uppercase tracking-[0.18em] text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
+                                    {t(`categories.${category}.label`)}
+                                  </p>
+                                  <h2 className='mt-4 font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.95]'>
+                                    {t(`entries.${entry.id}.title`)}
+                                  </h2>
+                                  <p className='mt-6 max-w-xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)]'>
+                                    {t(`entries.${entry.id}.description`)}
+                                  </p>
+                                  <ul className='mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
+                                    {entry.tags.map((tag) => (
+                                      <li key={tag}>{t(`tags.${tag}`)}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              </div>
+                            </article>
+                          }
+                        >
+                          <GuideCard
+                            image={entry.image}
+                            alt={t(`entries.${entry.id}.alt`)}
+                            category={t(`categories.${category}.label`)}
+                            title={t(`entries.${entry.id}.title`)}
+                            description={t(`entries.${entry.id}.description`)}
+                            tags={entry.tags.map((tag) => t(`tags.${tag}`))}
+                            presentation='gallery'
+                          />
+                        </ExpandableGalleryItem>
+                      </HorizontalEditorialPanel>
+                    ))}
+                    {TEMPORARY_GALLERY_TEST_SLIDES.slice(
+                      0,
+                      Math.max(0, 4 - entries.length),
+                    ).map((slide, placeholderIndex) => (
+                      <HorizontalEditorialPanel
+                        key={`temporary-${slide.slideNumber}`}
+                        format={slide.format}
+                      >
+                        <TemporaryGalleryPlaceholder
+                          slideNumber={entries.length + placeholderIndex + 1}
+                          tone={slide.tone}
                         />
-                      </ExpandableGalleryItem>
-                    </HorizontalEditorialPanel>
-                  ))}
-                  {TEMPORARY_GALLERY_TEST_SLIDES.slice(
-                    0,
-                    Math.max(0, 4 - entries.length),
-                  ).map((slide, placeholderIndex) => (
-                    <HorizontalEditorialPanel
-                      key={`temporary-${slide.slideNumber}`}
-                      format={slide.format}
-                    >
-                      <TemporaryGalleryPlaceholder
-                        slideNumber={entries.length + placeholderIndex + 1}
-                        tone={slide.tone}
-                      />
-                    </HorizontalEditorialPanel>
-                  ))}
-                </HorizontalEditorialGallery>
+                      </HorizontalEditorialPanel>
+                    ))}
+                  </HorizontalEditorialGallery>
+                </ExpandableGalleryGroup>
               </div>
             </Container>
           </section>

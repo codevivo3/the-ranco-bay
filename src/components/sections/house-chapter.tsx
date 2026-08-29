@@ -19,7 +19,7 @@ export function HouseChapterImage({alt, image}: HouseChapterImageProps) {
         alt={alt}
         fill
         sizes="(min-width: 1024px) 76vw, 90vw"
-        className="object-contain transition-transform duration-700 group-hover:scale-[1.01] motion-reduce:transition-none"
+        className="object-cover transition-transform duration-700 group-hover:scale-[1.01] motion-reduce:transition-none"
       />
     </div>
   );
@@ -31,7 +31,7 @@ export function HouseChapterText({
   title,
 }: HouseChapterTextProps) {
   return (
-    <article className="editorial-gallery-text-card trb-editorial-glass flex w-full items-center px-[clamp(1.5rem,5vw,5rem)] py-[clamp(2rem,5vw,5rem)]">
+    <article className="editorial-gallery-text-card trb-editorial-glass">
       <div>
         <p className="text-xs tabular-nums tracking-[0.18em] text-page-muted">
           {index}

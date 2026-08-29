@@ -5,8 +5,8 @@ type TemporaryGalleryPlaceholderProps = {
 
 export const TEMPORARY_GALLERY_TEST_SLIDES = [
   {format: "portrait", slideNumber: 2, tone: "sand"},
-  {format: "landscape", slideNumber: 3, tone: "lagoon"},
-  {format: "portrait", slideNumber: 4, tone: "lake"},
+  {format: "square", slideNumber: 3, tone: "lagoon"},
+  {format: "landscape", slideNumber: 4, tone: "lake"},
 ] as const;
 
 const toneClasses = {
@@ -20,15 +20,17 @@ export function TemporaryGalleryPlaceholder({
   slideNumber,
   tone,
 }: TemporaryGalleryPlaceholderProps) {
+  const displayNumber = String(slideNumber).padStart(2, "0");
+
   return (
     <div
       aria-hidden="true"
-      data-temporary-gallery-placeholder="true"
+      data-temporary-gallery-placeholder={displayNumber}
       className={`${toneClasses[tone]} relative flex h-full w-full items-center justify-center overflow-hidden`}
     >
       <div className="absolute inset-[clamp(0.75rem,2vw,1.5rem)] border border-dashed border-current opacity-35" />
       <span className="font-display text-[clamp(3rem,7vw,7rem)] leading-none opacity-55">
-        {String(slideNumber).padStart(2, "0")}
+        {displayNumber}
       </span>
     </div>
   );

@@ -1,3 +1,5 @@
+import {ArrowRight} from "lucide-react";
+
 import {Link} from "@/i18n/navigation";
 
 type EditorialLinkProps = {
@@ -28,7 +30,7 @@ export function EditorialLink({
         aria-hidden="true"
         className="transition-transform group-hover:translate-x-1 motion-reduce:transition-none"
       >
-        →
+        <ArrowRight aria-hidden="true" size={18} strokeWidth={1.5} />
       </span>
     </Link>
   );

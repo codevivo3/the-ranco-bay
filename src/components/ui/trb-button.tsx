@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { ArrowRight } from 'lucide-react';
 
 import { Link } from '@/i18n/navigation';
 
@@ -97,7 +98,7 @@ function ButtonContent({ children }: { children: ReactNode }) {
           motion-reduce:transition-none
         '
       >
-        →
+        <ArrowRight aria-hidden='true' size={18} strokeWidth={1.5} />
       </span>
     </>
   );

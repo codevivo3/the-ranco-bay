@@ -126,7 +126,8 @@
   },
   "Common": {
     "Footer": {"brand": "The Ranco Bay", "location": "Ranco • Lago Maggiore • Italien"},
-    "NotFound": {"title": "Seite nicht gefunden", "description": "Die angeforderte Seite ist nicht Teil dieser Website.", "returnHome": "Zur Startseite"}
+    "NotFound": {"title": "Seite nicht gefunden", "description": "Die angeforderte Seite ist nicht Teil dieser Website.", "returnHome": "Zur Startseite"},
+    "Gallery": {"previousItem": "Vorheriges Galerieelement", "nextItem": "Nächstes Galerieelement"}
   },
   "Accessibility": {"skipToContent": "Zum Hauptinhalt springen", "closeDialog": "Dialog schließen"}
 }
