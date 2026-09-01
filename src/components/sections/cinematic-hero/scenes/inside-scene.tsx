@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { SCENE_IMAGES } from '@/components/sections/cinematic-hero/cinematic-hero.config';
+import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 
 type InsideSceneProps = {
   alts: readonly [string, string, string, string];
@@ -16,6 +17,11 @@ export function InsideScene({ alts, subtitle, title }: InsideSceneProps) {
       style={{ zIndex: 2, opacity: 0, transform: 'translate3d(0, 7svh, 0)' }}
     >
       <div className='absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(240,237,218,0.09),transparent_44%)]' />
+      <EditorialWatermark
+        tone='inverse'
+        variant='upper-right'
+        opacity={0.035}
+      />
 
       <div className='absolute inset-x-4 top-[12svh] z-10 h-[54svh] overflow-hidden sm:left-[4vw] sm:right-auto sm:top-[14svh] sm:h-[68svh] sm:w-[62vw]'>
         <Image

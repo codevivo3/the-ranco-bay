@@ -19,6 +19,7 @@ import {
   HouseChapterText,
 } from '@/components/sections/house-chapter';
 import { TrbButton } from '@/components/ui/trb-button';
+import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { getLocalizedPageMetadata } from '@/lib/seo/localized-page-metadata';
 
@@ -71,19 +72,7 @@ export default async function HousePage({ params }: HousePageProps) {
       />
 
       <section className='house-intro-watermark relative flex min-h-[100svh] items-center overflow-hidden bg-page-surface py-[var(--space-section)]'>
-        <div
-          aria-hidden='true'
-          className='house-intro-watermark__mark pointer-events-none select-none'
-        >
-          <Image
-            src='/logo/trb-logo-image-plain.svg'
-            alt=''
-            fill
-            sizes='(min-width: 1024px) 115rem, 125vw'
-            className='object-contain'
-            draggable={false}
-          />
-        </div>
+        <EditorialWatermark />
         <Container className='relative z-10'>
           <SectionHeading
             eyebrow={t('introduction.eyebrow')}
@@ -161,8 +150,9 @@ export default async function HousePage({ params }: HousePageProps) {
         </section>
       ))}
 
-      <section className='flex min-h-[100svh] items-center bg-page-surface py-[var(--space-section)]'>
-        <Container>
+      <section className='relative flex min-h-[100svh] items-center overflow-hidden bg-page-surface py-[var(--space-section)]'>
+        <EditorialWatermark variant='lower-left' />
+        <Container className='relative z-10'>
           <SectionHeading
             eyebrow={t('amenities.eyebrow')}
             title={t('amenities.title')}

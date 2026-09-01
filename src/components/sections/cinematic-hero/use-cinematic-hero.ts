@@ -14,6 +14,9 @@ export function useCinematicHero(counters: string[]) {
     if (!section) return;
 
     const elements = getCinematicHeroElements(section);
+    const navigationCue = section.querySelector<HTMLElement>(
+      "[data-cinematic-navigation-cue]",
+    );
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const controller = createTriggeredHeroController({
       counters,
@@ -38,6 +41,29 @@ export function useCinematicHero(counters: string[]) {
           renderMobile();
         });
       }
+    };
+
+    const updateNavigationCue = () => {
+      if (!navigationCue || reducedMotion.matches) return;
+
+      const rect = section.getBoundingClientRect();
+      const scrollDistance = Math.max(
+        section.offsetHeight - window.innerHeight,
+        1,
+      );
+      const progress = Math.min(1, Math.max(0, -rect.top / scrollDistance));
+      const fadeProgress = triggeredMode
+        ? progress
+        : Math.min(1, Math.max(0, (progress - 0.9) / 0.1));
+      const opacity = 1 - fadeProgress;
+
+      navigationCue.style.opacity = String(opacity);
+      navigationCue.style.visibility = opacity > 0.01 ? "visible" : "hidden";
+    };
+
+    const handleScroll = () => {
+      requestMobileRender();
+      updateNavigationCue();
     };
 
     const handleWheel = (event: WheelEvent) => {
@@ -66,6 +92,7 @@ export function useCinematicHero(counters: string[]) {
       } else {
         requestMobileRender();
       }
+      updateNavigationCue();
     };
 
     const handleReducedMotionChange = () => {
@@ -76,6 +103,7 @@ export function useCinematicHero(counters: string[]) {
       } else {
         requestMobileRender();
       }
+      updateNavigationCue();
     };
 
     if (reducedMotion.matches) {
@@ -85,17 +113,18 @@ export function useCinematicHero(counters: string[]) {
     } else {
       renderMobile();
     }
+    updateNavigationCue();
 
     window.addEventListener("wheel", handleWheel, {passive: false});
     window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("scroll", requestMobileRender, {passive: true});
+    window.addEventListener("scroll", handleScroll, {passive: true});
     window.addEventListener("resize", handleResize);
     reducedMotion.addEventListener("change", handleReducedMotionChange);
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
       window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("scroll", requestMobileRender);
+      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
       reducedMotion.removeEventListener("change", handleReducedMotionChange);
       if (animationFrame !== null) window.cancelAnimationFrame(animationFrame);

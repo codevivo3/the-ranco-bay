@@ -62,7 +62,7 @@
         },
         "privateBeach": {
           "eyebrow": "Spiaggia privata",
-          "lineOne": "Godi la spiaggia.",
+          "lineOne": "Fino alla spiaggia.",
           "lineTwo": "A piedi nudi.",
           "alt": "Lettini su un prato accanto all'acqua azzurra"
         },
@@ -269,13 +269,34 @@
       "title": "Inizia dai dettagli che contano",
       "titleLineOne": "Inizia dai dettagli",
       "titleLineTwo": "che contano",
-      "body": "Il canale definitivo e i contatti saranno collegati in una fase successiva e controllata.",
-      "formStatus": "Questo modulo mostra soltanto la struttura prevista. L'invio non è ancora attivo.",
+      "body": "Condividi le date che stai valutando e ciò che vorresti sapere. Ti risponderemo personalmente.",
       "fields": {
         "name": "Nome",
         "email": "Email",
-        "dates": "Date preferite",
+        "arrival": "Arrivo",
+        "departure": "Partenza",
         "message": "Cosa vorresti sapere?"
+      },
+      "actions": {
+        "submit": "Invia richiesta",
+        "sending": "Invio richiesta"
+      },
+      "status": {
+        "sending": "La tua richiesta è in fase di invio…",
+        "success": "Grazie. La tua richiesta è stata inviata a The Ranco Bay.",
+        "error": "Non è stato possibile inviare la richiesta. Riprova.",
+        "rateLimit": "Sono state inviate troppe richieste da questa connessione. Attendi qualche minuto e riprova."
+      },
+      "validation": {
+        "nameRequired": "Inserisci il tuo nome.",
+        "nameTooLong": "Limita il nome a 120 caratteri.",
+        "emailRequired": "Inserisci il tuo indirizzo email.",
+        "emailInvalid": "Inserisci un indirizzo email valido.",
+        "emailTooLong": "Limita l'indirizzo email a 254 caratteri.",
+        "messageRequired": "Dicci cosa vorresti sapere.",
+        "messageTooLong": "Limita il messaggio a 4.000 caratteri.",
+        "dateInvalid": "Scegli una data valida.",
+        "dateOrder": "La partenza non può precedere l'arrivo."
       }
     },
     "details": {

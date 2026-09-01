@@ -56,14 +56,69 @@ body {
   text-wrap: balance;
 }
 
-.house-intro-watermark__mark {
+.editorial-watermark {
   position: absolute;
-  right: -42%;
-  bottom: -48%;
+  z-index: 0;
   width: clamp(44rem, 125vw, 120rem);
   aspect-ratio: 54.883407 / 57.03441;
-  transform: rotate(-8deg);
+  pointer-events: none;
+  user-select: none;
   opacity: 0.04;
+}
+
+.editorial-watermark--inverse img {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(12%) saturate(329%)
+    hue-rotate(8deg) brightness(104%) contrast(89%);
+}
+
+.editorial-watermark--lower-right {
+  right: -42%;
+  bottom: -48%;
+  transform: rotate(-8deg);
+}
+
+.editorial-watermark--lower-left {
+  bottom: -48%;
+  left: -42%;
+  transform: rotate(8deg);
+}
+
+.editorial-watermark--upper-right {
+  top: -48%;
+  right: -42%;
+  transform: rotate(8deg);
+}
+
+.cinematic-hero-navigation-cue {
+  color: var(--trb-lagoon);
+  transition:
+    opacity 450ms ease,
+    visibility 450ms ease;
+}
+
+.cinematic-hero-navigation-cue__icon {
+  animation: trb-hero-navigation-cue 2.2s ease-in-out infinite;
+}
+
+.cinematic-hero-navigation-cue__icon--outline {
+  animation-delay: -0.38s;
+}
+
+.cinematic-hero-navigation-cue__icon--foreground {
+  animation-delay: 10ms;
+}
+
+@keyframes trb-hero-navigation-cue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.68;
+  }
+
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
 }
 
 .editorial-gallery-row {
@@ -237,10 +292,23 @@ body {
 }
 
 @media (min-width: 40rem) {
-  .house-intro-watermark__mark {
+  .editorial-watermark {
+    width: clamp(62rem, 120vw, 115rem);
+  }
+
+  .editorial-watermark--lower-right {
     right: -38%;
     bottom: -52%;
-    width: clamp(62rem, 120vw, 115rem);
+  }
+
+  .editorial-watermark--lower-left {
+    bottom: -52%;
+    left: -38%;
+  }
+
+  .editorial-watermark--upper-right {
+    top: -52%;
+    right: -38%;
   }
 
   .editorial-gallery-row {
@@ -250,10 +318,23 @@ body {
 }
 
 @media (min-width: 64rem) {
-  .house-intro-watermark__mark {
+  .editorial-watermark {
+    width: min(125vw, 115rem);
+  }
+
+  .editorial-watermark--lower-right {
     right: -34%;
     bottom: -56%;
-    width: min(125vw, 115rem);
+  }
+
+  .editorial-watermark--lower-left {
+    bottom: -56%;
+    left: -34%;
+  }
+
+  .editorial-watermark--upper-right {
+    top: -56%;
+    right: -34%;
   }
 
   .editorial-gallery-row {
@@ -352,6 +433,7 @@ body {
   }
 
   .horizontal-editorial-gallery__direction-icon,
+  .cinematic-hero-navigation-cue__icon,
   .horizontal-editorial-gallery-shell:hover
     .horizontal-editorial-gallery__direction-icon,
   .horizontal-editorial-gallery-shell:focus-within

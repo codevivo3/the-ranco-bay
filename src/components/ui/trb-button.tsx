@@ -17,32 +17,40 @@ type TrbButtonProps = {
       href: string;
       external: true;
     }
+  | {
+      disabled?: boolean;
+      external?: never;
+      href?: never;
+      type: 'button' | 'submit';
+    }
 );
 
 const buttonClasses =
   'group relative isolate inline-flex items-center justify-center gap-3 ' +
   'overflow-hidden rounded-lg ' +
-  'border border-[rgba(80,205,215,0.32)] ' +
-  'bg-[linear-gradient(180deg,#13788A_0%,#176A83_30%,#244B74_100%)] ' +
+  'border border-[rgba(134,221,227,0.34)] ' +
+  'bg-[linear-gradient(180deg,rgba(19,120,138,0.78)_0%,rgba(23,106,131,0.72)_34%,rgba(36,75,116,0.67)_100%)] ' +
+  'backdrop-blur-[14px] backdrop-saturate-[1.3] ' +
   'px-6 py-3.5 font-medium tracking-[0.01em] text-[var(--trb-sand)] ' +
-  // Resting depth + very restrained Lagoon glow.
-  'shadow-[0_4px_10px_rgba(20,58,82,0.22),0_0_0_1px_rgba(19,120,138,0.08),0_0_18px_rgba(19,120,138,0.10)] ' +
+  // Glass depth: restrained Lagoon glow plus internal reflected edge.
+  'shadow-[inset_0_1px_0_rgba(255,255,255,0.22),inset_0_-1px_0_rgba(36,75,116,0.16),0_5px_16px_rgba(20,58,82,0.18),0_0_18px_rgba(19,120,138,0.10)] ' +
   // Tactile movement.
-  'transition-[transform,box-shadow,filter,border-color] duration-200 ease-out ' +
-  // Hover: tiny lift, brighter reflection, slightly stronger aura.
+  'transition-[transform,box-shadow,filter,border-color,background-color] duration-200 ease-out ' +
+  // Hover: tiny lift, brighter glass edge, slightly stronger aura.
   'hover:-translate-y-[2px] ' +
-  'hover:border-[rgba(104,224,229,0.48)] ' +
-  'hover:brightness-[1.06] ' +
-  'hover:shadow-[0_7px_16px_rgba(20,58,82,0.26),0_0_0_1px_rgba(19,120,138,0.12),0_0_24px_rgba(19,120,138,0.18)] ' +
+  'hover:border-[rgba(154,232,236,0.50)] ' +
+  'hover:brightness-[1.08] ' +
+  'hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.30),inset_0_-1px_0_rgba(36,75,116,0.14),0_8px_22px_rgba(20,58,82,0.20),0_0_24px_rgba(19,120,138,0.16)] ' +
   // Press: move toward the surface and compress the shadow.
   'active:translate-y-[1px] active:scale-[0.985] ' +
-  'active:brightness-[0.97] ' +
-  'active:shadow-[0_2px_5px_rgba(20,58,82,0.22),0_0_10px_rgba(19,120,138,0.10)] ' +
+  'active:brightness-[0.98] ' +
+  'active:shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_2px_6px_rgba(20,58,82,0.18),0_0_10px_rgba(19,120,138,0.10)] ' +
   // Keyboard accessibility.
   'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ' +
   'focus-visible:outline-[var(--trb-lagoon)] ' +
   // Respect reduced-motion preference.
-  'motion-reduce:transform-none motion-reduce:transition-none';
+  'motion-reduce:transform-none motion-reduce:transition-none ' +
+  'disabled:cursor-not-allowed disabled:opacity-55 disabled:transform-none';
 
 function ButtonContent({ children }: { children: ReactNode }) {
   return (
@@ -110,6 +118,18 @@ export function TrbButton({
   ...props
 }: TrbButtonProps) {
   const classes = `${buttonClasses} ${className}`;
+
+  if ('type' in props) {
+    return (
+      <button
+        type={props.type}
+        disabled={props.disabled}
+        className={classes}
+      >
+        <ButtonContent>{children}</ButtonContent>
+      </button>
+    );
+  }
 
   if (props.external) {
     return (

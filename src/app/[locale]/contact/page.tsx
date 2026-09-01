@@ -4,7 +4,9 @@ import {getTranslations, setRequestLocale} from "next-intl/server";
 
 import {Container} from "@/components/layout/container";
 import {PageIntro} from "@/components/layout/page-intro";
+import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import {SectionHeading} from "@/components/ui/section-heading";
+import {ContactEnquiryForm} from "@/features/contact/contact-enquiry-form";
 import {getLocalizedPageMetadata} from "@/lib/seo/localized-page-metadata";
 import { TrbButton } from '@/components/ui/trb-button';
 
@@ -71,8 +73,9 @@ export default async function ContactPage({params}: ContactPageProps) {
         </Container>
       </section>
 
-      <section className='flex min-h-[100svh] items-center bg-page-surface py-[var(--space-section)]'>
-        <Container className='!max-w-[110rem]'>
+      <section className='relative flex min-h-[100svh] items-center overflow-hidden bg-page-surface py-[var(--space-section)]'>
+        <EditorialWatermark variant='upper-right' opacity={0.025} />
+        <Container className='relative z-10 !max-w-[110rem]'>
           <div className='grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
             <SectionHeading
               eyebrow={t('enquiry.eyebrow')}
@@ -84,46 +87,7 @@ export default async function ContactPage({params}: ContactPageProps) {
               titleRole='editorial'
               body={t('enquiry.body')}
             />
-            <form aria-describedby='enquiry-form-status'>
-              <p
-                id='enquiry-form-status'
-                className='mb-8 border-l-2 border-[var(--trb-lagoon)] pl-4 text-sm leading-6 text-page-muted'
-              >
-                {t('enquiry.formStatus')}
-              </p>
-              <fieldset disabled className='grid gap-6 sm:grid-cols-2'>
-                <label className='text-sm text-page-text'>
-                  <span>{t('enquiry.fields.name')}</span>
-                  <input
-                    name='name'
-                    className='mt-3 block w-full border-b border-page-border bg-transparent px-0 py-3'
-                  />
-                </label>
-                <label className='text-sm text-page-text'>
-                  <span>{t('enquiry.fields.email')}</span>
-                  <input
-                    name='email'
-                    type='email'
-                    className='mt-3 block w-full border-b border-page-border bg-transparent px-0 py-3'
-                  />
-                </label>
-                <label className='text-sm text-page-text sm:col-span-2'>
-                  <span>{t('enquiry.fields.dates')}</span>
-                  <input
-                    name='dates'
-                    className='mt-3 block w-full border-b border-page-border bg-transparent px-0 py-3'
-                  />
-                </label>
-                <label className='text-sm text-page-text sm:col-span-2'>
-                  <span>{t('enquiry.fields.message')}</span>
-                  <textarea
-                    name='message'
-                    rows={4}
-                    className='mt-3 block w-full resize-none border-b border-page-border bg-transparent px-0 py-3'
-                  />
-                </label>
-              </fieldset>
-            </form>
+            <ContactEnquiryForm locale={locale} />
           </div>
         </Container>
       </section>

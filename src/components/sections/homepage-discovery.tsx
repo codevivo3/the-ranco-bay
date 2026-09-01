@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
+import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { TrbButton } from '@/components/ui/trb-button';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { GuideCard } from '@/features/local-guide/guide-card';
@@ -26,8 +27,11 @@ export async function HomepageDiscovery() {
 
   return (
     <>
-      <section className={`${homepageSectionLayout} bg-page-surface`}>
-        <Container className='w-full'>
+      <section
+        className={`${homepageSectionLayout} relative overflow-hidden bg-page-surface`}
+      >
+        <EditorialWatermark variant='upper-right' />
+        <Container className='relative z-10 w-full'>
           <div className='grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
             <div className='relative mx-auto aspect-square w-full max-w-[36rem] overflow-hidden lg:mx-0'>
               <Image
@@ -119,9 +123,14 @@ export async function HomepageDiscovery() {
       </section>
 
       <section
-        className={`${homepageSectionLayout} bg-[var(--trb-lagoon)] text-[var(--trb-sand)]`}
+        className={`${homepageSectionLayout} relative overflow-hidden bg-[var(--trb-lagoon)] text-[var(--trb-sand)]`}
       >
-        <Container className='w-full'>
+        <EditorialWatermark
+          tone='inverse'
+          variant='lower-right'
+          opacity={0.05}
+        />
+        <Container className='relative z-10 w-full'>
           <div className='max-w-4xl'>
             <p className='text-xs uppercase tracking-[0.18em] text-[color-mix(in_srgb,var(--trb-sand)_78%,transparent)]'>
               {home('FinalCta.eyebrow')}
