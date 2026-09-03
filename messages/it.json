@@ -62,7 +62,7 @@
         },
         "privateBeach": {
           "eyebrow": "Spiaggia privata",
-          "lineOne": "Fino alla spiaggia.",
+          "lineOne": "La tua spiaggia.",
           "lineTwo": "A piedi nudi.",
           "alt": "Lettini su un prato accanto all'acqua azzurra"
         },
@@ -88,7 +88,7 @@
     },
     "GuidePreview": {
       "eyebrow": "Guida locale",
-      "title": "Tre modi per scoprire il lato più tranquillo del lago",
+      "title": "Tre modi per vivere il lago",
       "body": "Una piccola selezione locale per mangiare bene, vivere l'acqua ed esplorare oltre Ranco.",
       "link": "Apri la guida locale"
     },
@@ -127,7 +127,7 @@
         "imageAlt": "Il Lago Maggiore visto dalla veranda in ombra"
       },
       "living": {
-        "title": "Spazi da vivere",
+        "title": "Spazi comuni",
         "body": "Gli ambienti comuni sono pensati per mattine lente, pasti in casa e ritorni dopo una giornata sul lago.",
         "imageAlt": "Un'ampia finestra interna affacciata sull'acqua azzurra"
       },
@@ -192,7 +192,7 @@
     "hero": {
       "eyebrow": "Guida locale",
       "title": "Modi utili per vivere il Lago Maggiore",
-      "titleLineOne": "Modi utili per vivere ",
+      "titleLineOne": "Modi utili per vivere",
       "titleLineTwo": "il Lago Maggiore",
       "body": "Una guida volutamente piccola, basata sul giudizio locale anziché su classifiche, quantità o liste generiche.",
       "imageAlt": "Cancelli aperti che conducono verso il Lago Maggiore"
@@ -216,17 +216,17 @@
     },
     "entries": {
       "lakeside-table": {
-        "title": "Un tavolo vicino all'acqua",
+        "title": "A tavola sul lago",
         "description": "Una porta editoriale temporanea per futuri ristoranti e aperitivi scelti dall'host.",
         "alt": "L'acqua azzurra vista attraverso una finestra interna"
       },
       "open-water": {
-        "title": "Trova tempo per il lago",
+        "title": "Tempo per il lago",
         "description": "Un punto di partenza temporaneo per nuoto, noleggio barche e ore tranquille vicino all'acqua.",
         "alt": "Lettini su un prato accanto all'acqua aperta"
       },
       "ranco-outlook": {
-        "title": "Inizia vicino a Ranco",
+        "title": "Intorno a Ranco",
         "description": "Un percorso temporaneo verso passeggiate, borghi e panorami scelti con un contesto locale pratico.",
         "alt": "Cancelli aperti che incorniciano il percorso verso il lago"
       }
@@ -240,9 +240,9 @@
     },
     "cta": {
       "eyebrow": "Consigli personali",
-      "title": "Raccontaci come ami trascorrere una giornata",
-      "titleLineOne": "Raccontaci come ami",
-      "titleLineTwo": "trascorrere una giornata",
+      "title": "Come immagini la tua giornata?",
+      "titleLineOne": "Come immagini",
+      "titleLineTwo": "la tua giornata?",
       "body": "La futura guida sarà più utile quando potrà adattarsi a ogni soggiorno, stagione e ritmo.",
       "link": "Contatta il tuo host"
     }
@@ -258,16 +258,16 @@
     },
     "hospitality": {
       "eyebrow": "Il tuo host",
-      "title": "Il mio aiuto fa parte dell'accoglienza",
-      "titleLineOne": "Il mio aiuto fa parte",
-      "titleLineTwo": "dell'accoglienza",
+      "title": "Un'accoglienza personale",
+      "titleLineOne": "Un'accoglienza",
+      "titleLineTwo": "personale",
       "body": "La storia definitiva dell'host è ancora in preparazione. L'intenzione è semplice: comunicazione personale, consigli utili e supporto prima e durante il soggiorno.",
       "imageAlt": "Un dettaglio tranquillo degli interni che rappresenta il carattere della casa"
     },
     "enquiry": {
       "eyebrow": "Richiesta",
-      "title": "Inizia dai dettagli che contano",
-      "titleLineOne": "Inizia dai dettagli",
+      "title": "I dettagli che contano",
+      "titleLineOne": "I dettagli",
       "titleLineTwo": "che contano",
       "body": "Condividi le date che stai valutando e ciò che vorresti sapere. Ti risponderemo personalmente.",
       "fields": {

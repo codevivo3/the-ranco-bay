@@ -8,7 +8,7 @@ import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import {SectionHeading} from "@/components/ui/section-heading";
 import {ContactEnquiryForm} from "@/features/contact/contact-enquiry-form";
 import {AvailabilityCalendar} from "@/features/accommodation/availability-calendar";
-import {accommodationAvailability} from "@/features/accommodation/availability-data";
+import {getBookingAvailability} from "@/features/accommodation/booking-availability";
 import {getLocalizedPageMetadata} from "@/lib/seo/localized-page-metadata";
 import { TrbButton } from '@/components/ui/trb-button';
 
@@ -32,6 +32,7 @@ export default async function ContactPage({params}: ContactPageProps) {
   const {locale} = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Contact");
+  const availability = await getBookingAvailability();
 
   return (
     <main id='main-content'>
@@ -47,7 +48,7 @@ export default async function ContactPage({params}: ContactPageProps) {
       />
 
       <section className='flex min-h-[100svh] items-center bg-[var(--trb-lake)] py-[var(--space-section)] text-[var(--trb-sand)]'>
-        <Container className='!max-w-[110rem]'>
+        <Container>
           <div className='grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20'>
             <div className='relative aspect-[4/5] overflow-hidden'>
               <Image
@@ -80,7 +81,7 @@ export default async function ContactPage({params}: ContactPageProps) {
 
       <section className='relative flex min-h-[100svh] items-center overflow-hidden bg-page-surface py-[var(--space-section)]'>
         <EditorialWatermark variant='upper-right' opacity={0.025} />
-        <Container className='relative z-10 !max-w-[110rem]'>
+        <Container className='relative z-10'>
           <div className='grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
             <div className='min-w-0'>
               <SectionHeading
@@ -96,7 +97,7 @@ export default async function ContactPage({params}: ContactPageProps) {
             </div>
           </div>
           <div className='mt-10 grid items-start gap-14 md:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
-            <AvailabilityCalendar data={accommodationAvailability} />
+            <AvailabilityCalendar data={availability} />
             <ContactEnquiryForm locale={locale} />
           </div>
         </Container>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import {Container} from "@/components/layout/container";
+import {PageIntroFrame} from "@/components/layout/page-intro-frame";
 
 type PageIntroProps = {
   alt: string;
@@ -26,10 +27,10 @@ export function PageIntro({
   const isEditorialStatement = titleRole === "editorial";
 
   return (
-    <section className="min-h-[100svh] bg-page-background pb-[var(--space-section)] pt-[clamp(8rem,11vw,10rem)]">
-      <Container className="!max-w-[110rem]">
+    <PageIntroFrame>
+      <Container className="py-8">
         <div
-          className={`grid items-start gap-10 lg:gap-16 ${isEditorialStatement ? "lg:grid-cols-[1.65fr_1fr]" : "lg:grid-cols-[0.82fr_1.18fr]"}`}
+          className={`grid items-center gap-10 lg:gap-16 ${isEditorialStatement ? "lg:grid-cols-[1.65fr_1fr]" : "lg:grid-cols-[0.82fr_1.18fr]"}`}
         >
           <div className="pb-2">
             <p className="text-xs uppercase tracking-[0.18em] text-page-muted">
@@ -71,6 +72,6 @@ export function PageIntro({
           </div>
         </div>
       </Container>
-    </section>
+    </PageIntroFrame>
   );
 }

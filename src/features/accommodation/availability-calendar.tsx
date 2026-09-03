@@ -141,7 +141,7 @@ export function AvailabilityCalendar({data}: {data: AvailabilityData}) {
         <li className="flex items-center gap-2"><span aria-hidden="true" className="h-px w-3 bg-page-muted" />{t("states.unavailable")}</li>
         <li>{t("states.unknown")}</li>
       </ul>
-      {!data.reviewedRange && <p className="mt-4 text-sm leading-6 text-page-muted">{t("notPublished")}</p>}
+      {!data.reviewedRange && data.unavailableRanges.length === 0 && <p className="mt-4 text-sm leading-6 text-page-muted">{t("notPublished")}</p>}
       <p id={`${id}-disclaimer`} className="mt-3 text-xs leading-5 text-page-muted">{t("disclaimer")}</p>
       <noscript><p className="mt-3 text-sm text-page-muted">{t("withoutJavaScript")}</p></noscript>
     </section>
