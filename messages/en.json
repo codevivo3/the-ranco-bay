@@ -124,6 +124,17 @@
     "details": {"eyebrow": "Contact details", "title": "The Ranco Bay in Ranco", "body": "Public contact information will be confirmed before launch.", "addressLabel": "Area", "addressValue": "Ranco, Lake Maggiore, Italy", "contactLabel": "Enquiries", "contactValue": "Direct contact details to be confirmed"},
     "location": {"title": "Location and map", "body": "Use Google Maps for the current public location context. No map API is required for this skeleton.", "mapsLink": "Open in Google Maps", "arrivalTitle": "Arrival", "arrivalBody": "Exact address, access and check-in instructions will be shared directly when a stay is confirmed.", "imageAlt": "Map showing Lake Maggiore and the surrounding border region of Italy and Switzerland"}
   },
+  "Availability": {
+    "title": "Availability",
+    "loading": "Loading calendar",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "today": "Today",
+    "states": {"available": "Available", "unavailable": "Unavailable", "unknown": "Ask the owner", "past": "Past date"},
+    "notPublished": "Availability has not been published yet. Please ask the owner about your preferred dates.",
+    "disclaimer": "Availability shown is indicative. Final confirmation will be provided by the owner.",
+    "withoutJavaScript": "Enable JavaScript to view the calendar."
+  },
   "Common": {
     "Footer": {"brand": "The Ranco Bay", "location": "Ranco • Lake Maggiore • Italy"},
     "NotFound": {"title": "Page not found", "description": "The requested page is not part of this website.", "returnHome": "Return home"},

@@ -124,6 +124,17 @@
     "details": {"eyebrow": "Kontaktdaten", "title": "The Ranco Bay in Ranco", "body": "Öffentliche Kontaktdaten werden vor dem Start bestätigt.", "addressLabel": "Region", "addressValue": "Ranco, Lago Maggiore, Italien", "contactLabel": "Anfragen", "contactValue": "Direkte Kontaktdaten werden bestätigt"},
     "location": {"title": "Lage und Karte", "body": "Google Maps bietet den aktuellen öffentlichen Lagekontext. Für dieses Grundgerüst ist keine Karten-API nötig.", "mapsLink": "Google Maps öffnen", "arrivalTitle": "Ankunft", "arrivalBody": "Genaue Adresse, Zufahrt und Check-in-Hinweise werden direkt mitgeteilt, sobald der Aufenthalt bestätigt ist.", "imageAlt": "Karte des Lago Maggiore und der umliegenden Grenzregion von Italien und der Schweiz"}
   },
+  "Availability": {
+    "title": "Verfügbarkeit",
+    "loading": "Kalender wird geladen",
+    "previousMonth": "Vorheriger Monat",
+    "nextMonth": "Nächster Monat",
+    "today": "Heute",
+    "states": {"available": "Verfügbar", "unavailable": "Nicht verfügbar", "unknown": "Bitte anfragen", "past": "Vergangenes Datum"},
+    "notPublished": "Die Verfügbarkeit ist noch nicht veröffentlicht. Bitte fragen Sie Ihre gewünschten Reisedaten direkt bei der Gastgeberin an.",
+    "disclaimer": "Die angezeigte Verfügbarkeit dient zur Orientierung. Die endgültige Bestätigung erhalten Sie von der Gastgeberin.",
+    "withoutJavaScript": "Aktivieren Sie JavaScript, um den Kalender anzuzeigen."
+  },
   "Common": {
     "Footer": {"brand": "The Ranco Bay", "location": "Ranco • Lago Maggiore • Italien"},
     "NotFound": {"title": "Seite nicht gefunden", "description": "Die angeforderte Seite ist nicht Teil dieser Website.", "returnHome": "Zur Startseite"},

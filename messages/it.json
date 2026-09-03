@@ -317,6 +317,17 @@
       "imageAlt": "Mappa del Lago Maggiore e della regione di confine circostante tra Italia e Svizzera"
     }
   },
+  "Availability": {
+    "title": "Disponibilità",
+    "loading": "Caricamento calendario",
+    "previousMonth": "Mese precedente",
+    "nextMonth": "Mese successivo",
+    "today": "Oggi",
+    "states": {"available": "Disponibile", "unavailable": "Non disponibile", "unknown": "Da verificare", "past": "Data passata"},
+    "notPublished": "Le disponibilità non sono ancora pubblicate. Chiedi alla proprietaria informazioni sulle date che preferisci.",
+    "disclaimer": "Le disponibilità indicate sono orientative. La conferma definitiva verrà fornita dalla proprietaria.",
+    "withoutJavaScript": "Attiva JavaScript per visualizzare il calendario."
+  },
   "Common": {
     "Footer": {
       "brand": "The Ranco Bay",

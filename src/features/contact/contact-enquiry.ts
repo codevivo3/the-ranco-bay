@@ -135,6 +135,6 @@ export function validateContactEnquiry(
 
 export function hasContactHoneypot(input: unknown) {
   if (!input || typeof input !== "object" || Array.isArray(input)) return false;
-  const value = (input as Record<string, unknown>).website;
+  const value = (input as Record<string, unknown>).contactNote;
   return typeof value === "string" && value.trim().length > 0;
 }

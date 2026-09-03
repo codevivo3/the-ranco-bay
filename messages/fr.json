@@ -124,6 +124,17 @@
     "details": {"eyebrow": "Coordonnées", "title": "The Ranco Bay à Ranco", "body": "Les coordonnées publiques seront confirmées avant le lancement.", "addressLabel": "Zone", "addressValue": "Ranco, lac Majeur, Italie", "contactLabel": "Demandes", "contactValue": "Coordonnées directes à confirmer"},
     "location": {"title": "Situation et carte", "body": "Utilisez Google Maps pour le contexte public actuel. Aucune API cartographique n'est nécessaire pour cette structure.", "mapsLink": "Ouvrir dans Google Maps", "arrivalTitle": "Arrivée", "arrivalBody": "L'adresse exacte, l'accès et les instructions d'arrivée seront transmis directement lorsque le séjour sera confirmé.", "imageAlt": "Carte du lac Majeur et de la région frontalière environnante entre l'Italie et la Suisse"}
   },
+  "Availability": {
+    "title": "Disponibilités",
+    "loading": "Chargement du calendrier",
+    "previousMonth": "Mois précédent",
+    "nextMonth": "Mois suivant",
+    "today": "Aujourd'hui",
+    "states": {"available": "Disponible", "unavailable": "Indisponible", "unknown": "À vérifier", "past": "Date passée"},
+    "notPublished": "Les disponibilités ne sont pas encore publiées. Contactez la propriétaire pour les dates souhaitées.",
+    "disclaimer": "Les disponibilités affichées sont indicatives. La confirmation définitive vous sera communiquée par la propriétaire.",
+    "withoutJavaScript": "Activez JavaScript pour afficher le calendrier."
+  },
   "Common": {
     "Footer": {"brand": "The Ranco Bay", "location": "Ranco • lac Majeur • Italie"},
     "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"},

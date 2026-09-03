@@ -1,5 +1,6 @@
 import {Resend} from "resend";
 
+import {buildOwnerEmail} from "@/features/contact/contact-owner-email";
 import {
   type ContactApiResponse,
   hasContactHoneypot,
@@ -45,38 +46,6 @@ function isRateLimited(key: string) {
 
 function isConfiguredEmail(value: string | undefined): value is string {
   return Boolean(value && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
-}
-
-function buildOwnerEmail({
-  arrival,
-  departure,
-  email,
-  locale,
-  message,
-  name,
-  receivedAt,
-}: {
-  arrival: string;
-  departure: string;
-  email: string;
-  locale: string;
-  message: string;
-  name: string;
-  receivedAt: string;
-}) {
-  return [
-    "New enquiry from The Ranco Bay website",
-    "",
-    `Name: ${name}`,
-    `Guest email: ${email}`,
-    `Arrival: ${arrival || "Not supplied"}`,
-    `Departure: ${departure || "Not supplied"}`,
-    `Site language: ${locale.toUpperCase()}`,
-    `Received: ${receivedAt}`,
-    "",
-    "Message:",
-    message,
-  ].join("\n");
 }
 
 export async function POST(request: Request) {
@@ -125,12 +94,14 @@ export async function POST(request: Request) {
   const resend = new Resend(apiKey);
 
   try {
+    const {html, text} = buildOwnerEmail({...validation.data, receivedAt});
     const {error} = await resend.emails.send(
       {
         from: `The Ranco Bay <${fromEmail}>`,
         replyTo: validation.data.email,
         subject: `New website enquiry — ${subjectName}`,
-        text: buildOwnerEmail({...validation.data, receivedAt}),
+        html,
+        text,
         to: [toEmail],
       },
       {idempotencyKey: `contact-enquiry/${validation.data.submissionId}`},

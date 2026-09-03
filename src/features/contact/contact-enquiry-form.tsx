@@ -93,7 +93,7 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
       message: readFormValue(formData, "message"),
       name: readFormValue(formData, "name"),
       submissionId,
-      website: readFormValue(formData, "website"),
+      contactNote: readFormValue(formData, "contactNote"),
     };
     const validation = validateContactEnquiry(payload);
 
@@ -155,7 +155,7 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
       >
         <label>
           Company
-          <input name="website" tabIndex={-1} autoComplete="off" />
+          <input name="contactNote" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
 

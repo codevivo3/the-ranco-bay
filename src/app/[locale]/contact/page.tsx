@@ -7,6 +7,8 @@ import {PageIntro} from "@/components/layout/page-intro";
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import {SectionHeading} from "@/components/ui/section-heading";
 import {ContactEnquiryForm} from "@/features/contact/contact-enquiry-form";
+import {AvailabilityCalendar} from "@/features/accommodation/availability-calendar";
+import {accommodationAvailability} from "@/features/accommodation/availability-data";
 import {getLocalizedPageMetadata} from "@/lib/seo/localized-page-metadata";
 import { TrbButton } from '@/components/ui/trb-button';
 
@@ -15,6 +17,9 @@ type ContactPageProps = {
 };
 
 const mapsUrl = 'https://maps.app.goo.gl/s9u8tAaH742owAHB8';
+// The same Google Maps listing as mapsUrl, using its stable numeric place ID.
+const mapsEmbedUrl =
+  'https://www.google.com/maps?cid=17678086622697744297&output=embed';
 
 export async function generateMetadata({
   params,
@@ -77,16 +82,21 @@ export default async function ContactPage({params}: ContactPageProps) {
         <EditorialWatermark variant='upper-right' opacity={0.025} />
         <Container className='relative z-10 !max-w-[110rem]'>
           <div className='grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
-            <SectionHeading
-              eyebrow={t('enquiry.eyebrow')}
-              title={t('enquiry.title')}
-              titleLines={[
-                t('enquiry.titleLineOne'),
-                t('enquiry.titleLineTwo'),
-              ]}
-              titleRole='editorial'
-              body={t('enquiry.body')}
-            />
+            <div className='min-w-0'>
+              <SectionHeading
+                eyebrow={t('enquiry.eyebrow')}
+                title={t('enquiry.title')}
+                titleLines={[
+                  t('enquiry.titleLineOne'),
+                  t('enquiry.titleLineTwo'),
+                ]}
+                titleRole='editorial'
+                body={t('enquiry.body')}
+              />
+            </div>
+          </div>
+          <div className='mt-10 grid items-start gap-14 md:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
+            <AvailabilityCalendar data={accommodationAvailability} />
             <ContactEnquiryForm locale={locale} />
           </div>
         </Container>
@@ -122,12 +132,13 @@ export default async function ContactPage({params}: ContactPageProps) {
             </div>
             <div>
               <div className='relative aspect-square overflow-hidden'>
-                <Image
-                  src='/images/placeholders/map.jpg'
-                  alt={t('location.imageAlt')}
-                  fill
-                  sizes='(min-width: 1024px) 50vw, 100vw'
-                  className='object-cover'
+                <iframe
+                  src={mapsEmbedUrl}
+                  title={`${t('details.title')} — Google Maps`}
+                  loading='lazy'
+                  referrerPolicy='no-referrer-when-downgrade'
+                  allowFullScreen
+                  className='absolute inset-0 h-full w-full border-0'
                 />
               </div>
               <h2 className='mt-7 font-display text-3xl text-page-text-strong'>
