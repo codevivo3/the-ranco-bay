@@ -3,6 +3,7 @@ import Image from "next/image";
 type HouseChapterImageProps = {
   alt: string;
   image: string;
+  imagePosition?: string;
 };
 
 type HouseChapterTextProps = {
@@ -11,15 +12,20 @@ type HouseChapterTextProps = {
   title: string;
 };
 
-export function HouseChapterImage({alt, image}: HouseChapterImageProps) {
+export function HouseChapterImage({
+  alt,
+  image,
+  imagePosition,
+}: HouseChapterImageProps) {
   return (
     <div className="relative h-full w-full overflow-hidden">
       <Image
         src={image}
         alt={alt}
         fill
-        sizes="(min-width: 1024px) 76vw, 90vw"
+        sizes="(min-width: 1024px) 58vw, 92vw"
         className="object-cover transition-transform duration-700 group-hover:scale-[1.01] motion-reduce:transition-none"
+        style={imagePosition ? {objectPosition: imagePosition} : undefined}
       />
     </div>
   );

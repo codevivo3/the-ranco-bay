@@ -7,6 +7,10 @@ import { TrbButton } from '@/components/ui/trb-button';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { GuideCard } from '@/features/local-guide/guide-card';
 import { getHomepageGuideEntries } from '@/features/local-guide/placeholder-data';
+import {
+  getPropertyImage,
+  propertyImageSlots,
+} from '@/features/property/property-images';
 
 const propertyFacts = [
   'lakeView',
@@ -19,11 +23,16 @@ const homepageSectionLayout =
   'flex min-h-[100svh] items-center py-[var(--space-section)]';
 
 export async function HomepageDiscovery() {
-  const [home, guide] = await Promise.all([
+  const [home, guide, imageAlts] = await Promise.all([
     getTranslations('Home'),
     getTranslations('Guide'),
+    getTranslations('PropertyImages'),
   ]);
   const guideEntries = getHomepageGuideEntries();
+  const accommodationImage = getPropertyImage(
+    propertyImageSlots.homeAccommodation,
+  );
+  const hospitalityImage = getPropertyImage(propertyImageSlots.homeHospitality);
 
   return (
     <>
@@ -35,11 +44,12 @@ export async function HomepageDiscovery() {
           <div className='grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
             <div className='relative mx-auto aspect-square w-full max-w-[36rem] overflow-hidden lg:mx-0'>
               <Image
-                src='/images/property/image1.jpg'
-                alt={home('HousePreview.imageAlt')}
+                src={accommodationImage.src}
+                alt={imageAlts(accommodationImage.altKey)}
                 fill
-                sizes='(min-width: 1024px) 55vw, 100vw'
+                sizes='(min-width: 640px) 36rem, calc(100vw - 2rem)'
                 className='object-cover'
+                style={{objectPosition: accommodationImage.focalPoint}}
               />
             </div>
             <div>
@@ -82,7 +92,9 @@ export async function HomepageDiscovery() {
                 category={guide(`categories.${entry.category}.label`)}
                 title={guide(`entries.${entry.id}.title`)}
                 description={guide(`entries.${entry.id}.description`)}
-                imageFrameClassName='md:aspect-[3/4] lg:aspect-auto lg:h-[clamp(360px,45svh,520px)]'
+                imageFrameClassName='aspect-[4/5] md:aspect-[3/4] lg:aspect-auto lg:h-[clamp(360px,45svh,520px)]'
+                imagePosition={entry.imagePosition}
+                imageSizes='(min-width: 1024px) 25vw, (min-width: 768px) 31vw, calc(100vw - 2rem)'
                 presentation='gallery'
               />
             ))}
@@ -97,10 +109,10 @@ export async function HomepageDiscovery() {
           <div className='grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20'>
             <div className='relative aspect-[4/5] overflow-hidden'>
               <Image
-                src='/images/property/image2-d.jpg'
-                alt={home('Hospitality.imageAlt')}
+                src={hospitalityImage.src}
+                alt={imageAlts(hospitalityImage.altKey)}
                 fill
-                sizes='(min-width: 1024px) 40vw, 100vw'
+                sizes='(min-width: 1024px) 31vw, calc(100vw - 2rem)'
                 className='object-cover'
               />
             </div>
@@ -114,7 +126,7 @@ export async function HomepageDiscovery() {
               <p className='mt-7 max-w-xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-lg sm:leading-8'>
                 {home('Hospitality.body')}
               </p>
-              <TrbButton className='mt-8' href='/contact'>
+              <TrbButton className='mt-8' href='/contact#enquiry'>
                 {home('Hospitality.link')}
               </TrbButton>
             </div>
@@ -139,7 +151,7 @@ export async function HomepageDiscovery() {
             <p className='mt-7 max-w-2xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_88%,transparent)] sm:text-lg sm:leading-8'>
               {home('FinalCta.body')}
             </p>
-            <TrbButton className='mt-8' href='/contact'>
+            <TrbButton className='mt-8' href='/contact#enquiry'>
               {home('FinalCta.link')}
             </TrbButton>
           </div>

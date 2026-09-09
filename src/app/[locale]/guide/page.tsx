@@ -49,7 +49,7 @@ export default async function GuidePage({params}: GuidePageProps) {
         titleLines={[t('hero.titleLineOne'), t('hero.titleLineTwo')]}
         titleLinesFromDesktop
         body={t('hero.body')}
-        image='/images/property/image3.png'
+        image='/images/cinematic/image3.png'
         alt={t('hero.imageAlt')}
         titleRole='editorial'
       />
@@ -136,6 +136,7 @@ export default async function GuidePage({params}: GuidePageProps) {
                             title={t(`entries.${entry.id}.title`)}
                             description={t(`entries.${entry.id}.description`)}
                             tags={entry.tags.map((tag) => t(`tags.${tag}`))}
+                            imagePosition={entry.imagePosition}
                             presentation='gallery'
                           />
                         </ExpandableGalleryItem>
@@ -176,7 +177,7 @@ export default async function GuidePage({params}: GuidePageProps) {
             <p className='mt-6 max-w-2xl text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)]'>
               {t('cta.body')}
             </p>
-            <TrbButton className='mt-8' href='/contact'>
+            <TrbButton className='mt-8' href='/contact#enquiry'>
               {t('cta.link')}
             </TrbButton>
           </div>

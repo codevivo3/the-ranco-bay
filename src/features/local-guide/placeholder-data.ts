@@ -1,3 +1,8 @@
+import {
+  getPropertyImage,
+  propertyImageSlots,
+} from "@/features/property/property-images";
+
 export const guideCategories = ["eat", "water", "explore"] as const;
 
 export type GuideCategory = (typeof guideCategories)[number];
@@ -10,6 +15,7 @@ export type GuideEntry = {
   homepageEligible: boolean;
   id: "lakeside-table" | "open-water" | "ranco-outlook";
   image: string;
+  imagePosition?: string;
   mapsUrl: string | null;
   seasonal: boolean;
   tags: readonly string[];
@@ -21,7 +27,7 @@ export const placeholderGuideEntries: readonly GuideEntry[] = [
   {
     id: "lakeside-table",
     category: "eat",
-    image: "/images/property/image2-a.jpg",
+    image: "/images/cinematic/image2-a.jpg",
     mapsUrl: null,
     homepageEligible: true,
     featured: true,
@@ -33,7 +39,8 @@ export const placeholderGuideEntries: readonly GuideEntry[] = [
   {
     id: "open-water",
     category: "water",
-    image: "/images/property/image4.jpg",
+    image: getPropertyImage(propertyImageSlots.guideWater).src,
+    imagePosition: getPropertyImage(propertyImageSlots.guideWater).focalPoint,
     mapsUrl: null,
     homepageEligible: true,
     featured: true,
@@ -45,7 +52,7 @@ export const placeholderGuideEntries: readonly GuideEntry[] = [
   {
     id: "ranco-outlook",
     category: "explore",
-    image: "/images/property/image3.png",
+    image: "/images/cinematic/image3.png",
     mapsUrl: null,
     homepageEligible: true,
     featured: true,

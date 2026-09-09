@@ -6,6 +6,8 @@ type GuideCardProps = {
   description: string;
   image: string;
   imageFrameClassName?: string;
+  imagePosition?: string;
+  imageSizes?: string;
   presentation?: 'gallery' | 'overlay' | 'standard';
   tags?: readonly string[];
   title: string;
@@ -17,6 +19,8 @@ export function GuideCard({
   description,
   image,
   imageFrameClassName = '',
+  imagePosition,
+  imageSizes,
   presentation = 'standard',
   tags = [],
   title,
@@ -34,11 +38,13 @@ export function GuideCard({
           alt={alt}
           fill
           sizes={
-            gallery
-              ? '(min-width: 1024px) 60vw, 100vw'
-              : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'
+            imageSizes ??
+            (gallery
+              ? '(min-width: 1024px) 45vw, 92vw'
+              : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw')
           }
           className='object-cover transition-transform duration-700 group-hover:scale-[1.015] motion-reduce:transition-none'
+          style={imagePosition ? {objectPosition: imagePosition} : undefined}
         />
 
         {overlay ? (

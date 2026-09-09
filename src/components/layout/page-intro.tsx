@@ -8,6 +8,7 @@ type PageIntroProps = {
   body: string;
   eyebrow: string;
   image: string;
+  imagePosition?: string;
   title: string;
   titleLines?: readonly string[];
   titleLinesFromDesktop?: boolean;
@@ -19,6 +20,7 @@ export function PageIntro({
   body,
   eyebrow,
   image,
+  imagePosition,
   title,
   titleLines,
   titleLinesFromDesktop = false,
@@ -64,10 +66,11 @@ export function PageIntro({
               fill
               sizes={
                 isEditorialStatement
-                  ? "(min-width: 1024px) 40vw, 100vw"
-                  : "(min-width: 1024px) 55vw, 100vw"
+                  ? "(min-width: 1024px) 38vw, (min-width: 640px) 34rem, calc(100vw - 2rem)"
+                  : "(min-width: 1024px) 55vw, (min-width: 640px) 34rem, calc(100vw - 2rem)"
               }
               className="object-cover"
+              style={imagePosition ? {objectPosition: imagePosition} : undefined}
             />
           </div>
         </div>

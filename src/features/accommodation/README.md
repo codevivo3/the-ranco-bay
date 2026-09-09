@@ -1,11 +1,12 @@
 # Accommodation feature
 
-## Informational availability calendar
+## Availability calendar and enquiry dates
 
 `AvailabilityCalendar` receives the existing `AvailabilityData` shape from the
 server-only `getBookingAvailability()` adapter. The Contact page passes only
 sanitized date ranges to the browser, never the private feed or event metadata.
-There is no booking action or connection to the enquiry form.
+Selectable dates synchronize with the enquiry form, but remain an indicative
+enquiry aid rather than a booking action.
 
 ### Booking.com source
 
@@ -72,8 +73,12 @@ empty calendar is not interpreted as unlimited availability.
 ### Date and display rules
 
 The calendar shows the current month plus eleven months, with Monday-first
-localized weekday names. Past dates are subdued and cannot be selected. All days
-are informational, with full date/status text for assistive technology.
+localized weekday names. Past, blocked and unreviewed nights cannot be selected
+as arrival dates. A stay occupies arrival and each night before departure, while
+departure is exclusive; this permits checkout on a date blocked for a following
+stay. Completed ranges cannot cross blocked or unreviewed nights. Calendar
+buttons and date fields stay synchronized, with full localized date/state text
+for assistive technology.
 
 The current date follows Europe/Rome and refreshes while the page is open and
 when the tab becomes visible. A hydration-safe placeholder prevents static builds

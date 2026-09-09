@@ -25,7 +25,7 @@ function load(name, overrides = {}, globals = {}) {
   return exports;
 }
 const {parseBookingICal} = load("booking-ical-parser");
-const {getDayStatus} = load("availability-dates");
+const {getDayStatus, isStayRangeAvailable, selectStayDate} = load("availability-dates");
 const calendar = (events = "") => `BEGIN:VCALENDAR\r\nVERSION:2.0\r\n${events}END:VCALENDAR\r\n`;
 const event = (fields) => `BEGIN:VEVENT\r\n${fields}\r\nEND:VEVENT\r\n`;
 const valid = calendar(event("DTSTART;VALUE=DATE:20260910\r\nDTEND;VALUE=DATE:20260915"));
@@ -49,6 +49,28 @@ test("leap days, year boundaries, single-day and empty/cancelled calendars", () 
   assert.equal(parseBookingICal(calendar(event("DTSTART:20260910")))[0].end, "2026-09-10");
   assert.equal(parseBookingICal(calendar()).length, 0);
   assert.equal(parseBookingICal(calendar(event("STATUS:CANCELLED"))).length, 0);
+});
+
+test("stay ranges validate occupied nights while keeping departure exclusive", () => {
+  const data = {
+    reviewedRange: {start: "2026-09-10", end: "2026-09-20"},
+    unavailableRanges: [{start: "2026-09-15", end: "2026-09-17"}],
+  };
+
+  assert.equal(isStayRangeAvailable("2026-09-10", "2026-09-15", "2026-09-01", data), true);
+  assert.equal(isStayRangeAvailable("2026-09-10", "2026-09-16", "2026-09-01", data), false);
+  assert.equal(isStayRangeAvailable("2026-09-18", "2026-09-21", "2026-09-01", data), true);
+  assert.equal(isStayRangeAvailable("2026-09-19", "2026-09-22", "2026-09-01", data), false);
+
+  const first = selectStayDate({arrival: "", departure: ""}, "2026-09-10", "2026-09-01", data);
+  assert.deepEqual(plain(first), {invalidRange: false, selection: {arrival: "2026-09-10", departure: ""}});
+  const complete = selectStayDate(first.selection, "2026-09-15", "2026-09-01", data);
+  assert.deepEqual(plain(complete), {invalidRange: false, selection: {arrival: "2026-09-10", departure: "2026-09-15"}});
+  const restarted = selectStayDate(complete.selection, "2026-09-18", "2026-09-01", data);
+  assert.deepEqual(plain(restarted), {invalidRange: false, selection: {arrival: "2026-09-18", departure: ""}});
+  const rejected = selectStayDate(first.selection, "2026-09-18", "2026-09-01", data);
+  assert.equal(rejected.invalidRange, true);
+  assert.deepEqual(plain(rejected.selection), plain(first.selection));
 });
 
 test("reject malformed, invalid, timed and unsupported events rather than partial data", () => {

@@ -1,4 +1,5 @@
 import type {ContactEnquiry} from "./contact-enquiry";
+import {trbBusiness} from "@/lib/constants/business";
 
 type OwnerEmailDetails = Omit<ContactEnquiry, "submissionId"> & {
   receivedAt: string;
@@ -12,7 +13,7 @@ const languages: Record<string, {format: string; label: string}> = {
 };
 
 // Public 240px PNG derivative of trb-logo-plain.svg; deploy alongside this template.
-const logoUrl = "https://therancobay.com/logo/trb-logo-email.png";
+const logoUrl = `${trbBusiness.website}/logo/trb-logo-email.png`;
 const colors = {
   surface: "#ffffff",
   text: "#222222",
@@ -66,7 +67,7 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
   const emailHref = escapeHtml(`mailto:${encodeURIComponent(details.email)}`);
 
   const text = [
-    "THE RANCO BAY",
+    trbBusiness.name.toUpperCase(),
     "NEW ENQUIRY",
     "",
     details.name,
@@ -82,7 +83,7 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
     details.message,
     "",
     "---",
-    "Submitted from therancobay.com",
+    `Submitted from ${new URL(trbBusiness.website).hostname}`,
     timestamp,
     websiteLanguage,
   ].join("\n");
@@ -92,7 +93,7 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>New enquiry — The Ranco Bay</title>
+  <title>New enquiry — ${trbBusiness.name}</title>
 </head>
 <body style="margin:0;padding:0;background-color:${colors.surface};color:${colors.text};font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${colors.surface}" style="border-collapse:collapse;">
@@ -100,7 +101,7 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
       <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${colors.surface}" style="width:100%;max-width:600px;table-layout:fixed;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:${colors.text};">
         <tr><td style="padding:0 16px 16px;">
-          <img src="${logoUrl}" alt="The Ranco Bay" width="180" height="180" style="display:block;width:180px;height:180px;border:0;color:${colors.text};font-family:Arial,Helvetica,sans-serif;font-size:16px;">
+          <img src="${logoUrl}" alt="${trbBusiness.name}" width="180" height="180" style="display:block;width:180px;height:180px;border:0;color:${colors.text};font-family:Arial,Helvetica,sans-serif;font-size:16px;">
         </td></tr>
         <tr><td style="padding:0 16px 12px;">
           <h1 style="margin:0;${labelStyle}color:${colors.accent};">NEW ENQUIRY</h1>
@@ -132,7 +133,7 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
         <tr><td style="padding:0 16px 16px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
             <tr><td style="border-top:1px solid ${colors.border};padding-top:20px;color:${colors.muted};font-size:12px;line-height:20px;">
-              Submitted from <a href="https://therancobay.com" style="color:${colors.muted};text-decoration:none;">therancobay.com</a><br>
+              Submitted from <a href="${trbBusiness.website}" style="color:${colors.muted};text-decoration:none;">${new URL(trbBusiness.website).hostname}</a><br>
               ${escapeHtml(timestamp)}<br>
               ${escapeHtml(websiteLanguage)}
             </td></tr>

@@ -33,7 +33,7 @@ export function PrivateBeachScene({
           alt={alt}
           fill
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-[70%_55%] sm:object-[65%_55%] lg:object-[50%_55%]"
           style={{transform: "scale(1.01)"}}
         />
       </div>
