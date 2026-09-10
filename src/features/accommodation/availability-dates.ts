@@ -12,6 +12,11 @@ export type AvailabilityData = {
   unavailableRanges: readonly DateRange[];
 };
 
+export type StayDateSelection = {
+  arrival: string;
+  departure: string;
+};
+
 export type DayStatus = "available" | "unavailable" | "unknown" | "past";
 export type CalendarMonth = {year: number; month: number};
 
@@ -25,6 +30,15 @@ export function monthAtOffset(today: CalendarDate, offset: number): CalendarMont
   const [year, month] = today.split("-").map(Number);
   const totalMonths = year * 12 + month - 1 + offset;
   return {year: Math.floor(totalMonths / 12), month: ((totalMonths % 12) + 12) % 12 + 1};
+}
+
+export function monthOffsetForDate(
+  today: CalendarDate,
+  date: CalendarDate,
+) {
+  const [todayYear, todayMonth] = today.split("-").map(Number);
+  const [year, month] = date.split("-").map(Number);
+  return year * 12 + month - (todayYear * 12 + todayMonth);
 }
 
 /** UTC is used solely for calendar arithmetic/Intl; no local date conversion. */
@@ -63,6 +77,78 @@ export function getDayStatus(
     return "unavailable";
   }
   return includesDate(data.reviewedRange, date) ? "available" : "unknown";
+}
+
+export function isCalendarDate(value: string): value is CalendarDate {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+
+  const [year, month, day] = value.split("-").map(Number);
+  const parsed = calendarDateForFormatting(toCalendarDate(year, month, day));
+  return (
+    parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() + 1 === month &&
+    parsed.getUTCDate() === day
+  );
+}
+
+function nextCalendarDate(date: CalendarDate): CalendarDate {
+  const next = calendarDateForFormatting(date);
+  next.setUTCDate(next.getUTCDate() + 1);
+  return toCalendarDate(
+    next.getUTCFullYear(),
+    next.getUTCMonth() + 1,
+    next.getUTCDate(),
+  );
+}
+
+/**
+ * A stay occupies arrival and every following night before departure.
+ * Departure is intentionally exclusive, so it may coincide with a later block.
+ */
+export function isStayRangeAvailable(
+  arrival: CalendarDate,
+  departure: CalendarDate,
+  today: CalendarDate,
+  data: AvailabilityData,
+) {
+  if (departure <= arrival) return false;
+
+  for (let date = arrival; date < departure; date = nextCalendarDate(date)) {
+    if (getDayStatus(date, today, data) !== "available") return false;
+  }
+
+  return true;
+}
+
+export type StaySelectionResult = {
+  invalidRange: boolean;
+  selection: StayDateSelection;
+};
+
+export function selectStayDate(
+  selection: StayDateSelection,
+  date: CalendarDate,
+  today: CalendarDate,
+  data: AvailabilityData,
+): StaySelectionResult {
+  const arrival = isCalendarDate(selection.arrival)
+    ? selection.arrival
+    : null;
+
+  if (arrival && !selection.departure && date > arrival) {
+    return isStayRangeAvailable(arrival, date, today, data)
+      ? {invalidRange: false, selection: {arrival, departure: date}}
+      : {invalidRange: true, selection};
+  }
+
+  if (getDayStatus(date, today, data) === "available") {
+    return {
+      invalidRange: false,
+      selection: {arrival: date, departure: ""},
+    };
+  }
+
+  return {invalidRange: false, selection};
 }
 
 export function getRomeToday(now = new Date()): CalendarDate {

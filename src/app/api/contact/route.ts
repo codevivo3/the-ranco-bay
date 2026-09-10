@@ -6,6 +6,7 @@ import {
   hasContactHoneypot,
   validateContactEnquiry,
 } from "@/features/contact/contact-enquiry";
+import {trbBusiness} from "@/lib/constants/business";
 
 export const runtime = "nodejs";
 
@@ -97,7 +98,7 @@ export async function POST(request: Request) {
     const {html, text} = buildOwnerEmail({...validation.data, receivedAt});
     const {error} = await resend.emails.send(
       {
-        from: `The Ranco Bay <${fromEmail}>`,
+        from: `${trbBusiness.name} <${fromEmail}>`,
         replyTo: validation.data.email,
         subject: `New website enquiry — ${subjectName}`,
         html,

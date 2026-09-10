@@ -2,7 +2,8 @@
 
 import type {KeyboardEvent, ReactNode} from "react";
 import {useCallback, useEffect, useRef, useState} from "react";
-import {ArrowRight} from "lucide-react";
+import {ArrowLeft, ArrowRight} from "lucide-react";
+import {useTranslations} from "next-intl";
 
 type HorizontalEditorialGalleryProps = {
   children: ReactNode;
@@ -19,6 +20,8 @@ type HorizontalEditorialPanelProps = {
 type DirectionCue = {
   left: number;
   visible: boolean;
+  previousLeft: number;
+  previousVisible: boolean;
 };
 
 const peekPanelClassName = "horizontal-editorial-gallery__panel--peek";
@@ -86,10 +89,13 @@ export function HorizontalEditorialGallery({
   label,
   variant,
 }: HorizontalEditorialGalleryProps) {
+  const tGallery = useTranslations("Common.Gallery");
   const galleryRef = useRef<HTMLDivElement>(null);
   const [directionCue, setDirectionCue] = useState<DirectionCue>({
     left: 0,
     visible: false,
+    previousLeft: 0,
+    previousVisible: false,
   });
 
   const updateNavigation = useCallback(() => {
@@ -137,6 +143,13 @@ export function HorizontalEditorialGallery({
     const nextCue = {
       left,
       visible: Boolean(nextPanel && nextItemIsVisible && cueIsInsideGallery),
+      // Mirror the next cue at the leading gap. Keep the hit area reachable
+      // when a wide panel fills the viewport and its leading gap is clipped.
+      previousLeft: Math.max(
+        gap / 2,
+        currentRect.left - galleryRect.left - gap / 2,
+      ),
+      previousVisible: currentIndex > 0,
     };
 
     updatePeekPanels(
@@ -150,7 +163,9 @@ export function HorizontalEditorialGallery({
     );
 
     setDirectionCue((current) =>
-      current.left === nextCue.left && current.visible === nextCue.visible
+      current.left === nextCue.left && current.visible === nextCue.visible &&
+      current.previousLeft === nextCue.previousLeft &&
+      current.previousVisible === nextCue.previousVisible
         ? current
         : nextCue,
     );
@@ -233,18 +248,37 @@ export function HorizontalEditorialGallery({
       >
         {children}
       </div>
-      {directionCue.visible ? (
-        <span
-          aria-hidden="true"
-          className="horizontal-editorial-gallery__direction-cue"
-          style={{left: directionCue.left}}
+      {directionCue.previousVisible ? (
+        <button
+          type="button"
+          aria-label={tGallery("previousItem")}
+          onClick={() => scrollToAdjacent(-1)}
+          className="horizontal-editorial-gallery__direction-cue horizontal-editorial-gallery__direction-cue--previous"
+          style={{left: directionCue.previousLeft}}
         >
-          <ArrowRight
+          <ArrowLeft
+            aria-hidden="true"
             className="horizontal-editorial-gallery__direction-icon"
             size={24}
             strokeWidth={1.5}
           />
-        </span>
+        </button>
+      ) : null}
+      {directionCue.visible ? (
+        <button
+          type="button"
+          aria-label={tGallery("nextItem")}
+          onClick={() => scrollToAdjacent(1)}
+          className="horizontal-editorial-gallery__direction-cue"
+          style={{left: directionCue.left}}
+        >
+          <ArrowRight
+            aria-hidden="true"
+            className="horizontal-editorial-gallery__direction-icon"
+            size={24}
+            strokeWidth={1.5}
+          />
+        </button>
       ) : null}
     </div>
   );

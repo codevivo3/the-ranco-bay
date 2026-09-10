@@ -1,0 +1,1213 @@
+"Name","Key","Section","Italian","English","German","French","Notes","Status","Ready to sync"
+"Metadata.title","Metadata.title","Metadata","The Ranco Bay — Soggiorni sul Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata | tipo: titolo SEO
+Italiano attuale (repository prima del pass): ""The Ranco Bay — Soggiorni sul Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81119387e0a1114f19f2
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.description","Metadata.description","Metadata","Un soggiorno tranquillo e curato dai proprietari a Ranco, sul Lago Maggiore.","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata | tipo: testo
+Italiano attuale (repository prima del pass): ""Un soggiorno tranquillo e curato dai proprietari a Ranco, sul Lago Maggiore.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81208ee5de6ab96ca548
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.openGraphTitle","Metadata.openGraphTitle","Metadata","The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata | tipo: etichetta
+Italiano attuale (repository prima del pass): ""The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b18cd4f7214f07d8f1
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.openGraphDescription","Metadata.openGraphDescription","Metadata","Una casa sul lago e una guida locale per soggiorni consapevoli a Ranco.","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata | tipo: testo
+Italiano attuale (repository prima del pass): ""Una casa sul lago e una guida locale per soggiorni consapevoli a Ranco.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Revisione facoltativa: «soggiorni consapevoli» è astratto; Manu può valutare «Una casa sul lago e consigli locali per il tuo soggiorno a Ranco». Non applicato: metadato conservato.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8196b000d0c56d616cc3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.pages.house.title","Metadata.pages.house.title","Metadata","La casa — The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata.pages.house | tipo: titolo SEO
+Italiano attuale (repository prima del pass): ""La casa — The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8159ac2ae8af114bb3a8
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.pages.house.description","Metadata.pages.house.description","Metadata","Scopri la casa, gli spazi affacciati sul lago, la spiaggia privata e le informazioni pratiche.","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata.pages.house | tipo: testo
+Italiano attuale (repository prima del pass): ""Scopri la casa, gli spazi affacciati sul lago, la spiaggia privata e le informazioni pratiche.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81088475cffe647a02b3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.pages.guide.title","Metadata.pages.guide.title","Metadata","Guida locale — The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata.pages.guide | tipo: titolo SEO
+Italiano attuale (repository prima del pass): ""Guida locale — The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81849d2ee2393afc3341
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.pages.guide.description","Metadata.pages.guide.description","Metadata","Una guida locale per mangiare, esplorare e vivere il Lago Maggiore.","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata.pages.guide | tipo: testo
+Italiano attuale (repository prima del pass): ""Una guida locale per mangiare, esplorare e vivere il Lago Maggiore.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81899ff9e40038aed405
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.pages.contact.title","Metadata.pages.contact.title","Metadata","Contatti — The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata.pages.contact | tipo: titolo SEO
+Italiano attuale (repository prima del pass): ""Contatti — The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8138b022c499529b5434
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Metadata.pages.contact.description","Metadata.pages.contact.description","Metadata","Invia una richiesta e trova le informazioni pratiche per raggiungere The Ranco Bay.","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Metadata.pages.contact | tipo: testo
+Italiano attuale (repository prima del pass): ""Invia una richiesta e trova le informazioni pratiche per raggiungere The Ranco Bay.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814eac38f0c31637b66f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.brand","Navigation.brand","Navigation","The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation | tipo: etichetta
+Italiano attuale (repository prima del pass): ""The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff811e84fbfdc6fd0b1a9a
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.primaryLabel","Navigation.primaryLabel","Navigation","Navigazione principale","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Navigazione principale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff811f859cf5eb4220f206
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.house","Navigation.house","Navigation","La casa","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation | tipo: etichetta
+Italiano attuale (repository prima del pass): ""La casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff819daf8ee78f656f8ae6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.guide","Navigation.guide","Navigation","Guida locale","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Guida locale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b4879fc2ce01a990bf
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.contact","Navigation.contact","Navigation","Contatti","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Contatti""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f281a6f8865fa9e7e3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.languageLabel","Navigation.languageLabel","Navigation","Scegli una lingua","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Scegli una lingua""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814a8d1be1cfb3ec6ddf
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.locales.en","Navigation.locales.en","Navigation","EN","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation.locales | tipo: etichetta
+Italiano attuale (repository prima del pass): ""EN""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8198a47ef50fa84eac3d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.locales.it","Navigation.locales.it","Navigation","IT","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation.locales | tipo: etichetta
+Italiano attuale (repository prima del pass): ""IT""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c7802dc65bce725f57
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.locales.de","Navigation.locales.de","Navigation","DE","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation.locales | tipo: etichetta
+Italiano attuale (repository prima del pass): ""DE""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814fb33ae5232a950212
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Navigation.locales.fr","Navigation.locales.fr","Navigation","FR","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Navigation.locales | tipo: etichetta
+Italiano attuale (repository prima del pass): ""FR""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d3970cd309898fad64
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hero.title","Home.Hero.title","Home","Una casa sul lato tranquillo del lago","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hero | tipo: titolo
+Italiano attuale (repository prima del pass): ""Una casa sul lato tranquillo del lago""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Il titolo attuale rientra in due righe sui viewport tablet/desktop testati. Non riscritto soltanto per differenziarlo.
+Verifica browser (font/layout originali): /it 390px: 4 righe; /it 834px: 2 righe; /it 1024px: 2 righe; /it 1366px: 2 righe; /it 1440px: 2 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f38e74e10f0200f18b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hero.metadata","Home.Hero.metadata","Home","RANCO · LAGO MAGGIORE — CASA SUL LAGO CON SPIAGGIA PRIVATA","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hero | tipo: sottotitolo
+Italiano attuale (repository prima del pass): ""RANCO · LAGO MAGGIORE — CASA SUL LAGO CON SPIAGGIA PRIVATA""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8180b47dce7f1aee1815
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hero.slides.arrival.alt","Home.Hero.slides.arrival.alt","Home","La riva e le montagne del Lago Maggiore viste dall'acqua","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hero.slides.arrival | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""La riva e le montagne del Lago Maggiore viste dall'acqua""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Alt legacy: il cinematic hero usa i propri alt Home.CinematicHero.scenes.*. Mantenuto; verificare prima di rimuovere.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff817f8644cce5c6f24440
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hero.slides.openWater.alt","Home.Hero.slides.openWater.alt","Home","Barche a vela ferme sull'acqua calma sotto le montagne","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hero.slides.openWater | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Barche a vela ferme sull'acqua calma sotto le montagne""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Alt legacy: il cinematic hero usa i propri alt Home.CinematicHero.scenes.*. Mantenuto; verificare prima di rimuovere.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff812e8c8bc174b4ca6fe6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hero.slides.evening.alt","Home.Hero.slides.evening.alt","Home","La luce calda della sera sul Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hero.slides.evening | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""La luce calda della sera sul Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Alt legacy: il cinematic hero usa i propri alt Home.CinematicHero.scenes.*. Mantenuto; verificare prima di rimuovere.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff810f83bbf03a43cb44e1
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.counter","Home.CinematicHero.counter","Home","{current} / {total}","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero | tipo: etichetta
+Italiano attuale (repository prima del pass): ""{current} / {total}""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff817f9aacd512e88d1c37
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.promise.alt","Home.CinematicHero.scenes.promise.alt","Home","Il Lago Maggiore visto dall'ombra dell'interno della casa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.promise | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Il Lago Maggiore visto dall'ombra dell'interno della casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff811ab256f64c50779b7b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.inside.title","Home.CinematicHero.scenes.inside.title","Home","Interni","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.inside | tipo: titolo
+Italiano attuale (repository prima del pass): ""Interni""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 1 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a984eed84cdedc453b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.inside.subtitle","Home.CinematicHero.scenes.inside.subtitle","Home","","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.inside | tipo: sottotitolo
+Italiano attuale (repository prima del pass): """"
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Stringa vuota intenzionale, non un testo mancante da inventare.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815b85ebc02077034b56
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.inside.windowAlt","Home.CinematicHero.scenes.inside.windowAlt","Home","L'acqua del lago vista da un'ampia finestra incorniciata da tende scure","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.inside | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""L'acqua del lago vista da un'ampia finestra incorniciata da tende scure""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81668dc8f81dd5e505ea
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.inside.sculptureAlt","Home.CinematicHero.scenes.inside.sculptureAlt","Home","Scultura in legno intagliato in un interno luminoso","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.inside | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Scultura in legno intagliato in un interno luminoso""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8102ae29f5900e049ee2
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.inside.bedsideAlt","Home.CinematicHero.scenes.inside.bedsideAlt","Home","Comodino in legno con libri e una custodia fotografica vintage","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.inside | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Comodino in legno con libri e una custodia fotografica vintage""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8175a653c5528e2d27e5
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.inside.detailAlt","Home.CinematicHero.scenes.inside.detailAlt","Home","Primo piano astratto di una superficie interna materica","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.inside | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Primo piano astratto di una superficie interna materica""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81498eb9f84c84b9f915
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.outside.label","Home.CinematicHero.scenes.outside.label","Home","Verso il lago","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.outside | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Verso il lago""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 1 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81708eb9de10095a44c1
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.outside.alt","Home.CinematicHero.scenes.outside.alt","Home","Cancelli aperti che incorniciano il percorso oltre la strada verso il Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.outside | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Cancelli aperti che incorniciano il percorso oltre la strada verso il Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d7b0d8c3dedc69bb20
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.privateBeach.eyebrow","Home.CinematicHero.scenes.privateBeach.eyebrow","Home","Spiaggia privata","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.privateBeach | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Spiaggia privata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 1 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f38608f01d30edf03b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.privateBeach.lineOne","Home.CinematicHero.scenes.privateBeach.lineOne","Home","La tua spiaggia.","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.privateBeach | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Fino alla spiaggia.""
+A 1680–2560px la prima battuta andava a capo, producendo tre righe complessive. «La tua spiaggia.» mantiene il riferimento alla spiaggia privata; seconda battuta e movimento invariati.
+Verifica browser (font/layout originali): /it 390px: 4 righe; /it 834px: 2 righe; /it 1024px: 2 righe; /it 1366px: 2 righe; /it 1440px: 2 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f9a2b0fb85b5712239
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Godi la spiaggia."". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.privateBeach.lineTwo","Home.CinematicHero.scenes.privateBeach.lineTwo","Home","A piedi nudi.","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.privateBeach | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""A piedi nudi.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 4 righe; /it 834px: 2 righe; /it 1024px: 2 righe; /it 1366px: 2 righe; /it 1440px: 2 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff812dad54e8d77ed07976
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.privateBeach.alt","Home.CinematicHero.scenes.privateBeach.alt","Home","Lettini su un prato accanto all'acqua azzurra","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.privateBeach | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Lettini su un prato accanto all'acqua azzurra""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ba8ac6ebddd9594c87
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.reveal.eyebrow","Home.CinematicHero.scenes.reveal.eyebrow","Home","Dal lago alla casa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.reveal | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Dal lago alla casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81218efae2f295ee2452
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.reveal.title","Home.CinematicHero.scenes.reveal.title","Home","The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.reveal | tipo: titolo
+Italiano attuale (repository prima del pass): ""The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b9aa78c64b78904495
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.CinematicHero.scenes.reveal.alt","Home.CinematicHero.scenes.reveal.alt","Home","Una casa riflessa nell'acqua calma sotto una montagna boscosa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.CinematicHero.scenes.reveal | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Una casa riflessa nell'acqua calma sotto una montagna boscosa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81839435e3ac5709e9e7
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.eyebrow","Home.HousePreview.eyebrow","Home","La casa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview | tipo: occhiello
+Italiano attuale (repository prima del pass): ""La casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d9b6f5fb07ab8399fc
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.title","Home.HousePreview.title","Home","Vivere il lago, da casa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview | tipo: titolo
+Italiano attuale (repository prima del pass): ""Vivere il lago, da casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 2 righe; /it 1366px: 2 righe; /it 1440px: 2 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81cd9a59e8aed453fb92
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Una casa sul lago, da vivere senza fretta"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.body","Home.HousePreview.body","Home","Una breve introduzione agli spazi, alla vista e alle comodità essenziali di un soggiorno a The Ranco Bay.","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview | tipo: testo
+Italiano attuale (repository prima del pass): ""Una breve introduzione agli spazi, alla vista e alle comodità essenziali di un soggiorno a The Ranco Bay.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814aa072c7c22e0c5872
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.link","Home.HousePreview.link","Home","Scopri la casa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview | tipo: CTA
+Italiano attuale (repository prima del pass): ""Scopri la casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verificare separatamente la destinazione: la CTA dice «Scopri la casa», ma il componente punta a /contact. Navigazione non modificata in questo audit.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c0b247f2f7c51d76c5
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.imageAlt","Home.HousePreview.imageAlt","Home","Il Lago Maggiore incorniciato dalla veranda in ombra","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Il Lago Maggiore incorniciato dalla veranda in ombra""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8192b4cbfdbe4c11c70f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.facts.lakeView","Home.HousePreview.facts.lakeView","Home","Vista lago","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview.facts | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Vista lago""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8166abbbe57725cf2f4b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.facts.privateBeach","Home.HousePreview.facts.privateBeach","Home","Spiaggia privata","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview.facts | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Spiaggia privata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 1 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff816eaa33f8d5a28687e6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.facts.parking","Home.HousePreview.facts.parking","Home","Parcheggio","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview.facts | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Parcheggio""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d399fced41b399085e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.HousePreview.facts.equipped","Home.HousePreview.facts.equipped","Home","Alloggio attrezzato","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.HousePreview.facts | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Alloggio attrezzato""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81fc8b9df405efee89a5
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.GuidePreview.eyebrow","Home.GuidePreview.eyebrow","Home","Guida locale","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.GuidePreview | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Guida locale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b0aaa9fa36a34d4684
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.GuidePreview.title","Home.GuidePreview.title","Home","Tre modi per vivere il lago","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.GuidePreview | tipo: titolo
+Italiano attuale (repository prima del pass): ""Tre modi per scoprire il lato più tranquillo del lago""
+Da tre righe a massimo due: conserva i tre modi di vivere il lago; il tono quieto resta affidato al contesto editoriale. Eliminata la perifrasi «il lato più tranquillo».
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff811eaa3bd9a2a9266d16
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.GuidePreview.body","Home.GuidePreview.body","Home","Una piccola selezione locale per mangiare bene, vivere l'acqua ed esplorare oltre Ranco.","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.GuidePreview | tipo: testo
+Italiano attuale (repository prima del pass): ""Una piccola selezione locale per mangiare bene, vivere l'acqua ed esplorare oltre Ranco.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81eba1b1cec060b79e6e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.GuidePreview.link","Home.GuidePreview.link","Home","Apri la guida locale","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.GuidePreview | tipo: CTA
+Italiano attuale (repository prima del pass): ""Apri la guida locale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verificare separatamente la destinazione: la CTA dice «Apri la guida locale», ma il componente punta a /contact. Navigazione non modificata.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d5ae05f49b51f5a755
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hospitality.eyebrow","Home.Hospitality.eyebrow","Home","Un'accoglienza locale","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hospitality | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Un'accoglienza locale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81dc99e7eca68898c539
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hospitality.title","Home.Hospitality.title","Home","Il lago, come lo viviamo noi","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hospitality | tipo: titolo
+Italiano attuale (repository prima del pass): ""Il lago, come lo viviamo noi""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 2 righe; /it 1366px: 2 righe; /it 1440px: 2 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a4869bfa4438c93c95
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Un'ospitalità autentica e personale"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hospitality.body","Home.Hospitality.body","Home","Il soggiorno è accompagnato da conoscenza locale, aiuto pratico e suggerimenti adatti al modo in cui ogni ospite vuole vivere il lago.","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hospitality | tipo: testo
+Italiano attuale (repository prima del pass): ""Il soggiorno è accompagnato da conoscenza locale, aiuto pratico e suggerimenti adatti al modo in cui ogni ospite vuole vivere il lago.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c3a151f4a011a6e6b2
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hospitality.link","Home.Hospitality.link","Home","Contattaci","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hospitality | tipo: CTA
+Italiano attuale (repository prima del pass): ""Contattaci""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81bc8f80d649bb75561e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.Hospitality.imageAlt","Home.Hospitality.imageAlt","Home","Un dettaglio tranquillo degli interni che racconta il carattere personale della casa","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.Hospitality | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Un dettaglio tranquillo degli interni che racconta il carattere personale della casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81959d66d408135a38f6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.FinalCta.eyebrow","Home.FinalCta.eyebrow","Home","Pianifica un soggiorno","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.FinalCta | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Pianifica un soggiorno""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8101a85ef1013ac519db
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.FinalCta.title","Home.FinalCta.title","Home","Inizia con una semplice conversazione","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.FinalCta | tipo: titolo
+Italiano attuale (repository prima del pass): ""Inizia con una semplice conversazione""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 3 righe; /it 834px: 2 righe; /it 1024px: 2 righe; /it 1366px: 2 righe; /it 1440px: 2 righe; /it 1680px: 2 righe; /it 1920px: 2 righe; /it 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8110a876f8f2a8cd9c66
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.FinalCta.body","Home.FinalCta.body","Home","Raccontaci le date e cosa desideri dal tuo tempo sul Lago Maggiore. I dettagli della richiesta saranno confermati personalmente.","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.FinalCta | tipo: testo
+Italiano attuale (repository prima del pass): ""Raccontaci le date e cosa desideri dal tuo tempo sul Lago Maggiore. I dettagli della richiesta saranno confermati personalmente.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff811ab9cfd2f2d0f349ad
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Home.FinalCta.link","Home.FinalCta.link","Home","Contatta The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: /it | sezione: Home.FinalCta | tipo: CTA
+Italiano attuale (repository prima del pass): ""Contatta The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ad8eaddfca7253ab88
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.hero.eyebrow","House.hero.eyebrow","House","La casa","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.hero | tipo: occhiello
+Italiano attuale (repository prima del pass): ""La casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8154ba4aca6d6217b2d4
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.hero.title","House.hero.title","House","Una casa tra luce, acqua e quiete","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.hero | tipo: titolo
+Italiano attuale (repository prima del pass): ""Una casa tra luce, acqua e quiete""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 4 righe; /it/house 834px: 2 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 2 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a39012db37290a003f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.hero.titleLineOne","House.hero.titleLineOne","House","Una casa tra luce,","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.hero | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Una casa tra luce,""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 4 righe; /it/house 834px: 2 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 2 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f1ac4cd539a03e7b01
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.hero.titleLineTwo","House.hero.titleLineTwo","House","acqua e quiete","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.hero | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""acqua e quiete""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 4 righe; /it/house 834px: 2 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 2 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8168bd0dfc4cca4ea31d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.hero.body","House.hero.body","House","Scopri l'alloggio per capitoli: dalla prima vista verso il lago alle informazioni pratiche che rendono semplice il soggiorno.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.hero | tipo: testo
+Italiano attuale (repository prima del pass): ""Scopri l'alloggio per capitoli: dalla prima vista verso il lago alle informazioni pratiche che rendono semplice il soggiorno.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Comprensibile ma metatestuale («per capitoli»). Possibile revisione dopo approvazione: «Dalla veranda agli spazi interni: scopri la casa e le informazioni utili per il soggiorno». Non applicata.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ff9d23e16c8402ffda
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.hero.imageAlt","House.hero.imageAlt","House","Una casa riflessa nell'acqua calma sotto una montagna boscosa","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.hero | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Una casa riflessa nell'acqua calma sotto una montagna boscosa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81218ab7e513e5ce72ce
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.introduction.eyebrow","House.introduction.eyebrow","House","Alloggio","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.introduction | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Alloggio""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ce8065ea4da9dc3663
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.introduction.title","House.introduction.title","House","Un luogo da vivere, non solo da visitare","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.introduction | tipo: titolo
+Italiano attuale (repository prima del pass): ""Un luogo da vivere, non solo da visitare""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 3 righe; /it/house 834px: 2 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 2 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8137ab9eff678a37fa26
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.introduction.body","House.introduction.body","House","La casa è presentata come una sequenza sincera di spazi ed esperienze. Le fotografie attuali restano temporanee in attesa del servizio definitivo.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.introduction | tipo: testo
+Italiano attuale (repository prima del pass): ""La casa è presentata come una sequenza sincera di spazi ed esperienze. Le fotografie attuali restano temporanee in attesa del servizio definitivo.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy provvisorio sul servizio fotografico. Confermare stato delle fotografie prima di eliminare l’avvertenza; non presentare immagini temporanee come definitive.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff818ea6c3fb5a80a06acf
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.veranda.title","House.chapters.veranda.title","House","Veranda e arrivo","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.veranda | tipo: titolo
+Italiano attuale (repository prima del pass): ""Veranda e arrivo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 1 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b2b502fecc2356517f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.veranda.body","House.chapters.veranda.body","House","Il primo rapporto è verso l'esterno: dal riparo della casa alla strada, alla spiaggia privata e al lago oltre.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.veranda | tipo: testo
+Italiano attuale (repository prima del pass): ""Il primo rapporto è verso l'esterno: dal riparo della casa alla strada, alla spiaggia privata e al lago oltre.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+«Il primo rapporto è verso l’esterno» suona astratto. Proposta da rivedere: «Dalla veranda lo sguardo si apre verso la strada, la spiaggia privata e il lago». Confermare vista/percorso reale prima di pubblicare.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8194b5eff0e1fb118c3b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.veranda.imageAlt","House.chapters.veranda.imageAlt","House","Il Lago Maggiore visto dalla veranda in ombra","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.veranda | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Il Lago Maggiore visto dalla veranda in ombra""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8135a4a7f72363afe949
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.living.title","House.chapters.living.title","House","Spazi comuni","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.living | tipo: titolo
+Italiano attuale (repository prima del pass): ""Spazi da vivere""
+A 1024px «Spazi da vivere» diventava tre righe nella colonna del capitolo. «Spazi comuni» riprende precisamente il significato della descrizione esistente.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 1 righe; /it/house 1440px: 2 righe; /it/house 1680px: 1 righe; /it/house 1920px: 1 righe; /it/house 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8177a960fcb14dae59c7
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.living.body","House.chapters.living.body","House","Gli ambienti comuni sono pensati per mattine lente, pasti in casa e ritorni dopo una giornata sul lago.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.living | tipo: testo
+Italiano attuale (repository prima del pass): ""Gli ambienti comuni sono pensati per mattine lente, pasti in casa e ritorni dopo una giornata sul lago.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f98c41dcf20c8650c3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.living.imageAlt","House.chapters.living.imageAlt","House","Un'ampia finestra interna affacciata sull'acqua azzurra","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.living | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Un'ampia finestra interna affacciata sull'acqua azzurra""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d4ae70ce014df6d4db
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.bedroom.title","House.chapters.bedroom.title","House","Camera da letto","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.bedroom | tipo: titolo
+Italiano attuale (repository prima del pass): ""Camera da letto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 1 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8148be4ce62a6ad5d99c
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.bedroom.body","House.chapters.bedroom.body","House","Un capitolo più quieto dedicato al riposo, allo spazio utile e ai dettagli che rendono confortevole l'alloggio.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.bedroom | tipo: testo
+Italiano attuale (repository prima del pass): ""Un capitolo più quieto dedicato al riposo, allo spazio utile e ai dettagli che rendono confortevole l'alloggio.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+«Un capitolo più quieto» descrive il sito, non la stanza. Possibile formula: «Uno spazio quieto per riposare, con i dettagli che rendono confortevole il soggiorno». Nessuna dotazione nuova da inventare.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8188885ddcf064ea3509
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.bedroom.imageAlt","House.chapters.bedroom.imageAlt","House","Comodino in legno accanto a un letto preparato con cura","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.bedroom | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Comodino in legno accanto a un letto preparato con cura""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff819998c3eaff4523eab6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.details.title","House.chapters.details.title","House","Dettagli","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.details | tipo: titolo
+Italiano attuale (repository prima del pass): ""Dettagli""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 1 righe; /it/house 1366px: 1 righe; /it/house 1440px: 1 righe; /it/house 1680px: 1 righe; /it/house 1920px: 1 righe; /it/house 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8194a4f2f41f345d0228
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.details.body","House.chapters.details.body","House","Materiali, oggetti e luce naturale danno carattere agli interni senza trasformare la casa in uno showroom.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.details | tipo: testo
+Italiano attuale (repository prima del pass): ""Materiali, oggetti e luce naturale danno carattere agli interni senza trasformare la casa in uno showroom.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+La chiusa «senza trasformare la casa in uno showroom» è difensiva. Possibile semplice taglio dopo revisione: «Materiali, oggetti e luce naturale danno carattere agli interni».
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff812791cde740fb433389
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.details.imageAlt","House.chapters.details.imageAlt","House","Primo piano di una superficie interna materica","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.details | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Primo piano di una superficie interna materica""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814496bce362c5c89540
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.outside.title","House.chapters.outside.title","House","All'aperto","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.outside | tipo: titolo
+Italiano attuale (repository prima del pass): ""All'aperto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 1 righe; /it/house 1366px: 1 righe; /it/house 1440px: 1 righe; /it/house 1680px: 1 righe; /it/house 1920px: 1 righe; /it/house 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a69299c88016f813f6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.outside.body","House.chapters.outside.body","House","Il percorso esterno collega direttamente la proprietà alla riva e al paesaggio più ampio di Ranco.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.outside | tipo: testo
+Italiano attuale (repository prima del pass): ""Il percorso esterno collega direttamente la proprietà alla riva e al paesaggio più ampio di Ranco.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+«Collega direttamente» può suggerire accesso senza attraversare la strada. Allineare con House.practical.items.beach.value dopo verifica proprietaria; non modificare implicitamente un fatto logistico.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8199a20ecd0d809c1b68
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.outside.imageAlt","House.chapters.outside.imageAlt","House","Cancelli aperti che incorniciano il percorso verso il Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.outside | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Cancelli aperti che incorniciano il percorso verso il Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81118fa0d05ad747db5a
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.beach.title","House.chapters.beach.title","House","Spiaggia privata","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.beach | tipo: titolo
+Italiano attuale (repository prima del pass): ""Spiaggia privata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 1 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8157b52cd68dac30925e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.beach.body","House.chapters.beach.body","House","Dall'altra parte della strada, la spiaggia privata crea un rapporto diretto e semplice con l'acqua.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.beach | tipo: testo
+Italiano attuale (repository prima del pass): ""Dall'altra parte della strada, la spiaggia privata crea un rapporto diretto e semplice con l'acqua.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff817dba34db17623138f3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.chapters.beach.imageAlt","House.chapters.beach.imageAlt","House","Lettini su un prato accanto all'acqua azzurra","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.chapters.beach | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Lettini su un prato accanto all'acqua azzurra""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815a99edcf93c0281324
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.eyebrow","House.amenities.eyebrow","House","In sintesi","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities | tipo: occhiello
+Italiano attuale (repository prima del pass): ""In sintesi""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8194b252dab44c06936d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.title","House.amenities.title","House","Gli elementi essenziali del soggiorno","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities | tipo: titolo
+Italiano attuale (repository prima del pass): ""Gli elementi essenziali del soggiorno""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 3 righe; /it/house 834px: 2 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 2 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8164acbaf1ad3f933dbc
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.body","House.amenities.body","House","In questa fase sono inclusi solo i fatti principali già confermati.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities | tipo: testo
+Italiano attuale (repository prima del pass): ""In questa fase sono inclusi solo i fatti principali già confermati.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Frase di lavorazione («In questa fase»): verificare dotazioni confermate. Possibile sostituzione, dopo verifica: «Le comodità essenziali per il soggiorno».
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8138a282e6ac6ee872ea
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.items.lakeView","House.amenities.items.lakeView","House","Posizione affacciata sul lago","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities.items | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Posizione affacciata sul lago""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8125ae76c5240cb57ef5
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.items.privateBeach","House.amenities.items.privateBeach","House","Accesso alla spiaggia privata","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities.items | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Accesso alla spiaggia privata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c488ccf6fd059c1b9e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.items.parking","House.amenities.items.parking","House","Parcheggio disponibile","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities.items | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Parcheggio disponibile""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff812a836feabc2dad803c
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.amenities.items.equipped","House.amenities.items.equipped","House","Alloggio attrezzato","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.amenities.items | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Alloggio attrezzato""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81eca46feb9b0df08ad1
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.eyebrow","House.practical.eyebrow","House","Informazioni pratiche","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Informazioni pratiche""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c58038d2cf1d35b39e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.title","House.practical.title","House","Cosa è utile sapere","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical | tipo: titolo
+Italiano attuale (repository prima del pass): ""Cosa è utile sapere""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 2 righe; /it/house 834px: 1 righe; /it/house 1024px: 1 righe; /it/house 1366px: 1 righe; /it/house 1440px: 1 righe; /it/house 1680px: 1 righe; /it/house 1920px: 1 righe; /it/house 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a8acbff0d1cc9501fc
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.body","House.practical.body","House","Capienza, regole e istruzioni di arrivo saranno confermate quando i contenuti dell'alloggio saranno definitivi.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical | tipo: testo
+Italiano attuale (repository prima del pass): ""Capienza, regole e istruzioni di arrivo saranno confermate quando i contenuti dell'alloggio saranno definitivi.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Capienza e regole ancora da confermare. Servono dati dell’host, non una parafrasi che faccia sembrare completo il contenuto.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81dba10ee8453433b51d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.setting.label","House.practical.items.setting.label","House","Contesto","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.setting | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Contesto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8179b7bedd800402fd50
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.setting.value","House.practical.items.setting.value","House","Ranco, sulla sponda lombarda del Lago Maggiore.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.setting | tipo: testo
+Italiano attuale (repository prima del pass): ""Ranco, sulla sponda lombarda del Lago Maggiore.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ffa280e693ea3b0c0e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.arrival.label","House.practical.items.arrival.label","House","Arrivo","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.arrival | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Arrivo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 1 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 1 righe; /it/contact 1366px: 1 righe; /it/contact 1440px: 1 righe; /it/contact 1680px: 1 righe; /it/contact 1920px: 1 righe; /it/contact 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81e288b9d5eea943f8b3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.arrival.value","House.practical.items.arrival.value","House","Le istruzioni precise per il check-in saranno condivise direttamente con gli ospiti confermati.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.arrival | tipo: testo
+Italiano attuale (repository prima del pass): ""Le istruzioni precise per il check-in saranno condivise direttamente con gli ospiti confermati.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8146acd1de4be92eb61d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.parking.label","House.practical.items.parking.label","House","Parcheggio","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.parking | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Parcheggio""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d4af59e8f21fb36e36
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.parking.value","House.practical.items.parking.value","House","Il parcheggio fa parte dell'offerta; i dettagli di accesso saranno aggiunti in seguito.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.parking | tipo: testo
+Italiano attuale (repository prima del pass): ""Il parcheggio fa parte dell'offerta; i dettagli di accesso saranno aggiunti in seguito.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Accesso al parcheggio ancora da completare; mantenuta l’incertezza esplicita.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ad83fed2f9b21dd9bf
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.beach.label","House.practical.items.beach.label","House","Spiaggia privata","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.beach | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Spiaggia privata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/house 390px: 1 righe; /it/house 834px: 1 righe; /it/house 1024px: 2 righe; /it/house 1366px: 2 righe; /it/house 1440px: 2 righe; /it/house 1680px: 2 righe; /it/house 1920px: 1 righe; /it/house 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81198381d0811e974d01
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.items.beach.value","House.practical.items.beach.value","House","La spiaggia si trova dall'altra parte della strada rispetto alla proprietà.","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical.items.beach | tipo: testo
+Italiano attuale (repository prima del pass): ""La spiaggia si trova dall'altra parte della strada rispetto alla proprietà.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff813db17cc84d8bfac729
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"House.practical.contactLink","House.practical.contactLink","House","Chiedi informazioni sulla casa","","","","AUDIT IT — 2026-09-03 | pagina: /it/house | sezione: House.practical | tipo: CTA
+Italiano attuale (repository prima del pass): ""Chiedi informazioni sulla casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8119a173f790304adcd7
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.hero.eyebrow","Guide.hero.eyebrow","Guide","Guida locale","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.hero | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Guida locale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d6acf0f0afdd37c7bf
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.hero.title","Guide.hero.title","Guide","Modi utili per vivere il Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.hero | tipo: titolo
+Italiano attuale (repository prima del pass): ""Modi utili per vivere il Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/guide 390px: 3 righe; /it/guide 834px: 2 righe; /it/guide 1024px: 2 righe; /it/guide 1366px: 2 righe; /it/guide 1440px: 2 righe; /it/guide 1680px: 2 righe; /it/guide 1920px: 2 righe; /it/guide 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f7bc17df21adc40fb9
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.hero.titleLineOne","Guide.hero.titleLineOne","Guide","Modi utili per vivere","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.hero | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Modi utili per vivere ""
+Rimosso soltanto uno spazio finale ridondante; parole e composizione invariate.
+Verifica browser (font/layout originali): /it/guide 390px: 3 righe; /it/guide 834px: 2 righe; /it/guide 1024px: 2 righe; /it/guide 1366px: 2 righe; /it/guide 1440px: 2 righe; /it/guide 1680px: 2 righe; /it/guide 1920px: 2 righe; /it/guide 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff818b85aefc355482b679
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Modi utili"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.hero.titleLineTwo","Guide.hero.titleLineTwo","Guide","il Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.hero | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""il Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/guide 390px: 3 righe; /it/guide 834px: 2 righe; /it/guide 1024px: 2 righe; /it/guide 1366px: 2 righe; /it/guide 1440px: 2 righe; /it/guide 1680px: 2 righe; /it/guide 1920px: 2 righe; /it/guide 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8184a7bdc368221d9bba
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""per vivere il Lago Maggiore"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.hero.body","Guide.hero.body","Guide","Una guida volutamente piccola, basata sul giudizio locale anziché su classifiche, quantità o liste generiche.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.hero | tipo: testo
+Italiano attuale (repository prima del pass): ""Una guida volutamente piccola, basata sul giudizio locale anziché su classifiche, quantità o liste generiche.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+«Giudizio locale» e il confronto con classifiche/liste appesantiscono il tono. Possibile alternativa: «Una piccola guida nata dalla conoscenza del luogo». Confermare curatela locale prima della pubblicazione.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81dd85bee91cf6d43fe1
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.hero.imageAlt","Guide.hero.imageAlt","Guide","Cancelli aperti che conducono verso il Lago Maggiore","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.hero | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Cancelli aperti che conducono verso il Lago Maggiore""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff812c8a06f9af55de84ad
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.eat.eyebrow","Guide.categories.eat.eyebrow","Guide","01","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.eat | tipo: occhiello
+Italiano attuale (repository prima del pass): ""01""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff816cb0eeffc5f0f19696
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.eat.label","Guide.categories.eat.label","Guide","Mangiare","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.eat | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Mangiare""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/guide 390px: 1 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 1 righe; /it/guide 1366px: 1 righe; /it/guide 1440px: 1 righe; /it/guide 1680px: 1 righe; /it/guide 1920px: 1 righe; /it/guide 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8182bd58f34fd85fd9e0
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.eat.description","Guide.categories.eat.description","Guide","Ristoranti, bar, aperitivi e pranzi scelti per il loro contesto, non per completezza.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.eat | tipo: testo
+Italiano attuale (repository prima del pass): ""Ristoranti, bar, aperitivi e pranzi scelti per il loro contesto, non per completezza.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+«Non per completezza» è formulazione di progetto. Manu può valutare «Una selezione di ristoranti, bar e aperitivi legati al territorio» dopo conferma delle raccomandazioni reali.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81838e60f8cde2cbd8d3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.water.eyebrow","Guide.categories.water.eyebrow","Guide","02","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.water | tipo: occhiello
+Italiano attuale (repository prima del pass): ""02""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ab863cc40f88e218fa
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.water.label","Guide.categories.water.label","Guide","Sull'acqua","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.water | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Sull'acqua""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/guide 390px: 1 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 1 righe; /it/guide 1366px: 1 righe; /it/guide 1440px: 1 righe; /it/guide 1680px: 1 righe; /it/guide 1920px: 1 righe; /it/guide 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff813bbd82dd262735c931
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.water.description","Guide.categories.water.description","Guide","Nuoto, barche ed esperienze che rendono il lago parte della giornata.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.water | tipo: testo
+Italiano attuale (repository prima del pass): ""Nuoto, barche ed esperienze che rendono il lago parte della giornata.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81dc8e49d1f634ffcde6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.explore.eyebrow","Guide.categories.explore.eyebrow","Guide","03","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.explore | tipo: occhiello
+Italiano attuale (repository prima del pass): ""03""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d4b616e6d5cef8e7a5
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.explore.label","Guide.categories.explore.label","Guide","Esplorare","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.explore | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Esplorare""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/guide 390px: 1 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 1 righe; /it/guide 1366px: 1 righe; /it/guide 1440px: 1 righe; /it/guide 1680px: 1 righe; /it/guide 1920px: 1 righe; /it/guide 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8189b323dca5661394aa
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.categories.explore.description","Guide.categories.explore.description","Guide","Borghi, punti panoramici, natura e gite che valgono il viaggio da Ranco.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.categories.explore | tipo: testo
+Italiano attuale (repository prima del pass): ""Borghi, punti panoramici, natura e gite che valgono il viaggio da Ranco.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ed9fd8eae0984e4032
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.lakeside-table.title","Guide.entries.lakeside-table.title","Guide","A tavola sul lago","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.lakeside-table | tipo: titolo
+Italiano attuale (repository prima del pass): ""Un tavolo vicino all'acqua""
+Tre righe nel modal desktop: «A tavola sul lago» conserva il tema del mangiare vicino all’acqua, senza inventare un ristorante. Verificato anche nella card homepage e nella galleria.
+Verifica browser (font/layout originali): /it 390px: 1 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe; /it/guide 390px: 1 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 1 righe; /it/guide 1366px: 1 righe; /it/guide 1440px: 1 righe; /it/guide 1680px: 1 righe; /it/guide 1920px: 1 righe; /it/guide 2560px: 1 righe; guide-modal 390px: 2 righe; guide-modal 834px: 1 righe; guide-modal 1024px: 2 righe; guide-modal 1366px: 2 righe; guide-modal 1440px: 2 righe; guide-modal 1680px: 2 righe; guide-modal 1920px: 2 righe; guide-modal 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8130bd96de1965f96825
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.lakeside-table.description","Guide.entries.lakeside-table.description","Guide","Una porta editoriale temporanea per futuri ristoranti e aperitivi scelti dall'host.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.lakeside-table | tipo: testo
+Italiano attuale (repository prima del pass): ""Una porta editoriale temporanea per futuri ristoranti e aperitivi scelti dall'host.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Raccomandazione temporanea: richiede nomi, luoghi ed esperienza confermati dall’host. Non inventati ristoranti, servizi o itinerari.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81db9dcac35534870141
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.lakeside-table.alt","Guide.entries.lakeside-table.alt","Guide","L'acqua azzurra vista attraverso una finestra interna","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.lakeside-table | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""L'acqua azzurra vista attraverso una finestra interna""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8114a425d20547c06b1e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.open-water.title","Guide.entries.open-water.title","Guide","Tempo per il lago","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.open-water | tipo: titolo
+Italiano attuale (repository prima del pass): ""Trova tempo per il lago""
+Eliminato «Trova»: il titolo manteneva tre righe nel modal a 1024–2560px. «Tempo per il lago» conserva il ritmo lento senza ridurre il carattere.
+Verifica browser (font/layout originali): /it 390px: 1 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe; /it/guide 390px: 1 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 1 righe; /it/guide 1366px: 1 righe; /it/guide 1440px: 1 righe; /it/guide 1680px: 1 righe; /it/guide 1920px: 1 righe; /it/guide 2560px: 1 righe; guide-modal 390px: 2 righe; guide-modal 834px: 1 righe; guide-modal 1024px: 2 righe; guide-modal 1366px: 2 righe; guide-modal 1440px: 2 righe; guide-modal 1680px: 2 righe; guide-modal 1920px: 2 righe; guide-modal 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81e8b60ff7e406feb26b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.open-water.description","Guide.entries.open-water.description","Guide","Un punto di partenza temporaneo per nuoto, noleggio barche e ore tranquille vicino all'acqua.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.open-water | tipo: testo
+Italiano attuale (repository prima del pass): ""Un punto di partenza temporaneo per nuoto, noleggio barche e ore tranquille vicino all'acqua.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Raccomandazione temporanea: richiede nomi, luoghi ed esperienza confermati dall’host. Non inventati ristoranti, servizi o itinerari.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814b8cd8f43f1b41bb08
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.open-water.alt","Guide.entries.open-water.alt","Guide","Lettini su un prato accanto all'acqua aperta","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.open-water | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Lettini su un prato accanto all'acqua aperta""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81fe80beef17c20998b0
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.ranco-outlook.title","Guide.entries.ranco-outlook.title","Guide","Intorno a Ranco","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.ranco-outlook | tipo: titolo
+Italiano attuale (repository prima del pass): ""Inizia vicino a Ranco""
+Tre righe nel modal a 1024px. «Intorno a Ranco» esprime l’esplorazione dei dintorni con una formulazione più naturale.
+Verifica browser (font/layout originali): /it 390px: 1 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe; /it/guide 390px: 1 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 1 righe; /it/guide 1366px: 1 righe; /it/guide 1440px: 1 righe; /it/guide 1680px: 1 righe; /it/guide 1920px: 1 righe; /it/guide 2560px: 1 righe; guide-modal 390px: 2 righe; guide-modal 834px: 1 righe; guide-modal 1024px: 2 righe; guide-modal 1366px: 2 righe; guide-modal 1440px: 2 righe; guide-modal 1680px: 2 righe; guide-modal 1920px: 2 righe; guide-modal 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81898dd2dc4d00f5176d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.ranco-outlook.description","Guide.entries.ranco-outlook.description","Guide","Un percorso temporaneo verso passeggiate, borghi e panorami scelti con un contesto locale pratico.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.ranco-outlook | tipo: testo
+Italiano attuale (repository prima del pass): ""Un percorso temporaneo verso passeggiate, borghi e panorami scelti con un contesto locale pratico.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Raccomandazione temporanea: richiede nomi, luoghi ed esperienza confermati dall’host. Non inventati ristoranti, servizi o itinerari.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff817d922df8b7d139972a
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.entries.ranco-outlook.alt","Guide.entries.ranco-outlook.alt","Guide","Cancelli aperti che incorniciano il percorso verso il lago","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.entries.ranco-outlook | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Cancelli aperti che incorniciano il percorso verso il lago""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a19e01c6aca0e1abce
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.tags.lunch","Guide.tags.lunch","Guide","Pranzo","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.tags | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Pranzo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff813a9912fbdbe85e9f7e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.tags.sunset","Guide.tags.sunset","Guide","Tramonto","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.tags | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Tramonto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8186bf45ed383f50a6f4
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.tags.swimming","Guide.tags.swimming","Guide","Nuoto","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.tags | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Nuoto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815f9751e83839bfa510
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.tags.halfDay","Guide.tags.halfDay","Guide","Mezza giornata","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.tags | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Mezza giornata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8184bb61cfad27918e8f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.tags.withoutCar","Guide.tags.withoutCar","Guide","Senza auto","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.tags | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Senza auto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81139712e6c40ce87b88
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.cta.eyebrow","Guide.cta.eyebrow","Guide","Consigli personali","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.cta | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Consigli personali""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81548666e4d2f2ca51c3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.cta.title","Guide.cta.title","Guide","Come immagini la tua giornata?","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.cta | tipo: titolo
+Italiano attuale (repository prima del pass): ""Raccontaci come ami trascorrere una giornata""
+Invito alle preferenze della giornata, reso più breve e naturale. Prima arrivava a quattro righe a 1920/2560px. Conservate e aggiornate le due righe localizzate già previste.
+Verifica browser (font/layout originali): /it/guide 390px: 3 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 2 righe; /it/guide 1366px: 2 righe; /it/guide 1440px: 2 righe; /it/guide 1680px: 2 righe; /it/guide 1920px: 2 righe; /it/guide 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815f97d6fd42695d299f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.cta.titleLineOne","Guide.cta.titleLineOne","Guide","Come immagini","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.cta | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Raccontaci come ami""
+Frammento del titolo Guide.cta.title; approvare e sincronizzare insieme a title/titleLineOne/titleLineTwo. Invito alle preferenze della giornata, reso più breve e naturale. Prima arrivava a quattro righe a 1920/2560px. Conservate e aggiornate le due righe localizzate già previste.
+Verifica browser (font/layout originali): /it/guide 390px: 3 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 2 righe; /it/guide 1366px: 2 righe; /it/guide 1440px: 2 righe; /it/guide 1680px: 2 righe; /it/guide 1920px: 2 righe; /it/guide 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c1afc6fe97434f2636
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.cta.titleLineTwo","Guide.cta.titleLineTwo","Guide","la tua giornata?","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.cta | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""trascorrere una giornata""
+Frammento del titolo Guide.cta.title; approvare e sincronizzare insieme a title/titleLineOne/titleLineTwo. Invito alle preferenze della giornata, reso più breve e naturale. Prima arrivava a quattro righe a 1920/2560px. Conservate e aggiornate le due righe localizzate già previste.
+Verifica browser (font/layout originali): /it/guide 390px: 3 righe; /it/guide 834px: 1 righe; /it/guide 1024px: 2 righe; /it/guide 1366px: 2 righe; /it/guide 1440px: 2 righe; /it/guide 1680px: 2 righe; /it/guide 1920px: 2 righe; /it/guide 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ef8136e7620550df11
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.cta.body","Guide.cta.body","Guide","La futura guida sarà più utile quando potrà adattarsi a ogni soggiorno, stagione e ritmo.","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.cta | tipo: testo
+Italiano attuale (repository prima del pass): ""La futura guida sarà più utile quando potrà adattarsi a ogni soggiorno, stagione e ritmo.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+La guida è descritta come futura: non trasformarla in un servizio personalizzato già operativo senza approvazione.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c18d47ea7491e6e8e7
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Guide.cta.link","Guide.cta.link","Guide","Contatta il tuo host","","","","AUDIT IT — 2026-09-03 | pagina: /it/guide | sezione: Guide.cta | tipo: CTA
+Italiano attuale (repository prima del pass): ""Contatta il tuo host""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff811a9910d75c9e10bc29
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hero.eyebrow","Contact.hero.eyebrow","Contact","Contatti","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hero | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Contatti""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff816e9487f9e953b4eb6d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hero.title","Contact.hero.title","Contact","Pianifica il tuo soggiorno","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hero | tipo: titolo
+Italiano attuale (repository prima del pass): ""Pianifica il tuo soggiorno""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff817daafeea9be3cf5e39
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Pianifica il lato pratico del soggiorno"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hero.titleLineOne","Contact.hero.titleLineOne","Contact","Pianifica","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hero | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Pianifica""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8106945cf8cd192d5b55
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Pianifica il lato pratico"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hero.titleLineTwo","Contact.hero.titleLineTwo","Contact","il tuo soggiorno","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hero | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""il tuo soggiorno""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81be985cf95b7813913f
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""del soggiorno"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hero.body","Contact.hero.body","Contact","Uno spazio tranquillo per richieste, informazioni sull'arrivo e indicazioni per trovare The Ranco Bay.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hero | tipo: testo
+Italiano attuale (repository prima del pass): ""Uno spazio tranquillo per richieste, informazioni sull'arrivo e indicazioni per trovare The Ranco Bay.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+«Uno spazio tranquillo per richieste» è metatestuale ma chiaro. Nessuna riscrittura necessaria per la tipografia.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815bb55ce2d540239c48
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hero.imageAlt","Contact.hero.imageAlt","Contact","Il Lago Maggiore incorniciato dall'interno in ombra della casa","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hero | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Il Lago Maggiore incorniciato dall'interno in ombra della casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a4a2c0d04be304ddf3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hospitality.eyebrow","Contact.hospitality.eyebrow","Contact","Il tuo host","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hospitality | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Il tuo host""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81edbb47ff83356564b7
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hospitality.title","Contact.hospitality.title","Contact","Un'accoglienza personale","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hospitality | tipo: titolo
+Italiano attuale (repository prima del pass): ""Il mio aiuto fa parte dell'accoglienza""
+Sintesi dell’accoglienza personale: prima tre righe a 1024/1920/2560px. L’aiuto pratico resta nel corpo; nessuna nuova promessa o informazione sull’host.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff814eadbfca40d533a3b6
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""L'aiuto locale fa parte dell'accoglienza"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hospitality.titleLineOne","Contact.hospitality.titleLineOne","Contact","Un'accoglienza","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hospitality | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Il mio aiuto fa parte""
+Frammento del titolo Contact.hospitality.title; approvare e sincronizzare insieme a title/titleLineOne/titleLineTwo. Sintesi dell’accoglienza personale: prima tre righe a 1024/1920/2560px. L’aiuto pratico resta nel corpo; nessuna nuova promessa o informazione sull’host.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81348416e4af189bf8d8
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""L'aiuto locale"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hospitality.titleLineTwo","Contact.hospitality.titleLineTwo","Contact","personale","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hospitality | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""dell'accoglienza""
+Frammento del titolo Contact.hospitality.title; approvare e sincronizzare insieme a title/titleLineOne/titleLineTwo. Sintesi dell’accoglienza personale: prima tre righe a 1024/1920/2560px. L’aiuto pratico resta nel corpo; nessuna nuova promessa o informazione sull’host.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81cfbc4fc54ce8ab079c
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""fa parte dell'accoglienza"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hospitality.body","Contact.hospitality.body","Contact","La storia definitiva dell'host è ancora in preparazione. L'intenzione è semplice: comunicazione personale, consigli utili e supporto prima e durante il soggiorno.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hospitality | tipo: testo
+Italiano attuale (repository prima del pass): ""La storia definitiva dell'host è ancora in preparazione. L'intenzione è semplice: comunicazione personale, consigli utili e supporto prima e durante il soggiorno.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Biografia ancora in preparazione. Confermare voce dell’host e contenuto effettivo. Non inventare storia personale, nome o livello di assistenza.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81fcbee9dab901bcf484
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.hospitality.imageAlt","Contact.hospitality.imageAlt","Contact","Un dettaglio tranquillo degli interni che rappresenta il carattere della casa","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.hospitality | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Un dettaglio tranquillo degli interni che rappresenta il carattere della casa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815b9d64f0dc999c1c5b
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.eyebrow","Contact.enquiry.eyebrow","Contact","Richiesta","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Richiesta""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81c0a2fbc754e6bf9a56
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.title","Contact.enquiry.title","Contact","I dettagli che contano","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry | tipo: titolo
+Italiano attuale (repository prima del pass): ""Inizia dai dettagli che contano""
+Eliminato l’avvio generico «Inizia dai»; mantenuto il concetto dei dettagli importanti. Prima tre righe a 2560px. Nessuna modifica al modulo.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815697ddfa8bf14fd914
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.titleLineOne","Contact.enquiry.titleLineOne","Contact","I dettagli","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""Inizia dai dettagli""
+Frammento del titolo Contact.enquiry.title; approvare e sincronizzare insieme a title/titleLineOne/titleLineTwo. Eliminato l’avvio generico «Inizia dai»; mantenuto il concetto dei dettagli importanti. Prima tre righe a 2560px. Nessuna modifica al modulo.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81f2a2b8c79c0433fe20
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Inizia"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.titleLineTwo","Contact.enquiry.titleLineTwo","Contact","che contano","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry | tipo: frammento titolo
+Italiano attuale (repository prima del pass): ""che contano""
+Frammento del titolo Contact.enquiry.title; approvare e sincronizzare insieme a title/titleLineOne/titleLineTwo. Eliminato l’avvio generico «Inizia dai»; mantenuto il concetto dei dettagli importanti. Prima tre righe a 2560px. Nessuna modifica al modulo.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8188b0d5c69b09b4d635
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""dai dettagli che contano"". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.body","Contact.enquiry.body","Contact","Condividi le date che stai valutando e ciò che vorresti sapere. Ti risponderemo personalmente.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry | tipo: testo
+Italiano attuale (repository prima del pass): ""Condividi le date che stai valutando e ciò che vorresti sapere. Ti risponderemo personalmente.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff816c90f5fa1701c5cde8
+DIVERGENZA PREESISTENTE — Italiano in Notion: ""Il canale definitivo e i contatti saranno collegati in una fase successiva e controllata."". La base di questo pass è il repository italiano; verificare con Manu prima di sovrascrivere.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.fields.name","Contact.enquiry.fields.name","Contact","Nome","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.fields | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Nome""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8142b2bafc98d4d59ba6
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.fields.email","Contact.enquiry.fields.email","Contact","Email","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.fields | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Email""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81ad9d68dfd6fc25fb9d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.fields.arrival","Contact.enquiry.fields.arrival","Contact","Arrivo","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.fields | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Arrivo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 1 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 1 righe; /it/contact 1366px: 1 righe; /it/contact 1440px: 1 righe; /it/contact 1680px: 1 righe; /it/contact 1920px: 1 righe; /it/contact 2560px: 1 righe.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.fields.departure","Contact.enquiry.fields.departure","Contact","Partenza","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.fields | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Partenza""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.fields.message","Contact.enquiry.fields.message","Contact","Cosa vorresti sapere?","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.fields | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Cosa vorresti sapere?""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d39b1be41e74f06230
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.actions.submit","Contact.enquiry.actions.submit","Contact","Invia richiesta","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.actions | tipo: CTA
+Italiano attuale (repository prima del pass): ""Invia richiesta""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.actions.sending","Contact.enquiry.actions.sending","Contact","Invio richiesta","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.actions | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Invio richiesta""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.status.sending","Contact.enquiry.status.sending","Contact","La tua richiesta è in fase di invio…","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.status | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""La tua richiesta è in fase di invio…""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.status.success","Contact.enquiry.status.success","Contact","Grazie. La tua richiesta è stata inviata a The Ranco Bay.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.status | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Grazie. La tua richiesta è stata inviata a The Ranco Bay.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.status.error","Contact.enquiry.status.error","Contact","Non è stato possibile inviare la richiesta. Riprova.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.status | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Non è stato possibile inviare la richiesta. Riprova.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.status.rateLimit","Contact.enquiry.status.rateLimit","Contact","Sono state inviate troppe richieste da questa connessione. Attendi qualche minuto e riprova.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.status | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Sono state inviate troppe richieste da questa connessione. Attendi qualche minuto e riprova.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.nameRequired","Contact.enquiry.validation.nameRequired","Contact","Inserisci il tuo nome.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Inserisci il tuo nome.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.nameTooLong","Contact.enquiry.validation.nameTooLong","Contact","Limita il nome a 120 caratteri.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Limita il nome a 120 caratteri.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.emailRequired","Contact.enquiry.validation.emailRequired","Contact","Inserisci il tuo indirizzo email.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Inserisci il tuo indirizzo email.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.emailInvalid","Contact.enquiry.validation.emailInvalid","Contact","Inserisci un indirizzo email valido.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Inserisci un indirizzo email valido.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.emailTooLong","Contact.enquiry.validation.emailTooLong","Contact","Limita l'indirizzo email a 254 caratteri.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Limita l'indirizzo email a 254 caratteri.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.messageRequired","Contact.enquiry.validation.messageRequired","Contact","Dicci cosa vorresti sapere.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Dicci cosa vorresti sapere.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.messageTooLong","Contact.enquiry.validation.messageTooLong","Contact","Limita il messaggio a 4.000 caratteri.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Limita il messaggio a 4.000 caratteri.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.dateInvalid","Contact.enquiry.validation.dateInvalid","Contact","Scegli una data valida.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Scegli una data valida.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.enquiry.validation.dateOrder","Contact.enquiry.validation.dateOrder","Contact","La partenza non può precedere l'arrivo.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.enquiry.validation | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""La partenza non può precedere l'arrivo.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy funzionale preservato: validazione, limiti e invio non modificati.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.eyebrow","Contact.details.eyebrow","Contact","Informazioni di contatto","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: occhiello
+Italiano attuale (repository prima del pass): ""Informazioni di contatto""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815bb0c7ce8904724cd2
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.title","Contact.details.title","Contact","The Ranco Bay a Ranco","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: titolo
+Italiano attuale (repository prima del pass): ""The Ranco Bay a Ranco""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 2 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 2 righe; /it/contact 1366px: 2 righe; /it/contact 1440px: 2 righe; /it/contact 1680px: 2 righe; /it/contact 1920px: 2 righe; /it/contact 2560px: 2 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff815eb371d72ad84ccf90
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.body","Contact.details.body","Contact","I contatti pubblici saranno confermati prima del lancio.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: testo
+Italiano attuale (repository prima del pass): ""I contatti pubblici saranno confermati prima del lancio.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Contatti pubblici ancora da confermare; il form email è già operativo. Francesco/Manu devono decidere quali contatti rendere pubblici.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81099295c3f1f08313b0
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.addressLabel","Contact.details.addressLabel","Contact","Zona","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Zona""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b08cf3d58a3b326f41
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.addressValue","Contact.details.addressValue","Contact","Ranco, Lago Maggiore, Italia","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: testo
+Italiano attuale (repository prima del pass): ""Ranco, Lago Maggiore, Italia""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8169984fec8dcf920eef
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.contactLabel","Contact.details.contactLabel","Contact","Richieste","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Richieste""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff818eb223ef9be3ca199a
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.details.contactValue","Contact.details.contactValue","Contact","Contatti diretti da confermare","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.details | tipo: testo
+Italiano attuale (repository prima del pass): ""Contatti diretti da confermare""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Segnaposto esplicito: richiede dato approvato, non una riscrittura stilistica.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff819590dbc81c1be311e9
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.location.title","Contact.location.title","Contact","Posizione e mappa","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.location | tipo: titolo
+Italiano attuale (repository prima del pass): ""Posizione e mappa""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 1 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 1 righe; /it/contact 1366px: 1 righe; /it/contact 1440px: 1 righe; /it/contact 1680px: 1 righe; /it/contact 1920px: 1 righe; /it/contact 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81a1b311f1a5268947b4
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.location.body","Contact.location.body","Contact","Usa Google Maps per il contesto pubblico attuale. Questa struttura non richiede un'API cartografica.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.location | tipo: testo
+Italiano attuale (repository prima del pass): ""Usa Google Maps per il contesto pubblico attuale. Questa struttura non richiede un'API cartografica.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Copy tecnico sull’API non adatto al visitatore. Proposta per Manu: «Consulta la mappa per orientarti a Ranco e organizzare il tuo arrivo». Non applicata in questo pass sui titoli.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff816f81eeea468b6feb1f
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.location.mapsLink","Contact.location.mapsLink","Contact","Apri in Google Maps","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.location | tipo: CTA
+Italiano attuale (repository prima del pass): ""Apri in Google Maps""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81e5ba8fdb516dd85f86
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.location.arrivalTitle","Contact.location.arrivalTitle","Contact","Arrivo","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.location | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Arrivo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 1 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 1 righe; /it/contact 1366px: 1 righe; /it/contact 1440px: 1 righe; /it/contact 1680px: 1 righe; /it/contact 1920px: 1 righe; /it/contact 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b096e0d2849cc5e758
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.location.arrivalBody","Contact.location.arrivalBody","Contact","Indirizzo esatto, accesso e istruzioni di check-in saranno condivisi direttamente quando il soggiorno sarà confermato.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.location | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Indirizzo esatto, accesso e istruzioni di check-in saranno condivisi direttamente quando il soggiorno sarà confermato.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81dea3a4f8adebcf4689
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Contact.location.imageAlt","Contact.location.imageAlt","Contact","Mappa del Lago Maggiore e della regione di confine circostante tra Italia e Svizzera","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Contact.location | tipo: testo alternativo
+Italiano attuale (repository prima del pass): ""Mappa del Lago Maggiore e della regione di confine circostante tra Italia e Svizzera""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verificare uso residuo: la mappa attuale è un iframe con titolo accessibile, non l’immagine originaria. Chiave mantenuta per compatibilità.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8167b5a0f3bdd21f44a3
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.title","Availability.title","Contact","Disponibilità","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: titolo
+Italiano attuale (repository prima del pass): ""Disponibilità""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it/contact 390px: 1 righe; /it/contact 834px: 1 righe; /it/contact 1024px: 1 righe; /it/contact 1366px: 1 righe; /it/contact 1440px: 1 righe; /it/contact 1680px: 1 righe; /it/contact 1920px: 1 righe; /it/contact 2560px: 1 righe.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.loading","Availability.loading","Contact","Caricamento calendario","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Caricamento calendario""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.previousMonth","Availability.previousMonth","Contact","Mese precedente","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Mese precedente""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.nextMonth","Availability.nextMonth","Contact","Mese successivo","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Mese successivo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.today","Availability.today","Contact","Oggi","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Oggi""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.states.available","Availability.states.available","Contact","Disponibile","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability.states | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Disponibile""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.states.unavailable","Availability.states.unavailable","Contact","Non disponibile","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability.states | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Non disponibile""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.states.unknown","Availability.states.unknown","Contact","Da verificare","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability.states | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Da verificare""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.states.past","Availability.states.past","Contact","Data passata","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability.states | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Data passata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.notPublished","Availability.notPublished","Contact","Le disponibilità non sono ancora pubblicate. Chiedi alla proprietaria informazioni sulle date che preferisci.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Le disponibilità non sono ancora pubblicate. Chiedi alla proprietaria informazioni sulle date che preferisci.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.disclaimer","Availability.disclaimer","Contact","Le disponibilità indicate sono orientative. La conferma definitiva verrà fornita dalla proprietaria.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: testo
+Italiano attuale (repository prima del pass): ""Le disponibilità indicate sono orientative. La conferma definitiva verrà fornita dalla proprietaria.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Conferma finale della proprietaria: significato di sicurezza preservato integralmente. Nessun cambio a disponibilità o integrazione iCal.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Availability.withoutJavaScript","Availability.withoutJavaScript","Contact","Attiva JavaScript per visualizzare il calendario.","","","","AUDIT IT — 2026-09-03 | pagina: /it/contact | sezione: Availability | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Attiva JavaScript per visualizzare il calendario.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Namespace Availability associato alla sezione Notion Contact già esistente; nessuna nuova opzione Select richiesta.
+NUOVA CHIAVE rispetto alle 189 righe Notion ispezionate: creare solo dopo controllo Key.
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.Footer.brand","Common.Footer.brand","Common","The Ranco Bay","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.Footer | tipo: etichetta
+Italiano attuale (repository prima del pass): ""The Ranco Bay""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): /it 390px: 2 righe; /it 834px: 1 righe; /it 1024px: 1 righe; /it 1366px: 1 righe; /it 1440px: 1 righe; /it 1680px: 1 righe; /it 1920px: 1 righe; /it 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff813e850fed6dc7577a9d
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.Footer.location","Common.Footer.location","Common","Ranco • Lago Maggiore • Italia","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.Footer | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Ranco • Lago Maggiore • Italia""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff813ba8cdd7bfd82dd4cd
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.NotFound.title","Common.NotFound.title","Common","Pagina non trovata","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.NotFound | tipo: titolo
+Italiano attuale (repository prima del pass): ""Pagina non trovata""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Verifica browser (font/layout originali): not-found 390px: 2 righe; not-found 834px: 1 righe; not-found 1440px: 1 righe; not-found 2560px: 1 righe.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff812c9bcde7539306d6bb
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.NotFound.description","Common.NotFound.description","Common","La pagina richiesta non fa parte di questo sito.","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.NotFound | tipo: testo
+Italiano attuale (repository prima del pass): ""La pagina richiesta non fa parte di questo sito.""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8140aee7f3f7a54a7604
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.NotFound.returnHome","Common.NotFound.returnHome","Common","Torna alla home","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.NotFound | tipo: CTA
+Italiano attuale (repository prima del pass): ""Torna alla home""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81e18cb8e5a253aeb7b8
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.Gallery.previousItem","Common.Gallery.previousItem","Common","Elemento precedente","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.Gallery | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Elemento precedente""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81dcbb85e33c5d109d3a
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Common.Gallery.nextItem","Common.Gallery.nextItem","Common","Elemento successivo","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Common.Gallery | tipo: etichetta
+Italiano attuale (repository prima del pass): ""Elemento successivo""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff8135b0a3f2275de71209
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Accessibility.skipToContent","Accessibility.skipToContent","Accessibility","Vai al contenuto principale","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Accessibility | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Vai al contenuto principale""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81d8800fc54e9e1a679e
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"
+"Accessibility.closeDialog","Accessibility.closeDialog","Accessibility","Chiudi finestra","","","","AUDIT IT — 2026-09-03 | pagina: trasversale | sezione: Accessibility | tipo: messaggio funzionale/accessibilità
+Italiano attuale (repository prima del pass): ""Chiudi finestra""
+Testo conservato dopo revisione; nessuna riscrittura necessaria o informazione nuova introdotta.
+Riga Notion esistente: https://app.notion.com/3cb7a757f8ff81b19253cdfb791becdc
+Key presente anche in messages/en.json, messages/de.json e messages/fr.json. Nessuna traduzione propagata; celle lingua Notion preservate (vuote se assenti).","Needs review","false"

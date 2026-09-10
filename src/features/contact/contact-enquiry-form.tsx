@@ -14,13 +14,21 @@ import {
 import {TrbButton} from "@/components/ui/trb-button";
 
 type ContactEnquiryFormProps = {
+  arrival: string;
+  departure: string;
   locale: string;
+  onDateChange: (
+    field: "arrival" | "departure",
+    value: string,
+  ) => void;
+  onValidateStay: () => boolean;
+  stayRangeInvalid: boolean;
 };
 
 type FormStatus = "error" | "idle" | "rateLimit" | "sending" | "success";
 
 const inputClasses =
-  "mt-3 block w-full border-b border-page-border bg-transparent px-0 py-3 " +
+  "mt-2 block w-full border-b border-[color-mix(in_srgb,var(--trb-lake)_32%,transparent)] bg-transparent px-0 py-2.5 lg:mt-1.5 lg:py-1.5 " +
   "outline-none transition-colors focus:border-[var(--trb-lagoon)] " +
   "disabled:cursor-wait disabled:opacity-60";
 
@@ -42,7 +50,14 @@ function createSubmissionId() {
   return `${value.slice(0, 8)}-${value.slice(8, 12)}-${value.slice(12, 16)}-${value.slice(16, 20)}-${value.slice(20)}`;
 }
 
-export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
+export function ContactEnquiryForm({
+  arrival,
+  departure,
+  locale,
+  onDateChange,
+  onValidateStay,
+  stayRangeInvalid,
+}: ContactEnquiryFormProps) {
   const t = useTranslations("Contact.enquiry");
   const formRef = useRef<HTMLFormElement>(null);
   const submissionIdRef = useRef<string | null>(null);
@@ -80,6 +95,10 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (isSending) return;
+    if (!onValidateStay()) {
+      setStatus("idle");
+      return;
+    }
 
     const formData = new FormData(event.currentTarget);
     const submissionId = submissionIdRef.current ?? createSubmissionId();
@@ -123,6 +142,8 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
       }
 
       formRef.current?.reset();
+      onDateChange("arrival", "");
+      onDateChange("departure", "");
       submissionIdRef.current = null;
       setStatus("success");
     } catch {
@@ -148,6 +169,7 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
       noValidate
       onChange={resetSubmissionState}
       onSubmit={handleSubmit}
+      className="contents"
     >
       <div
         aria-hidden="true"
@@ -159,8 +181,16 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
         </label>
       </div>
 
-      <fieldset disabled={isSending} className="grid gap-6 sm:grid-cols-2">
-        <label className="text-sm text-page-text" htmlFor="contact-name">
+      <div className="border-t border-page-border pt-6 lg:col-start-2 lg:row-start-1 lg:pt-5">
+        <p className="text-xs uppercase tracking-[0.18em] text-page-accent">
+          {t("columnLabel")}
+        </p>
+
+        <fieldset
+          disabled={isSending}
+          className="mt-3 grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:mt-2 lg:gap-y-3"
+        >
+        <label className="text-[0.9375rem] text-page-text" htmlFor="contact-name">
           <span>{t("fields.name")}</span>
           <input
             id="contact-name"
@@ -183,7 +213,7 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
           ) : null}
         </label>
 
-        <label className="text-sm text-page-text" htmlFor="contact-email">
+        <label className="text-[0.9375rem] text-page-text" htmlFor="contact-email">
           <span>{t("fields.email")}</span>
           <input
             id="contact-email"
@@ -206,15 +236,22 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
           ) : null}
         </label>
 
-        <label className="text-sm text-page-text" htmlFor="contact-arrival">
+        <label className="text-[0.9375rem] text-page-text" htmlFor="contact-arrival">
           <span>{t("fields.arrival")}</span>
           <input
             id="contact-arrival"
             name="arrival"
             type="date"
-            aria-invalid={Boolean(fieldErrors.arrival)}
+            value={arrival}
+            onChange={(event) => onDateChange("arrival", event.target.value)}
+            aria-invalid={Boolean(fieldErrors.arrival) || stayRangeInvalid}
             aria-describedby={
-              fieldErrors.arrival ? "contact-arrival-error" : undefined
+              [
+                fieldErrors.arrival ? "contact-arrival-error" : null,
+                stayRangeInvalid ? "availability-range-error" : null,
+              ]
+                .filter(Boolean)
+                .join(" ") || undefined
             }
             className={inputClasses}
           />
@@ -228,15 +265,22 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
           ) : null}
         </label>
 
-        <label className="text-sm text-page-text" htmlFor="contact-departure">
+        <label className="text-[0.9375rem] text-page-text" htmlFor="contact-departure">
           <span>{t("fields.departure")}</span>
           <input
             id="contact-departure"
             name="departure"
             type="date"
-            aria-invalid={Boolean(fieldErrors.departure)}
+            value={departure}
+            onChange={(event) => onDateChange("departure", event.target.value)}
+            aria-invalid={Boolean(fieldErrors.departure) || stayRangeInvalid}
             aria-describedby={
-              fieldErrors.departure ? "contact-departure-error" : undefined
+              [
+                fieldErrors.departure ? "contact-departure-error" : null,
+                stayRangeInvalid ? "availability-range-error" : null,
+              ]
+                .filter(Boolean)
+                .join(" ") || undefined
             }
             className={inputClasses}
           />
@@ -251,21 +295,21 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
         </label>
 
         <label
-          className="text-sm text-page-text sm:col-span-2"
+          className="text-[0.9375rem] text-page-text sm:col-span-2"
           htmlFor="contact-message"
         >
           <span>{t("fields.message")}</span>
           <textarea
             id="contact-message"
             name="message"
-            rows={4}
+            rows={3}
             required
             maxLength={CONTACT_LIMITS.message}
             aria-invalid={Boolean(fieldErrors.message)}
             aria-describedby={
               fieldErrors.message ? "contact-message-error" : undefined
             }
-            className={`${inputClasses} resize-none`}
+            className={`${inputClasses} resize-none lg:h-16`}
           />
           {errorFor("message") ? (
             <span
@@ -276,16 +320,17 @@ export function ContactEnquiryForm({locale}: ContactEnquiryFormProps) {
             </span>
           ) : null}
         </label>
-      </fieldset>
+        </fieldset>
+      </div>
 
-      <div className="mt-8 flex flex-col items-start gap-4">
+      <div className="flex flex-col items-start gap-3 lg:col-start-2 lg:row-start-2">
         <TrbButton type="submit" disabled={isSending}>
           {isSending ? t("actions.sending") : t("actions.submit")}
         </TrbButton>
         <p
           id="contact-form-status"
           aria-live="polite"
-          className={`min-h-6 text-sm leading-6 ${
+          className={`text-sm leading-6 ${
             status === "success"
               ? "text-[var(--trb-lagoon)]"
               : "text-[var(--trb-walnut)]"

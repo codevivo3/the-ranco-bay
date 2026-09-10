@@ -13,7 +13,7 @@
   --color-text-muted: var(--trb-lake-muted);
   --color-accent: var(--trb-lagoon);
   --color-focus: var(--trb-lake);
-  --color-border: color-mix(in srgb, var(--trb-walnut) 24%, transparent);
+  --color-border: color-mix(in srgb, var(--trb-walnut) 35%, transparent);
 
   --space-section: clamp(4rem, 9vw, 8rem);
   --space-gutter: clamp(1rem, 4vw, 3rem);

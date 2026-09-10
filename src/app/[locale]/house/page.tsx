@@ -11,29 +11,94 @@ import {
 } from '@/components/layout/horizontal-editorial-gallery';
 import { PageIntro } from '@/components/layout/page-intro';
 import {
-  TEMPORARY_GALLERY_TEST_SLIDES,
-  TemporaryGalleryPlaceholder,
-} from '@/components/layout/temporary-gallery-placeholder';
-import {
   HouseChapterImage,
   HouseChapterText,
 } from '@/components/sections/house-chapter';
 import { TrbButton } from '@/components/ui/trb-button';
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { SectionHeading } from '@/components/ui/section-heading';
+import {
+  getPropertyImage,
+  houseGallerySlots,
+  propertyImageSlots,
+  type PropertyGalleryFormat,
+  type PropertyImageId,
+} from '@/features/property/property-images';
 import { getLocalizedPageMetadata } from '@/lib/seo/localized-page-metadata';
 
 type HousePageProps = {
   params: Promise<{ locale: string }>;
 };
 
+type HouseGalleryItem = {
+  altKey?: string;
+  focalPoint?: string;
+  format: PropertyGalleryFormat;
+  id: string;
+  src: string;
+};
+
+function propertyGalleryItem(
+  imageId: PropertyImageId,
+  format: PropertyGalleryFormat,
+): HouseGalleryItem {
+  const image = getPropertyImage(imageId);
+
+  return {
+    id: imageId,
+    src: image.src,
+    altKey: image.altKey,
+    focalPoint: image.focalPoint,
+    format,
+  };
+}
+
 const chapters = [
-  { key: 'veranda', image: '/images/property/image1.jpg' },
-  { key: 'living', image: '/images/property/image2-a.jpg' },
-  { key: 'bedroom', image: '/images/property/image2-c.jpg' },
-  { key: 'details', image: '/images/property/image2-d.jpg' },
-  { key: 'outside', image: '/images/property/image3.png' },
-  { key: 'beach', image: '/images/property/image4.jpg' },
+  {
+    key: 'veranda',
+    items: houseGallerySlots.veranda.map((item) =>
+      propertyGalleryItem(item.imageId, item.format),
+    ),
+  },
+  {
+    key: 'living',
+    items: houseGallerySlots.living.map((item) =>
+      propertyGalleryItem(item.imageId, item.format),
+    ),
+  },
+  {
+    key: 'bedroom',
+    items: houseGallerySlots.bedroom.map((item) =>
+      propertyGalleryItem(item.imageId, item.format),
+    ),
+  },
+  {
+    key: 'details',
+    items: houseGallerySlots.details.map((item) =>
+      propertyGalleryItem(item.imageId, item.format),
+    ),
+  },
+  {
+    key: 'outside',
+    items: [
+      {
+        id: 'outside-lead',
+        src: '/images/cinematic/image3.png',
+        format: 'landscape',
+        altKey: undefined,
+        focalPoint: undefined,
+      },
+      ...houseGallerySlots.outside.map((item) =>
+        propertyGalleryItem(item.imageId, item.format),
+      ),
+    ],
+  },
+  {
+    key: 'beach',
+    items: houseGallerySlots.beach.map((item) =>
+      propertyGalleryItem(item.imageId, item.format),
+    ),
+  },
 ] as const;
 
 const amenityKeys = [
@@ -56,8 +121,10 @@ export default async function HousePage({ params }: HousePageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('House');
+  const imageAlts = await getTranslations('PropertyImages');
   const tAccessibility = await getTranslations('Accessibility');
   const tGallery = await getTranslations('Common.Gallery');
+  const introductionImage = getPropertyImage(propertyImageSlots.houseIntro);
 
   return (
     <main id='main-content'>
@@ -66,8 +133,9 @@ export default async function HousePage({ params }: HousePageProps) {
         title={t('hero.title')}
         titleLines={[t('hero.titleLineOne'), t('hero.titleLineTwo')]}
         body={t('hero.body')}
-        image='/images/property/image5.jpg'
-        alt={t('hero.imageAlt')}
+        image={introductionImage.src}
+        imagePosition={introductionImage.focalPoint}
+        alt={imageAlts(introductionImage.altKey)}
         titleRole='editorial'
       />
 
@@ -110,39 +178,40 @@ export default async function HousePage({ params }: HousePageProps) {
                   label={t(`chapters.${chapter.key}.title`)}
                   variant='house'
                 >
-                  <HorizontalEditorialPanel format='landscape'>
-                    <ExpandableGalleryItem
-                      itemId={chapter.key}
-                      dialogLabel={t(`chapters.${chapter.key}.title`)}
-                      dialogContent={
-                        <div className='relative h-[min(78svh,52rem)] w-full'>
-                          <Image
-                            src={chapter.image}
-                            alt={t(`chapters.${chapter.key}.imageAlt`)}
-                            fill
-                            sizes='90vw'
-                            className='object-contain'
+                  {chapter.items.map((item) => {
+                    const alt = item.altKey
+                      ? imageAlts(item.altKey)
+                      : t('chapters.outside.imageAlt');
+
+                    return (
+                      <HorizontalEditorialPanel
+                        key={item.id}
+                        format={item.format}
+                      >
+                        <ExpandableGalleryItem
+                          itemId={item.id}
+                          dialogLabel={t(`chapters.${chapter.key}.title`)}
+                          dialogContent={
+                            <div className='relative h-[min(78svh,52rem)] w-full'>
+                              <Image
+                                src={item.src}
+                                alt={alt}
+                                fill
+                                sizes='90vw'
+                                className='object-contain'
+                              />
+                            </div>
+                          }
+                        >
+                          <HouseChapterImage
+                            image={item.src}
+                            alt={alt}
+                            imagePosition={item.focalPoint}
                           />
-                        </div>
-                      }
-                    >
-                      <HouseChapterImage
-                        image={chapter.image}
-                        alt={t(`chapters.${chapter.key}.imageAlt`)}
-                      />
-                    </ExpandableGalleryItem>
-                  </HorizontalEditorialPanel>
-                  {TEMPORARY_GALLERY_TEST_SLIDES.map((slide) => (
-                    <HorizontalEditorialPanel
-                      key={slide.slideNumber}
-                      format={slide.format}
-                    >
-                      <TemporaryGalleryPlaceholder
-                        slideNumber={slide.slideNumber}
-                        tone={slide.tone}
-                      />
-                    </HorizontalEditorialPanel>
-                  ))}
+                        </ExpandableGalleryItem>
+                      </HorizontalEditorialPanel>
+                    );
+                  })}
                 </HorizontalEditorialGallery>
               </ExpandableGalleryGroup>
             </div>
@@ -188,7 +257,7 @@ export default async function HousePage({ params }: HousePageProps) {
               </div>
             ))}
           </dl>
-          <TrbButton className='mt-10' href='/contact'>
+          <TrbButton className='mt-10' href='/contact#enquiry'>
             {t('practical.contactLink')}
           </TrbButton>
         </Container>

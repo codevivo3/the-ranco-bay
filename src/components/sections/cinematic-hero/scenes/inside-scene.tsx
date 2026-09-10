@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { Container } from '@/components/layout/container';
 import { SCENE_IMAGES } from '@/components/sections/cinematic-hero/cinematic-hero.config';
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 
@@ -23,80 +24,67 @@ export function InsideScene({ alts, subtitle, title }: InsideSceneProps) {
         opacity={0.035}
       />
 
-      <div className='absolute inset-x-4 top-[12svh] z-10 h-[54svh] overflow-hidden sm:left-[4vw] sm:right-auto sm:top-[14svh] sm:h-[68svh] sm:w-[62vw]'>
-        <Image
-          data-cinematic-image
-          data-drift={SCENE_IMAGES.inside[0].drift}
-          src={SCENE_IMAGES.inside[0].src}
-          alt={alts[0]}
-          fill
-          sizes='(min-width: 640px) 62vw, calc(100vw - 2rem)'
-          className='object-cover object-center'
-          style={{ transform: 'scale(1.01)' }}
-        />
-      </div>
+      <Container className='absolute inset-0 2xl:flex 2xl:items-center'>
+        <div className='relative h-full w-full 2xl:h-[min(calc(100svh-8rem),52rem)] 2xl:max-h-[52rem]'>
+          <div className='absolute inset-x-0 top-[12svh] z-10 aspect-[4/3] overflow-hidden sm:right-auto sm:top-[14svh] sm:w-[62vw] lg:w-[56%] 2xl:top-[8%] 2xl:w-[45%]'>
+            <Image
+              data-cinematic-image
+              data-drift={SCENE_IMAGES.inside[0].drift}
+              src={SCENE_IMAGES.inside[0].src}
+              alt={alts[0]}
+              fill
+              sizes='(min-width: 640px) 62vw, calc(100vw - 2rem)'
+              className='object-cover object-center'
+              style={{ transform: 'scale(1.01)' }}
+            />
+          </div>
 
-      <div className='absolute right-4 top-[9svh] z-20 h-[23svh] w-[42vw] overflow-hidden sm:right-[4vw] sm:top-[10svh] sm:h-[34svh] sm:w-[27vw]'>
-        <Image
-          data-cinematic-image
-          data-drift={SCENE_IMAGES.inside[1].drift}
-          src={SCENE_IMAGES.inside[1].src}
-          alt={alts[1]}
-          fill
-          sizes='(min-width: 640px) 27vw, 42vw'
-          className='object-cover object-center'
-          style={{ transform: 'scale(1.01)' }}
-        />
-      </div>
+          <div className='absolute right-0 top-[9svh] z-30 aspect-[3/4] w-[42vw] overflow-hidden sm:top-[10svh] sm:w-[27vw] lg:top-[31svh] lg:w-[18%] 2xl:right-[11%] 2xl:top-[20%]'>
+            <Image
+              data-cinematic-image
+              data-drift={SCENE_IMAGES.inside[1].drift}
+              src={SCENE_IMAGES.inside[1].src}
+              alt={alts[1]}
+              fill
+              sizes='(min-width: 1024px) 20vw, (min-width: 640px) 27vw, 42vw'
+              className='object-cover object-center lg:object-[50%_70%]'
+              style={{ transform: 'scale(1.01)' }}
+            />
+          </div>
 
-      <div className='absolute bottom-[8svh] left-4 z-20 h-[26svh] w-[49vw] overflow-hidden sm:bottom-[7svh] sm:left-auto sm:right-[9vw] sm:h-[34svh] sm:w-[33vw]'>
-        <div
-          data-cinematic-image
-          data-drift={SCENE_IMAGES.inside[2].drift}
-          className='absolute inset-x-0 bottom-[-2.5svh] top-0'
-          style={{ transform: 'scale(1.01)' }}
-        >
-          <Image
-            src={SCENE_IMAGES.inside[2].src}
-            alt={alts[2]}
-            fill
-            sizes='(min-width: 640px) 33vw, 49vw'
-            className='object-cover object-center'
-          />
+          <div className='absolute bottom-[24svh] left-0 z-20 aspect-[4/3] w-[49vw] overflow-hidden sm:left-auto sm:right-[5vw] sm:w-[33vw] lg:bottom-[7svh] lg:left-[54%] lg:right-auto lg:w-[30%] 2xl:bottom-[22%] 2xl:left-[43%] 2xl:w-[28%]'>
+            <div
+              data-cinematic-image
+              data-drift={SCENE_IMAGES.inside[2].drift}
+              className='absolute inset-x-0 bottom-[-2.5svh] top-0'
+              style={{ transform: 'scale(1.01)' }}
+            >
+              <Image
+                src={SCENE_IMAGES.inside[2].src}
+                alt={alts[2]}
+                fill
+                sizes='(min-width: 640px) 33vw, 49vw'
+                className='object-cover object-center'
+              />
+            </div>
+          </div>
+
+          <div
+            data-cinematic-copy
+            data-scene='1'
+            className='absolute bottom-3 left-0 z-40 text-[var(--trb-sand)] motion-reduce:!opacity-100 motion-reduce:!transform-none sm:bottom-8 2xl:bottom-[6%]'
+            style={{ opacity: 0, transform: 'translate3d(0, 4svh, 0)' }}
+          >
+            <p className='font-display text-[clamp(2.5rem,4vw,4.5rem)] leading-[0.98]'>
+              {title}
+            </p>
+
+            <p className='mt-2 text-[clamp(0.85rem,1vw,1.1rem)] font-light uppercase leading-tight tracking-[0.16em] text-[var(--trb-sand)]/80'>
+              {subtitle}
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div className='absolute bottom-[12svh] right-4 z-30 h-[19svh] w-[37vw] overflow-hidden sm:bottom-[5svh] sm:left-[43vw] sm:right-auto sm:h-[23svh] sm:w-[20vw]'>
-        <div
-          data-cinematic-image
-          data-drift={SCENE_IMAGES.inside[3].drift}
-          className='absolute inset-x-0 bottom-[-2.5svh] top-0'
-          style={{ transform: 'scale(1.01)' }}
-        >
-          <Image
-            src={SCENE_IMAGES.inside[3].src}
-            alt={alts[3]}
-            fill
-            sizes='(min-width: 640px) 20vw, 37vw'
-            className='object-cover object-center'
-          />
-        </div>
-      </div>
-
-      <div
-        data-cinematic-copy
-        data-scene='1'
-        className='absolute bottom-3 left-4 z-40 text-[var(--trb-sand)] motion-reduce:!opacity-100 motion-reduce:!transform-none sm:bottom-8 sm:left-[4vw]'
-        style={{ opacity: 0, transform: 'translate3d(0, 4svh, 0)' }}
-      >
-        <p className='font-display text-[clamp(2.5rem,4vw,4.5rem)] leading-[0.98]'>
-          {title}
-        </p>
-
-        <p className='mt-2 text-[clamp(0.85rem,1vw,1.1rem)] font-light uppercase leading-tight tracking-[0.16em] text-[var(--trb-sand)]/80'>
-          {subtitle}
-        </p>
-      </div>
+      </Container>
     </div>
   );
 }

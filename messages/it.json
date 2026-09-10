@@ -20,7 +20,6 @@
     }
   },
   "Navigation": {
-    "brand": "The Ranco Bay",
     "primaryLabel": "Navigazione principale",
     "house": "La casa",
     "guide": "Guida locale",
@@ -46,30 +45,30 @@
       "counter": "{current} / {total}",
       "scenes": {
         "promise": {
-          "alt": "Il Lago Maggiore visto dall'ombra dell'interno della casa"
+          "alt": "Un vaso di fiori sul tavolo della veranda con il Lago Maggiore sullo sfondo"
         },
         "inside": {
           "title": "Interni",
           "subtitle": "",
-          "windowAlt": "L'acqua del lago vista da un'ampia finestra incorniciata da tende scure",
-          "sculptureAlt": "Scultura in legno intagliato in un interno luminoso",
-          "bedsideAlt": "Comodino in legno con libri e una custodia fotografica vintage",
-          "detailAlt": "Primo piano astratto di una superficie interna materica"
+          "windowAlt": "Il soggiorno aperto sulla veranda vetrata e sul lago",
+          "sculptureAlt": "Un vaso in ceramica blu sotto opere incorniciate",
+          "bedsideAlt": "Un letto preparato con asciugamani piegati e remi in legno sopra la testata",
+          "detailAlt": "Una bottiglia di vino e una ciotola di frutta su un tavolo in legno"
         },
         "outside": {
           "label": "Verso il lago",
-          "alt": "Cancelli aperti che incorniciano il percorso oltre la strada verso il Lago Maggiore"
+          "alt": "Due sedute sulla terrazza in pietra affacciata sul lago"
         },
         "privateBeach": {
           "eyebrow": "Spiaggia privata",
-          "lineOne": "Fino alla spiaggia.",
+          "lineOne": "La tua spiaggia.",
           "lineTwo": "A piedi nudi.",
-          "alt": "Lettini su un prato accanto all'acqua azzurra"
+          "alt": "Lettini sull'erba accanto al lago con barche a vela sull'acqua"
         },
         "reveal": {
           "eyebrow": "Dal lago alla casa",
           "title": "The Ranco Bay",
-          "alt": "Una casa riflessa nell'acqua calma sotto una montagna boscosa"
+          "alt": "Un cartello di benvenuto in legno e narcisi con il Lago Maggiore sullo sfondo"
         }
       }
     },
@@ -88,7 +87,7 @@
     },
     "GuidePreview": {
       "eyebrow": "Guida locale",
-      "title": "Tre modi per scoprire il lato più tranquillo del lago",
+      "title": "Tre modi per vivere il lago",
       "body": "Una piccola selezione locale per mangiare bene, vivere l'acqua ed esplorare oltre Ranco.",
       "link": "Apri la guida locale"
     },
@@ -127,7 +126,7 @@
         "imageAlt": "Il Lago Maggiore visto dalla veranda in ombra"
       },
       "living": {
-        "title": "Spazi da vivere",
+        "title": "Spazi comuni",
         "body": "Gli ambienti comuni sono pensati per mattine lente, pasti in casa e ritorni dopo una giornata sul lago.",
         "imageAlt": "Un'ampia finestra interna affacciata sull'acqua azzurra"
       },
@@ -192,7 +191,7 @@
     "hero": {
       "eyebrow": "Guida locale",
       "title": "Modi utili per vivere il Lago Maggiore",
-      "titleLineOne": "Modi utili per vivere ",
+      "titleLineOne": "Modi utili per vivere",
       "titleLineTwo": "il Lago Maggiore",
       "body": "Una guida volutamente piccola, basata sul giudizio locale anziché su classifiche, quantità o liste generiche.",
       "imageAlt": "Cancelli aperti che conducono verso il Lago Maggiore"
@@ -216,17 +215,17 @@
     },
     "entries": {
       "lakeside-table": {
-        "title": "Un tavolo vicino all'acqua",
+        "title": "A tavola sul lago",
         "description": "Una porta editoriale temporanea per futuri ristoranti e aperitivi scelti dall'host.",
         "alt": "L'acqua azzurra vista attraverso una finestra interna"
       },
       "open-water": {
-        "title": "Trova tempo per il lago",
+        "title": "Tempo per il lago",
         "description": "Un punto di partenza temporaneo per nuoto, noleggio barche e ore tranquille vicino all'acqua.",
         "alt": "Lettini su un prato accanto all'acqua aperta"
       },
       "ranco-outlook": {
-        "title": "Inizia vicino a Ranco",
+        "title": "Intorno a Ranco",
         "description": "Un percorso temporaneo verso passeggiate, borghi e panorami scelti con un contesto locale pratico.",
         "alt": "Cancelli aperti che incorniciano il percorso verso il lago"
       }
@@ -240,9 +239,9 @@
     },
     "cta": {
       "eyebrow": "Consigli personali",
-      "title": "Raccontaci come ami trascorrere una giornata",
-      "titleLineOne": "Raccontaci come ami",
-      "titleLineTwo": "trascorrere una giornata",
+      "title": "Come immagini la tua giornata?",
+      "titleLineOne": "Come immagini",
+      "titleLineTwo": "la tua giornata?",
       "body": "La futura guida sarà più utile quando potrà adattarsi a ogni soggiorno, stagione e ritmo.",
       "link": "Contatta il tuo host"
     }
@@ -258,16 +257,17 @@
     },
     "hospitality": {
       "eyebrow": "Il tuo host",
-      "title": "Il mio aiuto fa parte dell'accoglienza",
-      "titleLineOne": "Il mio aiuto fa parte",
-      "titleLineTwo": "dell'accoglienza",
+      "title": "Un'accoglienza personale",
+      "titleLineOne": "Un'accoglienza",
+      "titleLineTwo": "personale",
       "body": "La storia definitiva dell'host è ancora in preparazione. L'intenzione è semplice: comunicazione personale, consigli utili e supporto prima e durante il soggiorno.",
       "imageAlt": "Un dettaglio tranquillo degli interni che rappresenta il carattere della casa"
     },
     "enquiry": {
       "eyebrow": "Richiesta",
-      "title": "Inizia dai dettagli che contano",
-      "titleLineOne": "Inizia dai dettagli",
+      "columnLabel": "La tua richiesta",
+      "title": "I dettagli che contano",
+      "titleLineOne": "I dettagli",
       "titleLineTwo": "che contano",
       "body": "Condividi le date che stai valutando e ciò che vorresti sapere. Ti risponderemo personalmente.",
       "fields": {
@@ -296,17 +296,16 @@
         "messageRequired": "Dicci cosa vorresti sapere.",
         "messageTooLong": "Limita il messaggio a 4.000 caratteri.",
         "dateInvalid": "Scegli una data valida.",
-        "dateOrder": "La partenza non può precedere l'arrivo."
+        "dateOrder": "La partenza deve essere successiva all'arrivo."
       }
     },
     "details": {
       "eyebrow": "Informazioni di contatto",
       "title": "The Ranco Bay a Ranco",
-      "body": "I contatti pubblici saranno confermati prima del lancio.",
-      "addressLabel": "Zona",
-      "addressValue": "Ranco, Lago Maggiore, Italia",
+      "body": "Contatta direttamente Emanuela o invia una richiesta tramite il modulo.",
+      "addressLabel": "Indirizzo",
       "contactLabel": "Richieste",
-      "contactValue": "Contatti diretti da confermare"
+      "qrLabel": "Inquadrami"
     },
     "location": {
       "title": "Posizione e mappa",
@@ -317,6 +316,25 @@
       "imageAlt": "Mappa del Lago Maggiore e della regione di confine circostante tra Italia e Svizzera"
     }
   },
+  "PropertyImages": {
+    "verandaTableFlowersLakeView": "Un vaso di fiori sul tavolo della veranda con il lago sullo sfondo",
+    "verandaHammockLakeView": "Un'amaca sulla veranda affacciata sul lago",
+    "verandaDiningLakeViewWide": "Il tavolo da pranzo sotto la veranda coperta con il lago sullo sfondo",
+    "livingRoomVerandaView": "Il soggiorno aperto sulla veranda vetrata e sull'amaca",
+    "diningLivingLakeView": "La zona pranzo e soggiorno rivolta verso la veranda e il lago",
+    "kitchenDiningOverview": "La cucina accanto a un tavolo da pranzo in legno",
+    "bedroomOverviewWide": "Vista ampia della camera con letto e armadi",
+    "bedroomBedFront": "Il letto preparato con asciugamani piegati e remi in legno sopra la testata",
+    "bedroomBedDetail": "Il letto preparato con asciugamani piegati e remi in legno sopra la testata",
+    "blueCeramicVase": "Un vaso in ceramica blu sotto un'opera incorniciata",
+    "bathroomOverview": "Il bagno con lavabo, sanitari e doccia",
+    "beachLoungersLakeView": "Lettini sull'erba accanto al lago",
+    "terraceLoungersLakeView": "Due sedute sulla terrazza in pietra affacciata sul lago",
+    "propertyFromLake": "La casa e la riva viste dal lago",
+    "welcomeDaffodilsLakeView": "Un cartello di benvenuto in legno e narcisi affacciati sul lago",
+    "entranceWelcome": "L'ingresso con uno zerbino di benvenuto",
+    "wineFruitDetail": "Una bottiglia di vino e una ciotola di frutta su un tavolo in legno"
+  },
   "Availability": {
     "title": "Disponibilità",
     "loading": "Caricamento calendario",
@@ -324,13 +342,14 @@
     "nextMonth": "Mese successivo",
     "today": "Oggi",
     "states": {"available": "Disponibile", "unavailable": "Non disponibile", "unknown": "Da verificare", "past": "Data passata"},
+    "dateLabels": {"available": "{date}, disponibile", "unavailable": "{date}, non disponibile", "unknown": "{date}, da verificare", "past": "{date}, data passata", "selectedArrival": "{date}, arrivo selezionato", "selectedDeparture": "{date}, partenza selezionata", "inRange": "{date}, compresa nel soggiorno selezionato", "departure": "{date}, disponibile come data di partenza"},
+    "rangeUnavailable": "Queste date includono una notte non disponibile.",
     "notPublished": "Le disponibilità non sono ancora pubblicate. Chiedi alla proprietaria informazioni sulle date che preferisci.",
     "disclaimer": "Le disponibilità indicate sono orientative. La conferma definitiva verrà fornita dalla proprietaria.",
     "withoutJavaScript": "Attiva JavaScript per visualizzare il calendario."
   },
   "Common": {
     "Footer": {
-      "brand": "The Ranco Bay",
       "location": "Ranco • Lago Maggiore • Italia"
     },
     "NotFound": {

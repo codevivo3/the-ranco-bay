@@ -1,17 +1,16 @@
 {
   "Metadata": {
     "title": "The Ranco Bay — Séjours au lac Majeur",
-    "description": "Un séjour paisible et porté par ses propriétaires à Ranco, au bord du lac Majeur.",
+    "description": "Un séjour paisible, avec l'accueil personnel des propriétaires, à Ranco au bord du lac Majeur.",
     "openGraphTitle": "The Ranco Bay",
-    "openGraphDescription": "Une maison au bord du lac et un guide local pour des séjours attentifs à Ranco.",
+    "openGraphDescription": "Une maison au bord du lac et un guide local pour vivre Ranco autrement.",
     "pages": {
       "house": {"title": "La maison — The Ranco Bay", "description": "Découvrez la maison, ses espaces face au lac, la plage privée et les informations pratiques."},
-      "guide": {"title": "Guide local — The Ranco Bay", "description": "Un guide porté par l'hôte pour manger, explorer et profiter du lac Majeur."},
-      "contact": {"title": "Contact — The Ranco Bay", "description": "Préparez une demande et trouvez les informations pratiques pour The Ranco Bay."}
+      "guide": {"title": "Guide local — The Ranco Bay", "description": "Un guide local pour bien manger, explorer et vivre le lac Majeur."},
+      "contact": {"title": "Contact — The Ranco Bay", "description": "Envoyez une demande et trouvez les indications pratiques pour rejoindre The Ranco Bay."}
     }
   },
   "Navigation": {
-    "brand": "The Ranco Bay",
     "primaryLabel": "Navigation principale",
     "house": "La maison",
     "guide": "Guide local",
@@ -33,36 +32,36 @@
       "counter": "{current} / {total}",
       "scenes": {
         "promise": {
-          "alt": "Le lac Majeur vu depuis l'intérieur ombragé de la maison"
+          "alt": "Un vase fleuri sur la table de la véranda avec le lac Majeur au-delà"
         },
         "inside": {
           "title": "À l'intérieur",
-          "subtitle": "Séjour",
-          "windowAlt": "L'eau du lac vue par une large fenêtre encadrée de rideaux sombres",
-          "sculptureAlt": "Sculpture en bois dans un intérieur lumineux",
-          "bedsideAlt": "Table de chevet en bois avec des livres et un étui d'appareil photo ancien",
-          "detailAlt": "Gros plan abstrait sur une surface intérieure texturée"
+          "subtitle": "",
+          "windowAlt": "Le salon ouvrant sur la véranda vitrée et le lac",
+          "sculptureAlt": "Un vase en céramique bleue sous des œuvres encadrées",
+          "bedsideAlt": "Un lit préparé avec des serviettes pliées et des rames en bois au-dessus",
+          "detailAlt": "Une bouteille de vin et un bol de fruits sur une table en bois"
         },
         "outside": {
           "label": "Vers le lac",
-          "alt": "Des grilles ouvertes encadrent le chemin qui traverse la route vers le lac Majeur"
+          "alt": "Deux fauteuils sur la terrasse en pierre face au lac"
         },
         "privateBeach": {
           "eyebrow": "Plage privée",
-          "lineOne": "Traversez la route.",
+          "lineOne": "Votre plage.",
           "lineTwo": "Pieds nus.",
-          "alt": "Des transats sur une pelouse au bord d'une eau bleue"
+          "alt": "Des transats sur l'herbe au bord du lac avec des voiliers sur l'eau"
         },
         "reveal": {
           "eyebrow": "Du lac à la maison",
           "title": "The Ranco Bay",
-          "alt": "Une maison se reflète dans une eau calme sous une montagne boisée"
+          "alt": "Un panneau de bienvenue en bois et des jonquilles avec le lac Majeur au-delà"
         }
       }
     },
     "HousePreview": {
       "eyebrow": "La maison",
-      "title": "Une maison face au lac, pour des journées sans hâte",
+      "title": "Vivre le lac, chez soi",
       "body": "Une introduction concise aux espaces, à la vue et aux conforts essentiels d'un séjour à The Ranco Bay.",
       "link": "Découvrir la maison",
       "imageAlt": "Le lac Majeur encadré par la véranda ombragée",
@@ -70,13 +69,13 @@
     },
     "GuidePreview": {
       "eyebrow": "Guide local",
-      "title": "Trois portes vers le côté plus paisible du lac",
-      "body": "Une petite sélection locale pour bien manger, aller sur l'eau et explorer au-delà de Ranco.",
+      "title": "Trois façons de vivre le lac",
+      "body": "Une petite sélection locale pour bien manger, profiter de l'eau et explorer au-delà de Ranco.",
       "link": "Ouvrir le guide local"
     },
     "Hospitality": {
       "eyebrow": "Un accueil local",
-      "title": "Une hospitalité portée par une personne réelle",
+      "title": "Le lac, comme nous le vivons",
       "body": "Le séjour s'accompagne de connaissances locales, d'une aide pratique et de recommandations adaptées à la manière dont chacun souhaite vivre le lac.",
       "link": "Nous contacter",
       "imageAlt": "Un détail intérieur paisible évoquant le caractère personnel de la maison"
@@ -89,7 +88,7 @@
     }
   },
   "House": {
-    "hero": {"eyebrow": "La maison", "title": "Des pièces façonnées par la lumière, l'eau et le temps", "titleLineOne": "Des pièces façonnées", "titleLineTwo": "par la lumière, l'eau et le temps", "body": "Découvrez l'hébergement par chapitres : de la première vue vers le lac aux détails pratiques qui rendent le séjour simple.", "imageAlt": "Une maison se reflète dans une eau calme sous une montagne boisée"},
+    "hero": {"eyebrow": "La maison", "title": "Une maison entre lumière, eau et quiétude", "titleLineOne": "Une maison entre lumière,", "titleLineTwo": "eau et quiétude", "body": "Découvrez l'hébergement par chapitres : de la première vue vers le lac aux détails pratiques qui rendent le séjour simple.", "imageAlt": "Une maison se reflète dans une eau calme sous une montagne boisée"},
     "introduction": {"eyebrow": "Hébergement", "title": "Un lieu où s'installer, pas seulement passer", "body": "La maison est présentée comme une suite sincère d'espaces et d'expériences. Les photographies actuelles restent temporaires avant le reportage définitif."},
     "chapters": {
       "veranda": {"title": "Véranda et arrivée", "body": "La première relation regarde dehors : de l'abri de la maison vers la route, la plage privée et le lac au-delà.", "imageAlt": "Le lac Majeur vu depuis la véranda ombragée"},
@@ -103,7 +102,7 @@
     "practical": {"eyebrow": "Informations pratiques", "title": "Ce qu'il est utile de savoir", "body": "Capacité, règles et instructions d'arrivée seront confirmées avec les contenus définitifs de l'hébergement.", "items": {"setting": {"label": "Situation", "value": "Ranco, sur la rive lombarde du lac Majeur."}, "arrival": {"label": "Arrivée", "value": "Les instructions précises d'arrivée seront envoyées directement aux voyageurs confirmés."}, "parking": {"label": "Parking", "value": "Le parking fait partie de l'offre ; les détails d'accès seront ajoutés ensuite."}, "beach": {"label": "Plage privée", "value": "La plage se trouve de l'autre côté de la route face à la propriété."}}, "contactLink": "Poser une question sur la maison"}
   },
   "Guide": {
-    "hero": {"eyebrow": "Guide local", "title": "Des façons utiles de vivre le lac Majeur", "titleLineOne": "Des façons utiles", "titleLineTwo": "de vivre le lac Majeur", "body": "Un guide volontairement réduit, fondé sur le jugement local plutôt que sur les classements, le volume ou les listes génériques.", "imageAlt": "Des grilles ouvertes conduisent vers le lac Majeur"},
+    "hero": {"eyebrow": "Guide local", "title": "Quelques façons de vivre le lac Majeur", "titleLineOne": "Quelques façons de vivre", "titleLineTwo": "le lac Majeur", "body": "Un guide volontairement concis, nourri d'une connaissance locale plutôt que de classements, de quantité ou de listes génériques.", "imageAlt": "Des grilles ouvertes conduisent vers le lac Majeur"},
     "categories": {
       "eat": {"eyebrow": "01", "label": "Manger", "description": "Restaurants, bars, aperitivo et déjeuners choisis pour leur contexte, pas pour l'exhaustivité."},
       "water": {"eyebrow": "02", "label": "Sur l'eau", "description": "Baignade, bateaux et expériences qui font du lac une partie de la journée."},
@@ -112,17 +111,36 @@
     "entries": {
       "lakeside-table": {"title": "Une table près de l'eau", "description": "Une porte éditoriale temporaire pour de futurs restaurants et aperitivo choisis par l'hôte.", "alt": "L'eau bleue vue à travers une fenêtre intérieure"},
       "open-water": {"title": "Prendre le temps du lac", "description": "Un point de départ temporaire pour la baignade, la location de bateaux et les heures calmes près de l'eau.", "alt": "Des transats sur une pelouse près de l'eau"},
-      "ranco-outlook": {"title": "Commencer près de Ranco", "description": "Une route temporaire vers des promenades, villages et panoramas accompagnés d'un contexte local pratique.", "alt": "Des grilles ouvertes encadrent le chemin vers le lac"}
+      "ranco-outlook": {"title": "Autour de Ranco", "description": "Une route temporaire vers des promenades, villages et panoramas accompagnés d'un contexte local pratique.", "alt": "Des grilles ouvertes encadrent le chemin vers le lac"}
     },
     "tags": {"lunch": "Déjeuner", "sunset": "Coucher de soleil", "swimming": "Baignade", "halfDay": "Demi-journée", "withoutCar": "Sans voiture"},
-    "cta": {"eyebrow": "Recommandations personnelles", "title": "Dites-nous comment vous aimez passer une journée", "titleLineOne": "Dites-nous comment", "titleLineTwo": "vous aimez passer une journée", "body": "Le futur guide sera plus utile lorsqu'il pourra répondre à chaque séjour, saison et rythme.", "link": "Contacter votre hôte"}
+    "cta": {"eyebrow": "Recommandations personnelles", "title": "Comment imaginez-vous votre journée ?", "titleLineOne": "Comment imaginez-vous", "titleLineTwo": "votre journée ?", "body": "Le futur guide sera plus utile lorsqu'il pourra répondre à chaque séjour, saison et rythme.", "link": "Contacter votre hôte"}
   },
   "Contact": {
-    "hero": {"eyebrow": "Contact", "title": "Préparez le côté pratique de votre séjour", "titleLineOne": "Préparez le côté pratique", "titleLineTwo": "de votre séjour", "body": "Un espace calme pour les demandes, le contexte d'arrivée et les informations nécessaires pour trouver The Ranco Bay.", "imageAlt": "Le lac Majeur encadré par l'intérieur ombragé de la maison"},
-    "hospitality": {"eyebrow": "Votre hôte", "title": "L'aide locale fait partie de l'accueil", "titleLineOne": "L'aide locale", "titleLineTwo": "fait partie de l'accueil", "body": "L'histoire définitive de l'hôte est encore en préparation. L'intention est simple : communication personnelle, recommandations utiles et soutien avant et pendant le séjour.", "imageAlt": "Un détail intérieur paisible représentant le caractère de la maison"},
-    "enquiry": {"eyebrow": "Demande", "title": "Commencez par les détails qui comptent", "titleLineOne": "Commencez", "titleLineTwo": "par les détails qui comptent", "body": "Indiquez les dates que vous envisagez et ce que vous souhaitez savoir. Nous vous répondrons personnellement.", "fields": {"name": "Nom", "email": "E-mail", "arrival": "Arrivée", "departure": "Départ", "message": "Que souhaitez-vous savoir ?"}, "actions": {"submit": "Envoyer la demande", "sending": "Envoi de la demande"}, "status": {"sending": "Votre demande est en cours d’envoi…", "success": "Merci. Votre demande a été envoyée à The Ranco Bay.", "error": "Votre demande n’a pas pu être envoyée. Veuillez réessayer.", "rateLimit": "Trop de demandes ont été envoyées depuis cette connexion. Veuillez patienter quelques minutes avant de réessayer."}, "validation": {"nameRequired": "Veuillez indiquer votre nom.", "nameTooLong": "Veuillez limiter votre nom à 120 caractères.", "emailRequired": "Veuillez indiquer votre adresse e-mail.", "emailInvalid": "Veuillez indiquer une adresse e-mail valide.", "emailTooLong": "Veuillez limiter votre adresse e-mail à 254 caractères.", "messageRequired": "Veuillez nous indiquer ce que vous souhaitez savoir.", "messageTooLong": "Veuillez limiter votre message à 4 000 caractères.", "dateInvalid": "Veuillez choisir une date valide.", "dateOrder": "Le départ ne peut pas précéder l’arrivée."}},
-    "details": {"eyebrow": "Coordonnées", "title": "The Ranco Bay à Ranco", "body": "Les coordonnées publiques seront confirmées avant le lancement.", "addressLabel": "Zone", "addressValue": "Ranco, lac Majeur, Italie", "contactLabel": "Demandes", "contactValue": "Coordonnées directes à confirmer"},
+    "hero": {"eyebrow": "Contact", "title": "Préparez votre séjour", "titleLineOne": "Préparez", "titleLineTwo": "votre séjour", "body": "Un espace calme pour les demandes, le contexte d'arrivée et les informations nécessaires pour trouver The Ranco Bay.", "imageAlt": "Le lac Majeur encadré par l'intérieur ombragé de la maison"},
+    "hospitality": {"eyebrow": "Votre hôte", "title": "Un accueil personnel", "titleLineOne": "Un accueil", "titleLineTwo": "personnel", "body": "L'histoire définitive de l'hôte est encore en préparation. L'intention est simple : communication personnelle, recommandations utiles et soutien avant et pendant le séjour.", "imageAlt": "Un détail intérieur paisible représentant le caractère de la maison"},
+    "enquiry": {"eyebrow": "Demande", "columnLabel": "Votre demande", "title": "Les détails qui comptent", "titleLineOne": "Les détails", "titleLineTwo": "qui comptent", "body": "Indiquez les dates que vous envisagez et ce que vous souhaitez savoir. Nous vous répondrons personnellement.", "fields": {"name": "Nom", "email": "E-mail", "arrival": "Arrivée", "departure": "Départ", "message": "Que souhaitez-vous savoir ?"}, "actions": {"submit": "Envoyer la demande", "sending": "Envoi de la demande"}, "status": {"sending": "Votre demande est en cours d’envoi…", "success": "Merci. Votre demande a été envoyée à The Ranco Bay.", "error": "Votre demande n’a pas pu être envoyée. Veuillez réessayer.", "rateLimit": "Trop de demandes ont été envoyées depuis cette connexion. Veuillez patienter quelques minutes avant de réessayer."}, "validation": {"nameRequired": "Veuillez indiquer votre nom.", "nameTooLong": "Veuillez limiter votre nom à 120 caractères.", "emailRequired": "Veuillez indiquer votre adresse e-mail.", "emailInvalid": "Veuillez indiquer une adresse e-mail valide.", "emailTooLong": "Veuillez limiter votre adresse e-mail à 254 caractères.", "messageRequired": "Veuillez nous indiquer ce que vous souhaitez savoir.", "messageTooLong": "Veuillez limiter votre message à 4 000 caractères.", "dateInvalid": "Veuillez choisir une date valide.", "dateOrder": "Le départ doit être postérieur à l’arrivée."}},
+    "details": {"eyebrow": "Coordonnées", "title": "The Ranco Bay à Ranco", "body": "Contactez directement Emanuela ou envoyez une demande via le formulaire.", "addressLabel": "Adresse", "contactLabel": "Demandes", "qrLabel": "Scannez-moi"},
     "location": {"title": "Situation et carte", "body": "Utilisez Google Maps pour le contexte public actuel. Aucune API cartographique n'est nécessaire pour cette structure.", "mapsLink": "Ouvrir dans Google Maps", "arrivalTitle": "Arrivée", "arrivalBody": "L'adresse exacte, l'accès et les instructions d'arrivée seront transmis directement lorsque le séjour sera confirmé.", "imageAlt": "Carte du lac Majeur et de la région frontalière environnante entre l'Italie et la Suisse"}
+  },
+  "PropertyImages": {
+    "verandaTableFlowersLakeView": "Un vase fleuri sur la table de la véranda avec le lac au-delà",
+    "verandaHammockLakeView": "Un hamac suspendu dans la véranda face au lac",
+    "verandaDiningLakeViewWide": "La table à manger sous la véranda couverte avec le lac au-delà",
+    "livingRoomVerandaView": "Le salon ouvrant sur la véranda vitrée et le hamac",
+    "diningLivingLakeView": "La salle à manger et le salon tournés vers la véranda et le lac",
+    "kitchenDiningOverview": "La cuisine à côté d'une table à manger en bois",
+    "bedroomOverviewWide": "Vue d'ensemble de la chambre avec le lit et les rangements",
+    "bedroomBedFront": "Le lit préparé avec des serviettes pliées et des rames en bois au-dessus",
+    "bedroomBedDetail": "Le lit préparé avec des serviettes pliées et des rames en bois au-dessus",
+    "blueCeramicVase": "Un vase en céramique bleue sous une œuvre encadrée",
+    "bathroomOverview": "La salle de bains avec son lavabo, ses sanitaires et sa douche",
+    "beachLoungersLakeView": "Des transats sur l'herbe au bord du lac",
+    "terraceLoungersLakeView": "Deux fauteuils sur la terrasse en pierre face au lac",
+    "propertyFromLake": "La maison et la rive vues depuis le lac",
+    "welcomeDaffodilsLakeView": "Un panneau de bienvenue en bois et des jonquilles face au lac",
+    "entranceWelcome": "La porte d'entrée avec un paillasson de bienvenue",
+    "wineFruitDetail": "Une bouteille de vin et un bol de fruits sur une table en bois"
   },
   "Availability": {
     "title": "Disponibilités",
@@ -131,12 +149,14 @@
     "nextMonth": "Mois suivant",
     "today": "Aujourd'hui",
     "states": {"available": "Disponible", "unavailable": "Indisponible", "unknown": "À vérifier", "past": "Date passée"},
+    "dateLabels": {"available": "{date}, disponible", "unavailable": "{date}, indisponible", "unknown": "{date}, à vérifier", "past": "{date}, date passée", "selectedArrival": "{date}, arrivée sélectionnée", "selectedDeparture": "{date}, départ sélectionné", "inRange": "{date}, dans le séjour sélectionné", "departure": "{date}, disponible comme date de départ"},
+    "rangeUnavailable": "Ces dates comprennent une nuit indisponible.",
     "notPublished": "Les disponibilités ne sont pas encore publiées. Contactez la propriétaire pour les dates souhaitées.",
     "disclaimer": "Les disponibilités affichées sont indicatives. La confirmation définitive vous sera communiquée par la propriétaire.",
     "withoutJavaScript": "Activez JavaScript pour afficher le calendrier."
   },
   "Common": {
-    "Footer": {"brand": "The Ranco Bay", "location": "Ranco • lac Majeur • Italie"},
+    "Footer": {"location": "Ranco • lac Majeur • Italie"},
     "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"},
     "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant"}
   },

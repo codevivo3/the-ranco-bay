@@ -20,7 +20,7 @@ export function OutsideScene({alt, label}: OutsideSceneProps) {
           alt={alt}
           fill
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-center lg:object-[50%_32%]"
           style={{transform: "scale(1.01)"}}
         />
       </div>

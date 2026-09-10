@@ -1,43 +1,56 @@
+import {getPropertyImage} from "@/features/property/property-images";
+
+const cinematicPropertyImages = {
+  promise: getPropertyImage("verandaTableFlowersLakeView"),
+  insideDominant: getPropertyImage("livingRoomVerandaView"),
+  insideUpperDetail: getPropertyImage("blueCeramicVase"),
+  insideBedsideDetail: getPropertyImage("bedroomBedDetail"),
+  insideSmallDetail: getPropertyImage("wineFruitDetail"),
+  outside: getPropertyImage("terraceLoungersLakeView"),
+  privateBeach: getPropertyImage("beachLoungersLakeView"),
+  reveal: getPropertyImage("welcomeDaffodilsLakeView"),
+};
+
 export const SCENE_IMAGES = {
   promise: {
-    src: "/images/property/image1.jpg",
+    src: cinematicPropertyImages.promise.src,
     altKey: "scenes.promise.alt",
     drift: 3,
   },
   inside: [
     {
-      src: "/images/property/image2-a.jpg",
+      src: cinematicPropertyImages.insideDominant.src,
       altKey: "scenes.inside.windowAlt",
       drift: 2,
     },
     {
-      src: "/images/property/image2-b.jpg",
+      src: cinematicPropertyImages.insideUpperDetail.src,
       altKey: "scenes.inside.sculptureAlt",
       drift: 5,
     },
     {
-      src: "/images/property/image2-c.jpg",
+      src: cinematicPropertyImages.insideBedsideDetail.src,
       altKey: "scenes.inside.bedsideAlt",
       drift: 3.5,
     },
     {
-      src: "/images/property/image2-d.jpg",
+      src: cinematicPropertyImages.insideSmallDetail.src,
       altKey: "scenes.inside.detailAlt",
       drift: 6,
     },
   ],
   outside: {
-    src: "/images/property/image3.png",
+    src: cinematicPropertyImages.outside.src,
     altKey: "scenes.outside.alt",
     drift: 5,
   },
   privateBeach: {
-    src: "/images/property/image4.jpg",
+    src: cinematicPropertyImages.privateBeach.src,
     altKey: "scenes.privateBeach.alt",
     drift: 3,
   },
   reveal: {
-    src: "/images/property/image5.jpg",
+    src: cinematicPropertyImages.reveal.src,
     altKey: "scenes.reveal.alt",
     drift: 1.5,
   },

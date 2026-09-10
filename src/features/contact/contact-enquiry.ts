@@ -114,7 +114,7 @@ export function validateContactEnquiry(
     data.arrival &&
     data.departure &&
     !fieldErrors.arrival &&
-    data.departure < data.arrival
+    data.departure <= data.arrival
   ) {
     fieldErrors.departure = "dateOrder";
   }
