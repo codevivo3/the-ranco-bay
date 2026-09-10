@@ -90,7 +90,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
       <section
         id='enquiry'
-        className='relative min-h-[100svh] scroll-mt-28 overflow-hidden bg-page-surface pb-[clamp(2.5rem,4svh,3.5rem)] pt-[clamp(6.5rem,11svh,7.5rem)] lg:flex lg:items-center'
+        className='relative min-h-[100svh] scroll-mt-28 overflow-hidden bg-page-surface pb-[clamp(3.5rem,6svh,4.5rem)] pt-[clamp(6.5rem,11svh,7.5rem)] lg:flex lg:items-center'
       >
         <EditorialWatermark variant='upper-right' opacity={0.025} />
 

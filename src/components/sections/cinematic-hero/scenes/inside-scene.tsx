@@ -24,9 +24,9 @@ export function InsideScene({ alts, subtitle, title }: InsideSceneProps) {
         opacity={0.035}
       />
 
-      <Container className='absolute inset-0'>
-        <div className='relative h-full w-full'>
-          <div className='absolute inset-x-0 top-[12svh] z-10 aspect-[4/3] overflow-hidden sm:right-auto sm:top-[14svh] sm:w-[62vw] lg:w-[56%]'>
+      <Container className='absolute inset-0 2xl:flex 2xl:items-center'>
+        <div className='relative h-full w-full 2xl:h-[min(calc(100svh-8rem),52rem)] 2xl:max-h-[52rem]'>
+          <div className='absolute inset-x-0 top-[12svh] z-10 aspect-[4/3] overflow-hidden sm:right-auto sm:top-[14svh] sm:w-[62vw] lg:w-[56%] 2xl:top-[8%] 2xl:w-[45%]'>
             <Image
               data-cinematic-image
               data-drift={SCENE_IMAGES.inside[0].drift}
@@ -39,7 +39,7 @@ export function InsideScene({ alts, subtitle, title }: InsideSceneProps) {
             />
           </div>
 
-          <div className='absolute right-0 top-[9svh] z-30 aspect-[3/4] w-[42vw] overflow-hidden sm:top-[10svh] sm:w-[27vw] lg:top-[31svh] lg:w-[18%]'>
+          <div className='absolute right-0 top-[9svh] z-30 aspect-[3/4] w-[42vw] overflow-hidden sm:top-[10svh] sm:w-[27vw] lg:top-[31svh] lg:w-[18%] 2xl:right-[11%] 2xl:top-[20%]'>
             <Image
               data-cinematic-image
               data-drift={SCENE_IMAGES.inside[1].drift}
@@ -52,7 +52,7 @@ export function InsideScene({ alts, subtitle, title }: InsideSceneProps) {
             />
           </div>
 
-          <div className='absolute bottom-[24svh] left-0 z-20 aspect-[4/3] w-[49vw] overflow-hidden sm:left-auto sm:right-[5vw] sm:w-[33vw] lg:bottom-[7svh] lg:left-[54%] lg:right-auto lg:w-[30%]'>
+          <div className='absolute bottom-[24svh] left-0 z-20 aspect-[4/3] w-[49vw] overflow-hidden sm:left-auto sm:right-[5vw] sm:w-[33vw] lg:bottom-[7svh] lg:left-[54%] lg:right-auto lg:w-[30%] 2xl:bottom-[22%] 2xl:left-[43%] 2xl:w-[28%]'>
             <div
               data-cinematic-image
               data-drift={SCENE_IMAGES.inside[2].drift}
@@ -72,7 +72,7 @@ export function InsideScene({ alts, subtitle, title }: InsideSceneProps) {
           <div
             data-cinematic-copy
             data-scene='1'
-            className='absolute bottom-3 left-0 z-40 text-[var(--trb-sand)] motion-reduce:!opacity-100 motion-reduce:!transform-none sm:bottom-8'
+            className='absolute bottom-3 left-0 z-40 text-[var(--trb-sand)] motion-reduce:!opacity-100 motion-reduce:!transform-none sm:bottom-8 2xl:bottom-[6%]'
             style={{ opacity: 0, transform: 'translate3d(0, 4svh, 0)' }}
           >
             <p className='font-display text-[clamp(2.5rem,4vw,4.5rem)] leading-[0.98]'>

@@ -73,7 +73,7 @@ export function AvailabilityEnquiry({data, locale}: AvailabilityEnquiryProps) {
   };
 
   return (
-    <div className="mt-12 grid items-start gap-x-12 gap-y-8 lg:mt-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-x-20 lg:gap-y-4">
+    <div className="mt-12 grid items-start gap-x-12 gap-y-8 lg:mt-[clamp(2rem,3.5svh,2.5rem)] lg:grid-cols-[1.1fr_0.9fr] lg:gap-x-20 lg:gap-y-[clamp(1.5rem,3svh,2rem)]">
       <AvailabilityCalendar
         data={data}
         monthOffset={monthOffset}
