@@ -45,7 +45,7 @@ export function HouseChapterText({
         <h2 className="mt-5 font-display text-4xl leading-none text-page-text-strong sm:text-5xl">
           {title}
         </h2>
-        <p className="mt-6 max-w-xl text-base leading-7 text-page-muted sm:text-lg sm:leading-8">
+        <p className="mt-6 max-w-xl text-[1.1875rem] leading-7 text-page-muted sm:text-[1.25rem] sm:leading-8">
           {body}
         </p>
       </div>

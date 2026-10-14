@@ -1,13 +1,13 @@
 {
   "Metadata": {
-    "title": "The Ranco Bay — Soggiorni sul Lago Maggiore",
-    "description": "Un soggiorno tranquillo e curato dai proprietari a Ranco, sul Lago Maggiore.",
+    "title": "The Ranco Bay — Appartamenti sul Lago Maggiore",
+    "description": "Due appartamenti sul lago con spiaggia privata e accoglienza personale a Ranco.",
     "openGraphTitle": "The Ranco Bay",
-    "openGraphDescription": "Una casa sul lago e una guida locale per soggiorni consapevoli a Ranco.",
+    "openGraphDescription": "Due appartamenti sul lago e una guida locale per soggiorni consapevoli a Ranco.",
     "pages": {
       "house": {
-        "title": "La casa — The Ranco Bay",
-        "description": "Scopri la casa, gli spazi affacciati sul lago, la spiaggia privata e le informazioni pratiche."
+        "title": "Veranda — The Ranco Bay",
+        "description": "Scopri Veranda, gli spazi affacciati sul lago, la spiaggia privata e le informazioni pratiche."
       },
       "guide": {
         "title": "Guida locale — The Ranco Bay",
@@ -16,11 +16,22 @@
       "contact": {
         "title": "Contatti — The Ranco Bay",
         "description": "Invia una richiesta e trova le informazioni pratiche per raggiungere The Ranco Bay."
+      },
+      "upperFloor": {
+        "title": "Mansarda — Prossimamente | The Ranco Bay",
+        "description": "Scopri il secondo appartamento di The Ranco Bay, in preparazione per il 2027."
       }
     }
   },
   "Navigation": {
     "primaryLabel": "Navigazione principale",
+    "apartments": "Appartamenti",
+    "groundFloor": "Veranda",
+    "upperFloor": "Mansarda",
+    "comingSoon": "Prossimamente",
+    "discover": "Scopri",
+    "property": "La proprietà",
+    "availability": "Disponibilità",
     "house": "La casa",
     "guide": "Guida locale",
     "contact": "Contatti",
@@ -28,6 +39,11 @@
     "locales": { "en": "EN", "it": "IT", "de": "DE", "fr": "FR" }
   },
   "Home": {
+    "StaticHero": {
+      "eyebrow": "Ranco · Lago Maggiore",
+      "body": "Due appartamenti indipendenti, una spiaggia privata e un'accoglienza personale sulla sponda lombarda del Lago Maggiore.",
+      "link": "Scopri gli appartamenti"
+    },
     "Hero": {
       "title": "Una casa sul lato tranquillo del lago",
       "metadata": "RANCO · LAGO MAGGIORE — CASA SUL LAGO CON SPIAGGIA PRIVATA",
@@ -85,6 +101,23 @@
         "equipped": "Alloggio attrezzato"
       }
     },
+    "Apartments": {
+      "eyebrow": "Gli appartamenti",
+      "title": "Due modi di vivere il lago",
+      "body": "Un appartamento già attivo e una seconda casa in preparazione, entrambi parte della stessa accoglienza a Ranco.",
+      "groundFloor": {
+        "eyebrow": "Veranda",
+        "title": "L'appartamento sul lago",
+        "body": "L'appartamento originale di The Ranco Bay accoglie già gli ospiti, con i suoi spazi, la vista lago e l'accesso alla spiaggia privata.",
+        "link": "Scopri Veranda"
+      },
+      "upperFloor": {
+        "eyebrow": "Mansarda · 2027",
+        "title": "Un secondo appartamento prende forma",
+        "body": "Mansarda è in preparazione per il 2027. Dettagli e disponibilità saranno condivisi quando saranno pronti.",
+        "link": "Scopri Prossimamente"
+      }
+    },
     "GuidePreview": {
       "eyebrow": "Guida locale",
       "title": "Tre modi per vivere il lago",
@@ -101,13 +134,13 @@
     "FinalCta": {
       "eyebrow": "Pianifica un soggiorno",
       "title": "Inizia con una semplice conversazione",
-      "body": "Raccontaci le date e cosa desideri dal tuo tempo sul Lago Maggiore. I dettagli della richiesta saranno confermati personalmente.",
+      "body": "Raccontaci le date e cosa desideri dal tuo tempo sul Lago Maggiore. Emanuela può parlare direttamente con te di disponibilità e tariffe dedicate.",
       "link": "Contatta The Ranco Bay"
     }
   },
   "House": {
     "hero": {
-      "eyebrow": "La casa",
+      "eyebrow": "Veranda",
       "title": "Una casa tra luce, acqua e quiete",
       "titleLineOne": "Una casa tra luce,",
       "titleLineTwo": "acqua e quiete",
@@ -305,7 +338,8 @@
       "body": "Contatta direttamente Emanuela o invia una richiesta tramite il modulo.",
       "addressLabel": "Indirizzo",
       "contactLabel": "Richieste",
-      "qrLabel": "Inquadrami"
+      "qrLabel": "Salva il contatto",
+      "whatsappLabel": "WhatsApp a Emanuela"
     },
     "location": {
       "title": "Posizione e mappa",
@@ -315,6 +349,15 @@
       "arrivalBody": "Indirizzo esatto, accesso e istruzioni di check-in saranno condivisi direttamente quando il soggiorno sarà confermato.",
       "imageAlt": "Mappa del Lago Maggiore e della regione di confine circostante tra Italia e Svizzera"
     }
+  },
+  "UpperFloor": {
+    "eyebrow": "Mansarda · 2027",
+    "title": "Prossimamente",
+    "body": "Un secondo appartamento di The Ranco Bay è in preparazione per il 2027. Gli spazi, le fotografie e le informazioni pratiche saranno presentati quando saranno pronti.",
+    "availability": "Le disponibilità non sono ancora aperte. Emanuela può rispondere alle domande e annotare direttamente il tuo interesse.",
+    "enquire": "Richiedi informazioni su Mansarda",
+    "contactEyebrow": "Contatto diretto",
+    "contactTitle": "Parla con Emanuela"
   },
   "PropertyImages": {
     "verandaTableFlowersLakeView": "Un vaso di fiori sul tavolo della veranda con il lago sullo sfondo",
@@ -337,6 +380,11 @@
   },
   "Availability": {
     "title": "Disponibilità",
+    "apartmentPickerLabel": "Scegli un appartamento",
+    "apartments": {
+      "groundFloor": {"label": "Veranda"},
+      "upperFloor": {"label": "Mansarda", "status": "Prossimamente · 2027", "title": "Le disponibilità non sono ancora aperte", "body": "Mansarda non è prenotabile mentre è in preparazione. Invia una richiesta per segnalare il tuo interesse a Emanuela."}
+    },
     "loading": "Caricamento calendario",
     "previousMonth": "Mese precedente",
     "nextMonth": "Mese successivo",
@@ -360,6 +408,12 @@
     "Gallery": {
       "previousItem": "Elemento precedente",
       "nextItem": "Elemento successivo"
+    },
+    "DirectContact": {
+      "label": "Richieste",
+      "enquire": "Invia una richiesta",
+      "whatsapp": "WhatsApp a Emanuela",
+      "vcard": "Salva il contatto"
     }
   },
   "Accessibility": {

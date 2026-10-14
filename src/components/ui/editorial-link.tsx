@@ -5,7 +5,12 @@ import {Link} from "@/i18n/navigation";
 type EditorialLinkProps = {
   children: React.ReactNode;
   className?: string;
-  href: "/" | "/house" | "/guide" | "/contact";
+  href:
+    | "/"
+    | "/house"
+    | "/guide"
+    | "/contact"
+    | "/apartments/upper-floor";
   tone?: "light" | "dark";
 };
 

@@ -1,4 +1,8 @@
 import {routing} from "@/i18n/routing";
+import {
+  isApartmentId,
+  type ApartmentId,
+} from "@/features/accommodation/apartments";
 
 export const CONTACT_LIMITS = {
   email: 254,
@@ -25,6 +29,7 @@ export type ContactFieldErrors = Partial<
 >;
 
 export type ContactEnquiry = {
+  apartmentId: ApartmentId;
   arrival: string;
   departure: string;
   email: string;
@@ -78,6 +83,7 @@ export function validateContactEnquiry(
 
   const record = input as Record<string, unknown>;
   const data: ContactEnquiry = {
+    apartmentId: readString(record, "apartmentId") as ApartmentId,
     arrival: readString(record, "arrival"),
     departure: readString(record, "departure"),
     email: readString(record, "email").toLowerCase(),
@@ -120,10 +126,12 @@ export function validateContactEnquiry(
   }
 
   const validLocale = routing.locales.some((locale) => locale === data.locale);
+  const validApartment = isApartmentId(data.apartmentId);
   const validSubmissionId = UUID_PATTERN.test(data.submissionId);
 
   if (
     Object.keys(fieldErrors).length > 0 ||
+    !validApartment ||
     !validLocale ||
     !validSubmissionId
   ) {

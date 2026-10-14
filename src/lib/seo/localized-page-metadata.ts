@@ -3,14 +3,21 @@ import {getTranslations} from "next-intl/server";
 
 import {routing} from "@/i18n/routing";
 
-type PublicPage = "contact" | "guide" | "house";
+type PublicPage = "contact" | "guide" | "house" | "upperFloor";
+
+const pagePaths: Record<PublicPage, string> = {
+  contact: 'contact',
+  guide: 'guide',
+  house: 'house',
+  upperFloor: 'apartments/upper-floor',
+};
 
 export async function getLocalizedPageMetadata(
   locale: string,
   page: PublicPage,
 ): Promise<Metadata> {
   const t = await getTranslations({locale, namespace: "Metadata.pages"});
-  const pathname = `/${locale}/${page}`;
+  const pathname = `/${locale}/${pagePaths[page]}`;
 
   return {
     title: t(`${page}.title`),

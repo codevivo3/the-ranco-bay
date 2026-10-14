@@ -3,7 +3,13 @@ import type {MetadataRoute} from "next";
 import {routing} from "@/i18n/routing";
 import {getSiteUrl} from "@/lib/constants/site";
 
-const publicPaths = ["", "house", "guide", "contact"] as const;
+const publicPaths = [
+  "",
+  "house",
+  "apartments/upper-floor",
+  "guide",
+  "contact",
+] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
+import { EditorialLink } from '@/components/ui/editorial-link';
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { TrbButton } from '@/components/ui/trb-button';
 import { SectionHeading } from '@/components/ui/section-heading';
@@ -41,32 +42,64 @@ export async function HomepageDiscovery() {
       >
         <EditorialWatermark variant='upper-right' />
         <Container className='relative z-10 w-full'>
-          <div className='grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
-            <div className='relative mx-auto aspect-square w-full max-w-[36rem] overflow-hidden lg:mx-0'>
-              <Image
-                src={accommodationImage.src}
-                alt={imageAlts(accommodationImage.altKey)}
-                fill
-                sizes='(min-width: 640px) 36rem, calc(100vw - 2rem)'
-                className='object-cover'
-                style={{objectPosition: accommodationImage.focalPoint}}
-              />
-            </div>
-            <div>
-              <SectionHeading
-                eyebrow={home('HousePreview.eyebrow')}
-                title={home('HousePreview.title')}
-                body={home('HousePreview.body')}
-              />
-              <ul className='mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-page-border py-6 text-sm text-page-text'>
-                {propertyFacts.map((fact) => (
-                  <li key={fact}>{home(`HousePreview.facts.${fact}`)}</li>
-                ))}
-              </ul>
-              <TrbButton className='mt-8' href='/contact'>
-                {home('HousePreview.link')}
-              </TrbButton>
-            </div>
+          <SectionHeading
+            eyebrow={home('Apartments.eyebrow')}
+            title={home('Apartments.title')}
+            body={home('Apartments.body')}
+          />
+          <div className='mt-14 grid gap-8 lg:grid-cols-2'>
+            <article className='bg-page-background'>
+              <div className='relative aspect-[4/3] overflow-hidden'>
+                <Image
+                  src={accommodationImage.src}
+                  alt={imageAlts(accommodationImage.altKey)}
+                  fill
+                  sizes='(min-width: 1024px) 38rem, calc(100vw - 2rem)'
+                  className='object-cover'
+                  style={{ objectPosition: accommodationImage.focalPoint }}
+                />
+              </div>
+              <div className='p-[clamp(1.5rem,4vw,3rem)]'>
+                <p className='text-xs uppercase tracking-[0.18em] text-page-accent'>
+                  {home('Apartments.groundFloor.eyebrow')}
+                </p>
+                <h3 className='mt-4 font-display text-[clamp(2rem,3.5vw,3.5rem)] leading-none text-page-text-strong'>
+                  {home('Apartments.groundFloor.title')}
+                </h3>
+                <p className='mt-5 max-w-xl text-[1.1875rem] leading-7 text-page-muted sm:text-[1.25rem] sm:leading-8'>
+                  {home('Apartments.groundFloor.body')}
+                </p>
+                <ul className='mt-6 grid grid-cols-2 gap-x-6 gap-y-3 border-y border-page-border py-5 text-sm text-page-text'>
+                  {propertyFacts.map((fact) => (
+                    <li key={fact}>{home(`HousePreview.facts.${fact}`)}</li>
+                  ))}
+                </ul>
+                <EditorialLink className='mt-6' href='/house'>
+                  {home('Apartments.groundFloor.link')}
+                </EditorialLink>
+              </div>
+            </article>
+
+            <article className='trb-editorial-glass relative flex min-h-[28rem] overflow-hidden p-[clamp(1.5rem,4vw,3rem)]'>
+              <EditorialWatermark variant='lower-right' opacity={0.035} />
+              <div className='relative z-10 mt-auto max-w-xl'>
+                <p className='text-xs uppercase tracking-[0.18em] text-page-accent'>
+                  {home('Apartments.upperFloor.eyebrow')}
+                </p>
+                <h3 className='mt-4 font-display text-[clamp(2rem,3.5vw,3.5rem)] leading-none text-page-text-strong'>
+                  {home('Apartments.upperFloor.title')}
+                </h3>
+                <p className='mt-5 text-[1.1875rem] leading-7 text-page-muted sm:text-[1.25rem] sm:leading-8'>
+                  {home('Apartments.upperFloor.body')}
+                </p>
+                <EditorialLink
+                  className='mt-6'
+                  href='/apartments/upper-floor'
+                >
+                  {home('Apartments.upperFloor.link')}
+                </EditorialLink>
+              </div>
+            </article>
           </div>
         </Container>
       </section>
@@ -79,7 +112,7 @@ export async function HomepageDiscovery() {
               title={home('GuidePreview.title')}
               body={home('GuidePreview.body')}
             />
-            <TrbButton className='mt-8' href='/contact'>
+            <TrbButton className='mt-8' href='/guide'>
               {home('GuidePreview.link')}
             </TrbButton>
           </div>
@@ -123,7 +156,7 @@ export async function HomepageDiscovery() {
               <h2 className='section-display mt-5'>
                 {home('Hospitality.title')}
               </h2>
-              <p className='mt-7 max-w-xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-lg sm:leading-8'>
+              <p className='mt-7 max-w-xl text-[1.1875rem] leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-[1.25rem] sm:leading-8'>
                 {home('Hospitality.body')}
               </p>
               <TrbButton className='mt-8' href='/contact#enquiry'>
@@ -148,7 +181,7 @@ export async function HomepageDiscovery() {
               {home('FinalCta.eyebrow')}
             </p>
             <h2 className='section-display mt-5'>{home('FinalCta.title')}</h2>
-            <p className='mt-7 max-w-2xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_88%,transparent)] sm:text-lg sm:leading-8'>
+            <p className='mt-7 max-w-2xl text-[1.1875rem] leading-7 text-[color-mix(in_srgb,var(--trb-sand)_88%,transparent)] sm:text-[1.25rem] sm:leading-8'>
               {home('FinalCta.body')}
             </p>
             <TrbButton className='mt-8' href='/contact#enquiry'>

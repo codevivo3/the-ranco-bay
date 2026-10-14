@@ -12,6 +12,11 @@ const languages: Record<string, {format: string; label: string}> = {
   fr: {format: "fr-FR", label: "French"},
 };
 
+const apartmentLabels = {
+  'ground-floor': 'Ground floor apartment',
+  'upper-floor': 'Upper floor apartment — coming soon',
+} as const;
+
 // Public 240px PNG derivative of trb-logo-plain.svg; deploy alongside this template.
 const logoUrl = `${trbBusiness.website}/logo/trb-logo-email.png`;
 const colors = {
@@ -58,6 +63,7 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
   }).format(received);
   const arrival = formatStayDate(details.arrival);
   const departure = formatStayDate(details.departure);
+  const apartment = apartmentLabels[details.apartmentId];
   const timestamp = `${submittedDate} · ${submittedTime}`;
   const websiteLanguage = `${language.label} website`;
   const labelStyle = `color:${colors.muted};font-size:12px;line-height:18px;letter-spacing:1px;font-weight:bold;`;
@@ -72,6 +78,9 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
     "",
     details.name,
     details.email,
+    "",
+    "APARTMENT",
+    apartment,
     "",
     "ARRIVAL",
     arrival,
@@ -111,6 +120,10 @@ export function buildOwnerEmail(details: OwnerEmailDetails) {
           <p style="margin:0;font-size:16px;line-height:24px;word-break:break-all;">
             <a href="${emailHref}" style="color:${colors.accent};text-decoration:underline;">${email}</a>
           </p>
+        </td></tr>
+        <tr><td style="padding:0 16px 24px;">
+          <p style="margin:0 0 6px;${labelStyle}">APARTMENT</p>
+          <p style="margin:0;color:${colors.text};font-size:16px;line-height:24px;">${escapeHtml(apartment)}</p>
         </td></tr>
         <tr><td style="padding:0 16px 24px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;border-collapse:collapse;">

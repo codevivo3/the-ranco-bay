@@ -159,6 +159,7 @@ export const propertyImages = {
 export type PropertyImageId = keyof typeof propertyImages;
 
 export const propertyImageSlots = {
+  homeHero: "verandaDiningLakeViewWide",
   homeAccommodation: "verandaTableFlowersLakeView",
   homeHospitality: "wineFruitDetail",
   guideWater: "beachLoungersLakeView",

@@ -55,7 +55,7 @@ export function PageIntro({
                   ))
                 : title}
             </h1>
-            <p className="mt-7 max-w-xl text-base leading-7 text-page-muted sm:text-lg sm:leading-8">
+            <p className="mt-7 max-w-xl text-[1.125rem] leading-7 text-page-muted sm:text-[1.25rem] sm:leading-8 lg:text-[1.375rem]">
               {body}
             </p>
           </div>

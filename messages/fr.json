@@ -1,17 +1,25 @@
 {
   "Metadata": {
-    "title": "The Ranco Bay — Séjours au lac Majeur",
-    "description": "Un séjour paisible, avec l'accueil personnel des propriétaires, à Ranco au bord du lac Majeur.",
+    "title": "The Ranco Bay — Appartements au lac Majeur",
+    "description": "Deux appartements au bord du lac avec plage privée et accueil personnel à Ranco.",
     "openGraphTitle": "The Ranco Bay",
-    "openGraphDescription": "Une maison au bord du lac et un guide local pour vivre Ranco autrement.",
+    "openGraphDescription": "Deux appartements au bord du lac et un guide local pour vivre Ranco autrement.",
     "pages": {
-      "house": {"title": "La maison — The Ranco Bay", "description": "Découvrez la maison, ses espaces face au lac, la plage privée et les informations pratiques."},
+      "house": {"title": "Veranda — The Ranco Bay", "description": "Découvrez Veranda, ses espaces face au lac, la plage privée et les informations pratiques."},
       "guide": {"title": "Guide local — The Ranco Bay", "description": "Un guide local pour bien manger, explorer et vivre le lac Majeur."},
-      "contact": {"title": "Contact — The Ranco Bay", "description": "Envoyez une demande et trouvez les indications pratiques pour rejoindre The Ranco Bay."}
+      "contact": {"title": "Contact — The Ranco Bay", "description": "Envoyez une demande et trouvez les indications pratiques pour rejoindre The Ranco Bay."},
+      "upperFloor": {"title": "Mansarda — Bientôt | The Ranco Bay", "description": "Découvrez le second appartement de The Ranco Bay, en préparation pour 2027."}
     }
   },
   "Navigation": {
     "primaryLabel": "Navigation principale",
+    "apartments": "Appartements",
+    "groundFloor": "Veranda",
+    "upperFloor": "Mansarda",
+    "comingSoon": "Bientôt",
+    "discover": "Découvrir",
+    "property": "La propriété",
+    "availability": "Disponibilités",
     "house": "La maison",
     "guide": "Guide local",
     "contact": "Contact",
@@ -19,6 +27,7 @@
     "locales": {"en": "EN", "it": "IT", "de": "DE", "fr": "FR"}
   },
   "Home": {
+    "StaticHero": {"eyebrow": "Ranco · Lac Majeur", "body": "Deux appartements indépendants, une plage privée et un accueil personnel sur la rive lombarde paisible du lac Majeur.", "link": "Découvrir les appartements"},
     "Hero": {
       "title": "Une maison au bord paisible du lac",
       "metadata": "RANCO · LAC MAJEUR — HÉBERGEMENT AU BORD DU LAC AVEC PLAGE PRIVÉE",
@@ -67,6 +76,13 @@
       "imageAlt": "Le lac Majeur encadré par la véranda ombragée",
       "facts": {"lakeView": "Vue sur le lac", "privateBeach": "Plage privée", "parking": "Parking", "equipped": "Hébergement équipé"}
     },
+    "Apartments": {
+      "eyebrow": "Les appartements",
+      "title": "Deux façons de séjourner au bord du lac",
+      "body": "Un appartement déjà ouvert et un second lieu en préparation, tous deux portés par le même accueil personnel à Ranco.",
+      "groundFloor": {"eyebrow": "Veranda", "title": "L'appartement existant au bord du lac", "body": "L'appartement d'origine de The Ranco Bay accueille déjà les voyageurs, avec ses espaces, sa vue sur le lac et l'accès à la plage privée.", "link": "Découvrir Veranda"},
+      "upperFloor": {"eyebrow": "Mansarda · 2027", "title": "Un second appartement prend forme", "body": "Mansarda est en préparation pour 2027. Les détails et disponibilités seront partagés lorsqu'ils seront prêts.", "link": "Voir Bientôt"}
+    },
     "GuidePreview": {
       "eyebrow": "Guide local",
       "title": "Trois façons de vivre le lac",
@@ -83,12 +99,12 @@
     "FinalCta": {
       "eyebrow": "Préparer un séjour",
       "title": "Commencez par une conversation simple",
-      "body": "Partagez vos dates et ce que vous attendez de votre temps au lac Majeur. Les détails seront confirmés personnellement.",
+      "body": "Partagez vos dates et vos envies pour votre séjour au lac Majeur. Emanuela peut échanger directement avec vous sur les disponibilités et les tarifs dédiés.",
       "link": "Contacter The Ranco Bay"
     }
   },
   "House": {
-    "hero": {"eyebrow": "La maison", "title": "Une maison entre lumière, eau et quiétude", "titleLineOne": "Une maison entre lumière,", "titleLineTwo": "eau et quiétude", "body": "Découvrez l'hébergement par chapitres : de la première vue vers le lac aux détails pratiques qui rendent le séjour simple.", "imageAlt": "Une maison se reflète dans une eau calme sous une montagne boisée"},
+    "hero": {"eyebrow": "Veranda", "title": "Une maison entre lumière, eau et quiétude", "titleLineOne": "Une maison entre lumière,", "titleLineTwo": "eau et quiétude", "body": "Découvrez l'hébergement par chapitres : de la première vue vers le lac aux détails pratiques qui rendent le séjour simple.", "imageAlt": "Une maison se reflète dans une eau calme sous une montagne boisée"},
     "introduction": {"eyebrow": "Hébergement", "title": "Un lieu où s'installer, pas seulement passer", "body": "La maison est présentée comme une suite sincère d'espaces et d'expériences. Les photographies actuelles restent temporaires avant le reportage définitif."},
     "chapters": {
       "veranda": {"title": "Véranda et arrivée", "body": "La première relation regarde dehors : de l'abri de la maison vers la route, la plage privée et le lac au-delà.", "imageAlt": "Le lac Majeur vu depuis la véranda ombragée"},
@@ -120,9 +136,10 @@
     "hero": {"eyebrow": "Contact", "title": "Préparez votre séjour", "titleLineOne": "Préparez", "titleLineTwo": "votre séjour", "body": "Un espace calme pour les demandes, le contexte d'arrivée et les informations nécessaires pour trouver The Ranco Bay.", "imageAlt": "Le lac Majeur encadré par l'intérieur ombragé de la maison"},
     "hospitality": {"eyebrow": "Votre hôte", "title": "Un accueil personnel", "titleLineOne": "Un accueil", "titleLineTwo": "personnel", "body": "L'histoire définitive de l'hôte est encore en préparation. L'intention est simple : communication personnelle, recommandations utiles et soutien avant et pendant le séjour.", "imageAlt": "Un détail intérieur paisible représentant le caractère de la maison"},
     "enquiry": {"eyebrow": "Demande", "columnLabel": "Votre demande", "title": "Les détails qui comptent", "titleLineOne": "Les détails", "titleLineTwo": "qui comptent", "body": "Indiquez les dates que vous envisagez et ce que vous souhaitez savoir. Nous vous répondrons personnellement.", "fields": {"name": "Nom", "email": "E-mail", "arrival": "Arrivée", "departure": "Départ", "message": "Que souhaitez-vous savoir ?"}, "actions": {"submit": "Envoyer la demande", "sending": "Envoi de la demande"}, "status": {"sending": "Votre demande est en cours d’envoi…", "success": "Merci. Votre demande a été envoyée à The Ranco Bay.", "error": "Votre demande n’a pas pu être envoyée. Veuillez réessayer.", "rateLimit": "Trop de demandes ont été envoyées depuis cette connexion. Veuillez patienter quelques minutes avant de réessayer."}, "validation": {"nameRequired": "Veuillez indiquer votre nom.", "nameTooLong": "Veuillez limiter votre nom à 120 caractères.", "emailRequired": "Veuillez indiquer votre adresse e-mail.", "emailInvalid": "Veuillez indiquer une adresse e-mail valide.", "emailTooLong": "Veuillez limiter votre adresse e-mail à 254 caractères.", "messageRequired": "Veuillez nous indiquer ce que vous souhaitez savoir.", "messageTooLong": "Veuillez limiter votre message à 4 000 caractères.", "dateInvalid": "Veuillez choisir une date valide.", "dateOrder": "Le départ doit être postérieur à l’arrivée."}},
-    "details": {"eyebrow": "Coordonnées", "title": "The Ranco Bay à Ranco", "body": "Contactez directement Emanuela ou envoyez une demande via le formulaire.", "addressLabel": "Adresse", "contactLabel": "Demandes", "qrLabel": "Scannez-moi"},
+    "details": {"eyebrow": "Coordonnées", "title": "The Ranco Bay à Ranco", "body": "Contactez directement Emanuela ou envoyez une demande via le formulaire.", "addressLabel": "Adresse", "contactLabel": "Demandes", "qrLabel": "Enregistrer le contact", "whatsappLabel": "WhatsApp à Emanuela"},
     "location": {"title": "Situation et carte", "body": "Utilisez Google Maps pour le contexte public actuel. Aucune API cartographique n'est nécessaire pour cette structure.", "mapsLink": "Ouvrir dans Google Maps", "arrivalTitle": "Arrivée", "arrivalBody": "L'adresse exacte, l'accès et les instructions d'arrivée seront transmis directement lorsque le séjour sera confirmé.", "imageAlt": "Carte du lac Majeur et de la région frontalière environnante entre l'Italie et la Suisse"}
   },
+  "UpperFloor": {"eyebrow": "Mansarda · 2027", "title": "Bientôt", "body": "Un second appartement de The Ranco Bay est en préparation pour 2027. Ses espaces, ses photographies et ses informations pratiques seront présentés lorsqu'ils seront prêts.", "availability": "Les disponibilités ne sont pas encore ouvertes. Emanuela peut répondre aux questions et noter directement votre intérêt.", "enquire": "Demander des informations sur Mansarda", "contactEyebrow": "Contact direct", "contactTitle": "Échanger avec Emanuela"},
   "PropertyImages": {
     "verandaTableFlowersLakeView": "Un vase fleuri sur la table de la véranda avec le lac au-delà",
     "verandaHammockLakeView": "Un hamac suspendu dans la véranda face au lac",
@@ -144,6 +161,8 @@
   },
   "Availability": {
     "title": "Disponibilités",
+    "apartmentPickerLabel": "Choisir un appartement",
+    "apartments": {"groundFloor": {"label": "Veranda"}, "upperFloor": {"label": "Mansarda", "status": "Bientôt · 2027", "title": "Les disponibilités ne sont pas encore ouvertes", "body": "Mansarda n'est pas réservable pendant sa préparation. Envoyez une demande à Emanuela pour lui faire part de votre intérêt."}},
     "loading": "Chargement du calendrier",
     "previousMonth": "Mois précédent",
     "nextMonth": "Mois suivant",
@@ -158,7 +177,8 @@
   "Common": {
     "Footer": {"location": "Ranco • lac Majeur • Italie"},
     "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"},
-    "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant"}
+    "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant"},
+    "DirectContact": {"label": "Demandes", "enquire": "Envoyer une demande", "whatsapp": "WhatsApp à Emanuela", "vcard": "Enregistrer le contact"}
   },
   "Accessibility": {"skipToContent": "Aller au contenu principal", "closeDialog": "Fermer la fenêtre"}
 }

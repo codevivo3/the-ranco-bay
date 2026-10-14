@@ -12,9 +12,13 @@ import {
   validateContactEnquiry,
 } from "@/features/contact/contact-enquiry";
 import {TrbButton} from "@/components/ui/trb-button";
+import type {ApartmentId} from "@/features/accommodation/apartments";
 
 type ContactEnquiryFormProps = {
+  apartmentId: ApartmentId;
+  apartmentLabel: string;
   arrival: string;
+  datesEnabled: boolean;
   departure: string;
   locale: string;
   onDateChange: (
@@ -51,7 +55,10 @@ function createSubmissionId() {
 }
 
 export function ContactEnquiryForm({
+  apartmentId,
+  apartmentLabel,
   arrival,
+  datesEnabled,
   departure,
   locale,
   onDateChange,
@@ -105,6 +112,7 @@ export function ContactEnquiryForm({
     submissionIdRef.current = submissionId;
 
     const payload = {
+      apartmentId,
       arrival: readFormValue(formData, "arrival"),
       departure: readFormValue(formData, "departure"),
       email: readFormValue(formData, "email"),
@@ -182,9 +190,13 @@ export function ContactEnquiryForm({
       </div>
 
       <div className="border-t border-page-border pt-6 lg:col-start-2 lg:row-start-1 lg:pt-5">
-        <p className="text-xs uppercase tracking-[0.18em] text-page-accent">
-          {t("columnLabel")}
-        </p>
+        <div className='flex flex-wrap items-baseline justify-between gap-2'>
+          <p className="text-xs uppercase tracking-[0.18em] text-page-accent">
+            {t("columnLabel")}
+          </p>
+          <p className='text-xs text-page-muted'>{apartmentLabel}</p>
+        </div>
+        <input type='hidden' name='apartmentId' value={apartmentId} />
 
         <fieldset
           disabled={isSending}
@@ -242,6 +254,7 @@ export function ContactEnquiryForm({
             id="contact-arrival"
             name="arrival"
             type="date"
+            disabled={!datesEnabled}
             value={arrival}
             onChange={(event) => onDateChange("arrival", event.target.value)}
             aria-invalid={Boolean(fieldErrors.arrival) || stayRangeInvalid}
@@ -271,6 +284,7 @@ export function ContactEnquiryForm({
             id="contact-departure"
             name="departure"
             type="date"
+            disabled={!datesEnabled}
             value={departure}
             onChange={(event) => onDateChange("departure", event.target.value)}
             aria-invalid={Boolean(fieldErrors.departure) || stayRangeInvalid}

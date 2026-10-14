@@ -116,7 +116,7 @@ export default async function GuidePage({params}: GuidePageProps) {
                                   <h2 className='mt-4 font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.95]'>
                                     {t(`entries.${entry.id}.title`)}
                                   </h2>
-                                  <p className='mt-6 max-w-xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)]'>
+                                  <p className='mt-6 max-w-xl text-[1.125rem] leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-[1.25rem] sm:leading-8'>
                                     {t(`entries.${entry.id}.description`)}
                                   </p>
                                   <ul className='mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
@@ -174,7 +174,7 @@ export default async function GuidePage({params}: GuidePageProps) {
               <span className='lg:block'>{t('cta.titleLineOne')} </span>
               <span className='lg:block'>{t('cta.titleLineTwo')}</span>
             </h2>
-            <p className='mt-6 max-w-2xl text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)]'>
+            <p className='mt-6 max-w-2xl text-[1.1875rem] leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-[1.25rem] sm:leading-8'>
               {t('cta.body')}
             </p>
             <TrbButton className='mt-8' href='/contact#enquiry'>
