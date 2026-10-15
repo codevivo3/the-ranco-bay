@@ -59,7 +59,7 @@ export function PageIntro({
               {body}
             </p>
           </div>
-          <div className="relative aspect-square w-full max-w-[34rem] justify-self-start overflow-hidden lg:max-w-none">
+          <div className="relative aspect-square w-full max-w-[34rem] justify-self-start overflow-hidden md:max-lg:justify-self-center lg:max-w-none">
             <Image
               src={image}
               alt={alt}

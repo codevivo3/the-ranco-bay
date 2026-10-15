@@ -13,6 +13,8 @@
   },
   "Navigation": {
     "primaryLabel": "Hauptnavigation",
+    "openMenu": "Navigationsmenü öffnen",
+    "closeMenu": "Navigationsmenü schließen",
     "apartments": "Apartments",
     "groundFloor": "Veranda",
     "upperFloor": "Mansarda",
@@ -136,7 +138,7 @@
     "hero": {"eyebrow": "Kontakt", "title": "Planen Sie Ihren Aufenthalt", "titleLineOne": "Planen Sie", "titleLineTwo": "Ihren Aufenthalt", "body": "Ein ruhiger Ort für Anfragen, Anreiseinformationen und alles, was hilft, The Ranco Bay zu finden.", "imageAlt": "Der Lago Maggiore, gerahmt vom schattigen Inneren des Hauses"},
     "hospitality": {"eyebrow": "Ihr Gastgeber", "title": "Ein persönlicher Empfang", "titleLineOne": "Ein persönlicher", "titleLineTwo": "Empfang", "body": "Die endgültige Gastgebergeschichte wird noch vorbereitet. Die Absicht ist einfach: persönliche Kommunikation, nützliche Empfehlungen und Unterstützung vor und während des Aufenthalts.", "imageAlt": "Ein ruhiges Innendetail, das den Charakter des Hauses zeigt"},
     "enquiry": {"eyebrow": "Anfrage", "columnLabel": "Ihre Anfrage", "title": "Die Details, die zählen", "titleLineOne": "Die Details,", "titleLineTwo": "die zählen", "body": "Teilen Sie uns Ihre gewünschten Reisedaten und Ihre Fragen mit. Wir antworten Ihnen persönlich.", "fields": {"name": "Name", "email": "E-Mail", "arrival": "Anreise", "departure": "Abreise", "message": "Was möchten Sie wissen?"}, "actions": {"submit": "Anfrage senden", "sending": "Anfrage wird gesendet"}, "status": {"sending": "Ihre Anfrage wird gesendet…", "success": "Vielen Dank. Ihre Anfrage wurde an The Ranco Bay gesendet.", "error": "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.", "rateLimit": "Von dieser Verbindung wurden zu viele Anfragen gesendet. Bitte warten Sie einige Minuten und versuchen Sie es erneut."}, "validation": {"nameRequired": "Bitte geben Sie Ihren Namen ein.", "nameTooLong": "Bitte verwenden Sie höchstens 120 Zeichen für Ihren Namen.", "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein.", "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.", "emailTooLong": "Bitte verwenden Sie höchstens 254 Zeichen für Ihre E-Mail-Adresse.", "messageRequired": "Bitte teilen Sie uns mit, was Sie wissen möchten.", "messageTooLong": "Bitte verwenden Sie höchstens 4.000 Zeichen für Ihre Nachricht.", "dateInvalid": "Bitte wählen Sie ein gültiges Datum.", "dateOrder": "Die Abreise muss nach der Anreise liegen."}},
-    "details": {"eyebrow": "Kontaktdaten", "title": "The Ranco Bay in Ranco", "body": "Kontaktieren Sie Emanuela direkt oder senden Sie eine Anfrage über das Formular.", "addressLabel": "Adresse", "contactLabel": "Anfragen", "qrLabel": "Kontakt speichern", "whatsappLabel": "Emanuela per WhatsApp"},
+    "details": {"eyebrow": "Kontaktdaten", "title": "The Ranco Bay in Ranco", "body": "Kontaktieren Sie Emanuela direkt oder senden Sie eine Anfrage über das Formular.", "addressLabel": "Adresse", "contactLabel": "Anfragen", "qrLabel": "Kontakt speichern", "saveContact": "Kontakt speichern", "whatsappLabel": "Emanuela per WhatsApp"},
     "location": {"title": "Lage und Karte", "body": "Google Maps bietet den aktuellen öffentlichen Lagekontext. Für dieses Grundgerüst ist keine Karten-API nötig.", "mapsLink": "Google Maps öffnen", "arrivalTitle": "Ankunft", "arrivalBody": "Genaue Adresse, Zufahrt und Check-in-Hinweise werden direkt mitgeteilt, sobald der Aufenthalt bestätigt ist.", "imageAlt": "Karte des Lago Maggiore und der umliegenden Grenzregion von Italien und der Schweiz"}
   },
   "UpperFloor": {"eyebrow": "Mansarda · 2027", "title": "Demnächst", "body": "Ein zweites Apartment von The Ranco Bay wird für 2027 vorbereitet. Räume, Fotografien und praktische Details werden vorgestellt, sobald sie bereit sind.", "availability": "Die Verfügbarkeit ist noch nicht freigegeben. Emanuela beantwortet Fragen und nimmt Ihr Interesse gern direkt auf.", "enquire": "Zur Mansarda anfragen", "contactEyebrow": "Direkter Kontakt", "contactTitle": "Mit Emanuela sprechen"},
@@ -178,7 +180,7 @@
     "Footer": {"location": "Ranco • Lago Maggiore • Italien"},
     "NotFound": {"title": "Seite nicht gefunden", "description": "Die angeforderte Seite ist nicht Teil dieser Website.", "returnHome": "Zur Startseite"},
     "Gallery": {"previousItem": "Vorheriges Galerieelement", "nextItem": "Nächstes Galerieelement"},
-    "DirectContact": {"label": "Anfragen", "enquire": "Anfrage senden", "whatsapp": "Emanuela per WhatsApp", "vcard": "Kontakt speichern"}
+    "DirectContact": {"label": "Anfragen", "enquire": "Anfrage senden", "whatsapp": "Emanuela per WhatsApp", "vcard": "Kontakt speichern", "saveContact": "Kontakt speichern"}
   },
   "Accessibility": {"skipToContent": "Zum Hauptinhalt springen", "closeDialog": "Dialog schließen"}
 }

@@ -25,6 +25,8 @@
   },
   "Navigation": {
     "primaryLabel": "Navigazione principale",
+    "openMenu": "Apri il menu di navigazione",
+    "closeMenu": "Chiudi il menu di navigazione",
     "apartments": "Appartamenti",
     "groundFloor": "Veranda",
     "upperFloor": "Mansarda",
@@ -339,6 +341,7 @@
       "addressLabel": "Indirizzo",
       "contactLabel": "Richieste",
       "qrLabel": "Salva il contatto",
+      "saveContact": "Salva contatto",
       "whatsappLabel": "WhatsApp a Emanuela"
     },
     "location": {
@@ -413,7 +416,8 @@
       "label": "Richieste",
       "enquire": "Invia una richiesta",
       "whatsapp": "WhatsApp a Emanuela",
-      "vcard": "Salva il contatto"
+      "vcard": "Salva il contatto",
+      "saveContact": "Salva contatto"
     }
   },
   "Accessibility": {

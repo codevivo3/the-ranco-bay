@@ -48,7 +48,7 @@ export function GuideCard({
         />
 
         {overlay ? (
-          <div className='absolute inset-x-0 bottom-0 z-10 border-t border-[color-mix(in_srgb,var(--trb-sand)_18%,transparent)] bg-[color-mix(in_srgb,var(--trb-lagoon)_52%,color-mix(in_srgb,var(--trb-sand)_18%,transparent))] px-5 py-5 text-[var(--trb-sand)] backdrop-blur-[14px] backdrop-saturate-[1.15] md:px-3 md:py-3 lg:px-6 lg:py-5'>
+          <div className={`absolute inset-x-0 bottom-0 z-10 border-t border-[color-mix(in_srgb,var(--trb-sand)_18%,transparent)] bg-[color-mix(in_srgb,var(--trb-lagoon)_52%,color-mix(in_srgb,var(--trb-sand)_18%,transparent))] px-5 py-5 text-[var(--trb-sand)] backdrop-blur-[14px] backdrop-saturate-[1.15] md:px-3 md:py-3 lg:px-6 lg:py-5 ${gallery ? 'pb-14 md:pb-14 lg:pb-5' : ''}`}>
             <p className='text-xs uppercase tracking-[0.18em] text-[color-mix(in_srgb,var(--trb-sand)_78%,transparent)]'>
               {category}
             </p>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import type {MouseEvent} from "react";
+import type {MouseEvent, ReactNode} from "react";
 
 import {Link, usePathname} from "@/i18n/navigation";
 
@@ -9,7 +9,12 @@ type HomeLogoLinkProps = {
   ariaLabel: string;
 };
 
-export function HomeLogoLink({ariaLabel}: HomeLogoLinkProps) {
+type HomeLinkProps = HomeLogoLinkProps & {
+  children: ReactNode;
+  className: string;
+};
+
+function HomeLink({ariaLabel, children, className}: HomeLinkProps) {
   const pathname = usePathname();
 
   const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
@@ -39,11 +44,19 @@ export function HomeLogoLink({ariaLabel}: HomeLogoLinkProps) {
 
   return (
     <Link
-      className="flex items-center gap-2"
+      className={className}
       href="/"
       aria-label={ariaLabel}
       onClick={handleClick}
     >
+      {children}
+    </Link>
+  );
+}
+
+export function HomeLogoLink({ariaLabel}: HomeLogoLinkProps) {
+  return (
+    <HomeLink ariaLabel={ariaLabel} className="flex items-center gap-2">
       <Image
         src="/logo/trb-logo-image-plain.svg"
         alt=""
@@ -58,6 +71,41 @@ export function HomeLogoLink({ariaLabel}: HomeLogoLinkProps) {
         height={50}
         priority
       />
-    </Link>
+    </HomeLink>
+  );
+}
+
+export function HomeLogoSymbolLink({ariaLabel}: HomeLogoLinkProps) {
+  return (
+    <HomeLink
+      ariaLabel={`${ariaLabel} home`}
+      className="flex items-center justify-self-start focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-page-focus"
+    >
+      <Image
+        src="/logo/trb-logo-image-plain.svg"
+        alt=""
+        width={35}
+        height={35}
+        priority
+      />
+    </HomeLink>
+  );
+}
+
+export function HomeLogoTypographyLink({ariaLabel}: HomeLogoLinkProps) {
+  return (
+    <HomeLink
+      ariaLabel={`${ariaLabel} wordmark home`}
+      className="flex items-center justify-self-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-page-focus"
+    >
+      <Image
+        src="/logo/trb-logo-typography-plain.svg"
+        alt=""
+        width={150}
+        height={50}
+        priority
+        className="h-auto w-[min(8.5rem,calc(100vw-11rem))]"
+      />
+    </HomeLink>
   );
 }

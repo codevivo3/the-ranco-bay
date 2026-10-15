@@ -42,7 +42,7 @@ export const propertyImages = {
     editorialPriority: "A",
   },
   livingRoomVerandaView: {
-    src: "/images/property/living/living-room-veranda-view.jpeg",
+    src: "/images/property/veranda/living/living-room-veranda-view.jpeg",
     width: 1918,
     height: 1438,
     altKey: "livingRoomVerandaView",
@@ -50,7 +50,7 @@ export const propertyImages = {
     editorialPriority: "B",
   },
   diningLivingLakeView: {
-    src: "/images/property/living/dining-living-lake-view.jpeg",
+    src: "/images/property/veranda/living/dining-living-lake-view.jpeg",
     width: 1023,
     height: 1365,
     altKey: "diningLivingLakeView",
@@ -58,7 +58,7 @@ export const propertyImages = {
     editorialPriority: "B",
   },
   kitchenDiningOverview: {
-    src: "/images/property/kitchen/kitchen-dining-overview.jpeg",
+    src: "/images/property/veranda/kitchen/kitchen-dining-overview.jpeg",
     width: 1313,
     height: 1751,
     altKey: "kitchenDiningOverview",
@@ -66,7 +66,7 @@ export const propertyImages = {
     editorialPriority: "C",
   },
   bedroomOverviewWide: {
-    src: "/images/property/bedroom/bedroom-overview-wide.jpeg",
+    src: "/images/property/veranda/bedroom/bedroom-overview-wide.jpeg",
     width: 1791,
     height: 1342,
     altKey: "bedroomOverviewWide",
@@ -74,7 +74,7 @@ export const propertyImages = {
     editorialPriority: "B",
   },
   bedroomBedFront: {
-    src: "/images/property/bedroom/bedroom-bed-front.jpeg",
+    src: "/images/property/veranda/bedroom/bedroom-bed-front.jpeg",
     width: 1406,
     height: 1875,
     altKey: "bedroomBedFront",
@@ -82,7 +82,7 @@ export const propertyImages = {
     editorialPriority: "C",
   },
   bedroomBedDetail: {
-    src: "/images/property/bedroom/bedroom-bed-detail.jpeg",
+    src: "/images/property/veranda/bedroom/bedroom-bed-detail.jpeg",
     width: 1937,
     height: 1452,
     altKey: "bedroomBedDetail",
@@ -90,7 +90,7 @@ export const propertyImages = {
     editorialPriority: "C",
   },
   blueCeramicVase: {
-    src: "/images/property/details/blue-ceramic-vase.jpeg",
+    src: "/images/property/veranda/details/blue-ceramic-vase.jpeg",
     width: 1154,
     height: 1539,
     altKey: "blueCeramicVase",
@@ -98,7 +98,7 @@ export const propertyImages = {
     editorialPriority: "C",
   },
   bathroomOverview: {
-    src: "/images/property/bathroom/bathroom-overview.jpeg",
+    src: "/images/property/veranda/bathroom/bathroom-overview.jpeg",
     width: 1644,
     height: 2192,
     altKey: "bathroomOverview",
@@ -131,7 +131,7 @@ export const propertyImages = {
     editorialPriority: "C",
   },
   welcomeDaffodilsLakeView: {
-    src: "/images/property/details/welcome-daffodils-lake-view.jpeg",
+    src: "/images/property/veranda/details/welcome-daffodils-lake-view.jpeg",
     width: 1408,
     height: 1878,
     altKey: "welcomeDaffodilsLakeView",
@@ -147,7 +147,7 @@ export const propertyImages = {
     editorialPriority: "C",
   },
   wineFruitDetail: {
-    src: "/images/property/details/wine-fruit-detail.jpeg",
+    src: "/images/property/veranda/details/wine-fruit-detail.jpeg",
     width: 1427,
     height: 1903,
     altKey: "wineFruitDetail",

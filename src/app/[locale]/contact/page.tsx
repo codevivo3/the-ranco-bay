@@ -66,7 +66,7 @@ export default async function ContactPage({
       <section className='flex min-h-[100svh] items-center bg-[var(--trb-lake)] py-[var(--space-section)] text-[var(--trb-sand)]'>
         <Container>
           <div className='grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-20'>
-            <div className='relative aspect-[4/5] w-full max-w-[34rem] overflow-hidden xl:max-w-[38rem] 2xl:max-w-[44rem]'>
+            <div className='relative aspect-[4/5] w-full max-w-[34rem] overflow-hidden md:max-lg:justify-self-center xl:max-w-[38rem] 2xl:max-w-[44rem]'>
               <Image
                 src={welcomeImage.src}
                 alt={imageAlts(welcomeImage.altKey)}
@@ -168,6 +168,7 @@ export default async function ContactPage({
                     <OwnerContactBlock
                       label={t('details.contactLabel')}
                       qrLabel={t('details.qrLabel')}
+                      saveContactLabel={t('details.saveContact')}
                       whatsappLabel={t('details.whatsappLabel')}
                     />
                   </dd>

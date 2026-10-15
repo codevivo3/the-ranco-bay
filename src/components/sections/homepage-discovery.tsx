@@ -140,7 +140,7 @@ export async function HomepageDiscovery() {
       >
         <Container className='w-full'>
           <div className='grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20'>
-            <div className='relative aspect-[4/5] overflow-hidden'>
+            <div className='relative aspect-[4/5] overflow-hidden md:max-lg:max-w-[34rem] md:max-lg:justify-self-center'>
               <Image
                 src={hospitalityImage.src}
                 alt={imageAlts(hospitalityImage.altKey)}

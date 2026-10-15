@@ -85,7 +85,7 @@ export function AvailabilityEnquiry({
   return (
     <div className="mt-12 lg:mt-[clamp(2rem,3.5svh,2.5rem)]">
       <div
-        className='grid w-full max-w-lg grid-cols-2 gap-1 rounded-lg bg-[color-mix(in_srgb,var(--trb-lagoon)_4%,transparent)] p-1'
+        className='grid w-full max-w-lg grid-cols-2 gap-1 rounded-lg bg-[color-mix(in_srgb,var(--trb-lagoon)_4%,transparent)] p-1 md:mx-auto lg:mx-0'
         aria-label={t('apartmentPickerLabel')}
       >
         {apartmentIds.map((id) => {
@@ -122,7 +122,7 @@ export function AvailabilityEnquiry({
             showRangeError={showRangeError}
           />
         ) : (
-          <section className='w-full max-w-lg border-y border-page-border py-8 lg:row-span-2'>
+          <section className='w-full max-w-lg border-y border-page-border py-8 md:mx-auto lg:mx-0 lg:row-span-2'>
             <p className='text-xs uppercase tracking-[0.18em] text-page-accent'>
               {t('apartments.upperFloor.status')}
             </p>

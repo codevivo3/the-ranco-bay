@@ -62,6 +62,7 @@ export default async function UpperFloorPage({ params }: UpperFloorPageProps) {
                 <OwnerContactBlock
                   label={commonContact('label')}
                   qrLabel={commonContact('vcard')}
+                  saveContactLabel={commonContact('saveContact')}
                   whatsappLabel={commonContact('whatsapp')}
                 />
               </div>

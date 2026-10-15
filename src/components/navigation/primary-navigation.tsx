@@ -28,7 +28,8 @@ const triggerClass =
   'group flex min-h-11 w-full cursor-pointer items-center justify-center text-center transition-colors hover:text-page-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-page-focus';
 const submenuLinkClass =
   'group flex min-h-11 items-center justify-center px-3 py-2 text-center leading-snug transition-colors hover:text-page-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-page-focus';
-const topLevelItemClass = 'w-full lg:w-36 xl:w-40';
+const topLevelItemClass =
+  'w-full lg:w-auto lg:[&>div]:w-36 xl:[&>div]:w-40';
 const underlineBaseClass =
   "relative inline-flex items-center gap-1 pb-1 after:absolute after:-bottom-px after:h-[2px] after:bg-[var(--trb-lagoon)] after:content-[''] after:transition-[left,right] after:duration-[220ms] after:ease-in-out group-hover:after:left-0 group-hover:after:right-0 group-focus-visible:after:left-0 group-focus-visible:after:right-0 motion-reduce:after:transition-none";
 
@@ -290,7 +291,7 @@ export function PrimaryNavigation({ labels }: PrimaryNavigationProps) {
             cancelScheduledClose();
             setOpenMenu(null);
           }}
-          className={`grid w-full overflow-hidden transition-[grid-template-rows] ease-in-out motion-reduce:transition-none lg:absolute lg:left-0 lg:top-full lg:z-20 ${
+          className={`grid w-full overflow-hidden transition-[grid-template-rows] ease-in-out motion-reduce:transition-none lg:absolute lg:left-1/2 lg:top-full lg:z-20 lg:-translate-x-1/2 ${
             isOpen
               ? 'pointer-events-auto grid-rows-[1fr] duration-300'
               : 'pointer-events-none grid-rows-[0fr] duration-[220ms]'
@@ -310,7 +311,7 @@ export function PrimaryNavigation({ labels }: PrimaryNavigationProps) {
       className='col-span-2 row-start-2 w-full min-w-0 sm:col-span-1 sm:col-start-2 sm:row-start-1 sm:w-auto sm:justify-self-center'
       aria-label={labels.primary}
     >
-      <ul className='grid grid-cols-2 items-start justify-center gap-x-4 gap-y-1 text-sm lg:flex lg:flex-wrap lg:items-center lg:gap-x-4 lg:text-[1.0625rem] xl:gap-x-6'>
+      <ul className='grid grid-cols-2 items-start justify-center gap-x-4 gap-y-1 text-sm lg:flex lg:flex-wrap lg:items-center lg:gap-x-9 lg:text-[1.0625rem] xl:gap-x-10'>
         {renderDropdown(
           'apartments',
           labels.apartments,
