@@ -3,7 +3,14 @@ import { ArrowRight } from 'lucide-react';
 
 import { Link } from '@/i18n/navigation';
 
-type InternalHref = '/' | '/house' | '/guide' | '/contact' | '/contact#enquiry';
+type InternalHref =
+  | '/'
+  | '/house'
+  | '/guide'
+  | '/contact'
+  | '/contact#enquiry'
+  | '/apartments/upper-floor'
+  | '/contact?apartment=upper-floor#enquiry';
 
 type TrbButtonProps = {
   children: ReactNode;

@@ -2,13 +2,16 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+import { OwnerContactBlock } from '@/components/contact/owner-contact-block';
 import { Container } from '@/components/layout/container';
 import { PageIntro } from '@/components/layout/page-intro';
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { TrbButton } from '@/components/ui/trb-button';
 import { AvailabilityEnquiry } from '@/features/accommodation/availability-enquiry';
+import { isApartmentId } from '@/features/accommodation/apartments';
 import { getBookingAvailability } from '@/features/accommodation/booking-availability';
+import { EnquiryScrollPosition } from '@/features/contact/enquiry-scroll-position';
 import {
   getPropertyImage,
   propertyImageSlots,
@@ -18,6 +21,7 @@ import { getLocalizedPageMetadata } from '@/lib/seo/localized-page-metadata';
 
 type ContactPageProps = {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ apartment?: string | string[] }>;
 };
 
 export async function generateMetadata({
@@ -27,8 +31,15 @@ export async function generateMetadata({
   return getLocalizedPageMetadata(locale, 'contact');
 }
 
-export default async function ContactPage({ params }: ContactPageProps) {
+export default async function ContactPage({
+  params,
+  searchParams,
+}: ContactPageProps) {
   const { locale } = await params;
+  const requestedApartment = (await searchParams).apartment;
+  const initialApartment = isApartmentId(requestedApartment)
+    ? requestedApartment
+    : 'ground-floor';
   setRequestLocale(locale);
 
   const t = await getTranslations('Contact');
@@ -55,7 +66,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
       <section className='flex min-h-[100svh] items-center bg-[var(--trb-lake)] py-[var(--space-section)] text-[var(--trb-sand)]'>
         <Container>
           <div className='grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-20'>
-            <div className='relative aspect-[4/5] w-full max-w-[34rem] overflow-hidden xl:max-w-[38rem] 2xl:max-w-[44rem]'>
+            <div className='relative aspect-[4/5] w-full max-w-[34rem] overflow-hidden md:max-lg:justify-self-center xl:max-w-[38rem] 2xl:max-w-[44rem]'>
               <Image
                 src={welcomeImage.src}
                 alt={imageAlts(welcomeImage.altKey)}
@@ -80,7 +91,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 </span>
               </h2>
 
-              <p className='mt-7 max-w-xl text-base leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-lg sm:leading-8'>
+              <p className='mt-7 max-w-xl text-[1.1875rem] leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-[1.25rem] sm:leading-8'>
                 {t('hospitality.body')}
               </p>
             </div>
@@ -93,8 +104,9 @@ export default async function ContactPage({ params }: ContactPageProps) {
         className='relative min-h-[100svh] scroll-mt-28 overflow-hidden bg-page-surface pb-[clamp(3.5rem,6svh,4.5rem)] pt-[clamp(6.5rem,11svh,7.5rem)] lg:flex lg:items-center'
       >
         <EditorialWatermark variant='upper-right' opacity={0.025} />
+        <EnquiryScrollPosition />
 
-        <Container className='relative z-10'>
+        <Container className='relative z-10' data-enquiry-content>
           <div className='grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
             <div className='contact-enquiry-heading min-w-0'>
               <SectionHeading
@@ -110,7 +122,11 @@ export default async function ContactPage({ params }: ContactPageProps) {
             </div>
           </div>
 
-          <AvailabilityEnquiry data={availability} locale={locale} />
+          <AvailabilityEnquiry
+            data={availability}
+            initialApartment={initialApartment}
+            locale={locale}
+          />
         </Container>
       </section>
 
@@ -147,59 +163,35 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 </div>
 
                 <div className='py-5'>
-                  <div className='flex items-center justify-between gap-8'>
-                    <div>
-                      <dt className='text-sm text-page-muted'>
-                        {t('details.contactLabel')}
-                      </dt>
-
-                      <dd className='mt-2 flex flex-col items-start gap-1 text-page-text'>
-                        <span>{trbBusiness.owner.name}</span>
-
-                        <a
-                          href={trbBusiness.links.phone}
-                          className='transition-colors hover:text-page-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-page-focus'
-                        >
-                          {trbBusiness.contact.phone.display}
-                        </a>
-
-                        <a
-                          href={trbBusiness.links.email}
-                          className='transition-colors hover:text-page-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-page-focus'
-                        >
-                          {trbBusiness.contact.email}
-                        </a>
-                      </dd>
-                    </div>
-
-                    <div className='hidden shrink-0 flex-col items-center gap-2 lg:flex'>
-                      <p className='qr-scan-cue w-[8rem] whitespace-nowrap text-center text-[0.625rem] uppercase tracking-[0.18em] text-[var(--trb-lagoon)]'>
-                        {t('details.qrLabel')}
-                      </p>
-                      <div
-                        aria-label='The Ranco Bay contact QR code'
-                        className='relative size-[8rem] shrink-0 bg-[length:100%_100%] bg-no-repeat'
-                        style={{
-                          backgroundImage:
-                            'url("/contact/trb-contact-qr-dots.svg")',
-                        }}
-                      />
-                    </div>
-                  </div>
+                  <dt className='sr-only'>{t('details.contactLabel')}</dt>
+                  <dd>
+                    <OwnerContactBlock
+                      label={t('details.contactLabel')}
+                      qrLabel={t('details.qrLabel')}
+                      saveContactLabel={t('details.saveContact')}
+                      whatsappLabel={t('details.whatsappLabel')}
+                    />
+                  </dd>
                 </div>
               </dl>
             </div>
 
-            <div className='flex w-full max-w-[29.5rem] flex-col lg:mt-14 lg:max-w-[25.5rem] lg:justify-self-end'>
+            <div className='flex w-full max-w-[36rem] flex-col lg:mt-14 lg:max-w-[30rem] lg:justify-self-end'>
               <div className='relative aspect-square w-full overflow-hidden'>
-                <iframe
-                  src={trbBusiness.links.mapsEmbed}
-                  title={`${t('details.title')} — Google Maps`}
-                  loading='lazy'
-                  referrerPolicy='no-referrer-when-downgrade'
-                  allowFullScreen
-                  className='absolute inset-0 h-full w-full border-0'
+                <Image
+                  src='/images/destination/trb-location-map.webp'
+                  alt={`${trbBusiness.name} — ${trbBusiness.address.displayLines.join(', ')}`}
+                  fill
+                  sizes='(min-width: 1024px) 408px, min(472px, 100vw)'
+                  className='object-cover'
                 />
+
+                <span
+                  aria-hidden='true'
+                  className='pointer-events-none absolute left-[49.55%] top-[51.27%] flex size-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-[var(--trb-sand)] bg-[var(--trb-lagoon)] shadow-sm'
+                >
+                  <span className='size-2 rounded-full bg-[var(--trb-sand)]' />
+                </span>
               </div>
 
               <TrbButton

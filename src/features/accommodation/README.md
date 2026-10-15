@@ -8,6 +8,13 @@ sanitized date ranges to the browser, never the private feed or event metadata.
 Selectable dates synchronize with the enquiry form, but remain an indicative
 enquiry aid rather than a booking action.
 
+Apartment identity is defined in `apartments.ts` using permanent
+`ground-floor` and `upper-floor` identifiers. The ground-floor apartment owns
+the current calendar and Booking.com source. The upper-floor apartment has a
+separate, non-bookable Coming Soon state and does not share or infer any blocked
+dates. A future source can be added for that identifier without changing the
+calendar component or overwriting the ground-floor data.
+
 ### Booking.com source
 
 Set `BOOKING_ICAL_URL` in untracked `.env.local` for development and in the

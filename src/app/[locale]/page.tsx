@@ -1,7 +1,7 @@
 import {setRequestLocale} from "next-intl/server";
 
-import {CinematicHero} from "@/components/sections/cinematic-hero";
 import {HomepageDiscovery} from "@/components/sections/homepage-discovery";
+import {StaticHomeHero} from "@/components/sections/static-home-hero";
 
 type HomePageProps = {
   params: Promise<{locale: string}>;
@@ -13,7 +13,7 @@ export default async function HomePage({params}: HomePageProps) {
 
   return (
     <main id="main-content">
-      <CinematicHero />
+      <StaticHomeHero />
       <HomepageDiscovery />
     </main>
   );

@@ -46,7 +46,7 @@ export function PromiseScene({alt, metadata, title}: PromiseSceneProps) {
             >
               {title}
             </h1>
-            <p className="mt-6 max-w-3xl text-[clamp(0.85rem,1vw,1.1rem)] uppercase leading-6 tracking-[0.1em] text-[var(--trb-sand)]/85 sm:mt-7">
+            <p className="mt-6 max-w-3xl text-[1.125rem] uppercase leading-7 tracking-[0.1em] text-[var(--trb-sand)]/85 sm:mt-7 sm:text-[1.25rem] sm:leading-8 lg:text-[1.375rem]">
               {metadata}
             </p>
           </div>

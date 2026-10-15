@@ -28,6 +28,18 @@ const peekPanelClassName = "horizontal-editorial-gallery__panel--peek";
 const previousPeekPanelClassName =
   "horizontal-editorial-gallery__panel--previous-peek";
 const peekWidthProperty = "--editorial-gallery-visible-peek";
+const maximumVisibleIndicators = 5;
+
+function getVisibleIndicatorIndexes(total: number, activeIndex: number) {
+  const visibleCount = Math.min(total, maximumVisibleIndicators);
+  const maximumStart = Math.max(0, total - visibleCount);
+  const start = Math.min(
+    maximumStart,
+    Math.max(0, activeIndex - Math.floor(visibleCount / 2)),
+  );
+
+  return Array.from({length: visibleCount}, (_, index) => start + index);
+}
 
 function getPanels(gallery: HTMLDivElement) {
   return Array.from(
@@ -91,6 +103,8 @@ export function HorizontalEditorialGallery({
 }: HorizontalEditorialGalleryProps) {
   const tGallery = useTranslations("Common.Gallery");
   const galleryRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [panelCount, setPanelCount] = useState(0);
   const [directionCue, setDirectionCue] = useState<DirectionCue>({
     left: 0,
     visible: false,
@@ -108,6 +122,12 @@ export function HorizontalEditorialGallery({
     if (panels.length === 0) return;
 
     const currentIndex = getClosestPanelIndex(gallery, panels);
+    setActiveIndex((current) =>
+      current === currentIndex ? current : currentIndex,
+    );
+    setPanelCount((current) =>
+      current === panels.length ? current : panels.length,
+    );
     const currentPanel = panels[currentIndex];
     const previousPanel = panels[currentIndex - 1];
     const nextPanel = panels[currentIndex + 1];
@@ -194,6 +214,33 @@ export function HorizontalEditorialGallery({
     };
   }, [updateNavigation]);
 
+  function scrollToIndex(index: number) {
+    const gallery = galleryRef.current;
+
+    if (!gallery) return;
+
+    const panels = getPanels(gallery);
+
+    if (panels.length === 0) return;
+
+    const nextIndex = Math.min(panels.length - 1, Math.max(0, index));
+
+    const nextPanel = panels[nextIndex];
+    const targetLeft =
+      nextPanel.offsetLeft -
+      gallery.offsetLeft -
+      (gallery.clientWidth - nextPanel.offsetWidth) / 2;
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    setActiveIndex(nextIndex);
+    gallery.scrollTo({
+      behavior: reduceMotion ? "auto" : "smooth",
+      left: targetLeft,
+    });
+  }
+
   function scrollToAdjacent(direction: -1 | 1) {
     const gallery = galleryRef.current;
 
@@ -211,19 +258,7 @@ export function HorizontalEditorialGallery({
 
     if (nextIndex === currentIndex) return;
 
-    const nextPanel = panels[nextIndex];
-    const targetLeft =
-      nextPanel.offsetLeft -
-      gallery.offsetLeft -
-      (gallery.clientWidth - nextPanel.offsetWidth) / 2;
-    const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-
-    gallery.scrollTo({
-      behavior: reduceMotion ? "auto" : "smooth",
-      left: targetLeft,
-    });
+    scrollToIndex(nextIndex);
   }
 
   function handleKeyDown(event: KeyboardEvent<HTMLDivElement>) {
@@ -279,6 +314,33 @@ export function HorizontalEditorialGallery({
             strokeWidth={1.5}
           />
         </button>
+      ) : null}
+      {panelCount > 1 ? (
+        <div className="absolute bottom-2 left-1/2 z-20 flex -translate-x-1/2 items-center rounded-full bg-[color-mix(in_srgb,var(--trb-sand)_82%,transparent)] px-1.5 py-1 shadow-sm backdrop-blur-sm lg:hidden">
+          {getVisibleIndicatorIndexes(panelCount, activeIndex).map((index) => {
+            const isActive = index === activeIndex;
+
+            return (
+              <button
+                key={index}
+                type="button"
+                aria-current={isActive ? "true" : undefined}
+                aria-label={`${label}: ${index + 1} / ${panelCount}`}
+                onClick={() => scrollToIndex(index)}
+                className="group flex size-9 items-center justify-center rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-page-focus"
+              >
+                <span
+                  aria-hidden="true"
+                  className={`block h-1.5 rounded-full transition-[width,background-color] duration-200 ease-out motion-reduce:transition-none ${
+                    isActive
+                      ? "w-4 bg-[var(--trb-lagoon)]"
+                      : "w-1.5 bg-[color-mix(in_srgb,var(--trb-lake)_48%,transparent)] group-hover:bg-[var(--trb-lagoon)]"
+                  }`}
+                />
+              </button>
+            );
+          })}
+        </div>
       ) : null}
     </div>
   );
