@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Questrial&display=swap");
+
+:root {
+  --trb-sand: #f0edda;
+  --trb-walnut: #5f4433;
+  --trb-lake: #244b74;
+  --trb-lake-deep: #173654;
+  --trb-lagoon: #13788a;
+}
+
+body {
+  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Questrial", "Manrope", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+}

@@ -1,0 +1,155 @@
+import Image from 'next/image'
+
+import {Container} from '@/components/layout/container'
+import {ExpandableGalleryGroup} from '@/components/layout/expandable-gallery-group'
+import {ExpandableGalleryItem} from '@/components/layout/expandable-gallery-item'
+import {
+  HorizontalEditorialGallery,
+  HorizontalEditorialPanel,
+} from '@/components/layout/horizontal-editorial-gallery'
+import {
+  TEMPORARY_GALLERY_TEST_SLIDES,
+  TemporaryGalleryPlaceholder,
+} from '@/components/layout/temporary-gallery-placeholder'
+import {SectionHeading} from '@/components/ui/section-heading'
+
+import {GuideCard} from './guide-card'
+import {
+  GuidePracticalInformation,
+  type GuidePracticalLabels,
+} from './guide-practical-information'
+import type {LocalGuideEntry} from './types'
+
+type GuideCategorySectionProps = {
+  closeLabel: string
+  description: string
+  entries: readonly LocalGuideEntry[]
+  eyebrow: string
+  index: number
+  label: string
+  nextLabel: string
+  practicalLabels: GuidePracticalLabels
+  previousLabel: string
+}
+
+export function GuideCategorySection({
+  closeLabel,
+  description,
+  entries,
+  eyebrow,
+  index,
+  label,
+  nextLabel,
+  practicalLabels,
+  previousLabel,
+}: GuideCategorySectionProps) {
+  return (
+    <section
+      className={
+        index % 2 === 0
+          ? 'flex min-h-[100svh] items-center bg-page-surface py-[var(--space-section)]'
+          : 'flex min-h-[100svh] items-center bg-page-background py-[var(--space-section)]'
+      }
+    >
+      <Container className='editorial-gallery-container'>
+        <div className='editorial-gallery-row editorial-gallery-row--guide grid items-stretch'>
+          <div className='editorial-gallery-card-slot'>
+            <div className='editorial-gallery-text-card trb-editorial-glass'>
+              <SectionHeading eyebrow={eyebrow} title={label} body={description} />
+            </div>
+          </div>
+          <ExpandableGalleryGroup
+            className='editorial-gallery-media-slot'
+            closeLabel={closeLabel}
+            previousLabel={previousLabel}
+            nextLabel={nextLabel}
+          >
+            <HorizontalEditorialGallery label={label} variant='guide'>
+              {entries.map((entry) => (
+                <HorizontalEditorialPanel key={entry.id} format={entry.format}>
+                  <ExpandableGalleryItem
+                    itemId={entry.id}
+                    dialogLabel={entry.title}
+                    dialogContent={
+                      <article
+                        className={`grid w-full overflow-hidden bg-[color-mix(in_srgb,var(--trb-lake)_82%,transparent)] ${
+                          entry.image ? 'lg:grid-cols-[1.2fr_0.8fr]' : ''
+                        }`}
+                      >
+                        {entry.image ? (
+                          <div className='relative h-[52svh] min-h-72 lg:h-[78svh] lg:max-h-[48rem]'>
+                            <Image
+                              src={entry.image}
+                              alt={entry.imageAlt}
+                              fill
+                              sizes='(min-width: 1024px) 60vw, 92vw'
+                              className='object-contain'
+                            />
+                          </div>
+                        ) : null}
+                        <div className='flex items-center px-[clamp(1.5rem,4vw,4rem)] py-[clamp(2rem,5vw,5rem)]'>
+                          <div>
+                            <p className='text-xs uppercase tracking-[0.18em] text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
+                              {label}
+                            </p>
+                            <h2 className='mt-4 font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.95]'>
+                              {entry.title}
+                            </h2>
+                            {entry.description ? (
+                              <p className='mt-6 max-w-xl whitespace-pre-line text-[1.125rem] leading-7 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] sm:text-[1.25rem] sm:leading-8'>
+                                {entry.description}
+                              </p>
+                            ) : null}
+                            {entry.seasonalInformation ? (
+                              <p className='mt-5 max-w-xl whitespace-pre-line text-sm leading-6 text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
+                                {entry.seasonalInformation}
+                              </p>
+                            ) : null}
+                            <GuidePracticalInformation
+                              entry={entry}
+                              labels={practicalLabels}
+                            />
+                            {entry.tags.length > 0 ? (
+                              <ul className='mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[color-mix(in_srgb,var(--trb-sand)_72%,transparent)]'>
+                                {entry.tags.map((tag) => <li key={tag}>{tag}</li>)}
+                              </ul>
+                            ) : null}
+                          </div>
+                        </div>
+                      </article>
+                    }
+                  >
+                    <GuideCard
+                      image={entry.image}
+                      alt={entry.imageAlt}
+                      category={label}
+                      title={entry.title}
+                      description={entry.description}
+                      imagePosition={entry.imagePosition}
+                      tags={entry.tags}
+                      presentation='gallery'
+                    />
+                  </ExpandableGalleryItem>
+                </HorizontalEditorialPanel>
+              ))}
+              {TEMPORARY_GALLERY_TEST_SLIDES.slice(
+                0,
+                Math.max(0, 4 - entries.length),
+              ).map((slide, placeholderIndex) => (
+                <HorizontalEditorialPanel
+                  key={`temporary-${slide.slideNumber}`}
+                  format={slide.format}
+                >
+                  <TemporaryGalleryPlaceholder
+                    slideNumber={entries.length + placeholderIndex + 1}
+                    tone={slide.tone}
+                  />
+                </HorizontalEditorialPanel>
+              ))}
+            </HorizontalEditorialGallery>
+          </ExpandableGalleryGroup>
+        </div>
+      </Container>
+    </section>
+  )
+}

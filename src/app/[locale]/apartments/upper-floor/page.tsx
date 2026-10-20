@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
+import { draftMode } from 'next/headers';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { OwnerContactBlock } from '@/components/contact/owner-contact-block';
 import { Container } from '@/components/layout/container';
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { TrbButton } from '@/components/ui/trb-button';
+import { MansardaPreviewIntroduction } from '@/features/accommodation/mansarda-preview-introduction';
+import type { AppLocale } from '@/i18n/routing';
+import { getDraftAwareApartmentIntroduction } from '@/lib/sanity/apartments';
 import { getLocalizedPageMetadata } from '@/lib/seo/localized-page-metadata';
 
 type UpperFloorPageProps = {
@@ -23,6 +27,13 @@ export default async function UpperFloorPage({ params }: UpperFloorPageProps) {
   setRequestLocale(locale);
   const t = await getTranslations('UpperFloor');
   const commonContact = await getTranslations('Common.DirectContact');
+  const { isEnabled: isDraftMode } = await draftMode();
+  const cmsIntroduction = isDraftMode
+    ? await getDraftAwareApartmentIntroduction(
+        'upper-floor',
+        locale as AppLocale,
+      )
+    : null;
 
   return (
     <main id='main-content'>
@@ -70,6 +81,12 @@ export default async function UpperFloorPage({ params }: UpperFloorPageProps) {
           </div>
         </Container>
       </section>
+      {cmsIntroduction?.status === 'success' ? (
+        <MansardaPreviewIntroduction
+          content={cmsIntroduction.data}
+          fallbackHeading={t('title')}
+        />
+      ) : null}
     </main>
   );
 }

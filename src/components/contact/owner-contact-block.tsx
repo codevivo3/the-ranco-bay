@@ -1,5 +1,6 @@
-import { Download, MessageCircle } from 'lucide-react';
+import { Download } from 'lucide-react';
 
+import { ContactIcon } from '@/components/ui/contact-icon';
 import { trbBusiness } from '@/lib/constants/business';
 
 type OwnerContactBlockProps = {
@@ -36,7 +37,7 @@ export function OwnerContactBlock({
             rel='noopener noreferrer'
             className={`${contactLinkClass} mt-2 inline-flex min-h-11 items-center gap-2`}
           >
-            <MessageCircle aria-hidden='true' size={18} strokeWidth={1.5} />
+            <ContactIcon decorative name='whatsapp' size={18} variant='trb' />
             {whatsappLabel}
           </a>
         </address>

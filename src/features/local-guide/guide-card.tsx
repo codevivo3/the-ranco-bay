@@ -4,7 +4,7 @@ type GuideCardProps = {
   alt: string;
   category: string;
   description: string;
-  image: string;
+  image?: string;
   imageFrameClassName?: string;
   imagePosition?: string;
   imageSizes?: string;
@@ -33,19 +33,21 @@ export function GuideCard({
       <div
         className={`${gallery ? 'h-full' : 'aspect-[4/5]'} relative overflow-hidden bg-page-surface ${imageFrameClassName}`}
       >
-        <Image
-          src={image}
-          alt={alt}
-          fill
-          sizes={
-            imageSizes ??
-            (gallery
-              ? '(min-width: 1024px) 45vw, 92vw'
-              : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw')
-          }
-          className='object-cover transition-transform duration-700 group-hover:scale-[1.015] motion-reduce:transition-none'
-          style={imagePosition ? {objectPosition: imagePosition} : undefined}
-        />
+        {image ? (
+          <Image
+            src={image}
+            alt={alt}
+            fill
+            sizes={
+              imageSizes ??
+              (gallery
+                ? '(min-width: 1024px) 45vw, 92vw'
+                : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw')
+            }
+            className='object-cover transition-transform duration-700 group-hover:scale-[1.015] motion-reduce:transition-none'
+            style={imagePosition ? {objectPosition: imagePosition} : undefined}
+          />
+        ) : null}
 
         {overlay ? (
           <div className={`absolute inset-x-0 bottom-0 z-10 border-t border-[color-mix(in_srgb,var(--trb-sand)_18%,transparent)] bg-[color-mix(in_srgb,var(--trb-lagoon)_52%,color-mix(in_srgb,var(--trb-sand)_18%,transparent))] px-5 py-5 text-[var(--trb-sand)] backdrop-blur-[14px] backdrop-saturate-[1.15] md:px-3 md:py-3 lg:px-6 lg:py-5 ${gallery ? 'pb-14 md:pb-14 lg:pb-5' : ''}`}>
@@ -57,9 +59,11 @@ export function GuideCard({
               {title}
             </h3>
 
-            <p className='mt-3 line-clamp-3 text-sm leading-5 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] md:mt-2 md:text-[0.8125rem] md:leading-[1.125rem] lg:mt-3 lg:text-sm lg:leading-5'>
-              {description}
-            </p>
+            {description ? (
+              <p className='mt-3 line-clamp-3 whitespace-pre-line text-sm leading-5 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] md:mt-2 md:text-[0.8125rem] md:leading-[1.125rem] lg:mt-3 lg:text-sm lg:leading-5'>
+                {description}
+              </p>
+            ) : null}
 
             {gallery && tags.length > 0 ? (
               <ul className='mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[color-mix(in_srgb,var(--trb-sand)_76%,transparent)]'>
@@ -82,9 +86,11 @@ export function GuideCard({
             {title}
           </h3>
 
-          <p className='mt-4 text-sm leading-6 text-page-muted'>
-            {description}
-          </p>
+          {description ? (
+            <p className='mt-4 whitespace-pre-line text-sm leading-6 text-page-muted'>
+              {description}
+            </p>
+          ) : null}
 
           {tags.length > 0 ? (
             <ul className='mt-5 flex flex-wrap gap-x-4 gap-y-2 text-xs text-page-muted'>

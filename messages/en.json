@@ -146,6 +146,7 @@
       "ranco-outlook": {"title": "Around Ranco", "description": "A temporary route into walks, villages and viewpoints chosen with practical local context.", "alt": "Open gates framing the path toward the lake"}
     },
     "tags": {"lunch": "Lunch", "sunset": "Sunset", "swimming": "Swimming", "halfDay": "Half day", "withoutCar": "Without a car"},
+    "practical": {"address": "Address", "website": "Official website", "directions": "Directions", "telephone": "Call"},
     "cta": {"eyebrow": "Personal recommendations", "title": "How do you picture your day?", "titleLineOne": "How do you picture", "titleLineTwo": "your day?", "body": "Future guide content will become more useful when it can respond to each stay, season and pace.", "link": "Contact your host"}
   },
   "Contact": {
@@ -203,7 +204,7 @@
   },
   "Common": {
     "Footer": {"location": "Ranco • Lake Maggiore • Italy"},
-    "NotFound": {"title": "Page not found", "description": "The requested page is not part of this website.", "returnHome": "Return home"},
+    "NotFound": {"title": "Page not found", "supportingText": "Looks like you've drifted a little off course.", "description": "The page you're looking for isn't here. Let's get you back to the lake.", "returnHome": "Back home"},
     "Gallery": {"previousItem": "Previous gallery item", "nextItem": "Next gallery item"},
     "DirectContact": {"label": "Enquiries", "enquire": "Send an enquiry", "whatsapp": "WhatsApp Emanuela", "vcard": "Save contact", "saveContact": "Save Contact"}
   },

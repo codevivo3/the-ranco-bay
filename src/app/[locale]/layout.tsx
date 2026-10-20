@@ -1,12 +1,16 @@
 import type {Metadata} from "next";
+import {draftMode} from "next/headers";
 import {hasLocale, NextIntlClientProvider} from "next-intl";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 import {notFound} from "next/navigation";
+import {VisualEditing} from "next-sanity/visual-editing";
 
 import {SiteFooter} from "@/components/layout/site-footer";
 import {SiteHeader} from "@/components/navigation/site-header";
+import {PreviewExitControl} from "@/components/preview/preview-exit-control";
 import {bodyFont, displayFont} from "@/lib/fonts";
 import {getSiteUrl} from "@/lib/constants/site";
+import {getLocalizedSocialMetadata} from "@/lib/seo/localized-social-metadata";
 import {routing} from "@/i18n/routing";
 
 import "../globals.css";
@@ -30,6 +34,13 @@ export async function generateMetadata({
   }
 
   const t = await getTranslations({locale, namespace: "Metadata"});
+  const socialMetadata = await getLocalizedSocialMetadata({
+    locale,
+    page: "home",
+    pathname: `/${locale}`,
+    title: t("openGraphTitle"),
+    description: t("openGraphDescription"),
+  });
 
   return {
     metadataBase: getSiteUrl(),
@@ -44,13 +55,7 @@ export async function generateMetadata({
         ]),
       ),
     },
-    openGraph: {
-      type: "website",
-      locale,
-      title: t("openGraphTitle"),
-      description: t("openGraphDescription"),
-      url: `/${locale}`,
-    },
+    ...socialMetadata,
     robots: {
       index: true,
       follow: true,
@@ -69,6 +74,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const {isEnabled: isDraftMode} = await draftMode();
   const accessibility = await getTranslations({
     locale,
     namespace: "Accessibility",
@@ -91,6 +97,12 @@ export default async function LocaleLayout({
           <SiteHeader />
           {children}
           <SiteFooter />
+          {isDraftMode ? (
+            <>
+              <VisualEditing />
+              <PreviewExitControl locale={locale} />
+            </>
+          ) : null}
         </NextIntlClientProvider>
       </body>
     </html>

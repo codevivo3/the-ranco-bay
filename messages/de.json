@@ -132,6 +132,7 @@
       "ranco-outlook": {"title": "Rund um Ranco", "description": "Ein vorläufiger Weg zu Spaziergängen, Dörfern und Aussichtspunkten mit praktischem lokalem Kontext.", "alt": "Offene Tore rahmen den Weg zum See"}
     },
     "tags": {"lunch": "Mittagessen", "sunset": "Sonnenuntergang", "swimming": "Schwimmen", "halfDay": "Halber Tag", "withoutCar": "Ohne Auto"},
+    "practical": {"address": "Adresse", "website": "Offizielle Website", "directions": "Route", "telephone": "Anrufen"},
     "cta": {"eyebrow": "Persönliche Empfehlungen", "title": "Wie stellen Sie sich Ihren Tag vor?", "titleLineOne": "Wie stellen Sie sich", "titleLineTwo": "Ihren Tag vor?", "body": "Der künftige Guide wird nützlicher, wenn er auf Aufenthalt, Saison und Tempo reagieren kann.", "link": "Gastgeber kontaktieren"}
   },
   "Contact": {
@@ -178,7 +179,7 @@
   },
   "Common": {
     "Footer": {"location": "Ranco • Lago Maggiore • Italien"},
-    "NotFound": {"title": "Seite nicht gefunden", "description": "Die angeforderte Seite ist nicht Teil dieser Website.", "returnHome": "Zur Startseite"},
+    "NotFound": {"title": "Seite nicht gefunden", "supportingText": "Sie sind wohl ein wenig vom Kurs abgekommen.", "description": "Diese Seite gibt es hier nicht. Zurück zum See.", "returnHome": "Zur Startseite"},
     "Gallery": {"previousItem": "Vorheriges Galerieelement", "nextItem": "Nächstes Galerieelement"},
     "DirectContact": {"label": "Anfragen", "enquire": "Anfrage senden", "whatsapp": "Emanuela per WhatsApp", "vcard": "Kontakt speichern", "saveContact": "Kontakt speichern"}
   },

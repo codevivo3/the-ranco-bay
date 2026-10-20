@@ -132,6 +132,7 @@
       "ranco-outlook": {"title": "Autour de Ranco", "description": "Une route temporaire vers des promenades, villages et panoramas accompagnés d'un contexte local pratique.", "alt": "Des grilles ouvertes encadrent le chemin vers le lac"}
     },
     "tags": {"lunch": "Déjeuner", "sunset": "Coucher de soleil", "swimming": "Baignade", "halfDay": "Demi-journée", "withoutCar": "Sans voiture"},
+    "practical": {"address": "Adresse", "website": "Site officiel", "directions": "Itinéraire", "telephone": "Appeler"},
     "cta": {"eyebrow": "Recommandations personnelles", "title": "Comment imaginez-vous votre journée ?", "titleLineOne": "Comment imaginez-vous", "titleLineTwo": "votre journée ?", "body": "Le futur guide sera plus utile lorsqu'il pourra répondre à chaque séjour, saison et rythme.", "link": "Contacter votre hôte"}
   },
   "Contact": {
@@ -178,7 +179,7 @@
   },
   "Common": {
     "Footer": {"location": "Ranco • lac Majeur • Italie"},
-    "NotFound": {"title": "Page introuvable", "description": "La page demandée ne fait pas partie de ce site.", "returnHome": "Retour à l'accueil"},
+    "NotFound": {"title": "Page introuvable", "supportingText": "On dirait que vous avez un peu dérivé.", "description": "La page que vous cherchez n'est pas ici. Retournons au lac.", "returnHome": "Retour à l'accueil"},
     "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant"},
     "DirectContact": {"label": "Demandes", "enquire": "Envoyer une demande", "whatsapp": "WhatsApp à Emanuela", "vcard": "Enregistrer le contact", "saveContact": "Enregistrer le contact"}
   },

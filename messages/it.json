@@ -272,6 +272,12 @@
       "halfDay": "Mezza giornata",
       "withoutCar": "Senza auto"
     },
+    "practical": {
+      "address": "Indirizzo",
+      "website": "Sito ufficiale",
+      "directions": "Indicazioni",
+      "telephone": "Chiama"
+    },
     "cta": {
       "eyebrow": "Consigli personali",
       "title": "Come immagini la tua giornata?",
@@ -405,7 +411,8 @@
     },
     "NotFound": {
       "title": "Pagina non trovata",
-      "description": "La pagina richiesta non fa parte di questo sito.",
+      "supportingText": "Sembra che tu abbia perso un po' la rotta.",
+      "description": "La pagina che cerchi non è qui. Torniamo al lago.",
       "returnHome": "Torna alla home"
     },
     "Gallery": {
