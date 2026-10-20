@@ -27,7 +27,7 @@ export async function getLocalizedPageMetadata(
       languages: Object.fromEntries(
         routing.locales.map((supportedLocale) => [
           supportedLocale,
-          `/${supportedLocale}/${page}`,
+          `/${supportedLocale}/${pagePaths[page]}`,
         ]),
       ),
     },
