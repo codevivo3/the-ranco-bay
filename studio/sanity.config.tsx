@@ -30,10 +30,10 @@ export default defineConfig({
   dataset,
   theme: trbTheme,
   plugins: [
-    structureTool({name: 'content', title: 'Content Studio', structure}),
+    structureTool({name: 'content', title: 'Contenuti', structure}),
     presentationTool({
       name: 'preview',
-      title: 'Preview',
+      title: 'Anteprima',
       resolve: presentationResolve,
       allowOrigins: [previewOrigin],
       previewUrl: {

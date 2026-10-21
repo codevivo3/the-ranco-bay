@@ -3,25 +3,33 @@ import {defineField, defineType} from 'sanity'
 
 export const editorialSection = defineType({
   name: 'editorialSection',
-  title: 'Editorial section',
+  title: 'Sezione editoriale',
   type: 'object',
   icon: BlockElementIcon,
   fields: [
     defineField({
       name: 'eyebrow',
-      title: 'Eyebrow',
+      title: 'Sopratitolo',
+      description: 'Breve etichetta mostrata sopra il titolo. Campo facoltativo.',
       type: 'localeStringRecommended',
     }),
     defineField({
       name: 'heading',
-      title: 'Heading',
+      title: 'Titolo',
+      description: 'Titolo principale della sezione nelle lingue disponibili.',
       type: 'localeStringRecommended',
     }),
-    defineField({name: 'body', title: 'Body', type: 'localeRichTextRecommended'}),
-    defineField({name: 'image', title: 'Photography', type: 'editorialImage'}),
+    defineField({
+      name: 'body',
+      title: 'Testo',
+      description: 'Contenuto editoriale della sezione nelle lingue disponibili.',
+      type: 'localeRichTextRecommended',
+    }),
+    defineField({name: 'image', title: 'Fotografia', type: 'editorialImage'}),
     defineField({
       name: 'linkLabel',
-      title: 'Link label',
+      title: 'Testo del collegamento',
+      description: 'Testo breve del collegamento mostrato alla fine della sezione.',
       type: 'localeStringRecommended',
       hidden: ({document}) => document?._type === 'propertyInformation',
     }),

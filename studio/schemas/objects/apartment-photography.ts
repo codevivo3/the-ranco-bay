@@ -2,21 +2,21 @@ import {ImagesIcon} from '@sanity/icons/Images'
 import {defineField, defineType} from 'sanity'
 
 export const photographyCategories = [
-  ['bathroom', 'Bathroom'],
-  ['bedroom', 'Bedroom'],
-  ['details', 'Details'],
-  ['kitchen', 'Kitchen'],
-  ['living', 'Living'],
-  ['general', 'General'],
+  ['bathroom', 'Bagno'],
+  ['bedroom', 'Camera da letto'],
+  ['details', 'Dettagli'],
+  ['kitchen', 'Cucina'],
+  ['living', 'Zona giorno'],
+  ['general', 'Generali'],
 ] as const
 
 export const apartmentPhotography = defineType({
   name: 'apartmentPhotography',
-  title: 'Apartment photography',
+  title: "Fotografie dell'appartamento",
   type: 'object',
   icon: ImagesIcon,
   description:
-    'Upload, replace, preview, and drag to reorder images within each category.',
+    'Carica, sostituisci e riordina le fotografie in ogni categoria trascinandole. Scegli immagini rappresentative e prive di informazioni sensibili.',
   fields: photographyCategories.map(([name, title]) =>
     defineField({
       name,

@@ -3,19 +3,20 @@ import {defineField, defineType} from 'sanity'
 
 export const websiteSettings = defineType({
   name: 'websiteSettings',
-  title: 'Website Settings',
+  title: 'Impostazioni del sito',
   type: 'document',
   icon: CogIcon,
   description:
-    'Public editorial defaults only. Secrets, booking rules, and integrations do not belong here.',
+    'Inserisci solo impostazioni editoriali pubbliche. Non aggiungere credenziali, regole di prenotazione, dati degli ospiti o informazioni riservate sulle integrazioni.',
   groups: [
-    {name: 'editorial', title: 'Editorial', default: true},
-    {name: 'seo', title: 'SEO defaults'},
+    {name: 'editorial', title: 'Contenuti editoriali', default: true},
+    {name: 'seo', title: 'SEO predefinita'},
   ],
   fields: [
     defineField({
       name: 'siteName',
-      title: 'Public site name',
+      title: 'Nome pubblico del sito',
+      description: 'Nome ufficiale mostrato sul sito. Questo campo non è modificabile.',
       type: 'string',
       initialValue: 'The Ranco Bay',
       validation: (Rule) => Rule.required(),
@@ -24,17 +25,21 @@ export const websiteSettings = defineType({
     }),
     defineField({
       name: 'footerStatement',
-      title: 'Footer statement',
+      title: 'Testo del piè di pagina',
+      description:
+        'Breve testo mostrato nel piè di pagina. Inserisci le versioni nelle quattro lingue.',
       type: 'localeStringRecommended',
       group: 'editorial',
     }),
     defineField({
       name: 'defaultSeo',
-      title: 'Default SEO',
+      title: 'SEO predefinita',
+      description:
+        'Valori utilizzati quando una pagina non dispone di informazioni SEO specifiche.',
       type: 'seo',
       group: 'seo',
       validation: (Rule) => Rule.required(),
     }),
   ],
-  preview: {prepare: () => ({title: 'Website Settings'})},
+  preview: {prepare: () => ({title: 'Impostazioni del sito'})},
 })

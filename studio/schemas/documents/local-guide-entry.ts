@@ -1,9 +1,16 @@
 import {PinIcon} from '@sanity/icons/Pin'
 import {defineField, defineType} from 'sanity'
 
+const categoryTitles: Record<string, string> = {
+  eat: 'Mangiare',
+  water: "Sull'acqua",
+  explore: 'Esplorare',
+  practical: 'Informazioni pratiche',
+}
+
 export const localGuideEntry = defineType({
   name: 'localGuideEntry',
-  title: 'Local Guide Entry',
+  title: 'Luogo della Guida locale',
   type: 'document',
   icon: PinIcon,
   groups: [
@@ -27,7 +34,7 @@ export const localGuideEntry = defineType({
       name: 'publicTitle',
       title: 'Titolo pubblico',
       description:
-        'Titolo che gli ospiti vedranno nella guida. Le quattro traduzioni sono obbligatorie per pubblicare.',
+        'Nome del luogo mostrato agli ospiti. Esempio: Battipalo. Le quattro traduzioni sono obbligatorie per pubblicare.',
       type: 'localeStringRequired',
       group: 'content',
       validation: (Rule) => Rule.required().error('Inserisci il titolo pubblico.'),
@@ -177,5 +184,10 @@ export const localGuideEntry = defineType({
       subtitle: 'category',
       media: 'photography.0.image',
     },
+    prepare: ({media, subtitle, title}) => ({
+      media,
+      subtitle: categoryTitles[String(subtitle)] ?? 'Categoria non specificata',
+      title,
+    }),
   },
 })

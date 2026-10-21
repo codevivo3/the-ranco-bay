@@ -2,27 +2,27 @@ import {HomeIcon} from '@sanity/icons/Home'
 import {defineField, defineType} from 'sanity'
 
 const editorialSectionFields = [
-  ['accommodationOverview', 'Accommodation overview'],
-  ['apartmentsOverview', 'Apartments overview'],
-  ['localGuideOverview', 'Local Guide overview'],
-  ['hospitality', 'Hospitality'],
-  ['finalCallToAction', 'Final call to action'],
+  ['accommodationOverview', "Presentazione dell'ospitalità"],
+  ['apartmentsOverview', 'Presentazione degli appartamenti'],
+  ['localGuideOverview', 'Presentazione della Guida locale'],
+  ['hospitality', 'Accoglienza'],
+  ['finalCallToAction', 'Invito finale'],
 ] as const
 
 export const homepage = defineType({
   name: 'homepage',
-  title: 'Homepage',
+  title: 'Pagina iniziale',
   type: 'document',
   icon: HomeIcon,
   groups: [
-    {name: 'content', title: 'Content', default: true},
-    {name: 'photography', title: 'Photography'},
-    {name: 'seo', title: 'SEO'},
+    {name: 'content', title: 'Contenuti', default: true},
+    {name: 'photography', title: 'Fotografie'},
+    {name: 'seo', title: 'SEO e motori di ricerca'},
   ],
   fields: [
     defineField({
       name: 'hero',
-      title: 'Cinematic hero',
+      title: 'Apertura cinematografica',
       type: 'cinematicHero',
       group: 'content',
       validation: (Rule) => Rule.required(),
@@ -32,14 +32,20 @@ export const homepage = defineType({
     ),
     defineField({
       name: 'featuredPhotography',
-      title: 'Featured photography',
-      description: 'Drag images to set their editorial order.',
+      title: 'Fotografie in evidenza',
+      description:
+        "Trascina le fotografie per definire l'ordine in cui appaiono sul sito.",
       type: 'array',
       of: [{type: 'editorialImage'}],
       options: {layout: 'grid'},
       group: 'photography',
     }),
-    defineField({name: 'seo', title: 'SEO', type: 'seo', group: 'seo'}),
+    defineField({
+      name: 'seo',
+      title: 'SEO e motori di ricerca',
+      type: 'seo',
+      group: 'seo',
+    }),
   ],
-  preview: {prepare: () => ({title: 'Homepage'})},
+  preview: {prepare: () => ({title: 'Pagina iniziale'})},
 })

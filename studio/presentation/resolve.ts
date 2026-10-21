@@ -12,7 +12,7 @@ const localeLocations = (path: string, title: string) =>
 export const presentationResolve: PresentationPluginOptions['resolve'] = {
   locations: {
     homepage: defineLocations({
-      locations: localeLocations('', 'Homepage'),
+      locations: localeLocations('', 'Pagina iniziale'),
     }),
     apartment: defineLocations({
       select: {documentId: '_id'},
@@ -29,14 +29,16 @@ export const presentationResolve: PresentationPluginOptions['resolve'] = {
           }
         }
 
-        return {message: 'This apartment has no public preview destination.'}
+        return {
+          message: 'Questo appartamento non dispone di una pagina pubblica di anteprima.',
+        }
       },
     }),
     propertyInformation: defineLocations({
-      locations: localeLocations('/property', 'The Property'),
+      locations: localeLocations('/property', 'La proprietà'),
     }),
     localGuideEntry: defineLocations({
-      locations: localeLocations('/guide', 'Local Guide'),
+      locations: localeLocations('/guide', 'Guida locale'),
     }),
   },
 }

@@ -9,14 +9,20 @@ type SeoFieldCopy = {
 
 const defaultCopy: SeoFieldCopy = {
   title: {
-    title: 'Search title',
-    description: 'Aim for a concise title. Missing translations are warnings.',
+    title: 'Titolo SEO',
+    description:
+      'Titolo visualizzato nei risultati dei motori di ricerca. Scrivi un titolo chiaro e conciso in ogni lingua.',
   },
   description: {
-    title: 'Search description',
-    description: 'A short summary for search and social previews.',
+    title: 'Descrizione SEO',
+    description:
+      'Breve descrizione utilizzata nei risultati di ricerca e nelle anteprime dei collegamenti.',
   },
-  socialImage: {title: 'Social sharing image'},
+  socialImage: {
+    title: 'Immagine per la condivisione',
+    description:
+      'Immagine utilizzata nelle anteprime quando la pagina viene condivisa.',
+  },
 }
 
 export function createSeoFields(copy: SeoFieldCopy = defaultCopy) {

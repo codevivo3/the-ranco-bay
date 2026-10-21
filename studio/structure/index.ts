@@ -7,17 +7,17 @@ import type {StructureResolver} from 'sanity/structure'
 export const structure: StructureResolver = (S) =>
   S.list()
     .id('content-studio')
-    .title('Content Studio')
+    .title('Contenuti del sito')
     .items([
-      S.listItem().singleton('homepage').title('Homepage').icon(HomeIcon),
+      S.listItem().singleton('homepage').title('Pagina iniziale').icon(HomeIcon),
       S.listItem()
         .id('apartments')
-        .title('Apartments')
+        .title('Appartamenti')
         .icon(HomeIcon)
         .child(
           S.list()
             .id('apartments-list')
-            .title('Apartments')
+            .title('Appartamenti')
             .items([
               S.listItem().singleton('ground-floor').title('Veranda').icon(HomeIcon),
               S.listItem().singleton('upper-floor').title('Mansarda').icon(HomeIcon),
@@ -25,15 +25,15 @@ export const structure: StructureResolver = (S) =>
         ),
       S.listItem()
         .singleton('propertyInformation')
-        .title('The Property')
+        .title('La proprietà')
         .icon(EarthGlobeIcon),
       S.documentTypeListItem('localGuideEntry')
-        .title('Local Guide')
+        .title('Guida locale')
         .icon(PinIcon)
         .showCount(),
       S.divider(),
       S.listItem()
         .singleton('websiteSettings')
-        .title('Website Settings')
+        .title('Impostazioni del sito')
         .icon(CogIcon),
     ])
