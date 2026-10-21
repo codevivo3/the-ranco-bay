@@ -64,6 +64,7 @@ export function PageIntro({
               src={image}
               alt={alt}
               fill
+              loading="eager"
               sizes={
                 isEditorialStatement
                   ? "(min-width: 1024px) 38vw, (min-width: 640px) 34rem, calc(100vw - 2rem)"

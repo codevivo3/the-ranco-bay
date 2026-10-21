@@ -6,7 +6,6 @@ import {getSiteUrl} from "@/lib/constants/site";
 const publicPaths = [
   "",
   "house",
-  "apartments/upper-floor",
   "guide",
   "contact",
 ] as const;

@@ -7,6 +7,7 @@ import {SiteFooter} from "@/components/layout/site-footer";
 import {SiteHeader} from "@/components/navigation/site-header";
 import {bodyFont, displayFont} from "@/lib/fonts";
 import {getSiteUrl} from "@/lib/constants/site";
+import {getLocalizedSocialMetadata} from "@/lib/seo/localized-social-metadata";
 import {routing} from "@/i18n/routing";
 
 import "../globals.css";
@@ -30,6 +31,13 @@ export async function generateMetadata({
   }
 
   const t = await getTranslations({locale, namespace: "Metadata"});
+  const socialMetadata = await getLocalizedSocialMetadata({
+    locale,
+    page: "home",
+    pathname: `/${locale}`,
+    title: t("openGraphTitle"),
+    description: t("openGraphDescription"),
+  });
 
   return {
     metadataBase: getSiteUrl(),
@@ -44,13 +52,7 @@ export async function generateMetadata({
         ]),
       ),
     },
-    openGraph: {
-      type: "website",
-      locale,
-      title: t("openGraphTitle"),
-      description: t("openGraphDescription"),
-      url: `/${locale}`,
-    },
+    ...socialMetadata,
     robots: {
       index: true,
       follow: true,
