@@ -193,7 +193,7 @@
   "Common": {
     "Footer": {"location": "Ranco • Lago Maggiore • Italien"},
     "NotFound": {"title": "Seite nicht gefunden", "supportingText": "Sie sind wohl ein wenig vom Kurs abgekommen.", "description": "Diese Seite gibt es hier nicht. Zurück zum See.", "returnHome": "Zur Startseite"},
-    "Gallery": {"previousItem": "Vorheriges Galerieelement", "nextItem": "Nächstes Galerieelement"},
+    "Gallery": {"previousItem": "Vorheriges Galerieelement", "nextItem": "Nächstes Galerieelement", "previousImage": "Vorheriges Foto", "nextImage": "Nächstes Foto", "image": "Foto"},
     "DirectContact": {"label": "Anfragen", "enquire": "Anfrage senden", "whatsapp": "Emanuela per WhatsApp", "vcard": "Kontakt speichern", "saveContact": "Kontakt speichern"}
   },
   "Accessibility": {"skipToContent": "Zum Hauptinhalt springen", "closeDialog": "Dialog schließen"}

@@ -114,13 +114,17 @@ export function ExpandableGalleryGroup({
     const focusFrame = window.requestAnimationFrame(() => closeRef.current?.focus());
 
     function handleKeyDown(event: KeyboardEvent) {
+      const isInsideGuideCarousel =
+        event.target instanceof Element &&
+        event.target.closest("[data-guide-carousel]") !== null;
+
       if (event.key === "Escape") {
         event.preventDefault();
         close();
-      } else if (event.key === "ArrowLeft") {
+      } else if (event.key === "ArrowLeft" && !isInsideGuideCarousel) {
         event.preventDefault();
         navigate(-1);
-      } else if (event.key === "ArrowRight") {
+      } else if (event.key === "ArrowRight" && !isInsideGuideCarousel) {
         event.preventDefault();
         navigate(1);
       } else if (event.key === "Tab" && dialogRef.current) {

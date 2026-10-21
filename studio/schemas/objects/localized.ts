@@ -16,10 +16,19 @@ function missingTranslationMessage(value: LocalizedValue) {
     : `Aggiungi la traduzione in: ${missing.map(({title}) => title).join(', ')}.`
 }
 
-function localizedValidation(level: 'error' | 'warning') {
+function localizedValidation(level: 'error' | 'warning' | 'optional') {
   return (Rule: ObjectRule) => {
-    const validation = Rule.custom(missingTranslationMessage)
-    return level === 'warning' ? validation.warning() : validation.error()
+    const validation = Rule.custom((value: LocalizedValue) => {
+      if (
+        level === 'optional' &&
+        !supportedLanguages.some(({id}) => hasContent(value?.[id]))
+      ) {
+        return true
+      }
+
+      return missingTranslationMessage(value)
+    })
+    return level === 'error' ? validation.error() : validation.warning()
   }
 }
 
@@ -27,7 +36,7 @@ function localizedType(
   name: string,
   title: string,
   fieldType: 'string' | 'text' | 'array',
-  level: 'error' | 'warning',
+  level: 'error' | 'warning' | 'optional',
 ) {
   const fields = supportedLanguages.map(({id, title: languageTitle}) => {
     if (fieldType === 'array') {
@@ -64,6 +73,7 @@ function localizedType(
 export const localizedTypes = [
   localizedType('localeStringRequired', 'Traduzioni', 'string', 'error'),
   localizedType('localeStringRecommended', 'Traduzioni', 'string', 'warning'),
+  localizedType('localeStringOptional', 'Traduzioni', 'string', 'optional'),
   localizedType('localeTextRequired', 'Traduzioni', 'text', 'error'),
   localizedType('localeTextRecommended', 'Traduzioni', 'text', 'warning'),
   localizedType('localeRichTextRequired', 'Traduzioni', 'array', 'error'),

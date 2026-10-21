@@ -218,7 +218,7 @@
   "Common": {
     "Footer": {"location": "Ranco • Lake Maggiore • Italy"},
     "NotFound": {"title": "Page not found", "supportingText": "Looks like you've drifted a little off course.", "description": "The page you're looking for isn't here. Let's get you back to the lake.", "returnHome": "Back home"},
-    "Gallery": {"previousItem": "Previous gallery item", "nextItem": "Next gallery item"},
+    "Gallery": {"previousItem": "Previous gallery item", "nextItem": "Next gallery item", "previousImage": "Previous photograph", "nextImage": "Next photograph", "image": "Photograph"},
     "DirectContact": {"label": "Enquiries", "enquire": "Send an enquiry", "whatsapp": "WhatsApp Emanuela", "vcard": "Save contact", "saveContact": "Save Contact"}
   },
   "Accessibility": {"skipToContent": "Skip to main content", "closeDialog": "Close dialog"}

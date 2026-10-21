@@ -18,6 +18,7 @@ export const LOCAL_GUIDE_ENTRIES_QUERY = defineQuery(`
       _id,
       internalTitle,
       publicTitle { en, it, de, fr },
+      subtitle { en, it, de, fr },
       description {
         en[] { _key, _type, style, children[] { _key, _type, text } },
         it[] { _key, _type, style, children[] { _key, _type, text } },

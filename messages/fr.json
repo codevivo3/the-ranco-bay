@@ -193,7 +193,7 @@
   "Common": {
     "Footer": {"location": "Ranco • lac Majeur • Italie"},
     "NotFound": {"title": "Page introuvable", "supportingText": "On dirait que vous avez un peu dérivé.", "description": "La page que vous cherchez n'est pas ici. Retournons au lac.", "returnHome": "Retour à l'accueil"},
-    "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant"},
+    "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant", "previousImage": "Photo précédente", "nextImage": "Photo suivante", "image": "Photo"},
     "DirectContact": {"label": "Demandes", "enquire": "Envoyer une demande", "whatsapp": "WhatsApp à Emanuela", "vcard": "Enregistrer le contact", "saveContact": "Enregistrer le contact"}
   },
   "Accessibility": {"skipToContent": "Aller au contenu principal", "closeDialog": "Fermer la fenêtre"}

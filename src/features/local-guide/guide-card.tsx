@@ -9,6 +9,7 @@ type GuideCardProps = {
   imagePosition?: string;
   imageSizes?: string;
   presentation?: 'gallery' | 'overlay' | 'standard';
+  subtitle?: string;
   tags?: readonly string[];
   title: string;
 };
@@ -22,6 +23,7 @@ export function GuideCard({
   imagePosition,
   imageSizes,
   presentation = 'standard',
+  subtitle,
   tags = [],
   title,
 }: GuideCardProps) {
@@ -55,9 +57,15 @@ export function GuideCard({
               {category}
             </p>
 
-            <h3 className='mt-2 font-display text-2xl leading-tight md:text-xl lg:text-3xl'>
+            <h3 className='mt-2 font-display text-2xl leading-tight [overflow-wrap:anywhere] md:text-xl lg:text-3xl'>
               {title}
             </h3>
+
+            {subtitle ? (
+              <p className='mt-2 line-clamp-2 text-sm leading-5 text-[color-mix(in_srgb,var(--trb-sand)_78%,transparent)] [overflow-wrap:anywhere] md:text-[0.8125rem] lg:text-sm'>
+                {subtitle}
+              </p>
+            ) : null}
 
             {description ? (
               <p className='mt-3 line-clamp-3 whitespace-pre-line text-sm leading-5 text-[color-mix(in_srgb,var(--trb-sand)_84%,transparent)] md:mt-2 md:text-[0.8125rem] md:leading-[1.125rem] lg:mt-3 lg:text-sm lg:leading-5'>
@@ -82,9 +90,15 @@ export function GuideCard({
             {category}
           </p>
 
-          <h3 className='mt-3 font-display text-3xl leading-tight text-page-text-strong'>
+          <h3 className='mt-3 font-display text-3xl leading-tight text-page-text-strong [overflow-wrap:anywhere]'>
             {title}
           </h3>
+
+          {subtitle ? (
+            <p className='mt-2 text-sm leading-6 text-page-muted [overflow-wrap:anywhere]'>
+              {subtitle}
+            </p>
+          ) : null}
 
           {description ? (
             <p className='mt-4 whitespace-pre-line text-sm leading-6 text-page-muted'>

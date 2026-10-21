@@ -12,6 +12,14 @@ remain on fallback entries; CMS image layout is derived from asset dimensions.
 Missing photographs, descriptions, seasonal information, and Maps URLs do not
 prevent a valid titled entry from rendering.
 
+The optional localized subtitle is normalized separately from the required
+public title and falls back to English when the requested translation is
+missing. Local Guide cards continue to use the first ordered photograph. The
+expanded item receives every valid photograph in Sanity order and presents
+multiple images as a non-autoplaying, keyboard- and swipe-enabled carousel.
+Entries with one photograph retain the same image treatment without controls;
+entries without photographs retain the existing no-image layout.
+
 Optional practical information is shown only inside the expanded guide item.
 Address is rendered as text; the official website and Google Maps values are
 validated HTTP(S) links; telephone values are normalized to a safe `tel:` URL.

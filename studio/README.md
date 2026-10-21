@@ -88,6 +88,9 @@ Sanity's native icon size, alignment, and spacing unchanged.
   website, telephone, Google Maps, coordinates, and seasonal-opening details
   are grouped under **Contatti e informazioni pratiche**. Existing entries do
   not require migration when these values are absent.
+- Local Guide titles remain required in all four languages. The separate
+  subtitle is optional; once started, missing translations produce an editorial
+  warning without blocking publication.
 - Photography stays embedded in its owning document. Apartment categories are
   Bathroom, Bedroom, Details, Kitchen, Living, and General.
 - English, Italian, German, and French values are stored in reusable localized

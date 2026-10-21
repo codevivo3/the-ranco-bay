@@ -53,6 +53,15 @@ export default async function GuidePage({params}: GuidePageProps) {
         imageAlt: t(`entries.${entry.id}.alt`),
         imagePosition: entry.imagePosition,
         mapsUrl: entry.mapsUrl ?? undefined,
+        photography: [
+          {
+            alt: t(`entries.${entry.id}.alt`),
+            format: entry.format,
+            id: `${entry.id}-photograph`,
+            imagePosition: entry.imagePosition,
+            src: entry.image,
+          },
+        ],
         tags: entry.tags.map((tag) => t(`tags.${tag}`)),
         title: t(`entries.${entry.id}.title`),
       }));
@@ -82,6 +91,11 @@ export default async function GuidePage({params}: GuidePageProps) {
           closeLabel={tAccessibility('closeDialog')}
           previousLabel={tGallery('previousItem')}
           nextLabel={tGallery('nextItem')}
+          carouselLabels={{
+            image: tGallery('image'),
+            next: tGallery('nextImage'),
+            previous: tGallery('previousImage'),
+          }}
           practicalLabels={{
             address: t('practical.address'),
             directions: t('practical.directions'),

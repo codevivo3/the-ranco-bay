@@ -2,6 +2,14 @@ import type {PropertyGalleryFormat} from '@/features/property/property-images'
 
 import type {GuideCategory} from './placeholder-data'
 
+export type LocalGuidePhotograph = {
+  alt: string
+  format: PropertyGalleryFormat
+  id: string
+  imagePosition?: string
+  src: string
+}
+
 export type LocalGuideEntry = {
   address?: string
   category: GuideCategory
@@ -15,7 +23,9 @@ export type LocalGuideEntry = {
   imagePosition?: string
   mapsUrl?: string
   officialWebsite?: string
+  photography: readonly LocalGuidePhotograph[]
   seasonalInformation?: string
+  subtitle?: string
   tags: readonly string[]
   telephone?: string
   telephoneUrl?: string

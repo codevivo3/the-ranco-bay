@@ -90,11 +90,25 @@ export function normalizeLocalGuideEntry(
   const title = localizedString(document.publicTitle, locale)
   if (!isGuideCategory(category) || !title) return null
 
-  const photograph = document.photography?.find(({image}) => image?.asset?._ref)
-  const format = photograph?.image ? imageFormat(photograph.image) : 'landscape'
-  const image = photograph?.image
-    ? buildGuideImageUrl(photograph.image as SanityImageSource, format)
-    : undefined
+  const photography = (document.photography ?? []).flatMap(
+    (photograph, index) => {
+      if (!photograph.image?.asset?._ref) return []
+
+      const format = imageFormat(photograph.image)
+      return [
+        {
+          alt: stegaClean(localizedString(photograph.alternativeText, locale)),
+          format,
+          id: photograph._key ?? `${document._id}-photograph-${index}`,
+          src: buildGuideImageUrl(
+            photograph.image as SanityImageSource,
+            format,
+          ),
+        },
+      ]
+    },
+  )
+  const photograph = photography[0]
   const telephone = safeTelephone(document.telephone)
 
   return {
@@ -102,10 +116,12 @@ export function normalizeLocalGuideEntry(
     address: document.address?.trim() || undefined,
     category,
     title,
+    subtitle: localizedString(document.subtitle, locale) || undefined,
     description: localizedRichText(document.description, locale),
-    image,
-    imageAlt: stegaClean(localizedString(photograph?.alternativeText, locale)),
-    format,
+    image: photograph?.src,
+    imageAlt: photograph?.alt ?? '',
+    format: photograph?.format ?? 'landscape',
+    photography,
     mapsUrl: safeHttpUrl(document.mapsUrl),
     officialWebsite: safeHttpUrl(document.officialWebsite),
     seasonalInformation:

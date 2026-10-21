@@ -40,6 +40,14 @@ export const localGuideEntry = defineType({
       validation: (Rule) => Rule.required().error('Inserisci il titolo pubblico.'),
     }),
     defineField({
+      name: 'subtitle',
+      title: 'Sottotitolo',
+      description:
+        'Breve frase che descrive il luogo o l’esperienza. Esempio: A tavola sul lago. Campo facoltativo; se lo compili, aggiungi tutte e quattro le traduzioni.',
+      type: 'localeStringOptional',
+      group: 'content',
+    }),
+    defineField({
       name: 'description',
       title: 'Descrizione',
       description:

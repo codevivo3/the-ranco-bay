@@ -433,7 +433,10 @@
     },
     "Gallery": {
       "previousItem": "Elemento precedente",
-      "nextItem": "Elemento successivo"
+      "nextItem": "Elemento successivo",
+      "previousImage": "Fotografia precedente",
+      "nextImage": "Fotografia successiva",
+      "image": "Fotografia"
     },
     "DirectContact": {
       "label": "Richieste",

@@ -59,6 +59,7 @@ export type LocalGuideEntryDocument = {
     image?: SanityGuideImage | null
   }> | null
   publicTitle?: LocalizedString | null
+  subtitle?: LocalizedString | null
   seasonalInformation?: LocalizedString | null
   telephone?: string | null
 }
