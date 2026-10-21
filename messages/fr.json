@@ -6,6 +6,7 @@
     "openGraphDescription": "Deux appartements au bord du lac et un guide local pour vivre Ranco autrement.",
     "pages": {
       "house": {"title": "Veranda — The Ranco Bay", "description": "Découvrez Veranda, ses espaces face au lac, la plage privée et les informations pratiques."},
+      "property": {"title": "La propriété — The Ranco Bay", "description": "Découvrez la propriété The Ranco Bay, ses espaces partagés et les informations publiques pour votre séjour."},
       "guide": {"title": "Guide local — The Ranco Bay", "description": "Un guide local pour bien manger, explorer et vivre le lac Majeur."},
       "contact": {"title": "Contact — The Ranco Bay", "description": "Envoyez une demande et trouvez les indications pratiques pour rejoindre The Ranco Bay."},
       "upperFloor": {"title": "Mansarda — Bientôt | The Ranco Bay", "description": "Découvrez le second appartement de The Ranco Bay, en préparation pour 2027."}
@@ -143,6 +144,18 @@
     "location": {"title": "Situation et carte", "body": "Utilisez Google Maps pour le contexte public actuel. Aucune API cartographique n'est nécessaire pour cette structure.", "mapsLink": "Ouvrir dans Google Maps", "arrivalTitle": "Arrivée", "arrivalBody": "L'adresse exacte, l'accès et les instructions d'arrivée seront transmis directement lorsque le séjour sera confirmé.", "imageAlt": "Carte du lac Majeur et de la région frontalière environnante entre l'Italie et la Suisse"}
   },
   "UpperFloor": {"eyebrow": "Mansarda · 2027", "title": "Bientôt", "body": "Un second appartement de The Ranco Bay est en préparation pour 2027. Ses espaces, ses photographies et ses informations pratiques seront présentés lorsqu'ils seront prêts.", "availability": "Les disponibilités ne sont pas encore ouvertes. Emanuela peut répondre aux questions et noter directement votre intérêt.", "enquire": "Demander des informations sur Mansarda", "contactEyebrow": "Contact direct", "contactTitle": "Échanger avec Emanuela"},
+  "PropertyPage": {
+    "intro": {"eyebrow": "La propriété", "title": "Informations sur la propriété et le séjour", "body": "Informations publiques sur la propriété, ses espaces partagés et les aspects pratiques du séjour."},
+    "sections": {
+      "overview": {"eyebrow": "01", "title": "Accueil & espaces partagés"},
+      "arrival": {"eyebrow": "02", "title": "Arrivée & stationnement"},
+      "stay": {"eyebrow": "03", "title": "Pendant votre séjour"},
+      "assistance": {"eyebrow": "04", "title": "Aide & contacts utiles"}
+    },
+    "photography": {"eyebrow": "La propriété", "title": "Autour de The Ranco Bay"},
+    "links": {"contact": "Contact et itinéraire", "guide": "Ouvrir le guide local", "house": "Découvrir Veranda"},
+    "fallback": {"eyebrow": "Informations sur la propriété", "title": "Les détails sont en préparation", "body": "Le guide public de la propriété est en préparation. Pour obtenir des informations à jour, contactez directement Emanuela.", "contact": "Contacter The Ranco Bay"}
+  },
   "PropertyImages": {
     "verandaTableFlowersLakeView": "Un vase fleuri sur la table de la véranda avec le lac au-delà",
     "verandaHammockLakeView": "Un hamac suspendu dans la véranda face au lac",

@@ -35,3 +35,12 @@ export function buildGuideImageUrl(
     .auto('format')
     .url()
 }
+
+export function buildEditorialImageUrl(source: SanityImageSource) {
+  return imageBuilder
+    .image(source)
+    .width(1800)
+    .quality(85)
+    .auto('format')
+    .url()
+}

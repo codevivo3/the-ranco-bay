@@ -6,6 +6,7 @@
     "openGraphDescription": "Zwei Apartments am See und ein lokaler Guide für bewusste Aufenthalte in Ranco.",
     "pages": {
       "house": {"title": "Veranda — The Ranco Bay", "description": "Entdecken Sie Veranda, ihre Räume mit Seeblick, den Privatstrand und praktische Details."},
+      "property": {"title": "Das Anwesen — The Ranco Bay", "description": "Entdecken Sie das Anwesen The Ranco Bay, die gemeinschaftlichen Bereiche und öffentliche Informationen für Ihren Aufenthalt."},
       "guide": {"title": "Lokaler Guide — The Ranco Bay", "description": "Ein lokaler Guide zum Essen, Entdecken und Erleben des Lago Maggiore."},
       "contact": {"title": "Kontakt — The Ranco Bay", "description": "Senden Sie eine Anfrage und finden Sie praktische Hinweise zur Anreise nach The Ranco Bay."},
       "upperFloor": {"title": "Mansarda — Demnächst | The Ranco Bay", "description": "Entdecken Sie das zweite Apartment von The Ranco Bay, das für 2027 vorbereitet wird."}
@@ -143,6 +144,18 @@
     "location": {"title": "Lage und Karte", "body": "Google Maps bietet den aktuellen öffentlichen Lagekontext. Für dieses Grundgerüst ist keine Karten-API nötig.", "mapsLink": "Google Maps öffnen", "arrivalTitle": "Ankunft", "arrivalBody": "Genaue Adresse, Zufahrt und Check-in-Hinweise werden direkt mitgeteilt, sobald der Aufenthalt bestätigt ist.", "imageAlt": "Karte des Lago Maggiore und der umliegenden Grenzregion von Italien und der Schweiz"}
   },
   "UpperFloor": {"eyebrow": "Mansarda · 2027", "title": "Demnächst", "body": "Ein zweites Apartment von The Ranco Bay wird für 2027 vorbereitet. Räume, Fotografien und praktische Details werden vorgestellt, sobald sie bereit sind.", "availability": "Die Verfügbarkeit ist noch nicht freigegeben. Emanuela beantwortet Fragen und nimmt Ihr Interesse gern direkt auf.", "enquire": "Zur Mansarda anfragen", "contactEyebrow": "Direkter Kontakt", "contactTitle": "Mit Emanuela sprechen"},
+  "PropertyPage": {
+    "intro": {"eyebrow": "Das Anwesen", "title": "Informationen zum Anwesen und für Gäste", "body": "Öffentliche Informationen zum Anwesen, zu den gemeinschaftlichen Bereichen und zu praktischen Aspekten des Aufenthalts."},
+    "sections": {
+      "overview": {"eyebrow": "01", "title": "Willkommen & gemeinschaftliche Bereiche"},
+      "arrival": {"eyebrow": "02", "title": "Anreise & Parken"},
+      "stay": {"eyebrow": "03", "title": "Während Ihres Aufenthalts"},
+      "assistance": {"eyebrow": "04", "title": "Hilfe & nützliche Kontakte"}
+    },
+    "photography": {"eyebrow": "Das Anwesen", "title": "Rund um The Ranco Bay"},
+    "links": {"contact": "Kontakt und Anreise", "guide": "Lokalen Guide öffnen", "house": "Veranda entdecken"},
+    "fallback": {"eyebrow": "Informationen zum Anwesen", "title": "Die Details werden vorbereitet", "body": "Der öffentliche Leitfaden zum Anwesen wird vorbereitet. Für aktuelle Informationen wenden Sie sich bitte direkt an Emanuela.", "contact": "The Ranco Bay kontaktieren"}
+  },
   "PropertyImages": {
     "verandaTableFlowersLakeView": "Eine Blumenvase auf dem Verandatisch mit dem See im Hintergrund",
     "verandaHammockLakeView": "Eine Hängematte auf der Veranda mit Blick auf den See",

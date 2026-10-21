@@ -62,3 +62,65 @@ export type LocalGuideEntryDocument = {
   seasonalInformation?: LocalizedString | null
   telephone?: string | null
 }
+
+export type SanityEditorialImage = {
+  _key?: string
+  alternativeText?: LocalizedString | null
+  image?: SanityGuideImage | null
+}
+
+export type SanityEditorialSection = {
+  body?: LocalizedRichText | null
+  eyebrow?: LocalizedString | null
+  heading?: LocalizedString | null
+  image?: SanityEditorialImage | null
+  linkLabel?: LocalizedString | null
+}
+
+export type SanityLocalizedSeo = {
+  description?: LocalizedString | null
+  socialImage?: SanityEditorialImage | null
+  title?: LocalizedString | null
+}
+
+export type PropertyInformationDocument = {
+  _id: string
+  arrivalAndParking?: SanityEditorialSection | null
+  assistance?: SanityEditorialSection | null
+  exteriorPhotography?: SanityEditorialImage[] | null
+  overview?: SanityEditorialSection | null
+  seo?: SanityLocalizedSeo | null
+  stayEssentials?: SanityEditorialSection | null
+}
+
+export type PropertyPhotograph = {
+  alt: string
+  height?: number
+  id: string
+  src: string
+  width?: number
+}
+
+export type LocalizedEditorialSection = {
+  body: EditorialTextBlock[]
+  eyebrow?: string
+  heading?: string
+  image?: PropertyPhotograph
+  linkLabel?: string
+}
+
+export type LocalizedPropertySeo = {
+  description?: string
+  socialImage?: PropertyPhotograph
+  title?: string
+}
+
+export type PropertyInformation = {
+  arrivalAndParking?: LocalizedEditorialSection
+  assistance?: LocalizedEditorialSection
+  exteriorPhotography: PropertyPhotograph[]
+  id: string
+  overview?: LocalizedEditorialSection
+  seo?: LocalizedPropertySeo
+  stayEssentials?: LocalizedEditorialSection
+}

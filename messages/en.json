@@ -6,6 +6,7 @@
     "openGraphDescription": "Two lakeside apartments and a local guide for thoughtful stays in Ranco.",
     "pages": {
       "house": {"title": "Veranda — The Ranco Bay", "description": "Explore Veranda, its lake-facing spaces, private beach and practical details."},
+      "property": {"title": "The Property — The Ranco Bay", "description": "Discover The Ranco Bay property, its shared spaces and public information for your stay."},
       "guide": {"title": "Local Guide — The Ranco Bay", "description": "A local guide to eating, exploring and experiencing Lake Maggiore."},
       "contact": {"title": "Contact — The Ranco Bay", "description": "Send an enquiry and find practical directions to The Ranco Bay."},
       "upperFloor": {"title": "Mansarda — Coming Soon | The Ranco Bay", "description": "Discover the second The Ranco Bay apartment, currently being prepared for 2027."}
@@ -164,6 +165,18 @@
     "enquire": "Enquire about Mansarda",
     "contactEyebrow": "Direct contact",
     "contactTitle": "Speak with Emanuela"
+  },
+  "PropertyPage": {
+    "intro": {"eyebrow": "The property", "title": "Property & guest information", "body": "Public information about the property, its shared spaces and the practical details of a stay."},
+    "sections": {
+      "overview": {"eyebrow": "01", "title": "Welcome & shared property"},
+      "arrival": {"eyebrow": "02", "title": "Arrival & parking"},
+      "stay": {"eyebrow": "03", "title": "During your stay"},
+      "assistance": {"eyebrow": "04", "title": "Help & useful contacts"}
+    },
+    "photography": {"eyebrow": "The property", "title": "Around The Ranco Bay"},
+    "links": {"contact": "Contact and directions", "guide": "Open the local guide", "house": "Explore Veranda"},
+    "fallback": {"eyebrow": "Property information", "title": "Details are being prepared", "body": "The public property guide is being prepared. For current information, contact Emanuela directly.", "contact": "Contact The Ranco Bay"}
   },
   "PropertyImages": {
     "verandaTableFlowersLakeView": "A flower-filled vase on the veranda table with the lake beyond",

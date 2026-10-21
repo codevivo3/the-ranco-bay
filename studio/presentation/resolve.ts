@@ -33,7 +33,7 @@ export const presentationResolve: PresentationPluginOptions['resolve'] = {
       },
     }),
     propertyInformation: defineLocations({
-      locations: localeLocations('/house', 'The Property'),
+      locations: localeLocations('/property', 'The Property'),
     }),
     localGuideEntry: defineLocations({
       locations: localeLocations('/guide', 'Local Guide'),

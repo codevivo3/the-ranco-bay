@@ -9,6 +9,10 @@
         "title": "Veranda — The Ranco Bay",
         "description": "Scopri Veranda, gli spazi affacciati sul lago, la spiaggia privata e le informazioni pratiche."
       },
+      "property": {
+        "title": "La proprietà — The Ranco Bay",
+        "description": "Scopri la proprietà di The Ranco Bay, gli spazi condivisi e le informazioni pubbliche per il soggiorno."
+      },
       "guide": {
         "title": "Guida locale — The Ranco Bay",
         "description": "Una guida locale per mangiare, esplorare e vivere il Lago Maggiore."
@@ -367,6 +371,18 @@
     "enquire": "Richiedi informazioni su Mansarda",
     "contactEyebrow": "Contatto diretto",
     "contactTitle": "Parla con Emanuela"
+  },
+  "PropertyPage": {
+    "intro": {"eyebrow": "La proprietà", "title": "Informazioni sulla proprietà e per gli ospiti", "body": "Informazioni pubbliche sulla proprietà, gli spazi condivisi e gli aspetti pratici del soggiorno."},
+    "sections": {
+      "overview": {"eyebrow": "01", "title": "Benvenuto e spazi condivisi"},
+      "arrival": {"eyebrow": "02", "title": "Arrivo e parcheggio"},
+      "stay": {"eyebrow": "03", "title": "Durante il soggiorno"},
+      "assistance": {"eyebrow": "04", "title": "Assistenza e contatti utili"}
+    },
+    "photography": {"eyebrow": "La proprietà", "title": "Intorno a The Ranco Bay"},
+    "links": {"contact": "Contatti e indicazioni", "guide": "Apri la guida locale", "house": "Scopri Veranda"},
+    "fallback": {"eyebrow": "Informazioni sulla proprietà", "title": "Stiamo preparando i dettagli", "body": "La guida pubblica della proprietà è in preparazione. Per informazioni aggiornate, contatta direttamente Emanuela.", "contact": "Contatta The Ranco Bay"}
   },
   "PropertyImages": {
     "verandaTableFlowersLakeView": "Un vaso di fiori sul tavolo della veranda con il lago sullo sfondo",

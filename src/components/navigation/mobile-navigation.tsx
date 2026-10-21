@@ -82,6 +82,7 @@ export function MobileNavigation({ labels }: MobileNavigationProps) {
 
   const groundFloorActive = pathMatches(pathname, '/house');
   const upperFloorActive = pathMatches(pathname, '/apartments/upper-floor');
+  const propertyActive = pathMatches(pathname, '/property');
   const guideActive = pathMatches(pathname, '/guide');
   const contactActive = pathMatches(pathname, '/contact');
 
@@ -224,10 +225,10 @@ export function MobileNavigation({ labels }: MobileNavigationProps) {
                   <ul className='min-h-0 overflow-hidden pb-2'>
                     <li>
                       <Link
-                        href='/house'
-                        aria-current={groundFloorActive ? 'page' : undefined}
+                        href='/property'
+                        aria-current={propertyActive ? 'page' : undefined}
                         className={`${submenuLinkClass} ${
-                          groundFloorActive
+                          propertyActive
                             ? 'font-semibold text-page-accent'
                             : ''
                         }`}

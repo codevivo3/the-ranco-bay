@@ -61,11 +61,13 @@ export function PrimaryNavigation({ labels }: PrimaryNavigationProps) {
     ? 'upperFloor'
     : pathMatches(pathname, '/house')
       ? 'groundFloor'
-      : pathMatches(pathname, '/guide')
-        ? 'guide'
-        : pathMatches(pathname, '/contact')
-          ? 'contact'
-          : null;
+      : pathMatches(pathname, '/property')
+        ? 'property'
+        : pathMatches(pathname, '/guide')
+          ? 'guide'
+          : pathMatches(pathname, '/contact')
+            ? 'contact'
+            : null;
 
   const cancelScheduledClose = () => {
     if (closeTimerRef.current) {
@@ -217,7 +219,7 @@ export function PrimaryNavigation({ labels }: PrimaryNavigationProps) {
     const isActive =
       menu === 'apartments'
         ? activeRoute === 'groundFloor' || activeRoute === 'upperFloor'
-        : activeRoute === 'guide';
+        : activeRoute === 'property' || activeRoute === 'guide';
     const triggerId = `primary-navigation-${menu}-trigger`;
     const panelId = `primary-navigation-${menu}-panel`;
 
@@ -357,8 +359,12 @@ export function PrimaryNavigation({ labels }: PrimaryNavigationProps) {
           labels.discover,
           <>
             <li>
-              <Link className={submenuLinkClass} href='/house'>
-                <span className={underlineClass(activeRoute === 'groundFloor')}>
+              <Link
+                className={submenuLinkClass}
+                href='/property'
+                aria-current={activeRoute === 'property' ? 'page' : undefined}
+              >
+                <span className={underlineClass(activeRoute === 'property')}>
                   {labels.property}
                 </span>
               </Link>

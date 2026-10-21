@@ -45,3 +45,117 @@ export const LOCAL_GUIDE_ENTRIES_QUERY = defineQuery(`
       displayOrder
     }
 `)
+
+export const PROPERTY_INFORMATION_QUERY = defineQuery(`
+  *[_type == "propertyInformation" && _id == "propertyInformation"][0] {
+    _id,
+    overview {
+      eyebrow { en, it, de, fr },
+      heading { en, it, de, fr },
+      body {
+        en[] { _key, _type, style, children[] { _key, _type, text } },
+        it[] { _key, _type, style, children[] { _key, _type, text } },
+        de[] { _key, _type, style, children[] { _key, _type, text } },
+        fr[] { _key, _type, style, children[] { _key, _type, text } }
+      },
+      image {
+        _key,
+        image {
+          asset,
+          crop,
+          hotspot,
+          "dimensions": asset->metadata.dimensions
+        },
+        alternativeText { en, it, de, fr }
+      },
+      linkLabel { en, it, de, fr }
+    },
+    arrivalAndParking {
+      eyebrow { en, it, de, fr },
+      heading { en, it, de, fr },
+      body {
+        en[] { _key, _type, style, children[] { _key, _type, text } },
+        it[] { _key, _type, style, children[] { _key, _type, text } },
+        de[] { _key, _type, style, children[] { _key, _type, text } },
+        fr[] { _key, _type, style, children[] { _key, _type, text } }
+      },
+      image {
+        _key,
+        image {
+          asset,
+          crop,
+          hotspot,
+          "dimensions": asset->metadata.dimensions
+        },
+        alternativeText { en, it, de, fr }
+      },
+      linkLabel { en, it, de, fr }
+    },
+    stayEssentials {
+      eyebrow { en, it, de, fr },
+      heading { en, it, de, fr },
+      body {
+        en[] { _key, _type, style, children[] { _key, _type, text } },
+        it[] { _key, _type, style, children[] { _key, _type, text } },
+        de[] { _key, _type, style, children[] { _key, _type, text } },
+        fr[] { _key, _type, style, children[] { _key, _type, text } }
+      },
+      image {
+        _key,
+        image {
+          asset,
+          crop,
+          hotspot,
+          "dimensions": asset->metadata.dimensions
+        },
+        alternativeText { en, it, de, fr }
+      },
+      linkLabel { en, it, de, fr }
+    },
+    assistance {
+      eyebrow { en, it, de, fr },
+      heading { en, it, de, fr },
+      body {
+        en[] { _key, _type, style, children[] { _key, _type, text } },
+        it[] { _key, _type, style, children[] { _key, _type, text } },
+        de[] { _key, _type, style, children[] { _key, _type, text } },
+        fr[] { _key, _type, style, children[] { _key, _type, text } }
+      },
+      image {
+        _key,
+        image {
+          asset,
+          crop,
+          hotspot,
+          "dimensions": asset->metadata.dimensions
+        },
+        alternativeText { en, it, de, fr }
+      },
+      linkLabel { en, it, de, fr }
+    },
+    exteriorPhotography[] {
+      _key,
+      image {
+        asset,
+        crop,
+        hotspot,
+        "dimensions": asset->metadata.dimensions
+      },
+      alternativeText { en, it, de, fr }
+    },
+    seo {
+      title { en, it, de, fr },
+      description { en, it, de, fr },
+      socialImage {
+        _key,
+        image {
+          asset,
+          crop,
+          hotspot,
+          "dimensions": asset->metadata.dimensions
+        },
+        alternativeText { en, it, de, fr }
+      }
+    }
+  }
+`)

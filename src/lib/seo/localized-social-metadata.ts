@@ -2,7 +2,13 @@ import type {Metadata} from "next";
 
 import {routing, type AppLocale} from "@/i18n/routing";
 
-type SocialPage = "contact" | "guide" | "home" | "house" | "upperFloor";
+type SocialPage =
+  | "contact"
+  | "guide"
+  | "home"
+  | "house"
+  | "property"
+  | "upperFloor";
 
 const openGraphLocales: Record<AppLocale, string> = {
   en: "en_US",
@@ -23,6 +29,12 @@ type LocalizedSocialMetadataOptions = {
   locale: string;
   page: SocialPage;
   pathname: string;
+  socialImage?: {
+    alt: string;
+    height?: number;
+    url: string;
+    width?: number;
+  };
   title: string;
 };
 
@@ -30,6 +42,7 @@ export async function getLocalizedSocialMetadata({
   description,
   locale,
   pathname,
+  socialImage,
   title,
 }: LocalizedSocialMetadataOptions): Promise<
   Pick<Metadata, "openGraph" | "twitter">
@@ -39,6 +52,8 @@ export async function getLocalizedSocialMetadata({
   if (!openGraphLocale) {
     throw new Error(`Unsupported social metadata locale: ${locale}`);
   }
+
+  const image = socialImage ?? officialSocialImage;
 
   return {
     openGraph: {
@@ -52,10 +67,10 @@ export async function getLocalizedSocialMetadata({
         .map((supportedLocale) => openGraphLocales[supportedLocale]),
       images: [
         {
-          url: officialSocialImage.url,
-          width: officialSocialImage.width,
-          height: officialSocialImage.height,
-          alt: officialSocialImage.alt,
+          url: image.url,
+          width: image.width,
+          height: image.height,
+          alt: image.alt,
         },
       ],
     },
@@ -63,7 +78,7 @@ export async function getLocalizedSocialMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [officialSocialImage.url],
+      images: [image.url],
     },
   };
 }

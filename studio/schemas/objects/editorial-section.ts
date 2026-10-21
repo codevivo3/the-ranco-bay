@@ -23,6 +23,7 @@ export const editorialSection = defineType({
       name: 'linkLabel',
       title: 'Link label',
       type: 'localeStringRecommended',
+      hidden: ({document}) => document?._type === 'propertyInformation',
     }),
   ],
 })
