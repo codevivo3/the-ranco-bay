@@ -117,11 +117,12 @@
       "outside": {"title": "Dehors", "body": "Le chemin extérieur relie directement la propriété à la rive et au paysage plus large de Ranco.", "imageAlt": "Des grilles ouvertes encadrent le chemin vers le lac Majeur"},
       "beach": {"title": "Plage privée", "body": "De l'autre côté de la route, la plage privée crée une relation directe et simple avec l'eau.", "imageAlt": "Des transats sur une pelouse au bord d'une eau bleue"}
     },
-    "amenities": {"eyebrow": "En bref", "title": "L'essentiel du séjour", "body": "Seuls les faits importants déjà confirmés sont présentés à ce stade.", "items": {"lakeView": "Situation face au lac", "privateBeach": "Accès à la plage privée", "parking": "Parking disponible", "equipped": "Hébergement équipé"}},
+    "amenities": {"eyebrow": "En bref", "title": "L'essentiel du séjour", "body": "Seuls les faits importants déjà confirmés sont présentés à ce stade.", "items": {"lakeView": "Situation face au lac", "privateBeach": "Plage privée", "parking": "Parking disponible", "equipped": "Hébergement équipé"}, "propertyLink": "Découvrir la propriété"},
     "practical": {"eyebrow": "Informations pratiques", "title": "Ce qu'il est utile de savoir", "body": "Capacité, règles et instructions d'arrivée seront confirmées avec les contenus définitifs de l'hébergement.", "items": {"setting": {"label": "Situation", "value": "Ranco, sur la rive lombarde du lac Majeur."}, "arrival": {"label": "Arrivée", "value": "Les instructions précises d'arrivée seront envoyées directement aux voyageurs confirmés."}, "parking": {"label": "Parking", "value": "Le parking fait partie de l'offre ; les détails d'accès seront ajoutés ensuite."}, "beach": {"label": "Plage privée", "value": "La plage se trouve de l'autre côté de la route face à la propriété."}}, "contactLink": "Poser une question sur la maison"}
   },
   "Guide": {
-    "hero": {"eyebrow": "Guide local", "title": "Quelques façons de vivre le lac Majeur", "titleLineOne": "Quelques façons de vivre", "titleLineTwo": "le lac Majeur", "body": "Un guide volontairement concis, nourri d'une connaissance locale plutôt que de classements, de quantité ou de listes génériques.", "imageAlt": "Des grilles ouvertes conduisent vers le lac Majeur"},
+    "hero": {"eyebrow": "Guide local", "title": "Quelques façons de vivre le lac Majeur", "titleLineOne": "Quelques façons de vivre", "titleLineTwo": "le lac Majeur", "body": "Un guide volontairement concis, nourri d'une connaissance locale plutôt que de classements, de quantité ou de listes génériques.", "imageAlt": "The Ranco Bay vue depuis le lac Majeur"},
+    "emptyState": "Les recommandations sont en préparation.",
     "categories": {
       "eat": {"eyebrow": "01", "label": "Manger", "description": "Restaurants, bars, aperitivo et déjeuners choisis pour leur contexte, pas pour l'exhaustivité."},
       "water": {"eyebrow": "02", "label": "Sur l'eau", "description": "Baignade, bateaux et expériences qui font du lac une partie de la journée."},
@@ -191,7 +192,7 @@
     "withoutJavaScript": "Activez JavaScript pour afficher le calendrier."
   },
   "Common": {
-    "Footer": {"location": "Ranco • lac Majeur • Italie"},
+    "Footer": {"location": "Ranco • lac Majeur • Italie", "contact": "Contacter Emanuela"},
     "NotFound": {"title": "Page introuvable", "supportingText": "On dirait que vous avez un peu dérivé.", "description": "La page que vous cherchez n'est pas ici. Retournons au lac.", "returnHome": "Retour à l'accueil"},
     "Gallery": {"previousItem": "Élément précédent", "nextItem": "Élément suivant", "previousImage": "Photo précédente", "nextImage": "Photo suivante", "image": "Photo"},
     "DirectContact": {"label": "Demandes", "enquire": "Envoyer une demande", "whatsapp": "WhatsApp à Emanuela", "vcard": "Enregistrer le contact", "saveContact": "Enregistrer le contact"}

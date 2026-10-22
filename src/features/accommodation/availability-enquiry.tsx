@@ -83,7 +83,7 @@ export function AvailabilityEnquiry({
   };
 
   return (
-    <div className="mt-12 lg:mt-[clamp(2rem,3.5svh,2.5rem)]">
+    <div className="mt-12 lg:mt-[clamp(1rem,1.75svh,1.5rem)] 2xl:mt-[clamp(1.75rem,3svh,2.25rem)]">
       <div
         className='grid w-full max-w-lg grid-cols-2 gap-1 rounded-lg bg-[color-mix(in_srgb,var(--trb-lagoon)_4%,transparent)] p-1 md:mx-auto lg:mx-0'
         aria-label={t('apartmentPickerLabel')}
@@ -110,7 +110,7 @@ export function AvailabilityEnquiry({
         })}
       </div>
 
-      <div className="mt-8 grid items-start gap-x-12 gap-y-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-x-20 lg:gap-y-[clamp(1.5rem,3svh,2rem)]">
+      <div className="mt-8 grid items-start gap-x-12 gap-y-8 lg:mt-[clamp(0.75rem,1.5svh,1.125rem)] lg:grid-cols-[1.1fr_0.9fr] lg:gap-x-20 lg:gap-y-[clamp(1.5rem,3svh,2rem)] 2xl:mt-7">
         {apartmentId === 'ground-floor' ? (
           <AvailabilityCalendar
             data={data}

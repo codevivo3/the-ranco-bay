@@ -131,11 +131,12 @@
       "outside": {"title": "Outside", "body": "The route outside connects the property directly with the lakeshore and the wider landscape of Ranco.", "imageAlt": "Open gates framing the path toward Lake Maggiore"},
       "beach": {"title": "Private beach", "body": "Across the road, the private beach creates a direct and uncomplicated relationship with the water.", "imageAlt": "Sun loungers on a lawn beside open blue water"}
     },
-    "amenities": {"eyebrow": "At a glance", "title": "The essentials of the stay", "body": "Only the main confirmed facts are included at this stage.", "items": {"lakeView": "Lake-facing setting", "privateBeach": "Access to the private beach", "parking": "Parking available", "equipped": "Equipped accommodation"}},
+    "amenities": {"eyebrow": "At a glance", "title": "The essentials of the stay", "body": "Only the main confirmed facts are included at this stage.", "items": {"lakeView": "Lake-facing setting", "privateBeach": "Private beach", "parking": "Parking available", "equipped": "Equipped accommodation"}, "propertyLink": "Explore the property"},
     "practical": {"eyebrow": "Practical information", "title": "What is useful to know", "body": "Detailed capacity, policies and arrival instructions will be confirmed as the accommodation content is finalized.", "items": {"setting": {"label": "Setting", "value": "Ranco, on the Lombardy shore of Lake Maggiore."}, "arrival": {"label": "Arrival", "value": "Exact check-in instructions will be shared directly with confirmed guests."}, "parking": {"label": "Parking", "value": "Parking is part of the accommodation offer; final access details will follow."}, "beach": {"label": "Private beach", "value": "The beach is across the road from the property."}}, "contactLink": "Ask about the house"}
   },
   "Guide": {
-    "hero": {"eyebrow": "Local Guide", "title": "Ways to experience Lake Maggiore", "titleLineOne": "Ways to experience", "titleLineTwo": "Lake Maggiore", "body": "A deliberately concise guide shaped by local knowledge, not rankings, quantity or generic lists.", "imageAlt": "Open garden gates leading toward Lake Maggiore"},
+    "hero": {"eyebrow": "Local Guide", "title": "Ways to experience Lake Maggiore", "titleLineOne": "Ways to experience", "titleLineTwo": "Lake Maggiore", "body": "A deliberately concise guide shaped by local knowledge, not rankings, quantity or generic lists.", "imageAlt": "The Ranco Bay viewed from Lake Maggiore"},
+    "emptyState": "Recommendations are being prepared.",
     "categories": {
       "eat": {"eyebrow": "01", "label": "Eat", "description": "Restaurants, bars, aperitivo and lunch suggestions selected for context, not completeness."},
       "water": {"eyebrow": "02", "label": "On the Water", "description": "Swimming, boats and lake experiences that make the water part of the day."},
@@ -216,7 +217,7 @@
     "withoutJavaScript": "Enable JavaScript to view the calendar."
   },
   "Common": {
-    "Footer": {"location": "Ranco • Lake Maggiore • Italy"},
+    "Footer": {"location": "Ranco • Lake Maggiore • Italy", "contact": "Contact Emanuela"},
     "NotFound": {"title": "Page not found", "supportingText": "Looks like you've drifted a little off course.", "description": "The page you're looking for isn't here. Let's get you back to the lake.", "returnHome": "Back home"},
     "Gallery": {"previousItem": "Previous gallery item", "nextItem": "Next gallery item", "previousImage": "Previous photograph", "nextImage": "Next photograph", "image": "Photograph"},
     "DirectContact": {"label": "Enquiries", "enquire": "Send an enquiry", "whatsapp": "WhatsApp Emanuela", "vcard": "Save contact", "saveContact": "Save Contact"}

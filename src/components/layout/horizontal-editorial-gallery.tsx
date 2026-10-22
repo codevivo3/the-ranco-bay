@@ -49,22 +49,30 @@ function getPanels(gallery: HTMLDivElement) {
   );
 }
 
+function getPanelScrollTarget(
+  gallery: HTMLDivElement,
+  panel: HTMLElement,
+) {
+  const centeredTarget =
+    panel.offsetLeft -
+    gallery.offsetLeft -
+    (gallery.clientWidth - panel.offsetWidth) / 2;
+  const maximumScrollLeft = gallery.scrollWidth - gallery.clientWidth;
+
+  return Math.min(maximumScrollLeft, Math.max(0, centeredTarget));
+}
+
 function getClosestPanelIndex(
   gallery: HTMLDivElement,
   panels: HTMLElement[],
 ) {
-  const galleryRect = gallery.getBoundingClientRect();
-  const galleryCenter = galleryRect.left + galleryRect.width / 2;
-
   return panels.reduce((closestIndex, panel, index) => {
-    const panelRect = panel.getBoundingClientRect();
-    const panelCenter = panelRect.left + panelRect.width / 2;
     const closestPanel = panels[closestIndex];
-    const closestRect = closestPanel.getBoundingClientRect();
-    const closestCenter = closestRect.left + closestRect.width / 2;
+    const panelTarget = getPanelScrollTarget(gallery, panel);
+    const closestTarget = getPanelScrollTarget(gallery, closestPanel);
 
-    return Math.abs(panelCenter - galleryCenter) <
-      Math.abs(closestCenter - galleryCenter)
+    return Math.abs(panelTarget - gallery.scrollLeft) <
+      Math.abs(closestTarget - gallery.scrollLeft)
       ? index
       : closestIndex;
   }, 0);
@@ -226,10 +234,7 @@ export function HorizontalEditorialGallery({
     const nextIndex = Math.min(panels.length - 1, Math.max(0, index));
 
     const nextPanel = panels[nextIndex];
-    const targetLeft =
-      nextPanel.offsetLeft -
-      gallery.offsetLeft -
-      (gallery.clientWidth - nextPanel.offsetWidth) / 2;
+    const targetLeft = getPanelScrollTarget(gallery, nextPanel);
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;

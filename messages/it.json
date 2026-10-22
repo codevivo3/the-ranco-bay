@@ -196,10 +196,11 @@
       "body": "In questa fase sono inclusi solo i fatti principali già confermati.",
       "items": {
         "lakeView": "Posizione affacciata sul lago",
-        "privateBeach": "Accesso alla spiaggia privata",
+        "privateBeach": "Spiaggia privata",
         "parking": "Parcheggio disponibile",
         "equipped": "Alloggio attrezzato"
-      }
+      },
+      "propertyLink": "Esplora la proprietà"
     },
     "practical": {
       "eyebrow": "Informazioni pratiche",
@@ -233,8 +234,9 @@
       "titleLineOne": "Modi utili per vivere",
       "titleLineTwo": "il Lago Maggiore",
       "body": "Una guida volutamente piccola, basata sul giudizio locale anziché su classifiche, quantità o liste generiche.",
-      "imageAlt": "Cancelli aperti che conducono verso il Lago Maggiore"
+      "imageAlt": "The Ranco Bay vista dal Lago Maggiore"
     },
+    "emptyState": "I consigli sono in preparazione.",
     "categories": {
       "eat": {
         "eyebrow": "01",
@@ -423,7 +425,8 @@
   },
   "Common": {
     "Footer": {
-      "location": "Ranco • Lago Maggiore • Italia"
+      "location": "Ranco • Lago Maggiore • Italia",
+      "contact": "Contatta Emanuela"
     },
     "NotFound": {
       "title": "Pagina non trovata",

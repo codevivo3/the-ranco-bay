@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import {
+  Parasol,
+  Shapes,
+  SquareParking,
+  WavesHorizontal,
+} from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
@@ -14,7 +20,7 @@ import {
   HouseChapterImage,
   HouseChapterText,
 } from '@/components/sections/house-chapter';
-import { TrbButton } from '@/components/ui/trb-button';
+import { EditorialLink } from '@/components/ui/editorial-link';
 import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { SectionHeading } from '@/components/ui/section-heading';
 import {
@@ -80,18 +86,9 @@ const chapters = [
   },
   {
     key: 'outside',
-    items: [
-      {
-        id: 'outside-lead',
-        src: '/images/cinematic/image3.png',
-        format: 'landscape',
-        altKey: undefined,
-        focalPoint: undefined,
-      },
-      ...houseGallerySlots.outside.map((item) =>
-        propertyGalleryItem(item.imageId, item.format),
-      ),
-    ],
+    items: houseGallerySlots.outside.map((item) =>
+      propertyGalleryItem(item.imageId, item.format),
+    ),
   },
   {
     key: 'beach',
@@ -101,14 +98,12 @@ const chapters = [
   },
 ] as const;
 
-const amenityKeys = [
-  'lakeView',
-  'privateBeach',
-  'parking',
-  'equipped',
+const amenities = [
+  { key: 'lakeView', Icon: WavesHorizontal },
+  { key: 'privateBeach', Icon: Parasol },
+  { key: 'parking', Icon: SquareParking },
+  { key: 'equipped', Icon: Shapes },
 ] as const;
-
-const practicalKeys = ['setting', 'arrival', 'parking', 'beach'] as const;
 
 export async function generateMetadata({
   params,
@@ -156,9 +151,7 @@ export default async function HousePage({ params }: HousePageProps) {
           className='bg-page-background py-[var(--space-section)]'
         >
           <Container className='editorial-gallery-container'>
-            <div
-              className='editorial-gallery-row editorial-gallery-row--house grid items-stretch'
-            >
+            <div className='editorial-gallery-row editorial-gallery-row--house grid items-stretch'>
               <div
                 className={`editorial-gallery-card-slot ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}
               >
@@ -227,39 +220,22 @@ export default async function HousePage({ params }: HousePageProps) {
             title={t('amenities.title')}
             body={t('amenities.body')}
           />
-          <ul className='mt-12 grid gap-x-10 gap-y-5 border-y border-page-border py-8 text-base text-page-text sm:grid-cols-2 lg:grid-cols-4'>
-            {amenityKeys.map((key) => (
-              <li key={key}>{t(`amenities.items.${key}`)}</li>
+          <ul className='mt-12 grid grid-cols-1 gap-y-5 border-y border-page-border py-8 text-base text-page-text sm:grid-cols-2 lg:flex lg:items-center lg:justify-between lg:gap-6'>
+            {amenities.map(({ key, Icon }) => (
+              <li key={key} className='flex min-w-0 items-center gap-2.5'>
+                <Icon
+                  aria-hidden='true'
+                  className='shrink-0 text-[#13788A]'
+                  size={20}
+                  strokeWidth={1.75}
+                />
+                <span>{t(`amenities.items.${key}`)}</span>
+              </li>
             ))}
           </ul>
-        </Container>
-      </section>
-
-      <section className='bg-page-background py-[var(--space-section)]'>
-        <Container>
-          <SectionHeading
-            eyebrow={t('practical.eyebrow')}
-            title={t('practical.title')}
-            body={t('practical.body')}
-          />
-          <dl className='mt-12 divide-y divide-page-border border-y border-page-border'>
-            {practicalKeys.map((key) => (
-              <div
-                key={key}
-                className='grid gap-2 py-6 sm:grid-cols-[0.35fr_0.65fr] sm:gap-8'
-              >
-                <dt className='font-medium text-page-text'>
-                  {t(`practical.items.${key}.label`)}
-                </dt>
-                <dd className='text-page-muted'>
-                  {t(`practical.items.${key}.value`)}
-                </dd>
-              </div>
-            ))}
-          </dl>
-          <TrbButton className='mt-10' href='/contact#enquiry'>
-            {t('practical.contactLink')}
-          </TrbButton>
+          <EditorialLink className='mt-8' href='/property'>
+            {t('amenities.propertyLink')}
+          </EditorialLink>
         </Container>
       </section>
     </main>

@@ -117,11 +117,12 @@
       "outside": {"title": "Draußen", "body": "Der Weg nach draußen verbindet das Grundstück direkt mit dem Seeufer und der Landschaft von Ranco.", "imageAlt": "Offene Tore rahmen den Weg zum Lago Maggiore"},
       "beach": {"title": "Privatstrand", "body": "Auf der anderen Straßenseite schafft der Privatstrand eine direkte und unkomplizierte Verbindung zum Wasser.", "imageAlt": "Sonnenliegen auf einer Wiese am offenen blauen Wasser"}
     },
-    "amenities": {"eyebrow": "Auf einen Blick", "title": "Das Wesentliche des Aufenthalts", "body": "In dieser Phase werden nur bestätigte, wichtige Fakten genannt.", "items": {"lakeView": "Lage mit Seeblick", "privateBeach": "Zugang zum Privatstrand", "parking": "Parkplatz vorhanden", "equipped": "Ausgestattete Unterkunft"}},
+    "amenities": {"eyebrow": "Auf einen Blick", "title": "Das Wesentliche des Aufenthalts", "body": "In dieser Phase werden nur bestätigte, wichtige Fakten genannt.", "items": {"lakeView": "Lage mit Seeblick", "privateBeach": "Privatstrand", "parking": "Parkplatz vorhanden", "equipped": "Ausgestattete Unterkunft"}, "propertyLink": "Das Anwesen entdecken"},
     "practical": {"eyebrow": "Praktische Informationen", "title": "Was hilfreich ist", "body": "Kapazität, Regeln und Anreisehinweise werden bestätigt, sobald die Unterkunftsinhalte fertiggestellt sind.", "items": {"setting": {"label": "Lage", "value": "Ranco, am lombardischen Ufer des Lago Maggiore."}, "arrival": {"label": "Ankunft", "value": "Genaue Check-in-Hinweise erhalten bestätigte Gäste direkt."}, "parking": {"label": "Parken", "value": "Ein Parkplatz gehört zum Angebot; genaue Zufahrtsdetails folgen."}, "beach": {"label": "Privatstrand", "value": "Der Strand liegt auf der anderen Straßenseite des Grundstücks."}}, "contactLink": "Fragen zum Haus stellen"}
   },
   "Guide": {
-    "hero": {"eyebrow": "Lokaler Guide", "title": "So lässt sich der Lago Maggiore erleben", "titleLineOne": "So lässt sich der", "titleLineTwo": "Lago Maggiore erleben", "body": "Ein bewusst kompakter Guide, geprägt von lokaler Erfahrung statt Rankings, Masse oder beliebigen Listen.", "imageAlt": "Offene Gartentore führen zum Lago Maggiore"},
+    "hero": {"eyebrow": "Lokaler Guide", "title": "So lässt sich der Lago Maggiore erleben", "titleLineOne": "So lässt sich der", "titleLineTwo": "Lago Maggiore erleben", "body": "Ein bewusst kompakter Guide, geprägt von lokaler Erfahrung statt Rankings, Masse oder beliebigen Listen.", "imageAlt": "The Ranco Bay vom Lago Maggiore aus gesehen"},
+    "emptyState": "Empfehlungen werden vorbereitet.",
     "categories": {
       "eat": {"eyebrow": "01", "label": "Essen", "description": "Restaurants, Bars, Aperitivo und Mittagessen, ausgewählt nach Kontext statt Vollständigkeit."},
       "water": {"eyebrow": "02", "label": "Auf dem Wasser", "description": "Schwimmen, Boote und Erlebnisse, die den See zum Teil des Tages machen."},
@@ -191,7 +192,7 @@
     "withoutJavaScript": "Aktivieren Sie JavaScript, um den Kalender anzuzeigen."
   },
   "Common": {
-    "Footer": {"location": "Ranco • Lago Maggiore • Italien"},
+    "Footer": {"location": "Ranco • Lago Maggiore • Italien", "contact": "Emanuela kontaktieren"},
     "NotFound": {"title": "Seite nicht gefunden", "supportingText": "Sie sind wohl ein wenig vom Kurs abgekommen.", "description": "Diese Seite gibt es hier nicht. Zurück zum See.", "returnHome": "Zur Startseite"},
     "Gallery": {"previousItem": "Vorheriges Galerieelement", "nextItem": "Nächstes Galerieelement", "previousImage": "Vorheriges Foto", "nextImage": "Nächstes Foto", "image": "Foto"},
     "DirectContact": {"label": "Anfragen", "enquire": "Anfrage senden", "whatsapp": "Emanuela per WhatsApp", "vcard": "Kontakt speichern", "saveContact": "Kontakt speichern"}

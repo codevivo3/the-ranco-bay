@@ -7,9 +7,7 @@ import { TrbButton } from '@/components/ui/trb-button';
 import {GuideCategorySection} from '@/features/local-guide/guide-category-section';
 import {
   guideCategories,
-  placeholderGuideEntries,
 } from "@/features/local-guide/placeholder-data";
-import type {LocalGuideEntry} from '@/features/local-guide/types';
 import type {AppLocale} from '@/i18n/routing';
 import {getLocalGuideEntries} from '@/lib/sanity/local-guide';
 import {getLocalizedPageMetadata} from "@/lib/seo/localized-page-metadata";
@@ -34,38 +32,8 @@ export default async function GuidePage({params}: GuidePageProps) {
   const cmsResult = await getLocalGuideEntries(locale as AppLocale);
   const cmsEntries = cmsResult.status === 'success' ? cmsResult.data : [];
 
-  const getEntries = (category: (typeof guideCategories)[number]) => {
-    const categoryEntries = cmsEntries.filter(
-      (entry) => entry.category === category,
-    );
-    if (categoryEntries.length > 0) return categoryEntries;
-
-    return placeholderGuideEntries
-      .filter((entry) => entry.category === category && entry.active)
-      .map<LocalGuideEntry>((entry, index) => ({
-        category,
-        description: t(`entries.${entry.id}.description`),
-        displayOrder: index,
-        featured: entry.featured,
-        format: entry.format,
-        id: entry.id,
-        image: entry.image,
-        imageAlt: t(`entries.${entry.id}.alt`),
-        imagePosition: entry.imagePosition,
-        mapsUrl: entry.mapsUrl ?? undefined,
-        photography: [
-          {
-            alt: t(`entries.${entry.id}.alt`),
-            format: entry.format,
-            id: `${entry.id}-photograph`,
-            imagePosition: entry.imagePosition,
-            src: entry.image,
-          },
-        ],
-        tags: entry.tags.map((tag) => t(`tags.${tag}`)),
-        title: t(`entries.${entry.id}.title`),
-      }));
-  };
+  const getEntries = (category: (typeof guideCategories)[number]) =>
+    cmsEntries.filter((entry) => entry.category === category);
 
   return (
     <main id='main-content'>
@@ -75,7 +43,7 @@ export default async function GuidePage({params}: GuidePageProps) {
         titleLines={[t('hero.titleLineOne'), t('hero.titleLineTwo')]}
         titleLinesFromDesktop
         body={t('hero.body')}
-        image='/images/cinematic/image3.png'
+        image='/images/property/exterior/property-from-lake.jpeg'
         alt={t('hero.imageAlt')}
         titleRole='editorial'
       />
@@ -102,6 +70,7 @@ export default async function GuidePage({params}: GuidePageProps) {
             telephone: t('practical.telephone'),
             website: t('practical.website'),
           }}
+          emptyState={t('emptyState')}
         />
       ))}
 

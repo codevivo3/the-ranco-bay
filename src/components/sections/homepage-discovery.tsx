@@ -7,11 +7,13 @@ import { EditorialWatermark } from '@/components/ui/editorial-watermark';
 import { TrbButton } from '@/components/ui/trb-button';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { GuideCard } from '@/features/local-guide/guide-card';
-import { getHomepageGuideEntries } from '@/features/local-guide/placeholder-data';
+import { guideCategories } from '@/features/local-guide/placeholder-data';
 import {
   getPropertyImage,
   propertyImageSlots,
 } from '@/features/property/property-images';
+import type { AppLocale } from '@/i18n/routing';
+import { getLocalGuideEntries } from '@/lib/sanity/local-guide';
 
 const propertyFacts = [
   'lakeView',
@@ -23,13 +25,21 @@ const propertyFacts = [
 const homepageSectionLayout =
   'flex min-h-[100svh] items-center py-[var(--space-section)]';
 
-export async function HomepageDiscovery() {
-  const [home, guide, imageAlts] = await Promise.all([
+export async function HomepageDiscovery({ locale }: { locale: AppLocale }) {
+  const [home, guide, imageAlts, guideResult] = await Promise.all([
     getTranslations('Home'),
     getTranslations('Guide'),
     getTranslations('PropertyImages'),
+    getLocalGuideEntries(locale),
   ]);
-  const guideEntries = getHomepageGuideEntries();
+  const publishedGuideEntries =
+    guideResult.status === 'success' ? guideResult.data : [];
+  const guideEntries = guideCategories.map((category) => ({
+    category,
+    entry: publishedGuideEntries.find(
+      (candidate) => candidate.category === category && candidate.featured,
+    ),
+  }));
   const accommodationImage = getPropertyImage(
     propertyImageSlots.homeAccommodation,
   );
@@ -117,20 +127,41 @@ export async function HomepageDiscovery() {
             </TrbButton>
           </div>
           <div className='mt-14 grid gap-12 md:grid-cols-3 md:gap-6 lg:gap-8'>
-            {guideEntries.map((entry) => (
-              <GuideCard
-                key={entry.id}
-                image={entry.image}
-                alt={guide(`entries.${entry.id}.alt`)}
-                category={guide(`categories.${entry.category}.label`)}
-                title={guide(`entries.${entry.id}.title`)}
-                description={guide(`entries.${entry.id}.description`)}
-                imageFrameClassName='aspect-[4/5] md:aspect-[3/4] lg:aspect-auto lg:h-[clamp(360px,45svh,520px)]'
-                imagePosition={entry.imagePosition}
-                imageSizes='(min-width: 1024px) 25vw, (min-width: 768px) 31vw, calc(100vw - 2rem)'
-                presentation='gallery'
-              />
-            ))}
+            {guideEntries.map(({ category, entry }) =>
+              entry ? (
+                <GuideCard
+                  key={entry.id}
+                  image={entry.image}
+                  alt={entry.imageAlt}
+                  category={guide(`categories.${category}.label`)}
+                  title={entry.title}
+                  subtitle={entry.subtitle}
+                  description={entry.description}
+                  imageFrameClassName='aspect-[4/5] md:aspect-[3/4] lg:aspect-auto lg:h-[clamp(360px,45svh,520px)]'
+                  imagePosition={entry.imagePosition}
+                  imageSizes='(min-width: 1024px) 25vw, (min-width: 768px) 31vw, calc(100vw - 2rem)'
+                  presentation='gallery'
+                />
+              ) : (
+                <article
+                  key={category}
+                  className='trb-editorial-glass relative flex min-h-[24rem] overflow-hidden p-[clamp(1.5rem,3vw,2.5rem)] md:min-h-[28rem] lg:h-[clamp(360px,45svh,520px)]'
+                >
+                  <EditorialWatermark
+                    variant='lower-right'
+                    opacity={0.025}
+                  />
+                  <div className='relative z-10 mt-auto'>
+                    <h3 className='font-display text-[clamp(2rem,3vw,3rem)] leading-none text-page-text-strong'>
+                      {guide(`categories.${category}.label`)}
+                    </h3>
+                    <p className='mt-4 max-w-xs text-base leading-7 text-page-muted'>
+                      {guide('emptyState')}
+                    </p>
+                  </div>
+                </article>
+              ),
+            )}
           </div>
         </Container>
       </section>

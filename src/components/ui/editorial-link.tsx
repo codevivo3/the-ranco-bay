@@ -8,6 +8,7 @@ type EditorialLinkProps = {
   href:
     | "/"
     | "/house"
+    | "/property"
     | "/guide"
     | "/contact"
     | "/apartments/upper-floor";

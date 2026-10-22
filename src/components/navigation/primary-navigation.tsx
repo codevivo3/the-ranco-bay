@@ -313,7 +313,7 @@ export function PrimaryNavigation({ labels }: PrimaryNavigationProps) {
       className='col-span-2 row-start-2 w-full min-w-0 sm:col-span-1 sm:col-start-2 sm:row-start-1 sm:w-auto sm:justify-self-center'
       aria-label={labels.primary}
     >
-      <ul className='grid grid-cols-2 items-start justify-center gap-x-4 gap-y-1 text-sm lg:flex lg:flex-wrap lg:items-center lg:gap-x-9 lg:text-[1.0625rem] xl:gap-x-10'>
+      <ul className='grid grid-cols-2 items-start justify-center gap-x-4 gap-y-1 text-sm lg:flex lg:flex-wrap lg:items-center lg:gap-x-9 lg:text-[0.9375rem] xl:gap-x-10 2xl:text-[1.0625rem]'>
         {renderDropdown(
           'apartments',
           labels.apartments,

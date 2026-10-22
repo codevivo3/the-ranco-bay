@@ -101,21 +101,17 @@ export default async function ContactPage({
 
       <section
         id='enquiry'
-        className='relative min-h-[100svh] scroll-mt-28 overflow-hidden bg-page-surface pb-[clamp(3.5rem,6svh,4.5rem)] pt-[clamp(6.5rem,11svh,7.5rem)] lg:flex lg:items-center'
+        className='relative min-h-[100svh] scroll-mt-28 overflow-hidden bg-page-surface pb-[clamp(3.5rem,6svh,4.5rem)] pt-[clamp(6.5rem,11svh,7.5rem)] lg:flex lg:items-center lg:py-[clamp(2.5rem,5svh,4rem)] 2xl:pb-[clamp(3.5rem,6svh,4.5rem)] 2xl:pt-[clamp(6.5rem,11svh,7.5rem)]'
       >
         <EditorialWatermark variant='upper-right' opacity={0.025} />
         <EnquiryScrollPosition />
 
         <Container className='relative z-10' data-enquiry-content>
-          <div className='grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20'>
+          <div>
             <div className='contact-enquiry-heading min-w-0'>
               <SectionHeading
                 eyebrow={t('enquiry.eyebrow')}
                 title={t('enquiry.title')}
-                titleLines={[
-                  t('enquiry.titleLineOne'),
-                  t('enquiry.titleLineTwo'),
-                ]}
                 titleRole='editorial'
                 body={t('enquiry.body')}
               />
@@ -130,7 +126,10 @@ export default async function ContactPage({
         </Container>
       </section>
 
-      <section className='flex min-h-[100svh] items-center bg-page-background py-[var(--space-section)]'>
+      <section
+        id='contact-details'
+        className='flex min-h-[100svh] scroll-mt-28 items-center bg-page-background py-[var(--space-section)]'
+      >
         <Container>
           <div className='grid items-start gap-14 lg:grid-cols-2 lg:gap-20'>
             <div>

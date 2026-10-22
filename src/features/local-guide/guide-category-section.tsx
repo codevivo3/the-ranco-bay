@@ -5,10 +5,6 @@ import {
   HorizontalEditorialGallery,
   HorizontalEditorialPanel,
 } from '@/components/layout/horizontal-editorial-gallery'
-import {
-  TEMPORARY_GALLERY_TEST_SLIDES,
-  TemporaryGalleryPlaceholder,
-} from '@/components/layout/temporary-gallery-placeholder'
 import {SectionHeading} from '@/components/ui/section-heading'
 
 import {GuideCard} from './guide-card'
@@ -27,6 +23,7 @@ type GuideCategorySectionProps = {
   carouselLabels: GuideCarouselLabels
   description: string
   entries: readonly LocalGuideEntry[]
+  emptyState: string
   eyebrow: string
   index: number
   label: string
@@ -40,6 +37,7 @@ export function GuideCategorySection({
   carouselLabels,
   description,
   entries,
+  emptyState,
   eyebrow,
   index,
   label,
@@ -66,13 +64,14 @@ export function GuideCategorySection({
               />
             </div>
           </div>
-          <ExpandableGalleryGroup
-            className='editorial-gallery-media-slot'
-            closeLabel={closeLabel}
-            previousLabel={previousLabel}
-            nextLabel={nextLabel}
-          >
-            <HorizontalEditorialGallery label={label} variant='guide'>
+          {entries.length > 0 ? (
+            <ExpandableGalleryGroup
+              className='editorial-gallery-media-slot'
+              closeLabel={closeLabel}
+              previousLabel={previousLabel}
+              nextLabel={nextLabel}
+            >
+              <HorizontalEditorialGallery label={label} variant='guide'>
               {entries.map((entry) => (
                 <HorizontalEditorialPanel key={entry.id} format={entry.format}>
                   <ExpandableGalleryItem
@@ -147,22 +146,17 @@ export function GuideCategorySection({
                   </ExpandableGalleryItem>
                 </HorizontalEditorialPanel>
               ))}
-              {TEMPORARY_GALLERY_TEST_SLIDES.slice(
-                0,
-                Math.max(0, 4 - entries.length),
-              ).map((slide, placeholderIndex) => (
-                <HorizontalEditorialPanel
-                  key={`temporary-${slide.slideNumber}`}
-                  format={slide.format}
-                >
-                  <TemporaryGalleryPlaceholder
-                    slideNumber={entries.length + placeholderIndex + 1}
-                    tone={slide.tone}
-                  />
-                </HorizontalEditorialPanel>
-              ))}
-            </HorizontalEditorialGallery>
-          </ExpandableGalleryGroup>
+              </HorizontalEditorialGallery>
+            </ExpandableGalleryGroup>
+          ) : (
+            <div className='editorial-gallery-media-slot'>
+              <div className='trb-editorial-glass flex h-[var(--editorial-card-height)] items-center justify-center px-[clamp(1.5rem,4vw,3rem)] text-center'>
+                <p className='max-w-sm text-base leading-7 text-page-muted'>
+                  {emptyState}
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </Container>
     </section>

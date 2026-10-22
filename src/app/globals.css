@@ -64,6 +64,19 @@ body {
   margin-top: 2rem;
 }
 
+@media (min-width: 64rem) {
+  .contact-enquiry-heading .editorial-statement {
+    max-inline-size: none;
+    font-size: clamp(2.9rem, 5.15vw, 6.5rem);
+    white-space: nowrap;
+  }
+
+  .contact-enquiry-heading .editorial-statement + p {
+    margin-top: 1.5rem;
+    max-inline-size: none;
+  }
+}
+
 .editorial-watermark {
   position: absolute;
   z-index: 0;
