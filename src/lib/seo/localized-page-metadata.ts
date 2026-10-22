@@ -33,8 +33,10 @@ export async function getLocalizedPageMetadata(
 ): Promise<Metadata> {
   const t = await getTranslations({locale, namespace: "Metadata.pages"});
   const pathname = `/${locale}/${pagePaths[page]}`;
+
   const title = overrides.title ?? t(`${page}.title`);
   const description = overrides.description ?? t(`${page}.description`);
+
   const socialMetadata = await getLocalizedSocialMetadata({
     locale,
     page,

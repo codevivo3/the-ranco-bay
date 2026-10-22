@@ -62,14 +62,14 @@ export function HomeLogoLink({ariaLabel}: HomeLogoLinkProps) {
         alt=""
         width={40}
         height={40}
-        loading="eager"
+        priority
       />
       <Image
         src="/logo/trb-logo-typography-plain.svg"
         alt=""
         width={150}
         height={50}
-        loading="eager"
+        priority
       />
     </HomeLink>
   );
@@ -86,7 +86,7 @@ export function HomeLogoSymbolLink({ariaLabel}: HomeLogoLinkProps) {
         alt=""
         width={35}
         height={35}
-        loading="eager"
+        priority
       />
     </HomeLink>
   );
@@ -103,7 +103,7 @@ export function HomeLogoTypographyLink({ariaLabel}: HomeLogoLinkProps) {
         alt=""
         width={150}
         height={50}
-        loading="eager"
+        priority
         className="h-auto w-[min(8.5rem,calc(100vw-11rem))]"
       />
     </HomeLink>
