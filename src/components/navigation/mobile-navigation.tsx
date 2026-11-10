@@ -1,11 +1,12 @@
 'use client';
 
 import { ChevronDown, ChevronUp, Menu, X } from 'lucide-react';
+import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 
-import { Link, usePathname } from '@/i18n/navigation';
-import { routing } from '@/i18n/routing';
+import { usePathname } from '@/i18n/navigation';
+import { getLocalizedPath, routing } from '@/i18n/routing';
 
 type MobileNavigationProps = {
   labels: {
@@ -70,6 +71,23 @@ export function MobileNavigation({ labels }: MobileNavigationProps) {
     return () => {
       desktopQuery.removeEventListener('change', handleDesktopChange);
       document.removeEventListener('keydown', handleEscape);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const root = document.documentElement;
+    const body = document.body;
+    const previousRootOverflow = root.style.overflow;
+    const previousBodyOverflow = body.style.overflow;
+
+    root.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+
+    return () => {
+      root.style.overflow = previousRootOverflow;
+      body.style.overflow = previousBodyOverflow;
     };
   }, [isOpen]);
 
@@ -289,8 +307,7 @@ export function MobileNavigation({ labels }: MobileNavigationProps) {
                       </span>
                     ) : null}
                     <Link
-                      href={pathname}
-                      locale={locale}
+                      href={getLocalizedPath(locale, pathname)}
                       hrefLang={locale}
                       aria-current={
                         locale === activeLocale ? 'page' : undefined

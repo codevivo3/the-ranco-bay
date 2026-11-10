@@ -6,3 +6,9 @@ export const supportedLanguages = [
 ] as const
 
 export const localeIds = supportedLanguages.map(({id}) => id)
+
+export function getLocalizedPath(locale: string, path = '') {
+  const suffix = path === '/' ? '' : path.startsWith('/') ? path : `/${path}`
+  if (locale === 'en') return suffix || '/'
+  return suffix ? `/${locale}${suffix}` : `/${locale}/`
+}

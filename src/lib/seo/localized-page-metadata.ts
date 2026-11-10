@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import {getTranslations} from "next-intl/server";
 
-import {routing} from "@/i18n/routing";
+import {getLocalizedPath, routing} from "@/i18n/routing";
 import {getLocalizedSocialMetadata} from "@/lib/seo/localized-social-metadata";
 
 type PublicPage = "contact" | "guide" | "house" | "property" | "upperFloor";
@@ -32,7 +32,8 @@ export async function getLocalizedPageMetadata(
   overrides: MetadataOverrides = {},
 ): Promise<Metadata> {
   const t = await getTranslations({locale, namespace: "Metadata.pages"});
-  const pathname = `/${locale}/${pagePaths[page]}`;
+  const pagePath = `/${pagePaths[page]}`;
+  const pathname = getLocalizedPath(locale, pagePath);
 
   const title = overrides.title ?? t(`${page}.title`);
   const description = overrides.description ?? t(`${page}.description`);
@@ -51,12 +52,15 @@ export async function getLocalizedPageMetadata(
     description,
     alternates: {
       canonical: pathname,
-      languages: Object.fromEntries(
-        routing.locales.map((supportedLocale) => [
-          supportedLocale,
-          `/${supportedLocale}/${pagePaths[page]}`,
-        ]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((supportedLocale) => [
+            supportedLocale,
+            getLocalizedPath(supportedLocale, pagePath),
+          ]),
+        ),
+        "x-default": getLocalizedPath(routing.defaultLocale, pagePath),
+      },
     },
     ...socialMetadata,
     ...(page === 'upperFloor' || overrides.index === false

@@ -1,11 +1,19 @@
 import {draftMode} from 'next/headers'
 import {NextResponse} from 'next/server'
 
-const localePath = /^\/(en|it|de|fr)(?:\/|$)/
+const validationOrigin = 'https://therancobay.invalid'
 
 function safeReturnPath(value: FormDataEntryValue | null) {
-  if (typeof value !== 'string' || !localePath.test(value)) return '/en'
-  return value
+  if (typeof value !== 'string' || !value.startsWith('/')) return '/'
+
+  try {
+    const url = new URL(value, validationOrigin)
+    if (url.origin !== validationOrigin) return '/'
+
+    return `${url.pathname}${url.search}${url.hash}`
+  } catch {
+    return '/'
+  }
 }
 
 export async function POST(request: Request) {

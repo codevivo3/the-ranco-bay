@@ -6,7 +6,7 @@ import {structureTool} from 'sanity/structure'
 import {TrbLogo} from './components/trb-logo'
 import {apartmentDocuments, protectedDocumentIds, withoutDraftPrefix} from './lib/constants'
 import {dataset, previewOrigin, projectId} from './lib/environment'
-import {supportedLanguages} from './lib/locales'
+import {getLocalizedPath, supportedLanguages} from './lib/locales'
 import {presentationResolve} from './presentation/resolve'
 import {schemaTypes} from './schemas'
 import {structure} from './structure'
@@ -37,7 +37,7 @@ export default defineConfig({
       resolve: presentationResolve,
       allowOrigins: [previewOrigin],
       previewUrl: {
-        initial: `${previewOrigin}/en`,
+        initial: `${previewOrigin}${getLocalizedPath('en')}`,
         previewMode: {
           enable: '/api/draft-mode/enable',
           shareAccess: false,

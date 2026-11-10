@@ -1,9 +1,10 @@
 'use client';
 
+import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
-import { Link, usePathname } from '@/i18n/navigation';
-import { routing } from '@/i18n/routing';
+import { usePathname } from '@/i18n/navigation';
+import { getLocalizedPath, routing } from '@/i18n/routing';
 
 export function LocaleNavigation() {
   const t = useTranslations('Navigation');
@@ -19,8 +20,7 @@ export function LocaleNavigation() {
         {routing.locales.map((locale) => (
           <li key={locale}>
             <Link
-              href={pathname}
-              locale={locale}
+              href={getLocalizedPath(locale, pathname)}
               hrefLang={locale}
               aria-current={locale === activeLocale ? 'page' : undefined}
               className={`relative pb-1 transition-opacity duration-180 ${

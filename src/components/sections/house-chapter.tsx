@@ -25,7 +25,7 @@ export function HouseChapterImage({
         alt={alt}
         fill
         sizes="(min-width: 1024px) 58vw, 92vw"
-        className="object-contain object-center transition-transform duration-700 motion-reduce:transition-none lg:object-cover lg:group-hover:scale-[1.01] lg:[object-position:var(--house-chapter-image-position,center)]"
+        className="object-cover [object-position:var(--house-chapter-image-position,center)] transition-transform duration-700 motion-reduce:transition-none sm:object-contain sm:object-center lg:object-cover lg:group-hover:scale-[1.01] lg:[object-position:var(--house-chapter-image-position,center)]"
         style={
           imagePosition
             ? ({"--house-chapter-image-position": imagePosition} as CSSProperties)

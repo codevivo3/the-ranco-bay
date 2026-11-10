@@ -1,12 +1,12 @@
 import {defineLocations, type PresentationPluginOptions} from 'sanity/presentation'
 
 import {withoutDraftPrefix} from '../lib/constants'
-import {supportedLanguages} from '../lib/locales'
+import {getLocalizedPath, supportedLanguages} from '../lib/locales'
 
 const localeLocations = (path: string, title: string) =>
   supportedLanguages.map(({id, title: language}) => ({
     title: `${title} · ${language}`,
-    href: `/${id}${path}`,
+    href: getLocalizedPath(id, path),
   }))
 
 export const presentationResolve: PresentationPluginOptions['resolve'] = {

@@ -10,7 +10,6 @@ import {SiteHeader} from "@/components/navigation/site-header";
 import {PreviewExitControl} from "@/components/preview/preview-exit-control";
 import {bodyFont, displayFont} from "@/lib/fonts";
 import {getSiteUrl} from "@/lib/constants/site";
-import {getLocalizedSocialMetadata} from "@/lib/seo/localized-social-metadata";
 import {routing} from "@/i18n/routing";
 
 import "../globals.css";
@@ -24,38 +23,9 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata({
-  params,
-}: LocaleLayoutProps): Promise<Metadata> {
-  const {locale} = await params;
-
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
-  const t = await getTranslations({locale, namespace: "Metadata"});
-  const socialMetadata = await getLocalizedSocialMetadata({
-    locale,
-    page: "home",
-    pathname: `/${locale}`,
-    title: t("openGraphTitle"),
-    description: t("openGraphDescription"),
-  });
-
+export function generateMetadata(): Metadata {
   return {
     metadataBase: getSiteUrl(),
-    title: t("title"),
-    description: t("description"),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: Object.fromEntries(
-        routing.locales.map((supportedLocale) => [
-          supportedLocale,
-          `/${supportedLocale}`,
-        ]),
-      ),
-    },
-    ...socialMetadata,
     robots: {
       index: true,
       follow: true,
